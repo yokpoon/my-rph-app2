@@ -349,3 +349,99 @@ export async function whitelistUserInDb(email: string, role: string = 'guru', na
     return false;
   }
 }
+
+/**
+ * Fetch school config from Supabase
+ */
+export async function fetchSchoolConfigFromDb() {
+  if (!isSupabaseConfigured || !supabase) return null;
+  try {
+    const { data, error } = await supabase.from("school_config").select("*").eq("id", "main_school").maybeSingle();
+    if (error || !data) return null;
+    return {
+      name: data.name,
+      chineseName: data.chinese_name,
+      code: data.code,
+      academicYear: data.academic_year,
+      currentWeek: data.current_week,
+      groupType: data.group_type,
+      ppd: data.ppd,
+    };
+  } catch (e) {
+    console.warn("fetchSchoolConfigFromDb note:", e);
+    return null;
+  }
+}
+
+/**
+ * Save school config to Supabase
+ */
+export async function saveSchoolConfigToDb(sc: any) {
+  if (!isSupabaseConfigured || !supabase) return false;
+  try {
+    const { error } = await supabase.from("school_config").upsert({
+      id: "main_school",
+      name: sc.name,
+      chinese_name: sc.chineseName,
+      code: sc.code,
+      academic_year: sc.academicYear,
+      current_week: sc.currentWeek,
+      group_type: sc.groupType,
+      ppd: sc.ppd,
+      updated_at: new Date().toISOString(),
+    });
+    if (error) {
+      console.warn("saveSchoolConfigToDb error:", error);
+      return false;
+    }
+    return true;
+  } catch (e) {
+    console.warn("saveSchoolConfigToDb note:", e);
+    return false;
+  }
+}
+
+/**
+ * Fetch academic weeks from Supabase
+ */
+export async function fetchAcademicWeeksFromDb() {
+  if (!isSupabaseConfigured || !supabase) return [];
+  try {
+    const { data, error } = await supabase.from("academic_weeks").select("*").order("week_number", { ascending: true });
+    if (error || !data || data.length === 0) return [];
+    return data.map((d: any) => ({
+      weekNumber: d.week_number,
+      startDate: d.start_date,
+      dueDateFriday: d.due_date_friday,
+      theme: d.theme || "",
+    }));
+  } catch (e) {
+    console.warn("fetchAcademicWeeksFromDb note:", e);
+    return [];
+  }
+}
+
+/**
+ * Save all academic weeks to Supabase
+ */
+export async function saveAcademicWeeksToDb(weeks: any[]) {
+  if (!isSupabaseConfigured || !supabase) return false;
+  try {
+    const payload = weeks.map((w: any) => ({
+      id: "w_" + w.weekNumber,
+      week_number: w.weekNumber,
+      start_date: w.startDate,
+      due_date_friday: w.dueDateFriday,
+      theme: w.theme,
+    }));
+    const { error } = await supabase.from("academic_weeks").upsert(payload);
+    if (error) {
+      console.warn("saveAcademicWeeksToDb error:", error);
+      return false;
+    }
+    return true;
+  } catch (e) {
+    console.warn("saveAcademicWeeksToDb note:", e);
+    return false;
+  }
+}
