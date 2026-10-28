@@ -277,6 +277,76 @@ export default function ERphColorAdminApp() {
   // Hydrate client-side state from localStorage & Supabase safely after initial mount
   useEffect(() => {
     try {
+      // 1. Instant local storage hydration for all entities
+      try {
+        const localT = localStorage.getItem('erph_live_teachers_v1');
+        if (localT) {
+          const parsedT = JSON.parse(localT);
+          if (Array.isArray(parsedT) && parsedT.length > 0) setTeachers(parsedT);
+        }
+        const localTime = localStorage.getItem('erph_live_timetable_v1');
+        if (localTime) {
+          const parsedTime = JSON.parse(localTime);
+          if (Array.isArray(parsedTime) && parsedTime.length > 0) setTimetable(parsedTime);
+        }
+        const localRph = localStorage.getItem('erph_live_rph_records_v1');
+        if (localRph) {
+          const parsedRph = JSON.parse(localRph);
+          if (Array.isArray(parsedRph) && parsedRph.length > 0) setRphRecords(parsedRph);
+        }
+      } catch (err) {
+        console.warn('Local storage early hydration note:', err);
+      }
+
+      // 2. Fetch full datasets from Supabase Cloud immediately on mount
+      if (isSupabaseConfigured) {
+        fetchTeachersFromDb().then((dbTeachers) => {
+          if (dbTeachers && dbTeachers.length > 0) {
+            setTeachers((prev) => {
+              const combined = [...prev];
+              for (const dt of dbTeachers) {
+                const idx = combined.findIndex((t) => t.id === dt.id || t.email.toLowerCase() === dt.email.toLowerCase());
+                if (idx >= 0) combined[idx] = { ...combined[idx], ...dt };
+                else combined.push(dt);
+              }
+              try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(combined)); } catch (_) {}
+              return combined;
+            });
+          }
+        });
+
+        fetchTimetableFromDb().then((dbTimetable) => {
+          if (dbTimetable && dbTimetable.length > 0) {
+            setTimetable((prev) => {
+              const combined = [...prev];
+              for (const slot of dbTimetable) {
+                const idx = combined.findIndex((s) => s.id === slot.id);
+                if (idx >= 0) combined[idx] = { ...combined[idx], ...slot };
+                else combined.push(slot);
+              }
+              try { localStorage.setItem('erph_live_timetable_v1', JSON.stringify(combined)); } catch (_) {}
+              return combined;
+            });
+          }
+        });
+
+        fetchRphRecordsFromDb().then((dbRphs) => {
+          if (dbRphs && dbRphs.length > 0) {
+            setRphRecords((prev) => {
+              const combined = [...prev];
+              for (const r of dbRphs) {
+                const idx = combined.findIndex((x) => x.id === r.id);
+                if (idx >= 0) combined[idx] = { ...combined[idx], ...r };
+                else combined.push(r);
+              }
+              try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(combined)); } catch (_) {}
+              return combined;
+            });
+          }
+        });
+      }
+
+      // 3. Hydrate session from localStorage
       const savedSession = localStorage.getItem('erph_auth_session_v1');
       const flag = localStorage.getItem('erph_is_authenticated_v1');
       if (flag === 'true' && savedSession) {
@@ -338,9 +408,15 @@ export default function ERphColorAdminApp() {
               name: sessionUser.user_metadata?.full_name || sessionUser.user_metadata?.name || 'SUPERADMIN YOK POON',
             };
             setTeachers((prev) => {
-              if (prev.some((t) => t.id === 'superadmin' || t.email.toLowerCase() === userEmail)) return prev;
+              const idx = prev.findIndex((t) => t.id === 'superadmin' || t.email.toLowerCase() === userEmail);
+              if (idx >= 0) {
+                const copy = [...prev];
+                copy[idx] = { ...copy[idx], ...superProfile };
+                return copy;
+              }
               return [superProfile, ...prev];
             });
+            saveTeacherToDb(superProfile).catch((err) => console.warn('saveTeacherToDb err:', err));
             handlePerformLogin(superProfile, 'google');
             return;
           }
@@ -366,6 +442,7 @@ export default function ERphColorAdminApp() {
               }
               return [adminProfile, ...prev];
             });
+            saveTeacherToDb(adminProfile).catch((err) => console.warn('saveTeacherToDb err:', err));
             handlePerformLogin(adminProfile, 'google');
             return;
           }
@@ -395,7 +472,7 @@ export default function ERphColorAdminApp() {
             return;
           }
 
-          // 6. Fallback for newly authenticated teacher
+          // 6. Fallback for newly authenticated teacher (e.g. Guru ICT)
           const googleName =
             sessionUser.user_metadata?.full_name ||
             sessionUser.user_metadata?.name ||
@@ -406,15 +483,21 @@ export default function ERphColorAdminApp() {
             name: googleName,
             chineseName: '',
             email: userEmail,
-            role: 'guru',
+            role: (whitelistRole as UserRole) || 'guru',
             panitia: 'Umum',
             subjectSlug: 'bahasa_melayu_sjkc',
           };
 
           setTeachers((prev) => {
-            if (prev.some((t) => t.email.toLowerCase() === userEmail)) return prev;
+            const idx = prev.findIndex((t) => t.email.toLowerCase() === userEmail);
+            if (idx >= 0) {
+              const copy = [...prev];
+              copy[idx] = { ...copy[idx], ...newProfile };
+              return copy;
+            }
             return [newProfile, ...prev];
           });
+          saveTeacherToDb(newProfile).catch((err) => console.warn('saveTeacherToDb err:', err));
 
           handlePerformLogin(newProfile, 'google');
         };
@@ -436,8 +519,6 @@ export default function ERphColorAdminApp() {
             }
           }
         });
-
-        return () => subscription.unsubscribe();
       }
 
       const savedMatrix = localStorage.getItem('erph_yearly_matrix_records_v2');
@@ -450,74 +531,7 @@ export default function ERphColorAdminApp() {
         setGasWebAppUrl(savedGas);
       }
 
-      // Hydrate Teachers, Timetable & RPH from localStorage immediately
-      try {
-        const localT = localStorage.getItem('erph_live_teachers_v1');
-        if (localT) {
-          const parsedT = JSON.parse(localT);
-          if (Array.isArray(parsedT) && parsedT.length > 0) setTeachers(parsedT);
-        }
-        const localTime = localStorage.getItem('erph_live_timetable_v1');
-        if (localTime) {
-          const parsedTime = JSON.parse(localTime);
-          if (Array.isArray(parsedTime) && parsedTime.length > 0) setTimetable(parsedTime);
-        }
-        const localRph = localStorage.getItem('erph_live_rph_records_v1');
-        if (localRph) {
-          const parsedRph = JSON.parse(localRph);
-          if (Array.isArray(parsedRph) && parsedRph.length > 0) setRphRecords(parsedRph);
-        }
-      } catch (err) {
-        console.warn('Local storage hydration note:', err);
-      }
 
-      // Hydrate from Cloud Database (Supabase) if configured
-      if (isSupabaseConfigured) {
-        fetchTeachersFromDb().then((dbTeachers) => {
-          if (dbTeachers && dbTeachers.length > 0) {
-            setTeachers((prev) => {
-              const combined = [...prev];
-              for (const dt of dbTeachers) {
-                const idx = combined.findIndex((t) => t.id === dt.id || t.email.toLowerCase() === dt.email.toLowerCase());
-                if (idx >= 0) combined[idx] = { ...combined[idx], ...dt };
-                else combined.push(dt);
-              }
-              try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(combined)); } catch (_) {}
-              return combined;
-            });
-          }
-        });
-
-        fetchTimetableFromDb().then((dbTimetable) => {
-          if (dbTimetable && dbTimetable.length > 0) {
-            setTimetable((prev) => {
-              const combined = [...prev];
-              for (const slot of dbTimetable) {
-                const idx = combined.findIndex((s) => s.id === slot.id);
-                if (idx >= 0) combined[idx] = { ...combined[idx], ...slot };
-                else combined.push(slot);
-              }
-              try { localStorage.setItem('erph_live_timetable_v1', JSON.stringify(combined)); } catch (_) {}
-              return combined;
-            });
-          }
-        });
-
-        fetchRphRecordsFromDb().then((dbRphs) => {
-          if (dbRphs && dbRphs.length > 0) {
-            setRphRecords((prev) => {
-              const combined = [...prev];
-              for (const r of dbRphs) {
-                const idx = combined.findIndex((x) => x.id === r.id);
-                if (idx >= 0) combined[idx] = { ...combined[idx], ...r };
-                else combined.push(r);
-              }
-              try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(combined)); } catch (_) {}
-              return combined;
-            });
-          }
-        });
-      }
     } catch (e) {
       console.error('Error hydrating session from localStorage:', e);
     } finally {
@@ -1754,115 +1768,14 @@ ${gen.assessment}`;
     });
   }, [teachers, rphRecords, adminReviewWeek, timetable]);
 
-  // Helper: Retrieve or dynamically synthesize weekly RPH lessons for inspection
+  // Helper: Retrieve weekly RPH lessons for inspection (real data only, no mock fallback)
   const getTeacherWeekRphs = useCallback(
     (teacherId: string, weekNum: number): RphRecord[] => {
-      const existing = rphRecords.filter(
+      return rphRecords.filter(
         (r) => r.teacherId === teacherId && r.weekNumber === weekNum
       );
-      if (existing.length > 0) return existing;
-
-      // If no explicit saved RPH in state, build representative lessons from teacher's timetable schedule
-      const teacherSlots = timetable.filter((s) => s.teacherId === teacherId);
-      const targetWeek = academicWeeks.find((w) => w.weekNumber === weekNum);
-      const weekTheme = targetWeek?.theme || `Minggu Persekolahan ${weekNum}`;
-
-      if (teacherSlots.length === 0) {
-        return [
-          {
-            id: `sample_${teacherId}_w${weekNum}_1`,
-            slotId: `slot_fallback_${teacherId}`,
-            teacherId,
-            weekNumber: weekNum,
-            date: targetWeek?.startDate || '2026-01-12',
-            day: 'ISNIN',
-            timeStart: '07:30',
-            timeEnd: '08:30',
-            grade: '4',
-            className: '4 CERDAS',
-            subjectSlug: 'bahasa_cina_sjkc',
-            subjectName: 'BAHASA CINA SJK(C) 华校华文',
-            sk: '1.1 进行口语交际。能根据不同的情况，有效地与人沟通。',
-            sps: ['1.1.1 进行口语交际，能应用礼貌语言与人沟通交流。'],
-            objectives: [
-              `Pada akhir pembelajaran, sekurang-kurangnya 80% murid dapat memahami standard pembelajaran ${weekTheme}.`,
-              'Murid dapat melengkapkan lembaran kerja pengukuhan dengan tepat.',
-            ],
-            criteria: [
-              'Menyebut sekurang-kurangnya 3 kosa kata / frasa utama dengan sebutan betul.',
-              'Menjawab soalan latihan bertulis dengan bimbingan minimum.',
-            ],
-            induction:
-              'Guru memperdengarkan rakaman audio / gambar rangsangan berhubung topik pembelajaran (5 minit).',
-            activities: [
-              'Langkah 1: Penerangan guru berkaitan isi pelajaran menggunakan buku teks digital.',
-              'Langkah 2: Aktiviti PAK-21 perbincangan berpasangan / kumpulan kecil.',
-              'Langkah 3: Latihan pengukuhan kendiri dalam buku aktiviti.',
-            ],
-            closure:
-              'Guru membuat rumusan sesi pembelajaran dan menerapkan nilai sivik (5 minit).',
-            emk: ['Nilai Murni', 'Kreativiti dan Inovasi'],
-            bbm: ['Buku Teks Digital', 'Lembaran Kerja', 'Kad Imbasan'],
-            assessment: 'Pemerhatian & Penulisan (PBD)',
-            reflection:
-              '25/28 murid berjaya mencapai objektif pembelajaran. 3 orang murid diberi bimbingan pemulihan.',
-            status: (weekNum <= school.currentWeek ? 'DISAHKAN' : 'DIHANTAR') as RphStatus,
-            verifiedBy: 'PHOON SAU PING (PK Pentadbiran)',
-            verifiedAt: targetWeek?.dueDateFriday || '2026-01-16',
-            updatedAt: new Date().toISOString(),
-          },
-        ];
-      }
-
-      return teacherSlots.map((slot) => ({
-        id: `synth_${teacherId}_w${weekNum}_${slot.id}`,
-        slotId: slot.id,
-        teacherId,
-        weekNumber: weekNum,
-        date: targetWeek?.startDate || '2026-01-12',
-        day: slot.day,
-        timeStart: slot.timeStart,
-        timeEnd: slot.timeEnd,
-        grade: slot.grade,
-        className: slot.className,
-        subjectSlug: slot.subjectSlug || 'bahasa_cina_sjkc',
-        subjectName: slot.subjectName || 'Mata Pelajaran KSSR Semakan',
-        sk:
-          slot.defaultSk ||
-          '1.1 Standard Kandungan sukatan kurikulum mengikut buku teks dan DSKP.',
-        sps:
-          slot.defaultSps && slot.defaultSps.length > 0
-            ? slot.defaultSps
-            : ['1.1.1 Standard Pembelajaran mengikut kemahiran topik minggu semasa.'],
-        objectives: [
-          `Pada akhir PdP, sekurang-kurangnya 80% murid dapat menguasai kemahiran pembelajaran ${weekTheme}.`,
-          'Murid dapat menyelesaikan aktiviti pengukuhan dengan tepat.',
-        ],
-        criteria: [
-          'Menyatakan konsep utama secara lisan atau bertulis.',
-          'Melengkapkan latihan bertulis dengan bimbingan minimum guru.',
-        ],
-        induction:
-          'Guru memulakan sesi PdP dengan set induksi menarik / tayangan bahan rangsangan (5 minit).',
-        activities: [
-          'Langkah 1: Pengenalan konsep topik pembelajaran berpandukan Standard Pembelajaran.',
-          'Langkah 2: Aktiviti interaktif murid secara berpasangan atau berkumpulan.',
-          'Langkah 3: Latihan pengukuhan kendiri dan sesi semakan jawapan.',
-        ],
-        closure:
-          'Guru merumuskan pembelajaran bersama murid serta menerapkan nilai murni sejagat (5 minit).',
-        emk: ['Nilai Murni', 'Kemahiran Berfikir Aras Tinggi (KBAT)'],
-        bbm: ['Buku Teks KSSR', 'Papan Putih Mini / Bahan Maujud', 'Lembaran Kerja'],
-        assessment: 'Pemerhatian, Lisan & Penulisan (PBD)',
-        reflection:
-          'Sebahagian besar murid berjaya mencapai objektif pembelajaran hari ini dengan baik.',
-        status: (weekNum <= school.currentWeek ? 'DISAHKAN' : 'DIHANTAR') as RphStatus,
-        verifiedBy: 'PHOON SAU PING (PK Pentadbiran)',
-        verifiedAt: targetWeek?.dueDateFriday || '2026-01-16',
-        updatedAt: new Date().toISOString(),
-      }));
     },
-    [rphRecords, timetable, academicWeeks, school.currentWeek]
+    [rphRecords]
   );
 
   const renderInspectRphCard = (r: RphRecord, teacherName: string) => {
