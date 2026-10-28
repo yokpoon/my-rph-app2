@@ -277,26 +277,104 @@ export default function ERphColorAdminApp() {
 
       // Live Supabase Authentication Listener (Production)
       if (isSupabaseConfigured && supabase) {
-        supabase.auth.getSession().then(({ data: { session } }) => {
-          if (session?.user?.email) {
-            const userEmail = session.user.email.toLowerCase();
+        const resolveUserFromSession = async (sessionUser: any) => {
+          if (!sessionUser?.email) return;
+          const userEmail = sessionUser.email.toLowerCase();
+
+          // Query live whitelisted_users table from Supabase
+          let whitelistRole: string | null = null;
+          try {
+            const { data } = await supabase
+              .from('whitelisted_users')
+              .select('*')
+              .ilike('email', userEmail)
+              .maybeSingle();
+
+            if (data?.role) {
+              whitelistRole = data.role.toLowerCase().trim();
+            }
+          } catch (err) {
+            console.warn('Whitelist query note:', err);
+          }
+
+          // 1. Check SuperAdmin from whitelist or known admin email
+          if (
+            whitelistRole === 'superadmin' ||
+            userEmail.includes('sekolah-3908') ||
+            userEmail.includes('yokpoon') ||
+            userEmail === SUPERADMIN_PROFILE.email.toLowerCase()
+          ) {
+            const superProfile: TeacherProfile = {
+              ...SUPERADMIN_PROFILE,
+              email: userEmail,
+              name: sessionUser.user_metadata?.full_name || sessionUser.user_metadata?.name || 'SUPERADMIN YOK POON',
+            };
+            handlePerformLogin(superProfile, 'google');
+            return;
+          }
+
+          // 2. Check Admin / Pentadbir from whitelist
+          if (whitelistRole === 'admin' || userEmail.includes('g-29021326')) {
             const matched = teachers.find((t) => t.email.toLowerCase() === userEmail);
-            if (matched) {
-              handlePerformLogin(matched, 'google');
-            } else if (userEmail === SUPERADMIN_PROFILE.email.toLowerCase()) {
-              handlePerformLogin(SUPERADMIN_PROFILE, 'google');
+            const adminProfile: TeacherProfile = matched || {
+              id: sessionUser.id || 'admin_' + Date.now(),
+              name: sessionUser.user_metadata?.full_name || sessionUser.user_metadata?.name || userEmail.split('@')[0].toUpperCase(),
+              chineseName: '',
+              email: userEmail,
+              role: 'pk_pentadbiran',
+              jawatan: 'GPK1',
+              panitia: 'Pentadbiran & Kurikulum',
+              subjectSlug: 'bahasa_melayu_sjkc',
+            };
+            handlePerformLogin(adminProfile, 'google');
+            return;
+          }
+
+          // 3. Match with existing teachers roster
+          const matched = teachers.find((t) => t.email.toLowerCase() === userEmail);
+          if (matched) {
+            handlePerformLogin(matched, 'google');
+            return;
+          }
+
+          // 4. Fallback for any other valid user
+          const googleName =
+            sessionUser.user_metadata?.full_name ||
+            sessionUser.user_metadata?.name ||
+            userEmail.split('@')[0].toUpperCase();
+
+          const newProfile: TeacherProfile = {
+            id: sessionUser.id || 'usr_' + Date.now(),
+            name: googleName,
+            chineseName: '',
+            email: userEmail,
+            role: 'guru',
+            panitia: 'Umum',
+            subjectSlug: 'bahasa_melayu_sjkc',
+          };
+
+          setTeachers((prev) => {
+            if (prev.some((t) => t.email.toLowerCase() === userEmail)) return prev;
+            return [newProfile, ...prev];
+          });
+
+          handlePerformLogin(newProfile, 'google');
+        };
+
+        supabase.auth.getSession().then(({ data: { session } }) => {
+          if (session?.user) {
+            resolveUserFromSession(session.user);
+            if (typeof window !== 'undefined' && (window.location.hash || window.location.search)) {
+              window.history.replaceState(null, '', window.location.pathname);
             }
           }
         });
 
         const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
-          if (session?.user?.email) {
-            const userEmail = session.user.email.toLowerCase();
-            const matched = teachers.find((t) => t.email.toLowerCase() === userEmail);
-            if (matched) {
-              handlePerformLogin(matched, 'google');
-            } else if (userEmail === SUPERADMIN_PROFILE.email.toLowerCase()) {
-              handlePerformLogin(SUPERADMIN_PROFILE, 'google');
+          if (session?.user) {
+            resolveUserFromSession(session.user);
+            if (typeof window !== 'undefined' && (window.location.hash || window.location.search)) {
+              window.history.replaceState(null, '', window.location.pathname);
             }
           }
         });

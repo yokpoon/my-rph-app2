@@ -34,7 +34,6 @@ export async function signInWithGoogleOAuth() {
     options: {
       redirectTo: origin,
       queryParams: {
-        hd: 'moe-dl.edu.my', // Prioritize MOE DELIMa Google Workspace domain
         prompt: 'select_account',
       },
     },
