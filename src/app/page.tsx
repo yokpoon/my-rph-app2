@@ -258,7 +258,18 @@ export default function ERphColorAdminApp() {
   });
 
   // Persistent App State - Clean Production Start (Populated live by Admin)
-  const [school, setSchool] = useState<SchoolConfig>(INITIAL_SCHOOL_CONFIG);
+  const [school, setSchool] = useState<SchoolConfig>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const cached = localStorage.getItem('erph_school_config_v1');
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (parsed && (parsed.name || parsed.code)) return { ...INITIAL_SCHOOL_CONFIG, ...parsed };
+        }
+      } catch (_) {}
+    }
+    return INITIAL_SCHOOL_CONFIG;
+  });
   const [teachers, setTeachers] = useState<TeacherProfile[]>([]);
   const [timetable, setTimetable] = useState<TimetableSlot[]>([]);
   const [rphRecords, setRphRecords] = useState<RphRecord[]>([]);
