@@ -295,7 +295,20 @@ export default function ERphColorAdminApp() {
           if (!sessionUser?.email) return;
           const userEmail = sessionUser.email.toLowerCase();
 
-          // Query live whitelisted_users table from Supabase
+          // 1. Fetch latest teachers from DB first to get correct configured role
+          let dbTeacher: any = null;
+          try {
+            const { data } = await supabase
+              .from('teachers')
+              .select('*')
+              .ilike('email', userEmail)
+              .maybeSingle();
+            if (data) dbTeacher = data;
+          } catch (e) {
+            console.warn('Teacher lookup error:', e);
+          }
+
+          // 2. Query live whitelisted_users table from Supabase
           let whitelistRole: string | null = null;
           try {
             const { data } = await supabase
@@ -311,7 +324,7 @@ export default function ERphColorAdminApp() {
             console.warn('Whitelist query note:', err);
           }
 
-          // 1. Check SuperAdmin from whitelist or known admin email
+          // 3. Superadmin check
           if (
             whitelistRole === 'superadmin' ||
             userEmail.includes('sekolah-3908') ||
@@ -332,17 +345,17 @@ export default function ERphColorAdminApp() {
             return;
           }
 
-          // 2. Check Admin / Pentadbir from whitelist
-          if (whitelistRole === 'admin' || userEmail.includes('g-29021326')) {
+          // 4. Admin / Pentadbir check
+          if (whitelistRole === 'admin' || userEmail.includes('g-29021326') || dbTeacher?.role === 'pk_pentadbiran' || dbTeacher?.role === 'guru_besar') {
             const adminProfile: TeacherProfile = {
-              id: sessionUser.id || 'admin_' + Date.now(),
-              name: sessionUser.user_metadata?.full_name || sessionUser.user_metadata?.name || userEmail.split('@')[0].toUpperCase(),
-              chineseName: '',
+              id: dbTeacher?.id || sessionUser.id || 'admin_' + Date.now(),
+              name: dbTeacher?.name || sessionUser.user_metadata?.full_name || sessionUser.user_metadata?.name || userEmail.split('@')[0].toUpperCase(),
+              chineseName: dbTeacher?.chinese_name || '',
               email: userEmail,
-              role: 'pk_pentadbiran',
-              jawatan: 'GPK1',
-              panitia: 'Pentadbiran & Kurikulum',
-              subjectSlug: 'bahasa_melayu_sjkc',
+              role: (dbTeacher?.role as UserRole) || 'pk_pentadbiran',
+              jawatan: dbTeacher?.jawatan || (dbTeacher?.role === 'guru_besar' ? 'GB' : 'GPK1'),
+              panitia: dbTeacher?.panitia || 'Pentadbiran & Kurikulum',
+              subjectSlug: dbTeacher?.subject_slug || 'bahasa_melayu_sjkc',
             };
             setTeachers((prev) => {
               const idx = prev.findIndex((t) => t.email.toLowerCase() === userEmail);
@@ -357,14 +370,32 @@ export default function ERphColorAdminApp() {
             return;
           }
 
-          // 3. Match with existing teachers roster
-          const matched = teachers.find((t) => t.email.toLowerCase() === userEmail);
-          if (matched) {
-            handlePerformLogin(matched, 'google');
+          // 5. Existing teacher record from database or local state
+          if (dbTeacher) {
+            const existingProfile: TeacherProfile = {
+              id: dbTeacher.id,
+              name: dbTeacher.name,
+              chineseName: dbTeacher.chinese_name || '',
+              email: userEmail,
+              role: (dbTeacher.role as UserRole) || 'guru',
+              jawatan: dbTeacher.jawatan || 'GAB',
+              panitia: dbTeacher.panitia || 'Bahasa Cina',
+              subjectSlug: dbTeacher.subject_slug || 'bahasa_cina_sjkc',
+            };
+            setTeachers((prev) => {
+              const idx = prev.findIndex((t) => t.email.toLowerCase() === userEmail);
+              if (idx >= 0) {
+                const copy = [...prev];
+                copy[idx] = { ...copy[idx], ...existingProfile };
+                return copy;
+              }
+              return [existingProfile, ...prev];
+            });
+            handlePerformLogin(existingProfile, 'google');
             return;
           }
 
-          // 4. Fallback for any other valid user
+          // 6. Fallback for newly authenticated teacher
           const googleName =
             sessionUser.user_metadata?.full_name ||
             sessionUser.user_metadata?.name ||
@@ -1992,6 +2023,7 @@ ${gen.assessment}`;
         ? 'Lim Choon Huat (Guru Besar)'
         : 'Wong Kah Wai (PK Pentadbiran)';
 
+    const verifiedToSave: RphRecord[] = [];
     setRphRecords((prev) => {
       const hasRecords = prev.some(
         (r) => r.teacherId === teacherId && r.weekNumber === adminReviewWeek
@@ -2001,18 +2033,25 @@ ${gen.assessment}`;
         const synthRecords = getTeacherWeekRphs(teacherId, adminReviewWeek);
         baseList = [...prev, ...synthRecords];
       }
-      return baseList.map((r) => {
+      const updated = baseList.map((r) => {
         if (r.teacherId === teacherId && r.weekNumber === adminReviewWeek) {
-          return {
+          const mod = {
             ...r,
             status: newStatus,
             verifiedBy: verifierTitle,
             verifierFeedback: adminFeedback,
             verifiedAt: new Date().toISOString(),
           };
+          verifiedToSave.push(mod);
+          return mod;
         }
         return r;
       });
+      try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(updated)); } catch (_) {}
+      return updated;
+    });
+    verifiedToSave.forEach((mod) => {
+      saveRphRecordToDb(mod).catch((err) => console.warn('saveRphRecordToDb err:', err));
     });
     setInspectTeacher(null);
     showToast(
@@ -2032,19 +2071,28 @@ ${gen.assessment}`;
         ? 'Lim Choon Huat (Guru Besar)'
         : 'Wong Kah Wai (PK Pentadbiran)';
 
-    setRphRecords((prev) =>
-      prev.map((r) =>
-        r.weekNumber === adminReviewWeek && r.status === 'DIHANTAR'
-          ? {
-              ...r,
-              status: 'DISAHKAN',
-              verifiedBy: verifierTitle,
-              verifierFeedback: `Disahkan secara pukal oleh ${verifierTitle}.`,
-              verifiedAt: new Date().toISOString(),
-            }
-          : r
-      )
-    );
+    const bulkVerifiedToSave: RphRecord[] = [];
+    setRphRecords((prev) => {
+      const updated = prev.map((r) => {
+        if (r.weekNumber === adminReviewWeek && r.status === 'DIHANTAR') {
+          const mod = {
+            ...r,
+            status: 'DISAHKAN' as RphStatus,
+            verifiedBy: verifierTitle,
+            verifierFeedback: `Disahkan secara pukal oleh ${verifierTitle}.`,
+            verifiedAt: new Date().toISOString(),
+          };
+          bulkVerifiedToSave.push(mod);
+          return mod;
+        }
+        return r;
+      });
+      try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(updated)); } catch (_) {}
+      return updated;
+    });
+    bulkVerifiedToSave.forEach((mod) => {
+      saveRphRecordToDb(mod).catch((err) => console.warn('saveRphRecordToDb err:', err));
+    });
     showToast(`⚡ Semua RPH berstatus 'DIHANTAR' untuk Minggu ${adminReviewWeek} telah DISAHKAN oleh ${verifierTitle}!`);
   };
 
@@ -2933,14 +2981,45 @@ ${gen.assessment}`;
 
                 <div className="bg-white p-3 rounded-xl border border-slate-200">
                   <span className="text-[10px] uppercase font-bold text-slate-400">Peranan Sistem</span>
-                  <p className="font-bold text-slate-800 text-sm mt-0.5">
-                    {isPentadbir
-                      ? '🛡️ Pentadbir (GB / GPK)'
-                      : isIct
-                      ? '💻 Guru ICT / Data'
-                      : '👩‍🏫 Guru Subjek'}
-                  </p>
-                  <p className="text-[11px] text-slate-500">Akses modul bersesuaian peranan</p>
+                  <div className="mt-1 flex items-center gap-2">
+                    <select
+                      value={currentUser.role}
+                      onChange={(e) => {
+                        const newRole = e.target.value as UserRole;
+                        const newJawatan = newRole === 'guru_besar' ? 'GB' : newRole === 'pk_pentadbiran' ? 'GPK1' : 'GAB';
+                        const updatedUser: TeacherProfile = {
+                          ...currentUser,
+                          role: newRole,
+                          jawatan: newJawatan,
+                        };
+                        setTeachers((prev) => {
+                          const list = prev.map((t) => (t.id === currentUser.id ? updatedUser : t));
+                          try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(list)); } catch (_) {}
+                          return list;
+                        });
+                        setAuthSession((prev) => prev ? { ...prev, role: newRole, jawatan: newJawatan } : prev);
+                        try {
+                          const curSession = localStorage.getItem('erph_auth_session_v1');
+                          if (curSession) {
+                            const p = JSON.parse(curSession);
+                            p.role = newRole;
+                            p.jawatan = newJawatan;
+                            localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
+                          }
+                        } catch (_) {}
+                        saveTeacherToDb(updatedUser).catch((err) => console.warn('saveTeacherToDb err:', err));
+                        showToast(`✅ Peranan berjaya dikemaskini kepada ${newRole}!`);
+                      }}
+                      className="w-full border rounded-lg p-1.5 bg-slate-50 font-bold text-xs text-slate-800"
+                    >
+                      <option value="guru">👩‍🏫 Guru Subjek</option>
+                      <option value="pk_pentadbiran">🛡️ PK Pentadbiran</option>
+                      <option value="guru_besar">🎖️ Guru Besar</option>
+                      <option value="guru_ict_data">💻 Guru ICT / Data</option>
+                      <option value="superadmin">👑 Superadmin</option>
+                    </select>
+                  </div>
+                  <p className="text-[10px] text-slate-500 mt-1">Disimpan terus ke Supabase & sesi log masuk</p>
                 </div>
               </div>
             </div>
