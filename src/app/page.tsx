@@ -451,7 +451,7 @@ export default function ERphColorAdminApp() {
               ...SUPERADMIN_PROFILE,
               id: 'superadmin',
               email: userEmail,
-              name: sessionUser.user_metadata?.full_name || sessionUser.user_metadata?.name || 'SUPERADMIN YOK POON',
+              name: 'SJKC YOK POON',
             };
             setTeachers((prev) => {
               const idx = prev.findIndex((t) => t.id === 'superadmin' || t.email.toLowerCase() === userEmail);
@@ -2082,14 +2082,17 @@ ${gen.assessment}`;
   // Admin Review Handlers
   const handleVerifyRph = (teacherId: string, newStatus: 'DISAHKAN' | 'PEMBETULAN') => {
     const teacher = teachers.find((t) => t.id === teacherId);
-    const verifierTitle =
-      currentUser.role === 'guru_besar'
-        ? `${currentUser.name} (Guru Besar)`
+    const roleLabel =
+      currentUser.role === 'superadmin'
+        ? 'Pentadbir Utama'
+        : currentUser.role === 'guru_besar'
+        ? 'Guru Besar'
         : currentUser.role === 'pk_pentadbiran'
-        ? `${currentUser.name} (PK Pentadbiran)`
-        : selectedVerifier === 'Guru Besar'
-        ? 'Lim Choon Huat (Guru Besar)'
-        : 'Wong Kah Wai (PK Pentadbiran)';
+        ? 'PK Pentadbiran'
+        : currentUser.jawatan || 'Pentadbir';
+
+    const verifierName = currentUser.name || "SJKC YOK POON";
+    const verifierTitle = `${verifierName} (${roleLabel})`;
 
     const verifiedToSave: RphRecord[] = [];
     setRphRecords((prev) => {
@@ -2158,14 +2161,17 @@ ${gen.assessment}`;
   };
 
   const handleBulkVerifyAllSubmitted = () => {
-    const verifierTitle =
-      currentUser.role === 'guru_besar'
-        ? `${currentUser.name} (Guru Besar)`
+    const roleLabel =
+      currentUser.role === 'superadmin'
+        ? 'Pentadbir Utama'
+        : currentUser.role === 'guru_besar'
+        ? 'Guru Besar'
         : currentUser.role === 'pk_pentadbiran'
-        ? `${currentUser.name} (PK Pentadbiran)`
-        : selectedVerifier === 'Guru Besar'
-        ? 'Lim Choon Huat (Guru Besar)'
-        : 'Wong Kah Wai (PK Pentadbiran)';
+        ? 'PK Pentadbiran'
+        : currentUser.jawatan || 'Pentadbir';
+
+    const verifierName = currentUser.name || "SJKC YOK POON";
+    const verifierTitle = `${verifierName} (${roleLabel})`;
 
     const bulkVerifiedToSave: RphRecord[] = [];
     setRphRecords((prev) => {

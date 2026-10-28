@@ -29,13 +29,13 @@ export interface AuthUserSession {
 export const SUPERADMIN_PROFILE: TeacherProfile = {
   id: 'superadmin',
   bil: 0,
-  name: 'SUPERADMIN YOK POON',
-  chineseName: '系统总管理员',
+  name: 'SJKC YOK POON',
+  chineseName: '育本国民型华文小学',
   email: 'YokPoon@moe-dl.edu.my',
-  panitia: 'Pengurusan Sistem & Keselamatan',
-  subjectSlug: 'rbt_sjkc',
+  panitia: 'Pengurusan Pentadbiran',
+  subjectSlug: 'bahasa_cina_sjkc',
   role: 'superadmin',
-  jawatan: 'GAB',
+  jawatan: 'GB',
   status: 'AKTIF',
   icNo: 'SUPERADMIN',
 };
@@ -316,7 +316,8 @@ export const INITIAL_SCHOOL_CONFIG: SchoolConfig = {
   groupType: 'KUMPULAN_B',
 };
 
-export const INITIAL_TEACHERS: TeacherProfile[] = [
+export const INITIAL_TEACHERS: TeacherProfile[] = [];
+const DEPRECATED_TEACHERS: TeacherProfile[] = [
   {
     id: 'gb1',
     bil: 1,
@@ -767,7 +768,8 @@ export function calculateTeacherMatrixSummary(
   };
 }
 
-export const INITIAL_TIMETABLE: TimetableSlot[] = [
+export const INITIAL_TIMETABLE: TimetableSlot[] = [];
+const DEPRECATED_TIMETABLE: TimetableSlot[] = [
   // Tan Mei Ling (t1) - Bahasa Cina & Pendidikan Moral
   {
     id: 'slot_t1_mon_1',
@@ -1039,7 +1041,8 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
   },
 ];
 
-export const INITIAL_RPH_RECORDS: RphRecord[] = [
+export const INITIAL_RPH_RECORDS: RphRecord[] = [];
+const DEPRECATED_RPH_RECORDS: RphRecord[] = [
   // Wong Kah Wai (admin1) - Rekod RPH Pengajaran Pentadbir (Sejarah)
   {
     id: 'rph_admin1_1',
