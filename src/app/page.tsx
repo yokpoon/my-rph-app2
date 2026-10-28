@@ -179,21 +179,35 @@ const fetchDskpJson = async (filename: string) => {
 };
 
 export default function ERphColorAdminApp() {
+  const [mounted, setMounted] = useState<boolean>(false);
   // Navigation & Active Persona
   const [activeNav, setActiveNav] = useState<NavTab>('dashboard');
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [isSidebarHovered, setIsSidebarHovered] = useState<boolean>(false);
   const [isSidebarPinned, setIsSidebarPinned] = useState<boolean>(false);
 
-  // Load pinned state from localStorage on mount
+  // Load active tab and pinned state from localStorage on mount
   useEffect(() => {
     try {
+      const savedTab = localStorage.getItem('erph_active_nav_tab_v1') as NavTab | null;
+      if (savedTab) {
+        setActiveNav(savedTab);
+      }
       const savedPin = localStorage.getItem('erph_sidebar_pinned');
       if (savedPin !== null) {
         setIsSidebarPinned(savedPin === 'true');
       }
     } catch (e) {}
   }, []);
+
+  // Save activeNav to localStorage on every change
+  useEffect(() => {
+    if (mounted && activeNav) {
+      try {
+        localStorage.setItem('erph_active_nav_tab_v1', activeNav);
+      } catch (e) {}
+    }
+  }, [activeNav, mounted]);
 
   const toggleSidebarPin = () => {
     setIsSidebarPinned((prev) => {
@@ -209,6 +223,9 @@ export default function ERphColorAdminApp() {
 
   const navigateTo = (tab: NavTab) => {
     setActiveNav(tab);
+    try {
+      localStorage.setItem('erph_active_nav_tab_v1', tab);
+    } catch (_) {}
     setMobileMenuOpen(false);
   };
 
@@ -216,7 +233,7 @@ export default function ERphColorAdminApp() {
   const PENTADBIR_JAWATAN: TeacherJawatan[] = ['GB', 'GPK1', 'GPK HEM', 'GPK KOKO', 'GPK KK'];
 
   // Hydration Mount State (Prevents Next.js Server-Client text mismatch)
-  const [mounted, setMounted] = useState<boolean>(false);
+  
 
   // User Authentication & Session State (Production Mode: Defaults to unauthenticated)
   const [authSession, setAuthSession] = useState<AuthUserSession | null>(null);
