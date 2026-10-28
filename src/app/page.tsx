@@ -1539,17 +1539,39 @@ ${gen.assessment}`;
   }, [rphRecords, currentUser.id, builderWeek]);
 
   const handleDeleteRph = (rphId: string) => {
-    if (confirm('Adakah anda pasti mahu memadam rekod e-RPH ini?')) {
-      setRphRecords((prev) => {
-        const updated = prev.filter((r) => r.id !== rphId);
-        try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(updated)); } catch (_) {}
-        return updated;
-      });
+    if (confirm('Adakah anda pasti mahu memadam rekod e-RPH ini secara kekal?')) {
+      const targetRecord = rphRecords.find((r) => r.id === rphId);
+      const remainingRecords = rphRecords.filter((r) => r.id !== rphId);
+
+      setRphRecords(remainingRecords);
+      try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(remainingRecords)); } catch (_) {}
+
       if (previewRph?.id === rphId) {
         setPreviewRph(null);
       }
+
       deleteRphRecordFromDb(rphId).catch((err) => console.warn('deleteRphRecordFromDb err:', err));
-      showToast('🗑️ e-RPH telah dipadam.');
+
+      // If the teacher has no more records for this week, update yearlyRecords matrix
+      if (targetRecord) {
+        const hasOtherInWeek = remainingRecords.some(
+          (r) => r.teacherId === targetRecord.teacherId && r.weekNumber === targetRecord.weekNumber
+        );
+        if (!hasOtherInWeek) {
+          setYearlyRecords((prev) => {
+            const tCells = { ...(prev[targetRecord.teacherId] || {}) };
+            delete tCells[targetRecord.weekNumber];
+            const nextMap = {
+              ...prev,
+              [targetRecord.teacherId]: tCells,
+            };
+            try { localStorage.setItem('erph_yearly_matrix_records_v2', JSON.stringify(nextMap)); } catch (_) {}
+            return nextMap;
+          });
+        }
+      }
+
+      showToast('🗑️ e-RPH telah dipadam secara kekal dari pangkalan data.');
     }
   };
 
@@ -1836,6 +1858,14 @@ ${gen.assessment}`;
             >
               <span>🖨️</span>
               <span>Cetak A4</span>
+            </button>
+            <button
+              type="button"
+              onClick={() => handleDeleteRph(r.id)}
+              className="px-2 py-1 bg-rose-50 hover:bg-rose-100 text-rose-700 border border-rose-200 rounded-lg font-bold text-[11px] shadow-sm transition"
+              title="Padam sesi e-RPH ini secara kekal dari pangkalan data"
+            >
+              🗑️ Padam
             </button>
           </div>
         </div>
@@ -6203,6 +6233,14 @@ ${gen.assessment}`;
                             className="px-3 py-1.5 bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs rounded-xl shadow-sm transition"
                           >
                             🖨️ Cetak
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => handleDeleteRph(draft.id)}
+                            className="px-2.5 py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-600 font-bold text-xs rounded-xl border border-rose-200 transition"
+                            title="Padam draf / rekod e-RPH ini secara kekal"
+                          >
+                            🗑️ Padam
                           </button>
                         </div>
                       </div>
