@@ -1,0 +1,495 @@
+[
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元一 通往未来的路  第一课 上学的路",
+    "sk_codes": [
+      "1.2",
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "4.1.1",
+      "4.5.1",
+      "5.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元二 巧妙的道歉  第一课 魔豆传心意",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.3.2",
+      "3.2.2",
+      "4.4.1",
+      "5.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元三 小动物的智慧  第一课 鸟儿筑巢",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "2.2.1",
+      "4.2.1",
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元四 温暖的亲情  第一课 爸爸的大手  第二课 百纳被的故事",
+    "sk_codes": [
+      "1.2",
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "4.2.1",
+      "4.5.1",
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元五 飞跃的想象  第一课 被子的大地  第二课 月亮渴了",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "2.2",
+      "4.3",
+      "5.3"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "4.3.1",
+      "5.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元六 脑筋转一转  第一课 小猫和老虎",
+    "sk_codes": [
+      "1.2",
+      "2.1",
+      "2.2",
+      "4.3",
+      "4.4",
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.2.2",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "4.3.1",
+      "4.4.1",
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十八 自然的规律  第一课 草的告白  第二课 自然界的时钟",
+    "sk_codes": [
+      "1.3",
+      "2.1",
+      "2.2",
+      "4.2",
+      "4.5",
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.3.2",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "4.2.1",
+      "4.5.1",
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元八 科技改变世界  第一课 神奇的三维 打印",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "2.2",
+      "3.2",
+      "4.1",
+      "5.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "3.2.2",
+      "4.1.1",
+      "5.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元九 创造历史的人  第一课 马来亚橡胶之父---陈齐贤",
+    "sk_codes": [
+      "1.3",
+      "2.1",
+      "4.2",
+      "5.5"
+    ],
+    "sp_codes": [
+      "1.3.1",
+      "2.1.1",
+      "2.1.2",
+      "4.2.1",
+      "5.5.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十 美丽的传说  第一课 天鹅长住的 地方",
+    "sk_codes": [
+      "1.2",
+      "2.1",
+      "2.2",
+      "4.2",
+      "4.5",
+      "5.1"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "4.2.1",
+      "4.5.1",
+      "5.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十一 舌尖上的美味  第一课 竹筒饭",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "4.4",
+      "5.4"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.1.1",
+      "2.1.2",
+      "4.4.1",
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十二 造福人类的 发明  第一课 蔡伦造纸",
+    "sk_codes": [
+      "1.3",
+      "2.1",
+      "4.2",
+      "4.5",
+      "5.3"
+    ],
+    "sp_codes": [
+      "1.3.1",
+      "2.1.1",
+      "2.1.2",
+      "4.2.1",
+      "4.5.1",
+      "5.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十三 汉字真有趣  第一课 快乐识字  第二课 丰收歌",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "2.2",
+      "4.4",
+      "5.1",
+      "5.5"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "4.4.1",
+      "5.1.1",
+      "5.5.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十四 读故事， 学成语  第一课 掩耳盗铃",
+    "sk_codes": [
+      "1.2",
+      "2.1",
+      "4.2",
+      "4.4",
+      "4.5",
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.2.2",
+      "2.1.1",
+      "2.1.2",
+      "4.2.1",
+      "4.4.1",
+      "4.5.1",
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十五 生活处处 有惊喜  第一课 上天送来的 小彩虹",
+    "sk_codes": [
+      "1.3",
+      "2.1",
+      "4.3",
+      "4.5",
+      "5.3"
+    ],
+    "sp_codes": [
+      "1.3.1",
+      "2.1.1",
+      "2.1.2",
+      "4.3.1",
+      "4.5.1",
+      "5.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十六 童话故事会  第一课 退休的鞋子",
+    "sk_codes": [
+      "1.2",
+      "2.1",
+      "4.2",
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.2.2",
+      "2.1.1",
+      "2.1.2",
+      "4.2.1",
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十七 真正的友情  第一课 争吵",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "4.3",
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.1.1",
+      "2.1.2",
+      "4.3.1",
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元十九 站在高楼 看世界  第一课 建筑界的 长颈鹿",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "2.2",
+      "4.4",
+      "5.3"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "4.4.1",
+      "5.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元二十 特别的体验  第一课 不一样的表演  第二课 特别任务",
+    "sk_codes": [
+      "1.2",
+      "2.1",
+      "2.2",
+      "4.2",
+      "5.4"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "2.1.1",
+      "2.1.2",
+      "2.2.1",
+      "4.2.1",
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元二十 特别的体验  第一课 不一样的表演  第二课 特别任务",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2"
+    ],
+    "remarks": "活动本下册第80和81页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元八 科技改变世界  第一课 神奇的三维 打印",
+    "sk_codes": [
+      "2.1",
+      "4.3"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "4.3.1"
+    ],
+    "remarks": "活动本上册第64和65页"
+  }
+]

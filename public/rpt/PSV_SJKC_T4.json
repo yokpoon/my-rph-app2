@@ -1,0 +1,456 @@
+[
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元九：峇峇娘惹",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "主题",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元六：千变万化",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元八：马来西亚",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元九：峇峇娘惹",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元九：峇峇娘惹",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元一：宇宙天地",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元二：人文与环",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "主题三：卫生",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "主题四：理财小学",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元/主题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元六：千变万化",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元七：童话乐园",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.8"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元八：马来西亚",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.7"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元九：经雕细刻",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.9"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元/主题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.10"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元/主题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "主题三：卫生",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "拟定主题与题目",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "拟定主题与题目",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元六：千变万化",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "拟定主题与题目",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "拟定主题与题目",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "拟定主题与题目",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元八：马来西亚",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元/主题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "拟定主题与题目",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "拟定主题与题目",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "拟定主题与题目",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": ""
+  }
+]

@@ -1,0 +1,4926 @@
+[
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "课题",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "正确地读出数目，如 235 读成“二百三十五”，不读成\"“二三五”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "正确地读出数目，如 235 读成“二百三十五”，不读成\"“二三五”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.1",
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.1",
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [],
+    "remarks": "可应用数轴和各种策略找出近似值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.1",
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [],
+    "remarks": "可应用数轴和各种策略找出近似值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.2.2"
+    ],
+    "remarks": "运用各种计算策略进行加法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示加法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.1",
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [],
+    "remarks": "可应用数轴和各种策略找出近似值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.2.2"
+    ],
+    "remarks": "运用各种计算策略进行加法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示加法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.2.2"
+    ],
+    "remarks": "运用各种计算策略进行加法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示加法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "3.3",
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.3.1",
+      "3.4.1"
+    ],
+    "remarks": "根据实物和图表做出比较。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.2.2"
+    ],
+    "remarks": "运用各种计算策略进行加法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示加法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": "在日常生活中使用钱币。  使用1:4珠算盘表示币值。  以硬币和纸币组成所指定的币值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1"
+    ],
+    "remarks": "进行币值与一位数和10的乘法。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.2.2"
+    ],
+    "remarks": "运用各种计算策略进行加法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示加法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": "在日常生活中使用钱币。  使用1:4珠算盘表示币值。  以硬币和纸币组成所指定的币值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.5.1"
+    ],
+    "remarks": "进行币值与一位数和10的除法。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.2.2"
+    ],
+    "remarks": "运用各种计算策略进行加法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示加法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": "在日常生活中使用钱币。  使用1:4珠算盘表示币值。  以硬币和纸币组成所指定的币值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.5.1"
+    ],
+    "remarks": "进行币值与一位数和10的除法。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [
+      "6.2.1",
+      "6.2.2",
+      "6.2.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.3"
+    ],
+    "remarks": "通过观察量筒上的刻度，认识升和毫升。  认识以升和毫升为单位的液体的体积。  以ℓ和mℓ的符号写出所给予的以升和毫升为单位的液体的体积。   以升和毫升为单位，测量、标记和记录液体的体积。   以升和毫升为单位，估算液体的体积，再与其实际体"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.5.1"
+    ],
+    "remarks": "进行币值与一位数和10的除法。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.5.1"
+    ],
+    "remarks": "进行币值与一位数和10的除法。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "8.2"
+    ],
+    "sp_codes": [
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "8.3"
+    ],
+    "sp_codes": [
+      "8.3.1"
+    ],
+    "remarks": "运用简易的词汇解说条形统计图上的标题、提示、纵轴和横轴。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": "使用各种实物、图片、数轴和1:4珠算盘，以顺序和逆序一个一个至十个十个和一百个一百个地数。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "有规律的数列在这里是指以一个一个至十个十个和一百个一百个顺序和逆序排列的一组数目。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.5.1"
+    ],
+    "remarks": "进行币值与一位数和10的除法。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "基本乘法涉及一位数乘以一位数。  乘法是相同数目的连加法。  运用各种策略建构和讲述基本乘法。  使用实物、图片、数轴、1:4珠算盘和心算表示乘法运算。  联系乘法交换律：a × b = b × a"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.5.1"
+    ],
+    "remarks": "进行币值与一位数和10的除法。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "基本乘法涉及一位数乘以一位数。  乘法是相同数目的连加法。  运用各种策略建构和讲述基本乘法。  使用实物、图片、数轴、1:4珠算盘和心算表示乘法运算。  联系乘法交换律：a × b = b × a"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0"
+    ],
+    "sp_codes": [
+      "2.4.1",
+      "2.4.2"
+    ],
+    "remarks": "基本除法包括有余数和没有余数的除法。   进行除数是一位数和10的除法。  除法包括平均分配法、等量分组法、连减法及乘法逆运算。  运用各种策略建构和讲述基本除法。  使用实物、图片、数轴、1:4珠算盘和心算来表示除法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2",
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "运用各种计算策略进行减法运算。  使用实物、图片、数轴、1:4珠算盘和心算表示减法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0"
+    ],
+    "sp_codes": [
+      "2.4.1",
+      "2.4.2"
+    ],
+    "remarks": "基本除法包括有余数和没有余数的除法。   进行除数是一位数和10的除法。  除法包括平均分配法、等量分组法、连减法及乘法逆运算。  运用各种策略建构和讲述基本除法。  使用实物、图片、数轴、1:4珠算盘和心算来表示除法运算。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [
+      "6.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0"
+    ],
+    "sp_codes": [
+      "2.5.1",
+      "2.5.2"
+    ],
+    "remarks": "进行除数是一位数和10的除法。  除法包括平均分配法、等量分组法、连减法及乘法逆运算。  运用各种策略建构和讲述基本除法。  使用实物、图片、数轴、1:4珠算盘和心算来表示除法运算。 解答涉及日常生活与两个数目有关的应用题。  应用以下解答"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [
+      "6.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0"
+    ],
+    "sp_codes": [
+      "2.5.1",
+      "2.5.2"
+    ],
+    "remarks": "进行除数是一位数和10的除法。  除法包括平均分配法、等量分组法、连减法及乘法逆运算。  运用各种策略建构和讲述基本除法。  使用实物、图片、数轴、1:4珠算盘和心算来表示除法运算。 解答涉及日常生活与两个数目有关的应用题。  应用以下解答"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.1.5"
+    ],
+    "remarks": "使用实物、图片和折纸解说分数的概念 以一个物体来确认真分数。  可以绘图、涂黑、粘贴和填色来表示真分数。  根据口述和所给予的涂黑部分写出真分数。  根据折纸、分数板和图表比较真分数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": "使用各种表示数位的方式包括1:4珠算盘，讲述数位和数值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "remarks": "平面图形包括正方形、长方形、三角形和圆。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6",
+      "4.7"
+    ],
+    "sp_codes": [
+      "4.6.1",
+      "4.7.1"
+    ],
+    "remarks": "使用适合的情境以解说有关RM1000以内的理财。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "remarks": "平面图形包括正方形、长方形、三角形和圆。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "通过观察尺和卷尺上的刻度，认识米和厘米。  以m和cm的符号写出所给予的以米和厘米为单位的长度。    以m和cm为单位，测量和标记距离。  以m和cm为单位，测量和记录物体的长度。  依据所给予以m和cm为单位的长度，画出直线。  以厘米"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5",
+      "3.2.6"
+    ],
+    "remarks": "用图表和数轴解说小数的概念。  根据口述、图表上涂黑的部分和数轴写出小数。  根据折纸、数轴和图表比较小数的值。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5",
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": "根据参照物，讲述以“大约”、“少于”和“多于”所估算的数量。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用各种方法整理数据。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "课题",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "认识模拟钟面上的刻度和标示五分钟倍数的数字。  先介绍时和五分钟倍数的时刻，然后才介绍“一刻”、“半”和“三刻”。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "立体包括正方体、长方体、正方棱锥体、圆柱体和圆锥体。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": ""
+  }
+]

@@ -1,0 +1,702 @@
+[
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元四 永恒之旅 第二十课：勇于抗战的斗士",
+    "sk_codes": [
+      "1.1",
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元一 蜕变之旅 第二课：风中的树苗",
+    "sk_codes": [
+      "1.1",
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.3.1",
+      "1.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元二 和谐之旅 第九课：笑谈端午",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "- 古诗： 《凉州词》    - 儿化韵"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元一 蜕变之旅 第四课：我诚实我守信",
+    "sk_codes": [
+      "1.2",
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.2.2",
+      "1.3.1",
+      "1.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元三 知性之旅 第十二课：走入传统马来屋",
+    "sk_codes": [
+      "1.1",
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元二 和谐之旅 第八课：雨后的线索",
+    "sk_codes": [
+      "1.1",
+      "1.2",
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.2.2",
+      "1.3.2"
+    ],
+    "remarks": "-标点符号： 省略号"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元四 永恒之旅 第十八课：棋盘里的智慧",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元三 知性之旅 第十四课：太空旅人",
+    "sk_codes": [
+      "1.1",
+      "1.2",
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.2.2",
+      "1.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元四 永恒之旅 第十八课：棋盘里的智慧",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元四 永恒之旅 第二十课：勇于抗战的斗士",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元一 蜕变之旅 第四课：我诚实我守信",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元四 永恒之旅 第二十课：勇于抗战的斗士",
+    "sk_codes": [
+      "3.1",
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.2.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元三 知性之旅 第十一课：诗情画意的世界",
+    "sk_codes": [
+      "3.1",
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.2.2"
+    ],
+    "remarks": "- 古诗： 《望洞庭》     修辞： 反复"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元二 和谐之旅 第十课：无声合唱团",
+    "sk_codes": [
+      "3.1",
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.2.1"
+    ],
+    "remarks": "修辞： 比喻"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元四 永恒之旅 第十七课：永不磨灭的幸福",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": "- 古诗： 《六月二十七日望湖楼醉书》"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元二 和谐之旅 第九课：笑谈端午",
+    "sk_codes": [
+      "4.2",
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.3.1"
+    ],
+    "remarks": "- 古诗： 《凉州词》    - 儿化韵"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元四 永恒之旅 第十六课：生命中的烙印",
+    "sk_codes": [
+      "4.1",
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.5.1"
+    ],
+    "remarks": "-标点符号： 破折号"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元四 永恒之旅 第十七课：永不磨灭的幸福",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1"
+    ],
+    "remarks": "- 古诗： 《六月二十七日望湖楼醉书》"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元三 知性之旅 第十五课：探索生态公园",
+    "sk_codes": [
+      "4.2",
+      "4.3",
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.3.1",
+      "4.4.1"
+    ],
+    "remarks": "- 古诗： 《渔歌子》"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元三 知性之旅 第十二课：走入传统马来屋",
+    "sk_codes": [
+      "4.3",
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.5.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元三 知性之旅 第十一课：诗情画意的世界",
+    "sk_codes": [
+      "4.1",
+      "4.2",
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.2.1",
+      "4.3.1"
+    ],
+    "remarks": "- 古诗： 《望洞庭》     修辞： 反复"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元二 和谐之旅 第八课：雨后的线索",
+    "sk_codes": [
+      "4.1",
+      "4.3",
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.3.1",
+      "4.5.1"
+    ],
+    "remarks": "-标点符号： 省略号"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元二 和谐之旅 第十课：无声合唱团",
+    "sk_codes": [
+      "4.4",
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.5.1"
+    ],
+    "remarks": "修辞： 比喻"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元三 知性之旅 第十三课：鸡场街里的年轻梦",
+    "sk_codes": [
+      "4.1",
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.2.1"
+    ],
+    "remarks": "- 古诗： 《江南春》"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元三 知性之旅 第十四课：太空旅人",
+    "sk_codes": [
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.5.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元四 永恒之旅 第十八课：棋盘里的智慧",
+    "sk_codes": [
+      "4.1",
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元四 永恒之旅 第十九课：巨石载船",
+    "sk_codes": [
+      "4.2",
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.4.1"
+    ],
+    "remarks": "- 古诗： 《凉州词》"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元四 永恒之旅 第十九课：巨石载船",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.1"
+    ],
+    "remarks": "- 古诗： 《凉州词》"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元一 蜕变之旅 第二课：风中的树苗",
+    "sk_codes": [
+      "5.1",
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元一 蜕变之旅 第四课：我诚实我守信",
+    "sk_codes": [
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元一 蜕变之旅 第五课：英雄有泪",
+    "sk_codes": [
+      "5.6"
+    ],
+    "sp_codes": [
+      "5.6.1"
+    ],
+    "remarks": "- 古诗： 《夏日绝句》"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元三 知性之旅 第十三课：鸡场街里的年轻梦",
+    "sk_codes": [
+      "5.1",
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.3.1"
+    ],
+    "remarks": "- 古诗： 《江南春》"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元四 永恒之旅 第十八课：棋盘里的智慧",
+    "sk_codes": [
+      "5.3",
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.3.1",
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元二 和谐之旅 第八课：雨后的线索",
+    "sk_codes": [
+      "5.4",
+      "5.5"
+    ],
+    "sp_codes": [
+      "5.4.1",
+      "5.5.1"
+    ],
+    "remarks": "-标点符号： 省略号"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元二 和谐之旅 第九课：笑谈端午",
+    "sk_codes": [
+      "5.2",
+      "5.3",
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.2.1",
+      "5.3.1",
+      "5.4.1"
+    ],
+    "remarks": "- 古诗： 《凉州词》    - 儿化韵"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元二 和谐之旅 第十课：无声合唱团",
+    "sk_codes": [
+      "5.4",
+      "5.6"
+    ],
+    "sp_codes": [
+      "5.4.1",
+      "5.6.1"
+    ],
+    "remarks": "修辞： 比喻"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元三 知性之旅 第十一课：诗情画意的世界",
+    "sk_codes": [
+      "5.3",
+      "5.6"
+    ],
+    "sp_codes": [
+      "5.3.1",
+      "5.6.1"
+    ],
+    "remarks": "- 古诗： 《望洞庭》     修辞： 反复"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元四 永恒之旅 第十六课：生命中的烙印",
+    "sk_codes": [
+      "5.5",
+      "5.6"
+    ],
+    "sp_codes": [
+      "5.5.1",
+      "5.6.1"
+    ],
+    "remarks": "-标点符号： 破折号"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元四 永恒之旅 第十七课：永不磨灭的幸福",
+    "sk_codes": [
+      "5.1",
+      "5.2",
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.2.1",
+      "5.3.1"
+    ],
+    "remarks": "- 古诗： 《六月二十七日望湖楼醉书》"
+  }
+]

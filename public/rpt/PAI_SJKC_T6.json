@@ -1,0 +1,2495 @@
+[
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.1.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن برتجويد."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": "EK2(2.1) عملن ممرهاتي فرسكيترن دغن برتوجوان. فنيلاين : - مثاتاكن فغرتين. - ممباخ دليل. -لاتيهن منوليس. KBAT : افاكه بيذا"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -املاء جاوي. KBAT : ممباخ فتيقن تيك س جاوي دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.1.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن برتجويد."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "3.1.3",
+      "3.1.4"
+    ],
+    "remarks": "EK2(2.1) عملن ممرهاتي فرسكيترن دغن برتوجوان. فنيلاين: - مثاتاكن فكتا. - فربينخغن. -مثنارايكن فكتا. KBAT : افاكه حكوم يغ "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -املاء جاوي. KBAT : ممباخ فتيقن تيك س جاوي دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.3.1",
+      "1.3.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع حفظن موريد KBAT : مغحفظ القرءان دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": "EK1(1.4) كرياتيؤيتي دان اينوؤاسي. فنيلاين : - سوءال جواب. - فمرهاتين - مثنارايكن فكتا KBAT : كناف كيت تيدق بوليه منخوري "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -بينا ايات. -جاويكن ايات. KBAT : ممبينا خونتوه ايات فينديق."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.3.1",
+      "1.3.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع حفظن موريد KBAT : مغحفظ القرءان دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "4.1.2",
+      "4.1.3"
+    ],
+    "remarks": "EK1(1.4) كرياتيؤيتي دان اينوؤاسي. فنيلاين : - سوءال جواب. - فمرهاتين - مثنارايكن فكتا KBAT : كناف كيت مستي صلاة ليم وقتو"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -بينا ايات. -جاويكن ايات. KBAT : ممبينا خونتوه ايات فينديق."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.6.1",
+      "1.6.2"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "4.1.2",
+      "4.1.3",
+      "4.1.4"
+    ],
+    "remarks": "EK1(1.4) كرياتيؤيتي دان اينوؤاسي. فنيلاين : - سوءال جواب. – فمرهاتين - فربينخغن - مثنارايكن فكتا KBAT : باضايمان هندق من"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : -بينا ايات. -توليس ايات. -كرجا كومفولن. KBAT : ممبينا دان منوليس خونتوه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.6.2",
+      "1.6.3",
+      "1.6.4"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2"
+    ],
+    "remarks": "(EK2) 2.3 مغحاصيلكن ايديا دري فمرهاتين فنيلاين : - مثبوت فكتا  مثناراي فكتا  كرجا كومفولن KBAT : اف توجوان كيت كمسجد؟"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.1.3",
+      "7.1.4"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : -بينا ايات. -توليس ايات. -كرجا كومفولن. KBAT : ممبينا دان منوليس خونتوه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.6.1",
+      "1.6.2"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "5.1.2",
+      "5.1.3",
+      "5.1.4"
+    ],
+    "remarks": "(EK2) 2.3 مغحاصيلكن ايديا دري فمرهاتين فنيلاين : - مثبوت فكتا  مثناراي فكتا  كرجا كومفولن KBAT : سيافاكه ساودارا كيت دان"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.1.3",
+      "7.1.4"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : -بينا ايات. -توليس ايات. -كرجا كومفولن. KBAT : ممبينا دان منوليس خونتوه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.6.2",
+      "1.6.3",
+      "1.6.4"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "5.1.4",
+      "5.1.5",
+      "5.1.6"
+    ],
+    "remarks": "(EK2) 2.3 مغحاصيلكن ايديا دري فمرهاتين فنيلاين : - مثبوت فكتا  مثناراي فكتا  كرجا كومفولن KBAT : اف ايسي اوتام دالم اقرا"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -املاء جاوي. KBAT : ممباخ فتيقن تيك س جاوي دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.14"
+    ],
+    "sp_codes": [
+      "6.1.1",
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "EK(1.14) بوليه ممبينا جاريغن سوسيال فنيلاين : -سوءال جواب - فربينخغن - مثناراي فكتا KBAT : افاكه فرلوث كيت هيدوف برمشارك"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -املاء جاوي. KBAT : ممباخ فتيقن تيك س جاوي دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2",
+      "1.7.3"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.14"
+    ],
+    "sp_codes": [
+      "6.1.3",
+      "6.1.4",
+      "6.1.5"
+    ],
+    "remarks": "EK(1.14) بوليه ممبينا جاريغن سوسيال فنيلاين : -سوءال جواب - فربينخغن - فمبنتغن KBAT : باضايمان كيت هندق استقامة دالم برا"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -بينا ايات. -جاويكن ايات. KBAT : ممبينا خونتوه ايات فينديق."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "3.2.1"
+    ],
+    "remarks": "EK2(2.1) عملن ممرهاتي فرسكيترن دغن برتوجوان. فنيلاين: - مثاتاكن فغرتين. - ممباخ دليل. - مثنارايكن فكتا. KBAT : بيلا اكن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -بينا ايات. -جاويكن ايات. KBAT : ممبينا خونتوه ايات فينديق."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2",
+      "1.7.3"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "3.2.3",
+      "3.2.4"
+    ],
+    "remarks": "EK2(2.1) عملن ممرهاتي فرسكيترن دغن برتوجوان. فنيلاين: - مثاتاكن فكتا. - فربينخغن كومفولن - مثنارايكن فكتا. KBAT : افاكه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : -بينا ايات. -توليس ايات. -كرجا كومفولن. KBAT : ممبينا دان منوليس خونتوه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.7.3",
+      "1.7.4"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. -ب"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": "EK1(1.1) برتغضوغجواب ترهادف كفوتوسن. فنيلاين : - مثبوتكن فكتا. - فربينخغن. - فمبنتغن. KBAT : افاكه السن اورغ يغ تيدق منو"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.1.3",
+      "7.1.4"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : -بينا ايات. -توليس ايات. -كرجا كومفولن. KBAT : ممبينا دان منوليس خونتوه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "4.2.2",
+      "4.2.3"
+    ],
+    "remarks": "EK1(1.1) برتغضوغجواب ترهادف كفوتوسن. فنيلاين : - مثبوتكن فكتا. - تونجوق خارا. KBAT : افاكه عاقبة اورغ يغ تيدق صلاة؟"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.1.3",
+      "7.1.4"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : -بينا ايات. -توليس ايات. -كرجا كومفولن. KBAT : ممبينا دان منوليس خونتوه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.7.2",
+      "1.7.3",
+      "1.7.4"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "4.2.3",
+      "4.2.4",
+      "4.2.5"
+    ],
+    "remarks": "EK1(1.1) برتغضوغجواب ترهادف كفوتوسن. فنيلاين : - برسوءال جواب. - مثلسايكن مسئله. - ماءين فرانن. KBAT : افاكه فرانن امام "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -املاء جاوي. KBAT : ممباخ فتيقن تيك س جاوي دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.12"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "EK1(1.12) برتوليرنسي ترهادف كتيدقتنتوان يغ تيغضي. فنيلاين : - سبوت دان سنارايكن. - ايغت دان فادنكن. KBAT : كناف كيت فرلو"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.11"
+    ],
+    "sp_codes": [
+      "5.2.1",
+      "5.2.2"
+    ],
+    "remarks": "(EK1) 1.11 برداي ساءيغ     فنيلاين : - برسوال جواب. - فمرهاتين. - كرجا كومفولن. KBAT بريكن خونتوه٢ صيفت رسول الله ملالوء"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -املاء جاوي. KBAT : ممباخ فتيقن تيك س جاوي دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.12"
+    ],
+    "sp_codes": [
+      "1.5.2",
+      "1.5.3"
+    ],
+    "remarks": "EK1(1.12) برتوليرنسي ترهادف كتيدقتنتوان يغ تيغضي. فنيلاين : - سبوت دان سنارايكن. - ايغت دان فادنكن. KBAT : سيافاكه ماءنس"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.11"
+    ],
+    "sp_codes": [
+      "5.2.2",
+      "5.2.3"
+    ],
+    "remarks": "(EK1) 1.11 برداي ساءيغ     فنيلاين : - برسوال جواب. - فمرهاتين. - كرجا كومفولن. KBAT : افاكه يغ فرلو دلاكوكن جك اد اورغ "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -بينا ايات. -جاويكن ايات. KBAT : ممبينا خونتوه ايات فينديق."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.12"
+    ],
+    "sp_codes": [
+      "1.5.3",
+      "1.5.4"
+    ],
+    "remarks": "EK1(1.12) برتوليرنسي ترهادف كتيدقتنتوان يغ تيغضي. فنيلاين : - سبوت دان سنارايكن. - ايغت دان فادنكن. KBAT : باضايمان خارا"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.11"
+    ],
+    "sp_codes": [
+      "5.2.3",
+      "5.2.4"
+    ],
+    "remarks": "(EK1) 1.11 برداي ساءيغ     فنيلاين : - برسوال جواب. - فمرهاتين. - كرجا كومفولن. KBAT : افاكه يغ فرلو دلاكوكن افابيلا برج"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "EK1(1.2) فكا كفد فلواغ فنيلاين : -باخ تيك س جاوي. -بينا ايات. -جاويكن ايات. KBAT : ممبينا خونتوه ايات فينديق."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.3.1"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ دان مغحفظ القرءان دغن فصيح سرتا برتجويد."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.14"
+    ],
+    "sp_codes": [
+      "6.2.1",
+      "6.2.2",
+      "6.2.3"
+    ],
+    "remarks": "EK(1.14) بوليه ممبينا جاريغن سوسيال فنيلاين : - منرغكن فكتا -مثناراي فكتا - كرجا كومفولن KBAT : اف سرونوقث فروضرام زياره"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.1.2",
+      "7.1.3"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : -بينا ايات. -توليس ايات. -كرجا كومفولن. KBAT : ممبينا دان منوليس خونتوه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13",
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.6.2",
+      "1.6.3"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سوءال جواب. -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درف"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد. KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.14"
+    ],
+    "sp_codes": [
+      "6.2.4",
+      "6.2.5",
+      "6.2.6"
+    ],
+    "remarks": "EK(1.14) بوليه ممبينا جاريغن سوسيال فنيلاين : - برسوءال جواب -منرغكن فكتا - كرجا كومفولن KBAT : بريكن خونتوه فرلاكوان تي"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.1.3",
+      "7.1.4"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : -بينا ايات. -توليس ايات. -كرجا كومفولن. KBAT : ممبينا دان منوليس خونتوه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "1.2.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن برتجويد."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "2.1.3",
+      "2.1.4"
+    ],
+    "remarks": "(EK5) 5.3 فرينسيف تغضوغجواب سوسيال. فنيلاين : -فمرهاتين -فنرغن -كرجا كومفولن KBAT : افاكه بيذا هديه دان رسواه؟"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "remarks": "EK1(1.8) كسغضوفن بلاجر دري كسيلفن. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس حروف. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "1.2.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن برتجويد."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "2.1.3",
+      "2.1.4"
+    ],
+    "remarks": "(EK5) 5.3 فرينسيف تغضوغجواب سوسيال. فنيلاين : -فمرهاتين -فنرغن -كرجا كومفولن KBAT : افاكه بيذا هديه دان رسواه؟"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "remarks": "EK1(1.8) كسغضوفن بلاجر دري كسيلفن. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس حروف. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.4.1",
+      "1.4.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع حفظن موريد KBAT : مغحفظ القرءان دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "2.1.4",
+      "2.1.5",
+      "2.1.6"
+    ],
+    "remarks": "(EK5) 5.3 فرينسيف تغضوغجواب سوسيال. فنيلاين : -فمرهاتين -فنرغن  -كرجا كومفولن KBAT : افاكه هديه فد هاري ضورو دحكومكن رسو"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "remarks": "EK1(1.8) كسغضوفن بلاجر دري كسيلفن. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس حروف. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.4.1",
+      "1.4.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع حفظن موريد KBAT : مغحفظ القرءان دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "3.3.1",
+      "3.3.2",
+      "3.3.3"
+    ],
+    "remarks": "EK 2 (2.2) مغاناليسيس فمرهاتين سخارا كريتيف دان كريتيس. فنيلاين: -سوءال جواب -فمرهاتين -مثناراي فكتا KBAT :\t افاكه خونتو"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "remarks": "EK1(1.8) كسغضوفن بلاجر دري كسيلفن. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس حروف. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "3.3.4",
+      "3.3.5",
+      "3.3.6"
+    ],
+    "remarks": "EK 1 (1.10)  براورينتاسيكن فتخافاين فنيلاين: -سوءال جواب -فمرهاتين -كرجا كومفولن KBAT :\t -ممبوات جوستيفيكاسي اكن سسواتو "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "remarks": "EK1(1.8) كسغضوفن بلاجر دري كسيلفن. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس حروف. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.8.2",
+      "1.8.3"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "4.3.1",
+      "4.3.2"
+    ],
+    "remarks": "EK1(1.1) برتغضوغجواب ترهادف كفوتوسن. فنيلاين : -مثاتاكن. - مغحفظ -تونجوق خارا KBAT : كمان فرضيث سلفس كيت ماتي؟"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "remarks": "EK1(1.8) كسغضوفن بلاجر دري كسيلفن. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس حروف. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "4.3.2",
+      "4.3.3"
+    ],
+    "remarks": "EK1(1.1) برتغضوغجواب ترهادف كفوتوسن. فنيلاين : -سوءال جواب -مغحفظ -فريكتيكل صلاة KBAT : اف بيذا تاتاخارا صلاة جنازه دغن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.2"
+    ],
+    "remarks": "EK1(1.8) كسغضوفن بلاجر دري كسيلفن. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس حروف. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.8.2",
+      "1.8.3"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن اية. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "4.3.3",
+      "4.3.4",
+      "4.3.5"
+    ],
+    "remarks": "EK1(1.1) برتغضوغجواب ترهادف كفوتوسن. فنيلاين : -سوءال جواب -مغحفظ -فريكتيكل صلاة KBAT : كناف راماي اورغ داتغ ملاوت تتافي"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.3"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس فركاتاءن. KBAT : كماهيرن موريد دالم كسنين "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن اية. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "5.3.1",
+      "5.3.2",
+      "5.3.3"
+    ],
+    "remarks": "(EMK2) 2.4 مميليه ايديا يغ باءيق دري اءيديا يغ باثق. فنيلاين : - فمرهاتين - برسوءال جواب - كرجا كومفولن .KBAT باضايمتناك"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.3"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس فركاتاءن. KBAT : كماهيرن موريد دالم كسنين "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.8.2",
+      "1.8.3"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سبوتن دان باخاءن اية. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درفد القرءان"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "5.3.3",
+      "5.3.4",
+      "5.3.5"
+    ],
+    "remarks": "(EMK2) 2.4 مميليه ايديا يغ باءيق دري اءيديا يغ باثق. فنيلاين : - فمرهاتين - برسوءال جواب - كرجا كومفولن .KBAT بوليهكه مم"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.3"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس فركاتاءن. KBAT : كماهيرن موريد دالم كسنين "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.12"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "EK1(1.12) برتوليرنسي ترهادف كتيدقتنتوان يغ تيغضي. فنيلاين : - سبوت دان سنارايكن فكتا. - ايغت دان فادنكن. KBAT : كناف كيت"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.8"
+    ],
+    "sp_codes": [
+      "6.3.1",
+      "6.3.2",
+      "6.3.3"
+    ],
+    "remarks": "(EK2) 2.8 مثسوايكن ايديا بهارو دغن كفرلوان مشاركت دان فرسكيترن. فنيلاين: - مثاتاكن فغرتين. -ماءين فرانن. -كرجا كومفولن. "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.3"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس فركاتاءن. KBAT : كماهيرن موريد دالم كسنين "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.12"
+    ],
+    "sp_codes": [
+      "1.5.2",
+      "1.5.3"
+    ],
+    "remarks": "EK1(1.12) برتوليرنسي ترهادف كتيدقتنتوان يغ تيغضي. فنيلاين : - سبوت دان سنارايكن فكتا. - ايغت دان فادنكن. KBAT : سيافاكه "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.8"
+    ],
+    "sp_codes": [
+      "6.3.3",
+      "6.3.4",
+      "6.3.5"
+    ],
+    "remarks": "(EK2) 2.8 مثسوايكن ايديا بهارو دغن كفرلوان مشاركت دان فرسكيترن. فنيلاين: - مثاتاكن فكتا. -ماءين فرانن. -كرجا كومفولن. KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "7.2.1",
+      "7.2.3"
+    ],
+    "remarks": "EK1(2.5) منمبهباءيق اءيديا يغ دفيليه. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس فركاتاءن. KBAT : كماهيرن موريد دالم كسنين "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.12"
+    ],
+    "sp_codes": [
+      "1.5.2",
+      "1.5.3",
+      "1.5.4"
+    ],
+    "remarks": "EK1(1.12) برتوليرنسي ترهادف كتيدقتنتوان يغ تيغضي. فنيلاين : - سبوت دان سنارايكن فكتا. - ايغت دان فادنكن. KBAT : باضايمان"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "3.4.1",
+      "3.4.2"
+    ],
+    "remarks": "EK1 (1.8) كسغضوفن بلاجر درفد كسيلفن. فنيلاين: -سوءال جواب -فمرهاتين -كرجا كومفولن KBAT :\t بوليهكه كيت مماسوقي رومه عباده"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "7.2.4",
+      "7.2.5"
+    ],
+    "remarks": "EK1(1.3) براني مغمبيل ريسيكو. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس ايات موده. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.3.1",
+      "1.3.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع حفظن موريد KBAT : مغحفظ القرءان دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "3.4.2",
+      "3.4.3"
+    ],
+    "remarks": "EK1 (1.8) كسغضوفن بلاجر درفد كسيلفن. فنيلاين: -سوءال جواب -فمرهاتين -مثناراي فكتا KBAT :\t افاكه سبب ماءنسي بوليه برلاكو "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "7.2.4",
+      "7.2.5"
+    ],
+    "remarks": "EK1(1.3) براني مغمبيل ريسيكو. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس ايات موده. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.4.1",
+      "1.4.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع حفظن موريد KBAT : مغحفظ القرءان دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "3.4.3",
+      "3.4.4",
+      "3.4.5"
+    ],
+    "remarks": "EK1 (1.8) كسغضوفن بلاجر درفد كسيلفن. فنيلاين: -سوءال جواب -فمرهاتين -مثناراي فكتا KBAT :\t افاكه اوسها اونتوق فرتاهنكن عق"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "7.2.4",
+      "7.2.5"
+    ],
+    "remarks": "EK1(1.3) براني مغمبيل ريسيكو. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس ايات موده. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.4.1",
+      "1.4.2"
+    ],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع حفظن موريد KBAT : مغحفظ القرءان دغن لنخر."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.8"
+    ],
+    "sp_codes": [
+      "6.4.1",
+      "6.4.2",
+      "6.4.3"
+    ],
+    "remarks": "(EK2) 2.8 مثسوايكن ايديا بهارو دغن كفرلوان مشاركت دان فرسكيترن. فنيلاين : - منرغكن فكتا - مثناراي فكتا - كرجا كومفولن KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "7.2.4",
+      "7.2.5"
+    ],
+    "remarks": "EK1(1.3) براني مغمبيل ريسيكو. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس ايات موده. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.7.2",
+      "1.7.3"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سوءال جواب. -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درف"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.8"
+    ],
+    "sp_codes": [
+      "6.4.4",
+      "6.4.5"
+    ],
+    "remarks": "(EK2) 2.8 مثسوايكن ايديا بهارو دغن كفرلوان مشاركت دان فرسكيترن. فنيلاين : - منرغكن فكتا - مثناراي فكتا - كرجا كومفولن KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "7.2.4",
+      "7.2.5"
+    ],
+    "remarks": "EK1(1.3) براني مغمبيل ريسيكو. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس ايات موده. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [
+      "1.8.2",
+      "1.8.3"
+    ],
+    "remarks": "EK1(1.13) تابه دان صبر دالم بلاجر. فنيلاين : -سوءال جواب. -سبوتن دان باخاءن. -بنديغ بيذا باخاءن. -مغلوركن خونتوه أية درف"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": "EK1(1.10) براورينتاسيكن فنخافاين. فنيلاين : تسميع باخاءن موريد KBAT : ممباخ القرءان دغن فصيح."
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "2.8"
+    ],
+    "sp_codes": [
+      "6.4.5",
+      "6.4.6"
+    ],
+    "remarks": "(EK2) 2.8 مثسوايكن ايديا بهارو دغن كفرلوان مشاركت دان فرسكيترن. فنيلاين : - منرغكن فكتا - مثناراي فكتا - كرجا كومفولن KB"
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 6,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Pendidikan Islam Tahun 6",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "7.2.4",
+      "7.2.5"
+    ],
+    "remarks": "EK1(1.3) براني مغمبيل ريسيكو. فنيلاين : 1. بنديغ بيذا خارا. 2. منوليس ايات موده. KBAT : كماهيرن موريد دالم كسنين توليسن "
+  }
+]

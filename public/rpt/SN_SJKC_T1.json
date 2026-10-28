@@ -1,0 +1,239 @@
+[
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "(i) 应用所有感觉官能对所发生的现象或变化有系统地进行定性研究（kualitatif）和定量 研究（kuantitatif）的观察。 (ii) 若有所需应用适当的工具以帮助观察。"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2"
+    ],
+    "remarks": "以超过一个合适的方式记录资料或想法，并以创意及创新方式有系统地呈现有关的资料或想法以及作出反应。"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "1.2.2",
+      "1.2.3",
+      "1.2.4",
+      "1.2.5"
+    ],
+    "remarks": "进行活动时，有品德、有系统和以正确的方法使用、处理、描绘、清洗和储存科学仪器、材料和标本以成为同学的楷模"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": "遵守科学室的规则以成为同学的楷模。"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "3.1",
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4",
+      "3.2.5"
+    ],
+    "remarks": "针对人类、动物和植物会以不同的方式获取食物、水和空气进行沟通。"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.1.2",
+      "4.1.3",
+      "4.1.4",
+      "4.1.5"
+    ],
+    "remarks": "能够很好地利用工具来帮助失去功能的感觉器官来进沟通"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5"
+    ],
+    "remarks": "针对人类在防止动物被虐待至某个身体部位受伤所扮演的角 色进行沟通。"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "1.0",
+      "1.9"
+    ],
+    "sp_codes": [
+      "6.1.1",
+      "6.1.2",
+      "6.1.3",
+      "6.1.4"
+    ],
+    "remarks": "针对两种不同的植物，从其叶脉、花、茎与根的分别进行沟通。"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "1.2",
+      "1.5",
+      "3.0",
+      "3.3"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "7.1.3",
+      "7.1.4",
+      "7.1.5",
+      "7.1.6"
+    ],
+    "remarks": "根据磁铁的应用，设计游戏或工具 。"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "3.0",
+      "3.2"
+    ],
+    "sp_codes": [
+      "8.1.1",
+      "8.1.2",
+      "8.1.3",
+      "8.1.4",
+      "8.1.5",
+      "8.1.6"
+    ],
+    "remarks": "应用有关物体的吸水力的知识解决问题。"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "9.1",
+      "9.2"
+    ],
+    "sp_codes": [
+      "9.1.1",
+      "9.2.1",
+      "9.2.2",
+      "9.2.3"
+    ],
+    "remarks": "根据有关土壤的知识，进行沟通以预测和解释土壤的用途。"
+  },
+  {
+    "subject_code": "SN_SJKC",
+    "subject_name": "Sains SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "主题/题目 (Tema / Tajuk)",
+    "sk_codes": [
+      "10.1"
+    ],
+    "sp_codes": [
+      "10.1.1",
+      "10.1.2",
+      "10.1.3",
+      "10.1.4",
+      "10.1.5"
+    ],
+    "remarks": "针对各种立体形状在生活中的重要性作出推论。"
+  }
+]

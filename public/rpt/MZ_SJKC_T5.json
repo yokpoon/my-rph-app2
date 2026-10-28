@@ -1,0 +1,873 @@
+[
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元九",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.3"
+    ],
+    "remarks": "EMK – 语文 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –舞蹈活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "EMK – 企业 元素 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元二",
+    "sk_codes": [
+      "1.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3",
+      "2.2.2"
+    ],
+    "remarks": "EMK – 企业 元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元二",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": "EMK – 语文 KBAT – 应用 PAK-21 – 沟通 协作(Think - Pair – Share)"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元七",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元三",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.3",
+      "2.2.1"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元四",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.2.1"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元六",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "EMK – 企业元 素 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元七",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK -企业 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元十",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.4"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元十",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元十",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [],
+    "remarks": "EMK -创造与革 新元素，价值 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元六",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –分组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元七",
+    "sk_codes": [
+      "1.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.1.3",
+      "3.1.1",
+      "3.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 发明PAK21 – gallery walk 表演"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元八",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [],
+    "remarks": "EMK -企业 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元九",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元十",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [],
+    "remarks": "EMK -价值 KBAT – 应用 PAK21 –沟通 协作(Think - Pair – Share)"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元十",
+    "sk_codes": [
+      "2.2",
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.4.2"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "单元十",
+    "sk_codes": [
+      "2.3",
+      "4.1"
+    ],
+    "sp_codes": [
+      "2.3.1",
+      "4.1.2"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "单元五",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.3"
+    ],
+    "remarks": "EMK – 语文 KBAT – 应用 PAK-21 – 沟通 协作(Think - Pair – Share)"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –舞蹈活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "单元三",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.3",
+      "2.2.1"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "单元五",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "单元六",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "EMK – 企业元 素 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "单元七",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK -企业 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "单元九",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –舞蹈活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "单元三",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.3",
+      "2.2.1"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "单元五",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.3"
+    ],
+    "remarks": "EMK – 语文 KBAT – 应用 PAK-21 – 沟通 协作(Think - Pair – Share)"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "单元五",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "单元六",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "EMK – 企业元 素 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "单元七",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK -企业 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "单元九",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –舞蹈活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "单元三",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.3",
+      "2.2.1"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "单元五",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.3"
+    ],
+    "remarks": "EMK – 语文 KBAT – 应用 PAK-21 – 沟通 协作(Think - Pair – Share)"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "单元五",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "单元七",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK -企业 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "单元九",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –舞蹈活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "单元五",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.3"
+    ],
+    "remarks": "EMK – 语文 KBAT – 应用 PAK-21 – 沟通 协作(Think - Pair – Share)"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "单元五",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "单元七",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK -企业 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "单元九",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应 用，发明 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –舞蹈活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "单元五",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2",
+      "5.1.4"
+    ],
+    "remarks": "EMK -创造与革 新元素 KBAT – 应用 PAK21 – 分 组活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "单元七",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK -企业 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –舞蹈活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "单元七",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK -企业 KBAT – 应用 PAK21 –分组 活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –舞蹈活动"
+  },
+  {
+    "subject_code": "MZ_SJKC",
+    "subject_name": "Pendidikan Muzik",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "单元一：",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "1.1.3"
+    ],
+    "remarks": "EMK -创造与革 新元素  KBAT – 应用 PAK21 –舞蹈活动"
+  }
+]

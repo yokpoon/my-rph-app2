@@ -1,0 +1,755 @@
+[
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "课题",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2"
+    ],
+    "remarks": "解说基本运算和涉及有括号和无括号的混合运算程序。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.0",
+      "1.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "1.读出基本运算算式"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1"
+    ],
+    "remarks": "规律的数列。 解答基本运算、涉及有括号和无括号的混合运算，并确定其答案的合理性。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "解答涉及日常生活与至 1 000 000 以内的整数、基本运算、有括号和无括号混合运算有关的常规问题。  运用各种策略，解答涉及日常生活与至 1 000 000 以内的整数、基本运算、有括号和无括号混合运算有 关的常规问题。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [],
+    "remarks": "解答涉及日常生活与至 1 000 000 以内的整数、基本运算、有括号和无括号混合运算有关的常规问题。  运用各种策略，解答涉及日常生活与至 1 000 000 以内的整数、基本运算、有括号和无括号混合运算有 关的常规问题。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.6.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "8.0"
+    ],
+    "sp_codes": [
+      "8.2.1"
+    ],
+    "remarks": "讲述众数、中位数、平均数和极差的意思。 说明诠释数据所需的步骤。 解答涉及诠释数据的问题, 并确定答案的合理性。 解答涉及日常生活与数据处理有关的常规问题。 运用各种策略，解答涉及日常生活与数据处理有关的常规问题。 以创意和创新的方式，解答"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "8.0"
+    ],
+    "sp_codes": [
+      "8.3.1"
+    ],
+    "remarks": "讲述众数、中位数、平均数和极差的意思。 说明诠释数据所需的步骤。 解答涉及诠释数据的问题, 并确定答案的合理性。 解答涉及日常生活与数据处理有关的常规问题。 运用各种策略，解答涉及日常生活与数据处理有关的常规问题。 以创意和创新的方式，解答"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": "读出涉及分数、小数和百分比的算式。  进行分数和带分数与百分比的换算 。找出小数的近似值。  进行涉及整数、真分数和带分数的分数乘法。 完成小数的基本运算和混合运算的算式， 并确定其答案的合理性。 从百分比计算数量和反之。   解答涉及日常"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0",
+      "2.2"
+    ],
+    "sp_codes": [],
+    "remarks": "读出涉及分数、小数和百分比的算式。  进行分数和带分数与百分比的换算 。找出小数的近似值。  进行涉及整数、真分数和带分数的分数乘法。 完成小数的基本运算和混合运算的算式， 并确定其答案的合理性。 从百分比计算数量和反之。   解答涉及日常"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0",
+      "2.3"
+    ],
+    "sp_codes": [],
+    "remarks": "读出涉及分数、小数和百分比的算式。  进行分数和带分数与百分比的换算 。找出小数的近似值。  进行涉及整数、真分数和带分数的分数乘法。 完成小数的基本运算和混合运算的算式， 并确定其答案的合理性。 从百分比计算数量和反之。   解答涉及日常"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "读出涉及分数、小数和百分比的算式。  进行分数和带分数与百分比的换算 。找出小数的近似值。  进行涉及整数、真分数和带分数的分数乘法。 完成小数的基本运算和混合运算的算式， 并确定其答案的合理性。 从百分比计算数量和反之。   解答涉及日常"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "3.0",
+      "3.1"
+    ],
+    "sp_codes": [],
+    "remarks": "讲述储蓄和投资的意思。   说明单利储蓄与复利储蓄。   完成钱币的基本运算和混合运算的算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1"
+    ],
+    "remarks": "式，并确定答案的合理性。  解答涉及日常生活与钱币有关的常规问题。   运用各种策略，解答涉及日常生活与钱币有关的常规问题。   以创意和创新的方式，解答涉及日常生活与钱币有关的非常规问题。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [],
+    "remarks": "式，并确定答案的合理性。  解答涉及日常生活与钱币有关的常规问题。   运用各种策略，解答涉及日常生活与钱币有关的常规问题。   以创意和创新的方式，解答涉及日常生活与钱币有关的非常规问题。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [],
+    "remarks": "式，并确定答案的合理性。  解答涉及日常生活与钱币有关的常规问题。   运用各种策略，解答涉及日常生活与钱币有关的常规问题。   以创意和创新的方式，解答涉及日常生活与钱币有关的非常规问题。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "3.5"
+    ],
+    "sp_codes": [
+      "3.5.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "讲述相隔时间。  换算涉及分数和小数的时间单位。   解答涉及分数和小"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1",
+      "4.2.2"
+    ],
+    "remarks": "数的时间加法和减法算式，并确认答案的合理性。   解答涉及日常生活与时间与时刻有关的常规问题。  运用各种策略，解答涉及日常生活与时间与时刻有关的常规问题。  以创意和创新的方式，解答涉及日常生活与时间与时刻有关的非常规问题。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "数的时间加法和减法算式，并确认答案的合理性。   解答涉及日常生活与时间与时刻有关的常规问题。  运用各种策略，解答涉及日常生活与时间与时刻有关的常规问题。  以创意和创新的方式，解答涉及日常生活与时间与时刻有关的非常规问题。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1"
+    ],
+    "remarks": "换算涉及分数和小数的度量衡单位  说明完成有分数和"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2"
+    ],
+    "remarks": "小数涉及度量衡的算式步骤。  完成有分数和小数涉及度量衡的算式， 并确定答案的合理性。  解答涉及日常生活与度量衡有关的常规问题。   运用各种策略，解答涉及日常生活与度量衡有关的常规问题。  以创意和创新的方式，解答涉及日常生活与度量衡有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": "小数涉及度量衡的算式步骤。  完成有分数和小数涉及度量衡的算式， 并确定答案的合理性。  解答涉及日常生活与度量衡有关的常规问题。   运用各种策略，解答涉及日常生活与度量衡有关的常规问题。  以创意和创新的方式，解答涉及日常生活与度量衡有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "6.0"
+    ],
+    "sp_codes": [
+      "6.1.1"
+    ],
+    "remarks": "说出由两个图形组的综合图形的图形名称。  解说测量正多边形角度的步骤。  测量正多边形的角度。 计算由两个正多边形组成的综合图形的周长。 计算由四边形和三角形组成的综合图形的面积。 计算由正方体和长方体组成的综合图形的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "6.0"
+    ],
+    "sp_codes": [
+      "6.2.1"
+    ],
+    "remarks": "说出由两个图形组的综合图形的图形名称。  解说测量正多边形角度的步骤。  测量正多边形的角度。 计算由两个正多边形组成的综合图形的周长。 计算由四边形和三角形组成的综合图形的面积。 计算由正方体和长方体组成的综合图形的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "6.0",
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "说出由两个图形组的综合图形的图形名称。  解说测量正多边形角度的步骤。  测量正多边形的角度。 计算由两个正多边形组成的综合图形的周长。 计算由四边形和三角形组成的综合图形的面积。 计算由正方体和长方体组成的综合图形的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "6.0"
+    ],
+    "sp_codes": [
+      "6.4.1"
+    ],
+    "remarks": "说出由两个图形组的综合图形的图形名称。  解说测量正多边形角度的步骤。  测量正多边形的角度。 计算由两个正多边形组成的综合图形的周长。 计算由四边形和三角形组成的综合图形的面积。 计算由正方体和长方体组成的综合图形的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "6.5"
+    ],
+    "sp_codes": [
+      "6.5.1"
+    ],
+    "remarks": "体积 解答涉及日常生活与空间有关的常规问题。 运用各种策略，解答涉及日常生活与空间有关的常规问题。 以创意和创新的方式，解答涉及日常生活与空间有关的非常 规问题。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "7.0",
+      "7.1"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述 x 轴和 y 轴在第一象限的位置。"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1"
+    ],
+    "remarks": "说出所给予的比。 说明确定两点之间的横向和直向距离的步骤。 表示两个数量的比。 解答涉及两点之间的横向和直向距离问题, 并确定答案的合理 性。 确定两个数量所表示的比的答案合理性。 解答涉及日常生活与坐标、比与比例有关的常规问题。 运用各种"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "说出所给予的比。 说明确定两点之间的横向和直向距离的步骤。 表示两个数量的比。 解答涉及两点之间的横向和直向距离问题, 并确定答案的合理 性。 确定两个数量所表示的比的答案合理性。 解答涉及日常生活与坐标、比与比例有关的常规问题。 运用各种"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "说出所给予的比。 说明确定两点之间的横向和直向距离的步骤。 表示两个数量的比。 解答涉及两点之间的横向和直向距离问题, 并确定答案的合理 性。 确定两个数量所表示的比的答案合理性。 解答涉及日常生活与坐标、比与比例有关的常规问题。 运用各种"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [
+      "7.4.1"
+    ],
+    "remarks": "说出所给予的比。 说明确定两点之间的横向和直向距离的步骤。 表示两个数量的比。 解答涉及两点之间的横向和直向距离问题, 并确定答案的合理 性。 确定两个数量所表示的比的答案合理性。 解答涉及日常生活与坐标、比与比例有关的常规问题。 运用各种"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "22 Pendekatan Bertema  Tema Utama: Alam Sekitar  Subtema: Flora dan Fauna",
+    "sk_codes": [
+      "8.0"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "讲述众数、中位数、平均数和极差的意思。 说明诠释数据所需的步骤。 解答涉及诠释数据的问题, 并确定答案的合理性。 解答涉及日常生活与数据处理有关的常规问题。 运用各种策略，解答涉及日常生活与数据处理有关的常规问题。 以创意和创新的方式，解答"
+  }
+]

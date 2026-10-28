@@ -1,0 +1,640 @@
+[
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "模组1：社交与生殖健康教育 1.0 自身的健康与生理变化 单元九：万花筒里的世界 题目：认识青春期",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [],
+    "remarks": "阐述发育的含义 阐述男生与女生发育的特征"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "模组1：社交与生殖健康教育 1.0 自身的健康与生理变化 单元九：万花筒里的世界 题目：月经常识知多少",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [
+      "1.1.3"
+    ],
+    "remarks": "1.1.3     阐述生理周期的个人生理变化"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "模组1：社交与生殖健康教育 1.0 自身的健康与生理变化 单元九：万花筒里的世界 题目：走出迷思",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [
+      "1.1.4"
+    ],
+    "remarks": "1.1.4 阐述生理周期（月经和遗精）的迷思"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "模组1：社交与生殖健康教育 1.0 自身的健康与生理变化 单元九：万花筒里的世界 题目：青春期健康管理",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [
+      "1.1.5"
+    ],
+    "remarks": "1.1.5 阐述和实行青春期健康管理的方法和习惯"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "模组1：社交与生殖健康教育 1.0 自身的健康与生理变化 单元九：万花筒里的世界 题目：接受身体的变化",
+    "sk_codes": [
+      "1.0",
+      "1.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1.2.1说明尊重和接受自身生理和心理变化的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "模组1：社交与生殖健康教育 1.0 自身的健康与生理变化 单元九：万花筒里的世界 题目：尊重他人爱自己",
+    "sk_codes": [
+      "1.0",
+      "1.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1.2.2说明尊重他人生理变化的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "模组1：社交与生殖健康教育 1.0 自身的健康与生理变化 单元九：万花筒里的世界 题目：尊重他人爱自己",
+    "sk_codes": [
+      "1.0",
+      "1.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1.2.2说明尊重他人生理变化的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "模组1：社交与生殖健康教育 2.0滥用物品 单元九：万花筒里的世界 题目：酒精是什么？",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.2"
+    ],
+    "remarks": "2.1.1阐述酒精饮料或食品的含义 2.1.2 分析服用含酒精产品所带来的负面影响"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "模组1：社交与生殖健康教育 2.0滥用物品 单元九：万花筒里的世界 题目：拒绝酒精有妙招",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.3"
+    ],
+    "remarks": "2.1.3 阐述并实践拒绝含酒精的饮料与食品的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "模组1：社交与生殖健康教育 2.0滥用物品 单元九：万花筒里的世界 题目：拒绝酒精有妙招",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.3"
+    ],
+    "remarks": "2.1.3 阐述并实践拒绝含酒精的饮料与食品的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "模组1：社交与生殖健康教育 3.0心智和情绪管理 单元九：万花筒里的世界 题目：冲突不断烦恼多",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2"
+    ],
+    "remarks": "3.1.1 阐述冲突与压力的含义 3.1.2 确认本身冲突和压力的来源"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "模组1：社交与生殖健康教育 3.0心智和情绪管理 单元九：万花筒里的世界 题目：压力能从何处来？",
+    "sk_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "2.1.5",
+      "3.1.1",
+      "3.1.2"
+    ],
+    "remarks": "3.1.1 阐述冲突与压力的含义 3.1.2 确认本身冲突和压力的来源  2.1.4阐述冲突和压力以带给本身的影响 2.1.5 选择管理冲突和压力的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "模组1：社交与生殖健康教育 3.0心智和情绪管理 单元九：万花筒里的世界 题目：压力能从何处来？",
+    "sk_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "2.1.5",
+      "3.1.1",
+      "3.1.2"
+    ],
+    "remarks": "3.1.1 阐述冲突与压力的含义 3.1.2 确认本身冲突和压力的来源  2.1.4阐述冲突和压力以带给本身的影响 2.1.5 选择管理冲突和压力的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "模组1：社交与生殖健康教育 3.0心智和情绪管理 单元九：万花筒里的世界 题目：冲突和压力的影响",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [],
+    "remarks": "3.1.3阐述冲突和压力以带给本身的影响"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "模组1：社交与生殖健康教育 3.0心智和情绪管理 单元九：万花筒里的世界 题目：冲突和压力的影响",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [],
+    "remarks": "3.1.3阐述冲突和压力以带给本身的影响"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "模组1：社交与生殖健康教育 3.0心智和情绪管理 单元九：万花筒里的世界 题目：缓解冲突与压力",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [],
+    "remarks": "3.1.4选择并实践管理冲突和压力的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "模组1：社交与生殖健康教育 3.0心智和情绪管理 单元九：万花筒里的世界 题目：缓解冲突与压力",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [],
+    "remarks": "3.1.4选择并实践管理冲突和压力的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "模组1：社交与生殖健康教育 4.0家庭 单元九：万花筒里的世界 题目：社会问题何其多",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [],
+    "remarks": "4.1.1阐述社会问题"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "模组1：社交与生殖健康教育 4.0家庭 单元九：万花筒里的世界 题目：家庭成员的责任",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.2"
+    ],
+    "remarks": "4.1.2  说明家庭成员在克服社会问题所应负的责任和扮演的角色"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "模组1：社交与生殖健康教育 4.0家庭 单元九：万花筒里的世界 题目：家人支持力量大",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.3"
+    ],
+    "remarks": "4.1.3  评价家庭成员的鼓励在克服社会问题的重要性"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "模组1：社交与生殖健康教育 4.0家庭 单元九：万花筒里的世界 题目：家人支持力量大",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.3"
+    ],
+    "remarks": "4.1.3  评价家庭成员的鼓励在克服社会问题的重要性"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "模组1：社交与生殖健康教育 5.0 人际关系 单元九：万花筒里的世界 题目：学习爱己爱人",
+    "sk_codes": [
+      "5.0",
+      "5.1"
+    ],
+    "sp_codes": [],
+    "remarks": "5.1.1说明爱自己和他人的重要性"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "模组1：社交与生殖健康教育 5.0人际关系 单元九：万花筒里的世界 题目：如何关爱他人",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2"
+    ],
+    "remarks": "5.1.2 阐述如何表达对他人的关怀"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "模组1：社交与生殖健康教育 5.0人际关系 单元九：万花筒里的世界 题目：适当表达感受",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.3"
+    ],
+    "remarks": "5.1.3 阐述在不同的情况下，以适当的方式来表达自身的感受"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "模组1：社交与生殖健康教育 6.0疾病 单元九：万花筒里的世界 题目：非传染性疾病",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.1"
+    ],
+    "remarks": "6.1.1 阐述非传染的疾病如心脏病、肾病、糖尿病和哮喘"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "模组1：社交与生殖健康教育 6.0疾病 单元九：万花筒里的世界 题目：患病的前后因果",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2"
+    ],
+    "remarks": "6.1.2 了解并联想非传染性疾病的原因和后果"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "模组1：社交与生殖健康教育 6.0疾病 单元九：万花筒里的世界 题目：预防非传染性疾病",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.3"
+    ],
+    "remarks": "6.1.3 讲解如何预防非传染疾病如心脏病、肾病、糖尿病和哮喘的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "模组1：社交与生殖健康教育 6.0疾病 单元九：万花筒里的世界 题目：预防非传染性疾病",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.3"
+    ],
+    "remarks": "6.1.3 讲解如何预防非传染疾病如心脏病、肾病、糖尿病和哮喘的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "模组1：社交与生殖健康教育 7.0安全 单元九：万花筒里的世界 题目：诱骗儿童事件",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2"
+    ],
+    "remarks": "7.1.1 阐述儿童性诱骗/诱拐（pengantunan kanak-kanak）的含义 7.1.2 讲述儿童性诱骗/诱拐的情况"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "模组1：社交与生殖健康教育 7.0安全 单元九：万花筒里的世界 题目：应用方法防诱拐",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.3"
+    ],
+    "remarks": "7.1.3 实践防儿童性诱骗/诱拐的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "模组1：社交与生殖健康教育 7.0安全 单元九：万花筒里的世界 题目：有效地自我保护",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.3"
+    ],
+    "remarks": "7.1.3 有效地讲解防儿童性诱骗/诱拐情况的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "模组1：社交与生殖健康教育 7.0安全 单元九：万花筒里的世界 题目：有效地自我保护",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.3"
+    ],
+    "remarks": "7.1.3 有效地讲解防儿童性诱骗/诱拐情况的方法"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "模组2：饮食习惯 8.0饮食 单元十：简单营养好滋味 题目：食物金字塔",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [],
+    "remarks": "8.1.1依照大马食物金字塔的等级来识别食物的组合"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "模组2：饮食习惯 8.0饮食 单元十：简单营养好滋味 题目：食物金字塔",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [],
+    "remarks": "8.1.1依照大马食物金字塔的等级来识别食物的组合"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "模组2：饮食习惯 8.0饮食 单元十：简单营养好滋味 题目：各级功能逐个看",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.2"
+    ],
+    "remarks": "8.1.2 根据大马食物的金字塔，理解并说出各级别的食物的功能"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "模组2：饮食习惯 8.0饮食 单元十：简单营养好滋味 题目：各级功能逐个看",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.2"
+    ],
+    "remarks": "8.1.2 根据大马食物的金字塔，理解并说出各级别的食物的功能"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "模组2：饮食习惯 8.0饮食 单元十：简单营养好滋味 题目：选择健康的食品",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [],
+    "remarks": "8.1.3依据大马食物的金字塔，讲解选择和摄取均衡食物的重要性"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "模组2：饮食习惯 8.0饮食 单元十：简单营养好滋味 题目：选择健康的食品",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [],
+    "remarks": "8.1.3依据大马食物的金字塔，讲解选择和摄取均衡食物的重要性"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 40,
+    "week_label": "Minggu 40",
+    "theme": "模组3：急救 9.0急救常识 单元十一：“脚滑”的狐狸 题目：认识瘀青和扭伤",
+    "sk_codes": [
+      "9.1"
+    ],
+    "sp_codes": [],
+    "remarks": "9.1.1阐述瘀青和扭伤的原因"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 41,
+    "week_label": "Minggu 41",
+    "theme": "模组3：急救 9.0急救常识 单元十一：“脚滑”的狐狸 题目：处理瘀青和扭伤的方法",
+    "sk_codes": [
+      "9.1"
+    ],
+    "sp_codes": [
+      "9.1.2"
+    ],
+    "remarks": "9.1.2 阐述在面对瘀青和扭伤时，应采取的处理步骤"
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 42,
+    "week_label": "Minggu 42",
+    "theme": "模组3：急救 9.0急救常识 单元十一：“脚滑”的狐狸 题目：及时处理患处",
+    "sk_codes": [
+      "9.1"
+    ],
+    "sp_codes": [
+      "9.1.2"
+    ],
+    "remarks": "9.1.2 阐述在面对瘀青和扭伤时，应采取的处理步骤 9.1.3在面对瘀青和扭伤时，实践正确的急救方法"
+  }
+]

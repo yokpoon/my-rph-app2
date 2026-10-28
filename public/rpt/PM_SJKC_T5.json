@@ -1,0 +1,268 @@
+[
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "主题1： 信奉上苍  题目： 同一条路上",
+    "sk_codes": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "主题2：善良  题目： 神奇画笔",
+    "sk_codes": [
+      "2.0",
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "主题3：负责任  题目： 破窗效应",
+    "sk_codes": [
+      "3.0",
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "主题4：感谢  题目： 说不出口的“谢谢”",
+    "sk_codes": [
+      "4.0",
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "主题5：崇高的品德  题目： 懂礼貌，守规矩",
+    "sk_codes": [
+      "5.0",
+      "5.1",
+      "5.2",
+      "5.3",
+      "5.4",
+      "5.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "主题6：尊重  题目： 尊重乐开怀",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "6.2",
+      "6.3",
+      "6.4",
+      "6.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "主题7：仁爱  题目： 让青山更翠绿",
+    "sk_codes": [
+      "7.0",
+      "7.1",
+      "7.2",
+      "7.3",
+      "7.4",
+      "7.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "主题8：公正  题目： 公正在人心",
+    "sk_codes": [
+      "8.0",
+      "8.1",
+      "8.2",
+      "8.3",
+      "8.4",
+      "8.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "主题9：勇敢  题目： 见义勇为",
+    "sk_codes": [
+      "9.0",
+      "9.1",
+      "9.2",
+      "9.3",
+      "9.4",
+      "9.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "主题10：诚实  题目： 诚信无价",
+    "sk_codes": [
+      "10.0",
+      "10.1",
+      "10.2",
+      "10.3",
+      "10.4",
+      "10.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "主题11：勤勉  题目： 勤奋星球",
+    "sk_codes": [
+      "11.0",
+      "11.1",
+      "11.2",
+      "11.3",
+      "11.4",
+      "11.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "主题12：合作  题目： 守望相助",
+    "sk_codes": [
+      "12.0",
+      "12.1",
+      "12.2",
+      "12.3",
+      "12.4",
+      "12.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "主题13：中庸  题目： 中庸之星",
+    "sk_codes": [
+      "13.0",
+      "13.1",
+      "13.2",
+      "13.3",
+      "13.4",
+      "13.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PM_SJKC",
+    "subject_name": "Pendidikan Moral",
+    "grade": 5,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "主题14：礼让  题目： 礼让之城",
+    "sk_codes": [
+      "14.0",
+      "14.1",
+      "14.2",
+      "14.3",
+      "14.4",
+      "14.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  }
+]

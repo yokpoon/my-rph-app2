@@ -1,0 +1,670 @@
+[
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "单元",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "单元",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "单元",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "单元",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "单元",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "单元",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "单元",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "单元",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "单元",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "单元",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "单元",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "单元",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "单元",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "单元",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "单元",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "单元",
+    "sk_codes": [
+      "8.1"
+    ],
+    "sp_codes": [
+      "8.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "单元",
+    "sk_codes": [
+      "9.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "单元",
+    "sk_codes": [
+      "9.1"
+    ],
+    "sp_codes": [
+      "9.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "单元",
+    "sk_codes": [
+      "9.1"
+    ],
+    "sp_codes": [
+      "9.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "单元",
+    "sk_codes": [
+      "9.1"
+    ],
+    "sp_codes": [
+      "9.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PK_SJKC",
+    "subject_name": "Pendidikan Kesihatan",
+    "grade": 3,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "单元",
+    "sk_codes": [
+      "9.1"
+    ],
+    "sp_codes": [
+      "9.1.4"
+    ],
+    "remarks": ""
+  }
+]

@@ -1,0 +1,5576 @@
+[
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "课题",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.1.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "课题",
+    "sk_codes": [
+      "3.0"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "课题",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1",
+      "3.2.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.1.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "1.2.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "课题",
+    "sk_codes": [
+      "3.0"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "1.2.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "1.2.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "1.2.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.6.1",
+      "1.6.2",
+      "1.6.3",
+      "1.6.4",
+      "1.6.5"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.6.1",
+      "1.6.2",
+      "1.6.3",
+      "1.6.4",
+      "1.6.5"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1",
+      "3.3.2",
+      "3.3.3"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.1",
+      "3.4.2",
+      "3.4.3"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "3.5"
+    ],
+    "sp_codes": [
+      "3.5.1",
+      "3.5.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1",
+      "3.3.2",
+      "3.3.3"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.1",
+      "3.4.2",
+      "3.4.3"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "3.5"
+    ],
+    "sp_codes": [
+      "3.5.1",
+      "3.5.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "8.0",
+      "8.1"
+    ],
+    "sp_codes": [
+      "9.1.1",
+      "9.2.1",
+      "9.3.1"
+    ],
+    "remarks": "1.从象形统计图和条形统计图读取资料。  2.解说建构象形统计图和条形统计图的步骤。  3. 建构象形统计图和条形统计图。  分析象形统计图和条形统计图。   4.解答涉及日常生活与象形统计图和条形统计图有关的常规问题。  5.运用各种策略"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "8.2"
+    ],
+    "sp_codes": [
+      "9.4.1"
+    ],
+    "remarks": "1.从象形统计图和条形统计图读取资料。  2.解说建构象形统计图和条形统计图的步骤。  3. 建构象形统计图和条形统计图。  分析象形统计图和条形统计图。   4.解答涉及日常生活与象形统计图和条形统计图有关的常规问题。  5.运用各种策略"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1",
+      "3.3.2",
+      "3.3.3"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.1",
+      "3.4.2",
+      "3.4.3"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "3.5"
+    ],
+    "sp_codes": [
+      "3.5.1",
+      "3.5.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6"
+    ],
+    "sp_codes": [
+      "4.6.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.1",
+      "5.2.2"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.1",
+      "5.3.2"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.5.1",
+      "4.5.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "4.6"
+    ],
+    "sp_codes": [
+      "4.6.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "4.5"
+    ],
+    "sp_codes": [
+      "4.5.1",
+      "4.5.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "6.5",
+      "7.5"
+    ],
+    "sp_codes": [
+      "6.5.1",
+      "7.5.1"
+    ],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0",
+      "8.0"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1",
+      "1.7.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "6.5",
+      "7.5"
+    ],
+    "sp_codes": [
+      "6.5.1",
+      "7.5.1"
+    ],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0",
+      "8.0"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "2.0"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.1.4",
+      "2.1.5"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0",
+      "8.0"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0",
+      "8.0"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "2.2.2",
+      "2.2.3",
+      "2.2.4"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "5.4"
+    ],
+    "sp_codes": [
+      "5.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0",
+      "8.0"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "3.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.2"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "3.7"
+    ],
+    "sp_codes": [
+      "3.7.1"
+    ],
+    "remarks": "1. 认识世界主要国家的钱币。   讲述 RM1与世界主要国家的兑换率。   2. 解说记录储蓄和开支的需要。  3. 完成涉及钱币基本运算和混合运算的算式，并确定其答案的合理性。  4. 解答涉及日常生活与钱币有关的常规问题。  5. 运"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0",
+      "8.0"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1",
+      "2.3.2"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0",
+      "8.0"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0",
+      "8.0"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0",
+      "8.0"
+    ],
+    "sp_codes": [
+      "7.1.1",
+      "7.1.2",
+      "8.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0",
+      "6.1",
+      "7.0"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4",
+      "5.1.5",
+      "5.1.6",
+      "5.1.7",
+      "5.1.8",
+      "5.1.9"
+    ],
+    "remarks": "1. 讲述毫米与厘米、厘米与米、米与公里、克与公斤和毫升与升的关系。  2. 解说度量衡中长度、质量和液体的体积的相关单位。  3. 确认答案的合理性及完成涉及度量衡的算式。  4. 解答涉及日常生活和度量衡有关的常规问题。  5. 运用各"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1",
+      "1.9.2"
+    ],
+    "remarks": "1. 讲述任何100 000以内的数目。  读出涉及基本运算和混合运算的算式。  2. 解说100 000以内的数值。  说明解答基本运算和混合运算算式的步骤。  3. 确定100 000以内数值，包括应用估算和近似值。  解答涉及基本运算"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.讲述:  x轴、y轴和原点。  符号和归一法的意思。  2.解说以下步骤:  读出点的坐标以及在第一象限的坐标上标上点。 根据所提供的比确定某个值。  比较一个单位的值。  3. 读出点的坐标以及在第一象限的坐标上标上点。  根据所提供"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [
+      "2.4.1"
+    ],
+    "remarks": "1. 讲述假分数和带分数。  2. 进行假分数与带分数的换算或反之。  3. 解答涉及整数、真分数和带分数加减的混合运算。  4. 解答涉及分数、小数和百分比的常规问题。  5. 运用各种策略，解答涉及分数、小数和百分比的常规问题。  6."
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "课题",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [],
+    "remarks": "1. 认识和说出长方形、正方形和三角形的角。  确认平行线和垂直线。  2. 讲述平行线和垂直线的特征。  使用公式讲述周长、面积和体积的意思。  3. 画出平行线和垂直线。  计算多边形的周长、面积和体积。  4.解答涉及日常生活与空间有"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "课题",
+    "sk_codes": [
+      "4.0"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "1.讲述时间单位之间的关系。  2.解说完成涉及时间单位的算式步骤。  3.确认答案的合理性及完成涉及时间单位的算式。  4.解答涉及日常生活与时间单位有关的常规问题。  5.解答涉及日常生活与时间单位有关的常规问题。  6.以创意和创新的"
+  }
+]

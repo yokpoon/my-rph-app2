@@ -1,0 +1,492 @@
+[
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "1.3",
+      "2.1",
+      "4.2",
+      "5.5"
+    ],
+    "sp_codes": [
+      "2.2.1"
+    ],
+    "remarks": "深广课文 《放学路上》 第11页   《所见》 第10页  冒号和引号 第11页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1",
+      "4.4",
+      "5.1"
+    ],
+    "sp_codes": [
+      "1.2.2",
+      "2.2.1"
+    ],
+    "remarks": "童诗《家》             《灯》 第17页  心部和日部 第16页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "4.1",
+      "5.1"
+    ],
+    "sp_codes": [
+      "2.2.1"
+    ],
+    "remarks": "深广课文 《新年》 第25页             火部和金部 第24页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1",
+      "4.2"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.2.1"
+    ],
+    "remarks": "《赠汪伦》 第31页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.3.2",
+      "4.3.1",
+      "5.5.1"
+    ],
+    "remarks": "深广课文 《蜻蜓落在 睡莲上》             顿号 第36页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "2.2.1",
+      "4.2.1",
+      "5.1.1"
+    ],
+    "remarks": "《江南》 第45页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.3.1",
+      "4.3.1",
+      "5.3.1"
+    ],
+    "remarks": "深广课文 《我的风筝》             近似字 第51页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "4.4.1",
+      "5.1.1"
+    ],
+    "remarks": "读读说说 《把屋子装满》 第60页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "2.2.1",
+      "4.2.1",
+      "5.3.1"
+    ],
+    "remarks": "深广课文 《那一夜》              《早发白帝城》 第68页   多音多义字"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "1.2.2",
+      "2.2.1",
+      "4.2.1",
+      "5.4.1"
+    ],
+    "remarks": "童诗 《树海》                 《鹿柴》 第74页  关联词 “无论……还是……”"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.3.2",
+      "2.2.1",
+      "4.3.1",
+      "5.3.1"
+    ],
+    "remarks": "深广课文 《小雨点》"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "2.2.1",
+      "4.4.1",
+      "5.3.1"
+    ],
+    "remarks": "《大王花的 自述》    第91页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.2.2",
+      "4.1.1",
+      "5.3.1"
+    ],
+    "remarks": "深广课文 《木木的日记》 第98页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "4.3.1",
+      "5.4.1"
+    ],
+    "remarks": "关联词 “如果……就……”"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "2.2.1",
+      "4.2.1",
+      "5.4.1"
+    ],
+    "remarks": "深广课文 《乌鸦兄弟》 第114页           《敕勒歌》 第113页   关联词 “可是” 第113页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "1.1",
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "4.2.1",
+      "5.1.2"
+    ],
+    "remarks": "《登乐游原》 第120页  马部、土部和 丝部 第120页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1",
+      "5.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "2.2.1",
+      "4.4.1"
+    ],
+    "remarks": "深广课文 《渡轮》 第125页             《风娃娃做好事》    第124页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.3.1",
+      "2.2.1",
+      "4.2.1",
+      "5.3.1"
+    ],
+    "remarks": "成语 [多不胜数、五颜六色、食指大动、古色古香]        《望庐山瀑布》 第133页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "1.1",
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "4.1.1",
+      "5.4.1"
+    ],
+    "remarks": "深广课文 《萤火虫和 星星》 第139页          扩展词语  关联词 “只要……就……” 第138页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "第二十一 单元 知识的力量  （一） 回家的脚印",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.2.2",
+      "2.2.1",
+      "4.2.1",
+      "5.1.1"
+    ],
+    "remarks": "《谁偷走大王的皇冠》            《江雪》 第145页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "第二十二 单元 小小心愿  （一） 百宝箱",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.2.1",
+      "2.2.1",
+      "4.2.1",
+      "5.1.2"
+    ],
+    "remarks": "深广课文 《世界很小又很大》 第152页           《小池》 第151页  人部、木部、衣部和 手部 第151页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "1.3",
+      "2.1",
+      "4.1",
+      "5.3"
+    ],
+    "sp_codes": [],
+    "remarks": "双音节动词“AABB式”"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1",
+      "5.1",
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": "复韵母 （ai,ei,ao,ou) 第19页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "5.2.1",
+      "5.4.1"
+    ],
+    "remarks": "复韵母 （ia,ie，ua,uo，iu，ao,iao，ou) 第40页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "第二十一 单元 知识的力量  （一） 回家的脚印",
+    "sk_codes": [
+      "2.1",
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": "鼻尾音 （ing，ong， ang，ong，iong ) 第147页"
+  },
+  {
+    "subject_code": "BC_SJKC",
+    "subject_name": "Bahasa Cina SJK(C)",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元/课题",
+    "sk_codes": [
+      "2.1",
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.3.1"
+    ],
+    "remarks": "鼻尾音 （ang，eng) 第128页"
+  }
+]

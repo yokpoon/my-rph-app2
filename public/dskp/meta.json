@@ -1,0 +1,214 @@
+[
+  {
+    "name": "BAHASA CINA SJKC 华校华语",
+    "slug": "bahasa_cina_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "BAHASA INGGERIS SJKC 华校英语",
+    "slug": "bahasa_inggeris_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "BAHASA MELAYU SJKC 华校国语",
+    "slug": "bahasa_melayu_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "MATEMATIK SJKC 华小数学",
+    "slug": "matematik_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "PEMULIHAN KHAS BM SJKC",
+    "slug": "pemulihan_khas_bm_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "name": "PEMULIHAN KHAS MT SJKC 辅导 (数学)",
+    "slug": "pemulihan_khas_mt_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "name": "PENDIDIKAN JASMANI SJKC 华校体育",
+    "slug": "pendidikan_jasmani_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "PENDIDIKAN JASMANI SJKC(BM) 华校体育",
+    "slug": "pendidikan_jasmani_sjkc_bm",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "PENDIDIKAN KESIHATAN SJKC 华校健康教育",
+    "slug": "pendidikan_kesihatan_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "PENDIDIKAN KESIHATAN SJKC(BM) 华校健康教育",
+    "slug": "pendidikan_kesihatan_sjkc_bm",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "PENDIDIKAN MORAL SJKC 华校道德教育",
+    "slug": "pendidikan_moral_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "PENDIDIKAN MUZIK SJKC 华校音乐",
+    "slug": "pendidikan_muzik_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "PENDIDIKAN SENI SJKC (BM) 华校美术",
+    "slug": "pendidikan_seni_sjkc_bm",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "PENDIDIKAN SENI SJKC 华校美术",
+    "slug": "pendidikan_seni_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "RBT  SJKC 华校设计与工艺",
+    "slug": "rbt_sjkc",
+    "grades": [
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "SAINS SJKC 华校科学",
+    "slug": "sains_sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "SEJARAH SJKC 华校历史",
+    "slug": "sejarah_sjkc",
+    "grades": [
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "TMK SJKC 华校信息与通信技术",
+    "slug": "tmk_sjkc",
+    "grades": [
+      "5",
+      "6"
+    ]
+  },
+  {
+    "name": "ڤنديديقن اسلام SJKC",
+    "slug": "sjkc",
+    "grades": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  }
+]

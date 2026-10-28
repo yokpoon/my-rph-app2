@@ -1,0 +1,3142 @@
+[
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Keberanian KBAT  : Menganalisis Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerjasama KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.2.6"
+    ],
+    "remarks": "EMK   : Nilai murni – Semangat bermasyarakat KBAT  : Menganalisis Strategi P&P: BCB- Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "EMK   : Bahasa KBAT  : Mengaplikasi Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Baik hati KBAT  : Menganalisis Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Keberanian KBAT  : Menganalisis Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerjasama KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.2.6"
+    ],
+    "remarks": "EMK   : Nilai murni – Semangat bermasyarakat KBAT  : Menganalisis Strategi P&P: BCB- Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "EMK   : Bahasa KBAT  : Mengaplikasi Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Baik hati KBAT  : Mengaplikasi\t Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerajinan KBAT  : Menilai Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Semangat Bermasyarakat KBAT  : Menilai Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerjasama KBAT  : Mencipta Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Bermuafakat KBAT  : Menganalisis\t Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerajinan KBAT  : Menilai Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Semangat Bermasyarakat KBAT  : Menilai Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerjasama KBAT  : Mencipta Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Bermuafakat KBAT  : Menganalisis\t Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Baik hati KBAT  : Mengaplikasi\t Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.3"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerjasama KBAT  : Menilai Strategi P&P: KP - Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Keprihatinan KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerajinan KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Bermuafakat KBAT  : Menganalisis Strategi P&P: KP- Muzik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1"
+    ],
+    "remarks": "EMK   : Bahasa KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Menjaga Kesihatan KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Menjaga Kesihatan KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.3"
+    ],
+    "remarks": "EMK   : Nilai murni - Keprihatinan KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Keprihatinan KBAT  : Mencipta Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Menganalisis Strategi P&P: Konstekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Menjaga Kesihatan KBAT  : Menilai Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Bertanggungjawab KBAT  : Menilai Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.4"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Menganalisis Strategi P&P: Konstekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Keprihatinan KBAT  : Mencipta Strategi P&P: BCB – Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Menjaga Kebersihan KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Menjaga Kesihatan KBAT  : Menilai Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Bertanggungjawab KBAT  : Menilai Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.4"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Menganalisis Strategi P&P: Konstekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Keprihatinan KBAT  : Mencipta Strategi P&P: BCB – Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Menjaga Kebersihan KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.3"
+    ],
+    "remarks": "EMK   : Nilai murni – Kebersihan dan Kesihatan KBAT  : Menganalisis Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Menganalisis Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Kebersihan dan Kesihatan KBAT  : Mencipta Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.3"
+    ],
+    "remarks": "EMK   : Nilai murni – Menjaga Kesihatan KBAT  : Mencipta Strategi P&P: KP- Muzik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Menghargai Masa KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Berhati-hati KBAT  : Mencipa Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Bertanggungjawab KBAT  : Menganalisis Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Keberanian KBAT  : Mencipta Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.3"
+    ],
+    "remarks": "EMK   : Nilai murni – Berhati-hati KBAT  : Mengaplikasi Strategi P&P: Konstektual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Berwaspada KBAT  : Mengaplikasi Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Bertanggungjawab KBAT  : Menilai Strategi P&P: BCB – Bacaan Imbasan"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Berdisiplin KBAT  : Mencipta Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.4.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerajinan KBAT  : Menganalisis Strategi P&P: KP- Kinestetik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.3"
+    ],
+    "remarks": "EMK   : Nilai murni – Berhati-hati KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "EMK   : Pendidikan Keselamatan jalan Raya KBAT  : Mengaplikasi Strategi P&P: KP- Verbal-linguisitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Menjaga Keselamatan KBAT  : Menganalisis Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.2"
+    ],
+    "remarks": "EMK   : Pendidikan Keselamatan Jalan Raya  KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.1",
+      "4.11"
+    ],
+    "sp_codes": [],
+    "remarks": "EMK   : Nilai murni – Berhati-hati KBAT  : Mengaplikasi Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.3"
+    ],
+    "remarks": "EMK   : Nilai murni – Berdisiplin  KBAT  : Mengaplikasi Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Berhemah tinggi KBAT  : Menganalisis Strategi P&P: Konstekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Berhemah Tinggi KBAT  : Mengaplikasi Strategi P&P: BCB – Membuat rujukan"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1"
+    ],
+    "remarks": "EMK   : Bahasa KBAT  : Menganalisis Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.3"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Mengaplikasi Strategi P&P: BCB – Bacaan Luncuran"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.3"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Menilai  Strategi P&P: KMD- Meramal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Menilai Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Bekerjasama KBAT  : Mencipta Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.2"
+    ],
+    "remarks": "EMK   : Bahasa KBAT  : Menganalisis Strategi P&P: KP- Muzik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.4"
+    ],
+    "remarks": "EMK   : Nilai murni- Menghargai KBAT  : Mengaplikasi Strategi P&P: BCB- Bacaan Luncuran"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.3"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Menilai  Strategi P&P: KMD- Meramal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Menilai Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Bekerjasama KBAT  : Mencipta Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.2"
+    ],
+    "remarks": "EMK   : Bahasa KBAT  : Menganalisis Strategi P&P: KP- Muzik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.4"
+    ],
+    "remarks": "EMK   : Nilai murni- Menghargai KBAT  : Mengaplikasi Strategi P&P: BCB- Bacaan Luncuran"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1"
+    ],
+    "remarks": "EMK   : Kreativiti dan Inovasi KBAT  : Menilai Strategi P&P: KP- Verbal-lingustik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Kreativiti dan Inovasi KBAT  : Menilai Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Rasional KBAT  : Menilai Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Mencipta Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.4"
+    ],
+    "remarks": "EMK   : Nilai murni – Kasih Sayang KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1"
+    ],
+    "remarks": "EMK   : Kreativiti dan Inovasi KBAT  : Menilai Strategi P&P: KP- Verbal-lingustik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Kreativiti dan Inovasi KBAT  : Menilai Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Rasional KBAT  : Menilai Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Mencipta Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.4"
+    ],
+    "remarks": "EMK   : Nilai murni – Kasih Sayang KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.2"
+    ],
+    "remarks": "EMK   : Kelestarian Global KBAT  : Menganalisis Strategi P&P: KP-Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Bertanggungjawab KBAT  : Menilai Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.3"
+    ],
+    "remarks": "EMK   : Kelestarian Global KBAT  : Menganalisis Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Mengaplikasi Strategi P&P: KP-Naturalis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.4"
+    ],
+    "remarks": "EMK   : Kelestarian Global KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.3"
+    ],
+    "remarks": "EMK   : Nilai murni – Prihatin  KBAT  : Menganalisis Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Kebersihan Mental dan Fizikal KBAT  : Menganalisis Strategi P&P: KMD-Meramal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.4"
+    ],
+    "remarks": "EMK   : Kelestarian Global KBAT  : Mengaplikasi Strategi P&P: KP-Naturalis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.3"
+    ],
+    "remarks": "EMK   : Nilai murni - Kesyukuran KBAT  : Mencipta Strategi P&P: KP-Muzik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.4"
+    ],
+    "remarks": "EMK   : Nilai murni – Berjimat-cermat KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Keprihatinan KBAT  : Menganalisis Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Kelestarian Global KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Bertanggungjawab KBAT  : Mencipta Strategi P&P:  BCB-Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Keprihatinan KBAT  : Menganalisis Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Kelestarian Global KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Bertanggungjawab KBAT  : Mencipta Strategi P&P:  BCB-Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Menghargai KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Cinta akan Negara KBAT  : Menilai Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Patriotisme KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.2"
+    ],
+    "remarks": "EMK   : Bahasa KBAT  : Menganalisis Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "EMK   : Patriotisme KBAT  : Menganalisis Strategi P&P: KP- Kinestetik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": "EMK   : Patriotisme KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Cinta akan Negara KBAT  : Menilai Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Patriotisme KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.2"
+    ],
+    "remarks": "EMK   : Bahasa KBAT  : Menganalisis Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "EMK   : Patriotisme KBAT  : Menganalisis Strategi P&P: KP- Kinestetik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": "EMK   : Patriotisme KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "EMK   : Patriotisme KBAT  : Menganalisis Strategi P&P: KP- Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Patriostisme KBAT  : Mengaplikasi Strategi P&P: BCB – Mendengar secara Berkesan"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": "EMK   : Patriotisme KBAT  : Mengaplikasi Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Cinta akan Negara KBAT  : Mengaplikasi Strategi P&P: KP- Verval-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.2"
+    ],
+    "remarks": "EMK   : Patriotisme KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Cinta akan Negara KBAT  : Menilai Strategi P&P: KP-Interpersonal"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Setia akan Negara KBAT  : Menilai Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Mencipta Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Cinta akan Negara KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Bertanggungjawab KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.3"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Menganalisis Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Mengaplikasi\t Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.2"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni  - Rasional KBAT  : Menganalisis Strategi P&P: KP- Muzik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Kerajinan KBAT  : Mencipta Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.1"
+    ],
+    "remarks": "EMK   : Teknologi dan Komunikasi KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.3"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Menganalisis Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Mengaplikasi\t Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.2"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni  - Rasional KBAT  : Menganalisis Strategi P&P: KP- Muzik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Kerajinan KBAT  : Mencipta Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.1"
+    ],
+    "remarks": "EMK   : Teknologi dan Komunikasi KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Menilai Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.2.1"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Menilai Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.3"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerjasama KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Menilai Strategi P&P: KP- Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.2.1"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Menilai Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.3"
+    ],
+    "remarks": "EMK   : Sains dan Teknologi KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerjasama KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerjasama KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerajinan KBAT  : Menganalisis BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.4"
+    ],
+    "remarks": "EMK   : Kreativiti dan Inovasi KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Mencipta Strategi P&P:  KP – Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.2"
+    ],
+    "remarks": "EMK   : Kreativiti dan Inovasi KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerjasama KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerajinan KBAT  : Menganalisis BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.4"
+    ],
+    "remarks": "EMK   : Kreativiti dan Inovasi KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Mencipta Strategi P&P:  KP – Verbal-lingusitik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.2"
+    ],
+    "remarks": "EMK   : Kreativiti dan Inovasi KBAT  : Mengaplikasi Strategi P&P: Kontekstual"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.3"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Menilai Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Mencipta Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.3"
+    ],
+    "remarks": "EMK   : Nilai murni – Berjimat-cermat KBAT  : Mencipta Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerajinan KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.3"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Menilai Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Mencipta Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.3"
+    ],
+    "remarks": "EMK   : Nilai murni – Berjimat-cermat KBAT  : Mencipta Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerajinan KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.3"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Menilai Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Menganalisis Strategi P&P: BCB – Bacaan Intensif"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Mencipta Strategi P&P: BCB – Mencatat"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.3"
+    ],
+    "remarks": "EMK   : Nilai murni – Berjimat-cermat KBAT  : Mencipta Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Kerajinan KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "EMK   : Keusahawanan KBAT  : Mencipta Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Keusahawanan KBAT  : Menilai Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.2"
+    ],
+    "remarks": "EMK   : Keusahawanan KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Kegigihan KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.3"
+    ],
+    "remarks": "EMK   : Keusahawanan  KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "EMK   : Keusahawanan KBAT  : Mencipta Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Keusahawanan KBAT  : Menilai Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.2"
+    ],
+    "remarks": "EMK   : Keusahawanan KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Kegigihan KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.3"
+    ],
+    "remarks": "EMK   : Keusahawanan  KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "EMK   : Keusahawanan KBAT  : Mencipta Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Keusahawanan KBAT  : Menilai Strategi P&P: BCB – Bacaan Mekanis"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.2"
+    ],
+    "remarks": "EMK   : Keusahawanan KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "EMK   : Nilai murni – Kegigihan KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.3"
+    ],
+    "remarks": "EMK   : Keusahawanan  KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Mencipta Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Menilai Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Berwaspada KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Baik hati KBAT  : Menganalisis Strategi P&P: KP- Kinestetik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.3"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan  KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Mencipta Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Menilai Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Berwaspada KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Baik hati KBAT  : Menganalisis Strategi P&P: KP- Kinestetik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.3"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan  KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Rasional KBAT  : Mencipta Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan KBAT  : Menilai Strategi P&P: KP- Verbal-linguistik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.2"
+    ],
+    "remarks": "EMK   : Nilai murni - Berwaspada KBAT  : Menganalisis Strategi P&P: Konstruktivisme"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "4.4"
+    ],
+    "sp_codes": [
+      "4.4.1",
+      "4.4.2"
+    ],
+    "remarks": "EMK   : Nilai murni – Baik hati KBAT  : Menganalisis Strategi P&P: KP- Kinestetik"
+  },
+  {
+    "subject_code": "BM_SJKC",
+    "subject_name": "Bahasa Melayu SJK(C)",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "Bahasa Melayu SJK(C) Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.3"
+    ],
+    "remarks": "EMK   : Pendidikan Kewangan  KBAT  : Mengaplikasi Strategi P&P: Konstruktivisme"
+  }
+]

@@ -1,0 +1,2912 @@
+[
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.0",
+      "2.3",
+      "3.6",
+      "5.4",
+      "6.8"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [
+      "1.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [
+      "1.3.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.6.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.6.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.6.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.6.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.14"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.12"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.11"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [
+      "1.5.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "1.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [
+      "6.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [
+      "6.3.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [
+      "6.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [
+      "6.4.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.2"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.8"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "2.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.2"
+    ],
+    "sp_codes": [
+      "3.2.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.12"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "3.4"
+    ],
+    "sp_codes": [
+      "3.4.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "2.8"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.1"
+    ],
+    "sp_codes": [
+      "5.1.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.1"
+    ],
+    "sp_codes": [
+      "6.1.7"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [
+      "6.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [
+      "6.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [
+      "6.2.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [
+      "6.2.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [
+      "6.2.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [
+      "6.2.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [
+      "6.2.7"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [
+      "6.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [
+      "6.3.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [
+      "6.3.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [
+      "6.3.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.3"
+    ],
+    "sp_codes": [
+      "6.3.7"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [
+      "6.4.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [
+      "6.4.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [
+      "6.4.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [
+      "6.4.6"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "6.4"
+    ],
+    "sp_codes": [
+      "6.4.7"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [
+      "7.4.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [
+      "7.4.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [
+      "7.4.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [
+      "7.4.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [
+      "7.4.5"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.13"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.1"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PAI_SJKC",
+    "subject_name": "Pendidikan Islam",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Pendidikan Islam Tahun 4",
+    "sk_codes": [
+      "7.4"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  }
+]

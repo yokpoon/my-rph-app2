@@ -1,0 +1,596 @@
+[
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Menggambar 制图   单元 : 美丽的校园  题目 : 我的学校   活动 :线条",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计     单元 : 感恩  题目 : 谢谢你  活动 :版画-印制",
+    "sk_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Menggambar 制图   单元 : 美丽的校园  题目 : 我的学校  活动 :  绘画 - 平行线",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计     单元 : 感恩  题目 : 谢谢你   活动 :感恩卡",
+    "sk_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计     单元 : 感恩  题目 : 谢谢你   活动 :感恩卡",
+    "sk_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Mengenal kraf traddisional   认识 传统手工艺品     单元:心爱的东西  题目: 小小二十四节 令鼓   活动: 二十四节令鼓",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.4",
+      "2.1.4",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Menggambar 制图   单元:我爱马来西亚  题目: 邮票   活动: 蜡染",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Mengenal kraf tradisional   认识 传统手工艺品     单元:心爱的东西题目: 小小二十四节 令鼓   活动: 陶器",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.4",
+      "2.1.4",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Membentuk dan  Membuat Binaan   塑造模型与制造物品  单元 : 创意游乐园  题目 :小小游乐园  活动 : 游乐园",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.3",
+      "2.1.3",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Menggambar 制图   单元 : 认识自我  题目 :给自己的话  活动 : 印拓（电脑软件）",
+    "sk_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Membentuk dan  Membuat Binaan   塑造模型与制造物品  单元 : 创意游乐园  题目 :小小游乐园   活动 : 塑像",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.3",
+      "2.1.3",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Menggambar 制图   单元 : 认识自我  题目 :给自己的话  活动 : 印拓（电脑软件）",
+    "sk_codes": [
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Mengenal kraf tradisional   认识传统手工艺品     单元:童玩  题目: 我心爱的玩具   活动: 陀螺",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.4",
+      "2.1.4",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Membentuk dan  Membuat Binaan   塑造模型与制造物品单元:环保  题目: 我们一起来环 保   活动: 面具（废物利 用）",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "3.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Mengenal kraf tradisional   认识传统手工艺品单元:童玩题目: 我心爱的玩具  活动: 玩乐游戏",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.4",
+      "2.1.4",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Mengenal kraf tradisional   认识传统手工艺品单元:童玩题目: 我心爱的玩具  活动: 玩乐游戏",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.4",
+      "2.1.4",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计  单元 : 双亲节  题目 : 爸爸妈妈，我爱你们  活动 : 折剪",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "2.1.2",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Menggambar 制图   单元 : 美丽的大自然题目 : 远近大不同  活动 : 水彩画（花朵）",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "3.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计单元 : 双亲节题目 : 爸爸妈妈，我爱你们  活动 : 双亲节贺卡",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "2.1.2",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Menggambar 制图   单元 : 美丽的大自然题目 : 远近大不同  活动 : 水彩画（树 木，风景画）",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "3.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计单元 : 双亲节题目 : 爸爸妈妈，我爱你们  活动 : 双亲节贺卡",
+    "sk_codes": [
+      "3.1"
+    ],
+    "sp_codes": [
+      "1.1.2",
+      "2.1.2",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Menggambar 制图   单元 : 美丽的大自然题目 : 远近大不同  活动 : 水彩画（树 木，风景画）",
+    "sk_codes": [
+      "2.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "3.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计单元 : 双亲节题目 : 爸爸妈妈，我爱你们  活动 : 双亲节贺卡",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.3.1",
+      "3.3.2",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Menggambar 制图   单元 : 美丽的大自然题目 : 远近大不同  活动 : 水彩画（树 木，风景画）",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计单元 : 双亲节题目 : 爸爸妈妈，我爱你们  活动 : 双亲节贺卡",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.3.1",
+      "3.3.2",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Menggambar 制图   单元 : 美丽的大自然题目 : 远近大不同  活动 : 水彩画（树 木，风景画）",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Menggambar 制图   单元 : 美丽的大自然题目 : 远近大不同  活动 : 水彩画（树 木，风景画）",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计单元 : 双亲节题目 : 爸爸妈妈，我爱你们  活动 : 双亲节贺卡",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "3.1"
+    ],
+    "sp_codes": [
+      "3.3.1",
+      "3.3.2",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Menggambar 制图   单元 : 美丽的大自然题目 : 远近大不同  活动 : 水彩画（树 木，风景画）",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Membuat Corak dan Rekaan   制造作品于图案设计单元 : 双亲节题目 : 爸爸妈妈，我爱你们  活动 : 双亲节贺卡",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "3.1",
+      "3.3"
+    ],
+    "sp_codes": [
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 2,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Menggambar 制图   单元 : 美丽的大自然题目 : 远近大不同  活动 : 水彩画（树 木，风景画）",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "4.1.1",
+      "4.1.2"
+    ],
+    "remarks": ""
+  }
+]

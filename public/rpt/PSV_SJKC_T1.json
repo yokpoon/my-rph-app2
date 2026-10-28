@@ -1,0 +1,72 @@
+[
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "单元：二（我的家） 模组：制图 活动：绘画 主题：人造物品 题目：我的家",
+    "sk_codes": [
+      "3.1",
+      "4.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "单元：二十 （小小鞋印）  模组：制图 活动：盖章 主题：人造物品 题目：生日卡片",
+    "sk_codes": [
+      "3.1",
+      "4.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "单元：二十二 （我的城市，我的代步工具）  模组：塑造模型与制作物品 活动：模型 主题：人造物品 题目：我的城市，我的代步工具",
+    "sk_codes": [
+      "3.1",
+      "4.1"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "2.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "PSV_SJKC",
+    "subject_name": "Pendidikan Seni Visual",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "3.3.1 学生在展览会上展示自己的作品及配合主题呈现音乐会。 活动建议： 第一周：班级会议         讨论：         - 活动主题       ",
+    "sk_codes": [
+      "3.3"
+    ],
+    "sp_codes": [
+      "3.3.1"
+    ],
+    "remarks": ""
+  }
+]

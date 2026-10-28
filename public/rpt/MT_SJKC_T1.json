@@ -1,0 +1,889 @@
+[
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "课题",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "课题",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [
+      "1.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "3.0"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": "使用实物、折纸和图片解释"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "课题",
+    "sk_codes": [
+      "3.0"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "课题",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.2"
+    ],
+    "remarks": "使用1:4珠算盘表示"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [
+      "1.1.1"
+    ],
+    "remarks": "有规律地讲述：多或少、相等或不相等"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4"
+    ],
+    "remarks": "应用“明天”、“今天”“昨天” 等词汇"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "课题",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [
+      "1.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.0"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "训练学生以正确的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "课题",
+    "sk_codes": [
+      "1.4"
+    ],
+    "sp_codes": [
+      "1.4.1"
+    ],
+    "remarks": "8 是由 7 和 1、6和2、5 和 3 或 4和4组成的"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.5"
+    ],
+    "sp_codes": [],
+    "remarks": "以顺序和逆序 数一个一个，  两个两个数"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "课题",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "1.6.1"
+    ],
+    "remarks": "1:4 珠算盘讲述数位和数值"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.7"
+    ],
+    "sp_codes": [
+      "1.7.1"
+    ],
+    "remarks": "以“大约”、“少于”"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "课题",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "1.8.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.9"
+    ],
+    "sp_codes": [
+      "1.9.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "1.10"
+    ],
+    "sp_codes": [
+      "1.10.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "课题",
+    "sk_codes": [
+      "2.1",
+      "2.2"
+    ],
+    "sp_codes": [
+      "2.1.1",
+      "2.1.2",
+      "2.1.3",
+      "2.2.1",
+      "2.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.1"
+    ],
+    "remarks": "直发性地讲述基本减法"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "课题",
+    "sk_codes": [
+      "2.3"
+    ],
+    "sp_codes": [
+      "2.3.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "课题",
+    "sk_codes": [
+      "2.4"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "课题",
+    "sk_codes": [
+      "2.5"
+    ],
+    "sp_codes": [
+      "2.5.1"
+    ],
+    "remarks": "理解连加相同的数目"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "课题",
+    "sk_codes": [
+      "2.6"
+    ],
+    "sp_codes": [
+      "2.6.1"
+    ],
+    "remarks": "理解连减相同的数目"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "课题",
+    "sk_codes": [
+      "3.0"
+    ],
+    "sp_codes": [
+      "3.1.1"
+    ],
+    "remarks": "使用实物、折纸和图片解释"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "课题",
+    "sk_codes": [
+      "3.0"
+    ],
+    "sp_codes": [
+      "3.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "课题",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.1"
+    ],
+    "remarks": "在日常生活中使用钱币"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "课题",
+    "sk_codes": [
+      "4.1"
+    ],
+    "sp_codes": [
+      "4.1.3"
+    ],
+    "remarks": "以硬币和纸币组合成"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "课题",
+    "sk_codes": [
+      "4.2"
+    ],
+    "sp_codes": [
+      "4.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "先进行机械式的加法和减法运算使用 1:4 珠算盘进行 涉及钱币的加法和 减法的应用"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "课题",
+    "sk_codes": [
+      "4.3"
+    ],
+    "sp_codes": [
+      "4.3.1"
+    ],
+    "remarks": "先进行机械式的加法和减法运算使用 1:4 珠算盘进行 涉及钱币的加法和 减法的应用"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "课题",
+    "sk_codes": [
+      "5.0"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.2",
+      "5.1.3",
+      "5.1.4"
+    ],
+    "remarks": "应用“明天”、“今天”“昨天” 等词汇"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "课题",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "课题",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "课题",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "5.2.3"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "课题",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "5.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0"
+    ],
+    "sp_codes": [
+      "6.1.1",
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "使用实物、 图片进行 测量和作出比较"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "课题",
+    "sk_codes": [
+      "6.0"
+    ],
+    "sp_codes": [
+      "6.1.1",
+      "6.1.2",
+      "6.1.3"
+    ],
+    "remarks": "使用实物、 图片进行 测量和作出比较"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "课题",
+    "sk_codes": [
+      "6.2"
+    ],
+    "sp_codes": [
+      "6.2.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "课题",
+    "sk_codes": [
+      "7.0"
+    ],
+    "sp_codes": [
+      "7.1.1"
+    ],
+    "remarks": "使用实物了解"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.2"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.3"
+    ],
+    "remarks": "排列立体以制作模型"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "课题",
+    "sk_codes": [
+      "7.1"
+    ],
+    "sp_codes": [
+      "7.1.4"
+    ],
+    "remarks": "船、房子"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.1"
+    ],
+    "remarks": "通过图形的排列、"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.2"
+    ],
+    "remarks": "设计图案"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.3",
+      "7.2.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "课题",
+    "sk_codes": [
+      "7.2"
+    ],
+    "sp_codes": [
+      "7.2.3",
+      "7.2.4"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "课题",
+    "sk_codes": [
+      "7.3"
+    ],
+    "sp_codes": [
+      "7.3.1"
+    ],
+    "remarks": ""
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "课题",
+    "sk_codes": [
+      "8.0"
+    ],
+    "sp_codes": [
+      "8.1.1"
+    ],
+    "remarks": "使用记数符号收集"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "课题",
+    "sk_codes": [
+      "8.2"
+    ],
+    "sp_codes": [
+      "8.2.1"
+    ],
+    "remarks": "提示只涉及一个图"
+  },
+  {
+    "subject_code": "MT_SJKC",
+    "subject_name": "Matematik SJK(C)",
+    "grade": 1,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "课题",
+    "sk_codes": [
+      "8.3"
+    ],
+    "sp_codes": [
+      "8.3.1"
+    ],
+    "remarks": ""
+  }
+]

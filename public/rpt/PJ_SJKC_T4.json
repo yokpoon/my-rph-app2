@@ -1,0 +1,925 @@
+[
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "基本水上运动 单元五 ：水上安全知多少 题目：自由泳的基本动作",
+    "sk_codes": [
+      "1.13",
+      "2.13"
+    ],
+    "sp_codes": [
+      "5.1.1",
+      "5.1.4"
+    ],
+    "remarks": "1.13.1在浮板的帮助下和换气技巧下，练习自由游的基本动作 2.13.1讲解手臂和腿部动作与换气技巧之间的关联 5.1.1   说明根据所进行的活动，自身的准备与适合的衣着 5.1.4   能够遵守活动地点的安全规则"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "基本水上运动 单元五 ：水上安全知多少 题目：完整的自由泳",
+    "sk_codes": [
+      "2.13"
+    ],
+    "sp_codes": [
+      "1.13.2",
+      "5.1.1"
+    ],
+    "remarks": "1.13.2  能够以正确的姿势进行自由泳 2.13.1讲解手臂和腿部动作与换气技巧之间的关联 5.1.1   说明根据所进行的活动，自身的准备与适合的衣着"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "娱乐与休闲 单元六 ：休闲活动大家玩 题目：如何搭帐篷             如何收帐篷",
+    "sk_codes": [
+      "1.14",
+      "2.14",
+      "5.1",
+      "5.3"
+    ],
+    "sp_codes": [
+      "1.14.1",
+      "2.14.1",
+      "5.1.4",
+      "5.3.1"
+    ],
+    "remarks": "1.14.1 能够搭帐篷 1.14.2能够搭帐篷和收帐篷 2.14.1 能够确认已搭好帐篷的部分 5.1.4   能够遵守活动地点的安全规则 5.3.1  进行活动时，学生可以和老师，同学及组员沟通"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "娱乐与休闲 单元六 ：休闲活动大家玩 题目：寻字游戏真好玩",
+    "sk_codes": [
+      "1.14",
+      "2.14",
+      "5.4"
+    ],
+    "sp_codes": [
+      "1.14.3",
+      "2.14.2",
+      "5.4.2"
+    ],
+    "remarks": "1.14.3 能够根据指示（风向），进行领航活动 2.14.2 能够实践风向的知识以找寻方向 5.4.2   分工合作地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "娱乐与休闲 单元六 ：休闲活动大家玩 题目：编花篮",
+    "sk_codes": [
+      "1.14",
+      "2.14"
+    ],
+    "sp_codes": [
+      "5.2.4"
+    ],
+    "remarks": "1.14.4能够玩传统游戏，如：扣脚跳跳乐和斗鸡 2.14.3能够确认在游戏中保持身体平衡和肌肉耐力的战略 5.2.4   能够接受挑战，享受整个活动的过程"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "基本体操 单元一：游乐场里体操乐 题目：平衡大比拼",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "5.4"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.1.2",
+      "1.1.3",
+      "2.1.1",
+      "2.1.2",
+      "5.4.2"
+    ],
+    "remarks": "1.1.1 能够独自进行“握足前进”与分组进行“蜈蚣爬行” 1.1.2 能够独自和双人进行一个和三个支撑面的静态式平衡活动 1.1.3 能够进行辅助手和头倒立 2.1.1 能够说明维持“握足前进”与“蜈蚣爬行”的平衡方法 2.1.2 能够说"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "基本体操 单元一：游乐场里体操乐 题目：平衡大比拼",
+    "sk_codes": [
+      "1.1",
+      "2.1",
+      "5.4"
+    ],
+    "sp_codes": [
+      "1.1.1",
+      "1.1.2",
+      "1.1.3",
+      "2.1.1",
+      "2.1.2",
+      "5.4.2"
+    ],
+    "remarks": "1.1.1 能够独自进行“握足前进”与分组进行“蜈蚣爬行” 1.1.2 能够独自和双人进行一个和三个支撑面的静态式平衡活动 1.1.3 能够进行辅助手和头倒立 2.1.1 能够说明维持“握足前进”与“蜈蚣爬行”的平衡方法 2.1.2 能够说"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "体能概念\t 单元七 ：热身与松弛 题目：让运动“有始有终”",
+    "sk_codes": [
+      "3.1",
+      "4.1",
+      "5.2"
+    ],
+    "sp_codes": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "4.1.1",
+      "4.1.2",
+      "4.1.3",
+      "4.1.4",
+      "5.2.1"
+    ],
+    "remarks": "3.1.1  进行可提升体温、呼吸率、脉搏率和肌肉弹性的活动 3.1.2  进行热身与松弛活动 3.1.3  在进行体能运动前后计算脉搏率 4.1.1  能够分辨热身和松弛活动 4.1.2  能够说明热身与松弛活动的重要性 4.1.3  能"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "体能- 健康要素\t 单元八：体能好身体棒 题目：心肺功能治理站",
+    "sk_codes": [
+      "3.2",
+      "4.2",
+      "5.4"
+    ],
+    "sp_codes": [],
+    "remarks": "3.2.1在限定的时间内进行可提升容量的有氧运动 4.2.1能够确认可以提高有氧容量的体操 4.2.2能够说出有氧的高容量运动后与脉搏跳动率之间的关系 5.4.3能够扮演组长的角色"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "体能- 健康要素\t 单元八：体能好身体棒 题目：锻炼肌肉有妙方",
+    "sk_codes": [
+      "3.4",
+      "4.4",
+      "5.2"
+    ],
+    "sp_codes": [
+      "3.4.1",
+      "4.4.2",
+      "5.2.4"
+    ],
+    "remarks": "3.4.1 能够做出各项体操，限时20至30秒 4.4.1说明进行肌肉耐力体操时主要肌肉的名称 4.4.2  能够确认肌力和肌肉耐力与动作表现之间的关系 5.2.4  能够接受挑战，享受整个活动的过程"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "体能- 健康要素\t 单元八：体能好身体棒 题目：宜动宜静对对碰",
+    "sk_codes": [
+      "3.3",
+      "4.3"
+    ],
+    "sp_codes": [
+      "5.3.1"
+    ],
+    "remarks": "3.3.1在限定的时间内进行和坚持动态和静态伸展体操 4.3.1能够说出进行伸展运动时主要肌肉的名称 4.3.2能够确认经常重复做的动态伸展运动 4.3.3能够确认进行静态伸展运动的有效时间 5.3.1 进行活动时，学生可以和老师，同学及组"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "体能- 健康要素\t 单元八：体能好身体棒 题目：为你开个“运动处方”",
+    "sk_codes": [
+      "3.5",
+      "4.5",
+      "5.3"
+    ],
+    "sp_codes": [
+      "3.5.1",
+      "3.5.2",
+      "4.5.1",
+      "4.5.2",
+      "5.3.3"
+    ],
+    "remarks": "3.5.1 测量身体的高度及重量 3.5.2 记录身体的高度及重量 4.5.1 与成长图表比较个人和同学的身高和体重 4.5.2  能够确认运动的效果对体重的改变 5.3.3  能够给予和接受意见"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "体能概念\t 单元七 ：热身与松弛 题目：体能测验",
+    "sk_codes": [
+      "4.6"
+    ],
+    "sp_codes": [
+      "3.6.1",
+      "3.6.3",
+      "5.2.1"
+    ],
+    "remarks": "3.6.1 能够依据《国民体能测试准则（SEGAK）》，进行体能测试 3.6.2记录体能测试的成绩 3.6.3 进行体能以改进并提升能测试的成绩 4.6.1能够以《国民体能测试准则》中的分数来比较自己的得分记录 4.6.2能够适当的处理提升"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "基本体操 单元一：游乐场里体操乐 题目：大树倒下来",
+    "sk_codes": [
+      "1.2"
+    ],
+    "sp_codes": [
+      "2.2.1",
+      "5.1.3",
+      "5.2.3"
+    ],
+    "remarks": "1.2.1在协助下， 进行直体往后倒和着地动作 2.2.1 能够说明直体往后倒和着地动作概念 5.1.3 能够正确地使用体育用具 5.2.3 当进行有挑战性的活动时，能够比较安全及有危险性的动作"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "基本体操 单元一：游乐场里体操乐 题目：绚丽风车转啊转",
+    "sk_codes": [
+      "1.3",
+      "2.3",
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1.3.1能够做侧手翻 2.3.1当进行侧手翻，前滚翻和后滚翻时，确定中心点的改变 5.2.4接受挑战和开心地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "基本体操 单元一：游乐场里体操乐 题目：连续翻滚",
+    "sk_codes": [
+      "2.3",
+      "5.1"
+    ],
+    "sp_codes": [
+      "1.3.1"
+    ],
+    "remarks": "1.3.1 能够进行旋转的动作 1.3.2能够正确地做出旋转的动作 2.3.1当进行侧手翻，前滚翻和后滚翻时，确定中心点的改变 5.1.5能够确认有关空间可以安全地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "基本体操 单元一：游乐场里体操乐 题目：悬荡小飞侠",
+    "sk_codes": [
+      "1.4",
+      "2.4"
+    ],
+    "sp_codes": [
+      "5.1.2"
+    ],
+    "remarks": "1.4.1能够以正手、反手及正反手握法握稳铁杆做出垂悬和摇荡的动作 2.4.1鉴定不同的握法与其悬荡的方向。 5.1.2  进行活动前，检查并确保用具的安全性"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "节律性动作 单元二：律动剧场 题目：小小编舞家",
+    "sk_codes": [
+      "1.5",
+      "2.5",
+      "5.3",
+      "5.4"
+    ],
+    "sp_codes": [
+      "1.5.1",
+      "1.5.2",
+      "2.5.1",
+      "5.3.3",
+      "5.4.1"
+    ],
+    "remarks": "1.5.1 能够随着旋律，创造有主题的创意动作 1.5.2 随着旋律，做出有主题的创意动作 2.5.1 根据旋律，在创意动作中确定适当的动作 5.3.3  能够给予和接受意见 5.4.1 选择朋友以进行双人与组别活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "基本游戏技能 单元三 ：球类运动 (A) 互攻球类运动 题目：一身是宝显神手",
+    "sk_codes": [
+      "1.6",
+      "2.6",
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1.6.1利用正确的身体部位和用具传球 1.6.2利用正确的身体部位和用具接球 2.6.1分辨在不同距离传球所需的力度 5.2.2能够有信心地进行各种有技能的动作"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "基本游戏技能 单元三 ：球类运动 (A) 互攻球类运动 题目： 传接不断",
+    "sk_codes": [
+      "1.6",
+      "2.6"
+    ],
+    "sp_codes": [
+      "5.1.2"
+    ],
+    "remarks": "1.6.1利用正确的身体部位和用具传球 1.6.2利用正确的身体部位和用具接球 2.6.2确认击球点与球移动方向的关联 5.1.2  进行活动前，检查游戏器材"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "基本游戏技能 单元三 ：球类运动 (A) 互攻球类运动 题目： 猴儿拦截",
+    "sk_codes": [
+      "1.6",
+      "2.6",
+      "5.4"
+    ],
+    "sp_codes": [],
+    "remarks": "1.6.1利用正确的身体部位和用具传球 1.6.2利用正确的身体部位和用具接球 1.6.5能够拦截与抢敌对的传球 2.6.5确认适合拦截与抢球的时机 5.4.2分工合作地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "基本游戏技能 单元三 ：球类运动 (A) 互攻球类运动 题目： 瞻前顾后",
+    "sk_codes": [
+      "1.6",
+      "2.6"
+    ],
+    "sp_codes": [
+      "5.3.2"
+    ],
+    "remarks": "1.6.1利用正确的身体部位和用具传球 1.6.2利用正确的身体部位和用具接球 1.6.5能够拦截与抢敌对的传球 2.6.1分辨在不同距离传球所需的力度 2.6.5确认适合拦截与抢球的时机 5.3.2 能够承认同伴的能力及接受同伴的弱点"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "基本游戏技能 单元三 ：球类运动 (A) 互攻球类运动 题目： 你运球，我防守（一）",
+    "sk_codes": [
+      "2.6",
+      "5.1"
+    ],
+    "sp_codes": [
+      "1.6.3"
+    ],
+    "remarks": "1.6.3 能够在限定的空间内盘球 1.6.4能够想象对手的动作，以做出拦 截的动作 2.6.3确认与球移动的适合空间 2.6.4能够想象对手的动作，确认做出拦 截的活动范围 5.1.5能够确认有关空间可以安全地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "基本游戏技能 单元三 ：球类运动 (A) 互攻球类运动 题目： 你运球，我防守（二）",
+    "sk_codes": [
+      "2.6"
+    ],
+    "sp_codes": [
+      "1.6.3",
+      "1.6.5",
+      "5.3.1"
+    ],
+    "remarks": "1.6.3 能够在限定的空间内盘球 1.6.5 能够拦截与抢敌对的传球 2.6.5确认适合拦截与抢球的时机 5.3.1 进行活动时，学生可以和老师，同学及组员沟通"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "基本游戏技能 单元三 ：球类运动 (A) 互攻球类运动 题目： 射门花样多",
+    "sk_codes": [
+      "1.6"
+    ],
+    "sp_codes": [
+      "2.6.6",
+      "5.2.4"
+    ],
+    "remarks": "1.6.7利用正确的身体部位和用具射门 2.6.6 确认射门者位置的击球点 5.2.3当进行有挑战性的活动时，能够比较安全及有危险性的动作 5.2.4 能够接受挑战，享受整个活动的过程"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "基本游戏技能 单元三 ：球类运动 (B) 隔网球类运动 题目： 步步为营",
+    "sk_codes": [
+      "5.3"
+    ],
+    "sp_codes": [
+      "1.7.4",
+      "2.7.1"
+    ],
+    "remarks": "1.7.4 能够做出基本步伐 2.7.1 确认收球，接球和传球时的接触点 5.3.1进行活动时，学生可以和老师，同学及组员沟通"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "基本游戏技能 单元三 ：球类运动 (B) 隔网球类运动 题目： 应接不暇",
+    "sk_codes": [
+      "2.7",
+      "5.4"
+    ],
+    "sp_codes": [
+      "1.7.1"
+    ],
+    "remarks": "1.7.1 能够利用手和用具发球 1.7.2能够利用脚发球 1.7.3能够利用手和用具接发球 2.7.1确认收球，接球和传球时的接触点 5.4.1选择朋友以进行双人与组别活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "基本游戏技能 单元三 ：球类运动 (B) 隔网球类运动 题目： 正手与反手击球",
+    "sk_codes": [
+      "2.7",
+      "5.3"
+    ],
+    "sp_codes": [
+      "1.7.5"
+    ],
+    "remarks": "1.7.5 能够正手和反手击球 2.7.1确认收球，接球和传球时的接触点 2.7.2确认开始移步时正确的站立姿势 5.3.2能够承认同伴的能力及接受同伴的弱点"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "基本游戏技能 单元三 ：球类运动 (B) 隔网球类运动 题目： 手脚传球不过三",
+    "sk_codes": [
+      "2.7"
+    ],
+    "sp_codes": [
+      "1.7.6",
+      "5.4.3"
+    ],
+    "remarks": "1.7.6 能够利用脚背或内侧扣球 2.7.3确认扣球时正确的站立姿势 5.4.3 能够扮演组长的角色"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "基本游戏技能 单元三 ：球类运动 (B) 隔网球类运动 题目： 手脚传球不过三",
+    "sk_codes": [
+      "2.7"
+    ],
+    "sp_codes": [
+      "1.7.6",
+      "5.4.3"
+    ],
+    "remarks": "1.7.6 能够利用脚背或内侧扣球 2.7.3确认扣球时正确的站立姿势 5.4.3 能够扮演组长的角色"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "基本游戏技能 单元三 ：球类运动 (C) 跑垒球类运动 题目： 侧向投球上下捕",
+    "sk_codes": [
+      "1.8",
+      "5.4"
+    ],
+    "sp_codes": [
+      "2.8.3"
+    ],
+    "remarks": "1.8.3能够进行侧向投球 1.8.4能够捕接来自不同方向和高度的球 2.8.3 确认当在不同的部位接球时手的位置 5.4.2分工合作地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "基本游戏技能 单元三 ：球类运动 (C) 跑垒球类运动 题目： 投球花样多",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2",
+      "2.8.1"
+    ],
+    "remarks": "1.8.1 能够做出顺时钟方向直手投球 1.8.2 能够做出顺逆时钟方向直手投球 1.8.3能够进行侧向投球 2.8.1 能够说出直手投球和侧向投球的差别 5.2.5接受游戏中的胜利或失败"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "基本游戏技能 单元三 ：球类运动 (C) 跑垒球类运动 题目： 投球花样多",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.8.1",
+      "1.8.2",
+      "2.8.1"
+    ],
+    "remarks": "1.8.1 能够做出顺时钟方向直手投球 1.8.2 能够做出顺逆时钟方向直手投球 1.8.3能够进行侧向投球 2.8.1 能够说出直手投球和侧向投球的差别 5.2.5接受游戏中的胜利或失败"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "基本游戏技能 单元三 ：球类运动 (C) 跑垒球类运动 题目： 触击球",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "2.8.2",
+      "5.4.2"
+    ],
+    "remarks": "1.8.6能够利用木拍或棒挡球 2.8.2 当触击求，确认球与棒的接触点 5.4.2  分工合作地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "基本游戏技能 单元三 ：球类运动 (C) 跑垒球类运动 题目： 触击球",
+    "sk_codes": [
+      "1.8"
+    ],
+    "sp_codes": [
+      "2.8.2",
+      "5.4.2"
+    ],
+    "remarks": "1.8.6能够利用木拍或棒挡球 2.8.2 当触击求，确认球与棒的接触点 5.4.2  分工合作地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "基本田径 单元四 ：田径的起源 (A) 跑 题目： 挑战倒五跑道",
+    "sk_codes": [
+      "1.9",
+      "2.9",
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1.9.1能够以不同速度直线跑与拐弯跑 2.9.1能够确保学生根据不同的跑道与速度进行正确的跑的技术 2.9.2说明跑姿与跑速的关联 5.2.2能够有信心地进行各种有技能的动作"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "基本田径 单元四 ：田径的起源 (A) 跑 题目： 挑战倒五跑道",
+    "sk_codes": [
+      "1.9",
+      "2.9",
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1.9.1能够以不同速度直线跑与拐弯跑 2.9.1能够确保学生根据不同的跑道与速度进行正确的跑的技术 2.9.2说明跑姿与跑速的关联 5.2.2能够有信心地进行各种有技能的动作"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "基本田径 单元四 ：田径的起源  (A) 跑 题目： 你传我接比一比",
+    "sk_codes": [
+      "1.9",
+      "2.9",
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1.9.2能够在指定的距离接力跑 2.9.3能够确认适合的距离以进行给与接用具 5.2.5接受游戏中的胜利或失败"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "基本田径 单元四 ：田径的起源  (A) 跑 题目： 障碍间节奏跑",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.9.3",
+      "2.9.4"
+    ],
+    "remarks": "1.9.3 能够有节奏地连续越过障碍物 2.9.4 能够确认越过障碍物时的步伐 5.2.2能够有信心地进行各种有技能的动作"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "基本田径 单元四 ：田径的起源  (A) 跑 题目： 障碍间节奏跑",
+    "sk_codes": [
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.9.3",
+      "2.9.4"
+    ],
+    "remarks": "1.9.3 能够有节奏地连续越过障碍物 2.9.4 能够确认越过障碍物时的步伐 5.2.2能够有信心地进行各种有技能的动作"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "基本田径 单元四 ：田径的起源  (B) 跳跃 题目： 跳入“圈套”",
+    "sk_codes": [
+      "2.10"
+    ],
+    "sp_codes": [
+      "1.10.1",
+      "5.1.5"
+    ],
+    "remarks": "1.10.1 跑并能够单脚跳，双脚着地 2.10.1能够确认身体各个部位以安全着地 2.10.2能够确认跳跃的角度 5.1.5   能够确认有关空间可以安全地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "基本田径 单元四 ：田径的起源  (B) 跳跃 题目： 一山还有一山高",
+    "sk_codes": [
+      "2.10",
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.10.2"
+    ],
+    "remarks": "1.10.2 起跑和能够跳越过不同高度的的障碍并安全着地 2.10.1能够确认身体各个部位以安全着地 2.10.2能够确认跳跃的角度 5.2.2能够有信心地进行各种有技能的动作"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "基本田径 单元四 ：田径的起源  (B) 跳跃 题目： 一山还有一山高",
+    "sk_codes": [
+      "2.10",
+      "5.2"
+    ],
+    "sp_codes": [
+      "1.10.2"
+    ],
+    "remarks": "1.10.2 起跑和能够跳越过不同高度的的障碍并安全着地 2.10.1能够确认身体各个部位以安全着地 2.10.2能够确认跳跃的角度 5.2.2能够有信心地进行各种有技能的动作"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "基本田径 单元四 ：田径的起源  (B) 跳跃 题目：连环跳",
+    "sk_codes": [
+      "1.10",
+      "2.10",
+      "5.1"
+    ],
+    "sp_codes": [],
+    "remarks": "1.10.3右脚跳跃后换左脚着地或反之 2.10.3识别和判断适合用来起跳的脚 5.1.5能够确认有关空间可以安全地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "基本田径 单元四 ：田径的起源  (B) 跳跃 题目：连环跳",
+    "sk_codes": [
+      "1.10",
+      "2.10",
+      "5.1"
+    ],
+    "sp_codes": [],
+    "remarks": "1.10.3右脚跳跃后换左脚着地或反之 2.10.3识别和判断适合用来起跳的脚 5.1.5能够确认有关空间可以安全地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "基本田径 单元四 ：田径的起源  (C) 投掷 题目：推球手",
+    "sk_codes": [
+      "1.11",
+      "2.11"
+    ],
+    "sp_codes": [
+      "5.2.4"
+    ],
+    "remarks": "1.11.1能够以站着，坐着，跪着和站着转体的姿势进行投掷圆的物体 2.11.1能够确认投掷时的出手高度与投掷的距离之间的关系 2.11.2能够确认腰部转动与投掷距离之间的关系 5.2.4   能够接受挑战，享受整个活动的过程"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "基本田径 单元四 ：田径的起源  (C) 投掷 题目：腾空胶环",
+    "sk_codes": [
+      "2.11"
+    ],
+    "sp_codes": [
+      "1.11.2",
+      "5.1.5"
+    ],
+    "remarks": "1.11.2 能够以站着，坐着，跪着和站着转体的姿势进行掷浅平的物体 2.11.1能够确认投掷时的出手高度与投掷的距离之间的关系 2.11.2能够确认腰部转动与投掷距离之间的关系 5.1.5   能够确认有关空间可以安全地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "基本田径 单元四 ：田径的起源  (C) 投掷 题目：腾空胶环",
+    "sk_codes": [
+      "2.11"
+    ],
+    "sp_codes": [
+      "1.11.2",
+      "5.1.5"
+    ],
+    "remarks": "1.11.2 能够以站着，坐着，跪着和站着转体的姿势进行掷浅平的物体 2.11.1能够确认投掷时的出手高度与投掷的距离之间的关系 2.11.2能够确认腰部转动与投掷距离之间的关系 5.1.5   能够确认有关空间可以安全地进行活动"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "基本田径 单元四 ：田径的起源  (C) 投掷 题目：穿云火箭",
+    "sk_codes": [
+      "2.11"
+    ],
+    "sp_codes": [
+      "1.11.3",
+      "5.2.4"
+    ],
+    "remarks": "1.11.3 能够以站着，坐着，跪着和站着转体的姿势进行投掷长的物体 2.11.1能够确认投掷时的出手高度与投掷的距离之间的关系 2.11.2能够确认腰部转动与投掷距离之间的关系 5.2.4   能够接受挑战，享受整个活动的过程"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 40,
+    "week_label": "Minggu 40",
+    "theme": "基本田径 单元四 ：田径的起源  (C) 投掷 题目：穿云火箭",
+    "sk_codes": [
+      "2.11"
+    ],
+    "sp_codes": [
+      "1.11.3",
+      "5.2.4"
+    ],
+    "remarks": "1.11.3 能够以站着，坐着，跪着和站着转体的姿势进行投掷长的物体 2.11.1能够确认投掷时的出手高度与投掷的距离之间的关系 2.11.2能够确认腰部转动与投掷距离之间的关系 5.2.4   能够接受挑战，享受整个活动的过程"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 41,
+    "week_label": "Minggu 41",
+    "theme": "基本田径 单元四 ：田径的起源  (C) 投掷 题目：投飞天球",
+    "sk_codes": [
+      "1.11",
+      "2.11",
+      "5.2"
+    ],
+    "sp_codes": [],
+    "remarks": "1.11.4能够以站着，坐着，跪着和站着转体的姿势进行投掷圆的物体（绳子） 2.11.1能够确认投掷时的出手高度与投掷的距离之间的关系 2.11.2能够确认腰部转动与投掷距离之间的关系 5.2.2能够有信心地进行各种有技能的动作"
+  },
+  {
+    "subject_code": "PJ_SJKC",
+    "subject_name": "Pendidikan Jasmani",
+    "grade": 4,
+    "academic_year": 2026,
+    "week_number": 42,
+    "week_label": "Minggu 42",
+    "theme": "基本水上运动 单元五 ：水上安全知多少 题目：岸上救生",
+    "sk_codes": [
+      "1.12",
+      "5.3"
+    ],
+    "sp_codes": [
+      "2.12.1",
+      "2.12.2"
+    ],
+    "remarks": "1.12.1能够在危及时使用适合的物品进行岸上救生 2.12.1 讲解在危及时使用适合的物品施救 2.12.2  讲解进行岸上救生的身体姿势 5.3.1进行活动时，学生可以和老师，同学及组员沟通"
+  }
+]
