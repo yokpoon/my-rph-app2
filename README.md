@@ -1,4 +1,4 @@
-# e-RPH SJK(C) — Sistem e-RPH, Semakan PK1 & Guru Ganti (e-RPH Edition)
+# e-RPH SJK(C) — Sistem e-RPH, Semakan Pentadbir
 
 Sistem pengurusan kurikulum & pentadbiran sekolah rendah jenis kebangsaan Cina (**SJKC**) berasaskan **Plan A+**:
 1. **e-RPH Dashboard**: Kad metrik gradien, status penghantaran e-RPH mingguan, dan widget Guru Ganti harian.
@@ -10,9 +10,6 @@ Sistem pengurusan kurikulum & pentadbiran sekolah rendah jenis kebangsaan Cina (
    - Jana satu prompt gabungan (`[SLOT:id]`) untuk semua waktu mengajar seminggu, tampal semula respons daripada Gemini/ChatGPT, dan siap untuk seluruh minggu dalam 1 klik.
 4. **Pusat Semakan & Cop Digital PK Pentadbiran (PK1 / Guru Besar)**:
    - Semak semua sesi RPH guru dalam panel *slide-over*, tulis ulasan pentadbir, dan turunkan **Cop Pengesahan Digital** secara pukal atau individu.
-5. **Auto-Solver Guru Ganti (`Jadual Waktu Induk`)**:
-   - Rekod ketidakhadiran guru (`Cuti Sakit`, `CRK`, `Kursus PPD`) dan sistem mengira skor keserasian secara automatik (`Slot Kosong +10`, `Panitia Sama +10`, `Kelas Sama +5`).
-
 ---
 
 ## Cara Menjalankan Aplikasi
