@@ -209,20 +209,11 @@ export default function ERphColorAdminApp() {
     confirmPass: '',
   });
 
-  // Persistent App State
+  // Persistent App State - Clean Production Start (Populated live by Admin)
   const [school, setSchool] = useState<SchoolConfig>(INITIAL_SCHOOL_CONFIG);
-  // Ensure the 4 Pentadbir positions (GB, GPK1, GPK HEM, GPK KK) hold Pentadbir roles by default
-  const [teachers, setTeachers] = useState<TeacherProfile[]>(() => {
-    return INITIAL_TEACHERS.map((t) => {
-      if (t.jawatan === 'GB') return { ...t, role: 'guru_besar' };
-      if (['GPK1', 'GPK HEM', 'GPK KOKO', 'GPK KK'].includes(t.jawatan || '')) {
-        return { ...t, role: 'pk_pentadbiran' };
-      }
-      return t;
-    });
-  });
-  const [timetable, setTimetable] = useState<TimetableSlot[]>(INITIAL_TIMETABLE);
-  const [rphRecords, setRphRecords] = useState<RphRecord[]>(INITIAL_RPH_RECORDS);
+  const [teachers, setTeachers] = useState<TeacherProfile[]>([]);
+  const [timetable, setTimetable] = useState<TimetableSlot[]>([]);
+  const [rphRecords, setRphRecords] = useState<RphRecord[]>([]);
 
   // Academic Weeks Management (Feature 1 & 2: Weeks 1 - 45, Weeks 43-45 hidden unless Friday date set)
   const [academicWeeks, setAcademicWeeks] = useState<AcademicWeek[]>(INITIAL_ACADEMIC_WEEKS);
@@ -236,9 +227,7 @@ export default function ERphColorAdminApp() {
 
   // Yearly Matrix State & Configuration
   const [penyemakGroups, setPenyemakGroups] = useState<PenyemakGroupDef[]>(INITIAL_PENYEMAK_GROUPS);
-  const [yearlyRecords, setYearlyRecords] = useState<Record<string, Record<number, MatrixCellRecord>>>(() => {
-    return generateInitialYearlyRecords(INITIAL_TEACHERS, INITIAL_ACADEMIC_WEEKS);
-  });
+  const [yearlyRecords, setYearlyRecords] = useState<Record<string, Record<number, MatrixCellRecord>>>({});
 
   const [matrixSearchQuery, setMatrixSearchQuery] = useState<string>('');
   const [matrixStatusFilter, setMatrixStatusFilter] = useState<'ALL' | 'LEWAT' | 'TIDAK_HANTAR'>('ALL');
@@ -306,17 +295,21 @@ export default function ERphColorAdminApp() {
           ) {
             const superProfile: TeacherProfile = {
               ...SUPERADMIN_PROFILE,
+              id: 'superadmin',
               email: userEmail,
               name: sessionUser.user_metadata?.full_name || sessionUser.user_metadata?.name || 'SUPERADMIN YOK POON',
             };
+            setTeachers((prev) => {
+              if (prev.some((t) => t.id === 'superadmin' || t.email.toLowerCase() === userEmail)) return prev;
+              return [superProfile, ...prev];
+            });
             handlePerformLogin(superProfile, 'google');
             return;
           }
 
           // 2. Check Admin / Pentadbir from whitelist
           if (whitelistRole === 'admin' || userEmail.includes('g-29021326')) {
-            const matched = teachers.find((t) => t.email.toLowerCase() === userEmail);
-            const adminProfile: TeacherProfile = matched || {
+            const adminProfile: TeacherProfile = {
               id: sessionUser.id || 'admin_' + Date.now(),
               name: sessionUser.user_metadata?.full_name || sessionUser.user_metadata?.name || userEmail.split('@')[0].toUpperCase(),
               chineseName: '',
@@ -326,6 +319,15 @@ export default function ERphColorAdminApp() {
               panitia: 'Pentadbiran & Kurikulum',
               subjectSlug: 'bahasa_melayu_sjkc',
             };
+            setTeachers((prev) => {
+              const idx = prev.findIndex((t) => t.email.toLowerCase() === userEmail);
+              if (idx >= 0) {
+                const copy = [...prev];
+                copy[idx] = { ...copy[idx], ...adminProfile };
+                return copy;
+              }
+              return [adminProfile, ...prev];
+            });
             handlePerformLogin(adminProfile, 'google');
             return;
           }
@@ -547,12 +549,32 @@ export default function ERphColorAdminApp() {
   const [newTeacherPanitia, setNewTeacherPanitia] = useState('Bahasa Cina');
   const [newTeacherRole, setNewTeacherRole] = useState<UserRole>('guru');
 
-  const currentUser = useMemo(() => {
+  const currentUser: TeacherProfile = useMemo(() => {
+    if (authSession) {
+      const matched = teachers.find(
+        (t) => t.id === authSession.userId || (authSession.email && t.email.toLowerCase() === authSession.email.toLowerCase())
+      );
+      if (matched) return matched;
+      return {
+        id: authSession.userId || 'admin1',
+        name: authSession.name,
+        chineseName: authSession.chineseName || '',
+        email: authSession.email,
+        role: authSession.role,
+        jawatan: authSession.jawatan,
+        panitia: authSession.panitia || 'Pentadbiran & Kurikulum',
+        subjectSlug: 'bahasa_melayu_sjkc',
+      };
+    }
     if (currentUserId === 'superadmin' || currentUserId === 'YokPoon') {
       return SUPERADMIN_PROFILE;
     }
-    return teachers.find((t) => t.id === currentUserId) || teachers[0];
-  }, [teachers, currentUserId]);
+    return (
+      teachers.find((t) => t.id === currentUserId) ||
+      teachers[0] ||
+      SUPERADMIN_PROFILE
+    );
+  }, [teachers, currentUserId, authSession]);
 
   // Regular teachers list excluding superadmin (for matrix, roster, and general selection)
   const regularTeachers = useMemo(() => {
@@ -7669,12 +7691,37 @@ ${gen.assessment}`;
                     </p>
                   </div>
                 </div>
-                <button
-                  onClick={handleRenewAcademicYear}
-                  className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs rounded-xl shadow transition"
-                >
-                  🔄 Perbaharui Sesi Kalendar Baharu ({school.academicYear})
-                </button>
+                <div className="flex flex-wrap items-center gap-2">
+                  <button
+                    onClick={handleRenewAcademicYear}
+                    className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs rounded-xl shadow transition"
+                  >
+                    🔄 Perbaharui Sesi Kalendar Baharu ({school.academicYear})
+                  </button>
+                  <button
+                    onClick={() => {
+                      if (confirm('Adakah anda pasti untuk mengosongkan semua data mock dan memulakan pangkalan data yang bersih? Tindakan ini akan memadam data ujian lama.')) {
+                        localStorage.removeItem('erph_live_teachers_v1');
+                        localStorage.removeItem('erph_live_timetable_v1');
+                        localStorage.removeItem('erph_live_rph_records_v1');
+                        localStorage.removeItem('erph_yearly_matrix_records_v2');
+                        setTimetable([]);
+                        setRphRecords([]);
+                        setYearlyRecords({});
+                        if (currentUser) {
+                          setTeachers([currentUser]);
+                        } else {
+                          setTeachers([]);
+                        }
+                        showToast('✨ Pangkalan data bersih telah dimulakan! Hanya profil pentadbir anda dikekalkan.');
+                      }
+                    }}
+                    className="px-4 py-2 bg-rose-500/10 hover:bg-rose-500/20 text-rose-700 border border-rose-300 font-extrabold text-xs rounded-xl shadow-xs transition"
+                    title="Kosongkan sebarang data mock ujian lama"
+                  >
+                    🧹 Reset Bersih Data Ujian
+                  </button>
+                </div>
               </div>
 
               {/* Roster Container */}
@@ -7803,7 +7850,15 @@ ${gen.assessment}`;
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100">
-                      {teachers.map((t) => (
+                      {teachers.length === 0 ? (
+                        <tr>
+                          <td colSpan={6} className="py-10 text-center text-slate-400">
+                            <p className="font-bold text-sm text-slate-600">Pangkalan data guru masih kosong.</p>
+                            <p className="text-xs mt-1">Sila gunakan borang "+ DAFTAR GURU BAHARU" di atas untuk mendaftarkan guru sekolah.</p>
+                          </td>
+                        </tr>
+                      ) : (
+                        teachers.map((t) => (
                         <tr key={t.id} className="hover:bg-slate-50">
                           <td className="py-3 px-4">
                             <span className="font-bold text-slate-900">{t.name}</span>
@@ -7862,7 +7917,7 @@ ${gen.assessment}`;
                             )}
                           </td>
                         </tr>
-                      ))}
+                      )))}
                     </tbody>
                   </table>
                 </div>
