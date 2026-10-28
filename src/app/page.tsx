@@ -760,6 +760,51 @@ export default function ERphColorAdminApp() {
   // Purge Drafts Confirmation Modal State
   const [showPurgeModal, setShowPurgeModal] = useState<boolean>(false);
 
+  // Global Delete / Action Confirmation Modal State
+  const [confirmModal, setConfirmModal] = useState<{
+    isOpen: boolean;
+    title: string;
+    message: string;
+    detail?: string;
+    confirmText?: string;
+    confirmColor?: "rose" | "amber" | "indigo";
+    onConfirm: () => void;
+  }>({
+    isOpen: false,
+    title: "",
+    message: "",
+    onConfirm: () => {},
+  });
+
+  const requestConfirmation = ({
+    title,
+    message,
+    detail,
+    confirmText = "Ya, Teruskan Padam",
+    confirmColor = "rose",
+    onConfirm,
+  }: {
+    title: string;
+    message: string;
+    detail?: string;
+    confirmText?: string;
+    confirmColor?: "rose" | "amber" | "indigo";
+    onConfirm: () => void;
+  }) => {
+    setConfirmModal({
+      isOpen: true,
+      title,
+      message,
+      detail,
+      confirmText,
+      confirmColor,
+      onConfirm: () => {
+        setConfirmModal((prev) => ({ ...prev, isOpen: false }));
+        onConfirm();
+      },
+    });
+  };
+
   // Archive Import Modal State & Payload
   const [showArchiveImportModal, setShowArchiveImportModal] = useState<boolean>(false);
   const [importedArchiveData, setImportedArchiveData] = useState<{
@@ -1603,40 +1648,49 @@ ${gen.assessment}`;
   }, [rphRecords, currentUser.id, builderWeek]);
 
   const handleDeleteRph = (rphId: string) => {
-    if (confirm('Adakah anda pasti mahu memadam rekod e-RPH ini secara kekal?')) {
-      const targetRecord = rphRecords.find((r) => r.id === rphId);
-      const remainingRecords = rphRecords.filter((r) => r.id !== rphId);
+    const targetRecord = rphRecords.find((r) => r.id === rphId);
+    const lessonInfo = targetRecord
+      ? `${targetRecord.day} • ${targetRecord.className} (${targetRecord.subjectName || 'Subjek'})`
+      : "sesi pengajaran ini";
 
-      setRphRecords(remainingRecords);
-      try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(remainingRecords)); } catch (_) {}
+    requestConfirmation({
+      title: "Padam Sesi e-RPH",
+      message: `Adakah anda pasti mahu memadam rekod "${lessonInfo}" secara kekal?`,
+      detail: "Tindakan ini akan memadam rekod PdP ini secara langsung daripada pangkalan data Supabase dan storan tempatan.",
+      confirmText: "Ya, Padam e-RPH",
+      confirmColor: "rose",
+      onConfirm: () => {
+        const remainingRecords = rphRecords.filter((r) => r.id !== rphId);
+        setRphRecords(remainingRecords);
+        try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(remainingRecords)); } catch (_) {}
 
-      if (previewRph?.id === rphId) {
-        setPreviewRph(null);
-      }
-
-      deleteRphRecordFromDb(rphId).catch((err) => console.warn('deleteRphRecordFromDb err:', err));
-
-      // If the teacher has no more records for this week, update yearlyRecords matrix
-      if (targetRecord) {
-        const hasOtherInWeek = remainingRecords.some(
-          (r) => r.teacherId === targetRecord.teacherId && r.weekNumber === targetRecord.weekNumber
-        );
-        if (!hasOtherInWeek) {
-          setYearlyRecords((prev) => {
-            const tCells = { ...(prev[targetRecord.teacherId] || {}) };
-            delete tCells[targetRecord.weekNumber];
-            const nextMap = {
-              ...prev,
-              [targetRecord.teacherId]: tCells,
-            };
-            try { localStorage.setItem('erph_yearly_matrix_records_v2', JSON.stringify(nextMap)); } catch (_) {}
-            return nextMap;
-          });
+        if (previewRph?.id === rphId) {
+          setPreviewRph(null);
         }
-      }
 
-      showToast('🗑️ e-RPH telah dipadam secara kekal dari pangkalan data.');
-    }
+        deleteRphRecordFromDb(rphId).catch((err) => console.warn('deleteRphRecordFromDb err:', err));
+
+        if (targetRecord) {
+          const hasOtherInWeek = remainingRecords.some(
+            (r) => r.teacherId === targetRecord.teacherId && r.weekNumber === targetRecord.weekNumber
+          );
+          if (!hasOtherInWeek) {
+            setYearlyRecords((prev) => {
+              const tCells = { ...(prev[targetRecord.teacherId] || {}) };
+              delete tCells[targetRecord.weekNumber];
+              const nextMap = {
+                ...prev,
+                [targetRecord.teacherId]: tCells,
+              };
+              try { localStorage.setItem('erph_yearly_matrix_records_v2', JSON.stringify(nextMap)); } catch (_) {}
+              return nextMap;
+            });
+          }
+        }
+
+        showToast('🗑️ e-RPH telah dipadam secara kekal dari pangkalan data.');
+      },
+    });
   };
 
   // Load GAS URL from localStorage on mount
@@ -2247,16 +2301,26 @@ ${gen.assessment}`;
   };
 
   const handleDeleteSlot = (slotId: string) => {
-    if (editingTimetableSlotId === slotId) {
-      setEditingTimetableSlotId(null);
-    }
-    setTimetable((prev) => {
-      const updated = prev.filter((s) => s.id !== slotId);
-      try { localStorage.setItem('erph_live_timetable_v1', JSON.stringify(updated)); } catch (_) {}
-      return updated;
+    const targetSlot = timetable.find((s) => s.id === slotId);
+    requestConfirmation({
+      title: "Padam Slot Jadual Mengajar",
+      message: `Padam slot ${targetSlot?.day || ""} ${targetSlot?.timeStart || ""}-${targetSlot?.timeEnd || ""} (${targetSlot?.className || ""})?`,
+      detail: "Slot jadual ini akan dipadamkan daripada jadual peribadi anda dan pangkalan data.",
+      confirmText: "Ya, Padam Slot",
+      confirmColor: "rose",
+      onConfirm: () => {
+        if (editingTimetableSlotId === slotId) {
+          setEditingTimetableSlotId(null);
+        }
+        setTimetable((prev) => {
+          const updated = prev.filter((s) => s.id !== slotId);
+          try { localStorage.setItem('erph_live_timetable_v1', JSON.stringify(updated)); } catch (_) {}
+          return updated;
+        });
+        deleteTimetableSlotFromDb(slotId).catch((err) => console.warn('deleteTimetableSlotFromDb err:', err));
+        showToast('Slot jadual telah dipadam.');
+      },
     });
-    deleteTimetableSlotFromDb(slotId).catch((err) => console.warn('deleteTimetableSlotFromDb err:', err));
-    showToast('Slot jadual telah dipadam.');
   };
 
 
@@ -2411,12 +2475,20 @@ ${gen.assessment}`;
 
   const handleDeleteAcademicWeek = (weekNum: number) => {
     if (weekNum <= 42) {
-      alert('Minggu 1 hingga 42 adalah takwim asas persekolahan KPM dan tidak boleh dipadam.');
+      showToast('⚠️ Minggu 1 hingga 42 adalah takwim asas persekolahan KPM dan tidak boleh dipadam.');
       return;
     }
-    if (!confirm(`Padam Minggu ${weekNum} daripada takwim persekolahan?`)) return;
-    setAcademicWeeks((prev) => prev.filter((w) => w.weekNumber !== weekNum));
-    showToast(`🗑️ Minggu ${weekNum} telah dipadamkan daripada takwim.`);
+    requestConfirmation({
+      title: "Padam Minggu Takwim",
+      message: `Padam Minggu ${weekNum} daripada takwim persekolahan?`,
+      detail: "Minggu tambahan ini akan dikeluarkan daripada takwim dan matriks semakan e-RPH sekolah.",
+      confirmText: `Ya, Padam Minggu ${weekNum}`,
+      confirmColor: "rose",
+      onConfirm: () => {
+        setAcademicWeeks((prev) => prev.filter((w) => w.weekNumber !== weekNum));
+        showToast(`🗑️ Minggu ${weekNum} telah dipadamkan daripada takwim.`);
+      },
+    });
   };
 
   const handleSetCurrentWeek = (weekNum: number) => {
@@ -2450,21 +2522,26 @@ ${gen.assessment}`;
 
   const handleDeleteTeacher = (teacherId: string) => {
     if (teacherId === 'superadmin') {
-      alert('⚠️ Akaun Superadmin keselamatan dilindungi dan tidak boleh dipadam.');
+      showToast('⚠️ Akaun Superadmin keselamatan dilindungi dan tidak boleh dipadam.');
       return;
     }
     const teacher = teachers.find((t) => t.id === teacherId);
-    if (!confirm(`Adakah anda pasti untuk memadam rekod "${teacher?.name}"?
-(Tip: Anda boleh memilih untuk menukar status kepada 'Cuti' atau 'Pindah' tanpa memadam data).`)) {
-      return;
-    }
-    setTeachers((prev) => {
-      const updated = prev.filter((t) => t.id !== teacherId);
-      try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(updated)); } catch (_) {}
-      return updated;
+    requestConfirmation({
+      title: "Padam Profil Guru",
+      message: `Adakah anda pasti untuk memadam rekod guru "${teacher?.name}"?`,
+      detail: "Tip: Jika guru ini hanya bercuti atau bertukar sekolah sementara, anda boleh memilih untuk menukar status guru kepada 'Cuti' atau 'Pindah' tanpa memadamkan data rekod.",
+      confirmText: "Ya, Padam Profil Guru",
+      confirmColor: "rose",
+      onConfirm: () => {
+        setTeachers((prev) => {
+          const updated = prev.filter((t) => t.id !== teacherId);
+          try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(updated)); } catch (_) {}
+          return updated;
+        });
+        deleteTeacherFromDb(teacherId).catch((err) => console.warn('deleteTeacherFromDb err:', err));
+        showToast(`Rekod guru ${teacher?.name} telah dipadam.`);
+      },
     });
-    deleteTeacherFromDb(teacherId).catch((err) => console.warn('deleteTeacherFromDb err:', err));
-    showToast(`Rekod guru ${teacher?.name} telah dipadam.`);
   };
 
   const handleRenewAcademicYear = () => {
@@ -6975,9 +7052,14 @@ ${gen.assessment}`;
                                     <button
                                       type="button"
                                       onClick={() => {
-                                        if (window.confirm(`Adakah anda pasti ingin memadamkan RPT bagi ${row.week_label || `Minggu ${row.week_number}`}?`)) {
-                                          handleDeleteRptRecord(idx);
-                                        }
+                                        requestConfirmation({
+                                          title: "Padam Baris RPT",
+                                          message: `Padam sukatan RPT bagi ${row.week_label || "Minggu " + row.week_number}?`,
+                                          detail: "Perubahan ini akan disimpan ke dalam senarai RPT pengajaran tersuai anda.",
+                                          confirmText: "Ya, Padam Baris RPT",
+                                          confirmColor: "rose",
+                                          onConfirm: () => handleDeleteRptRecord(idx),
+                                        });
                                       }}
                                       className="px-2 py-1 bg-rose-50 hover:bg-rose-100 text-rose-600 font-bold rounded-lg border border-rose-200 transition text-[11px] cursor-pointer"
                                       title="Padam baris ini"
@@ -8041,22 +8123,30 @@ ${gen.assessment}`;
                     🔄 Perbaharui Sesi Kalendar Baharu ({school.academicYear})
                   </button>
                   <button
+                    type="button"
                     onClick={() => {
-                      if (confirm('Adakah anda pasti untuk mengosongkan semua data mock dan memulakan pangkalan data yang bersih? Tindakan ini akan memadam data ujian lama.')) {
-                        localStorage.removeItem('erph_live_teachers_v1');
-                        localStorage.removeItem('erph_live_timetable_v1');
-                        localStorage.removeItem('erph_live_rph_records_v1');
-                        localStorage.removeItem('erph_yearly_matrix_records_v2');
-                        setTimetable([]);
-                        setRphRecords([]);
-                        setYearlyRecords({});
-                        if (currentUser) {
-                          setTeachers([currentUser]);
-                        } else {
-                          setTeachers([]);
-                        }
-                        showToast('✨ Pangkalan data bersih telah dimulakan! Hanya profil pentadbir anda dikekalkan.');
-                      }
+                      requestConfirmation({
+                        title: "Reset Bersih Data Ujian",
+                        message: "Adakah anda pasti untuk mengosongkan semua data mock dan memulakan pangkalan data yang bersih?",
+                        detail: "Tindakan ini akan membersihkan data ujian lama. Hanya profil pentadbir anda yang akan dikekalkan.",
+                        confirmText: "Ya, Mulakan Pangkalan Data Bersih",
+                        confirmColor: "rose",
+                        onConfirm: () => {
+                          localStorage.removeItem("erph_live_teachers_v1");
+                          localStorage.removeItem("erph_live_timetable_v1");
+                          localStorage.removeItem("erph_live_rph_records_v1");
+                          localStorage.removeItem("erph_yearly_matrix_records_v2");
+                          setTimetable([]);
+                          setRphRecords([]);
+                          setYearlyRecords({});
+                          if (currentUser) {
+                            setTeachers([currentUser]);
+                          } else {
+                            setTeachers([]);
+                          }
+                          showToast("✨ Pangkalan data bersih telah dimulakan! Hanya profil pentadbir anda dikekalkan.");
+                        },
+                      });
                     }}
                     className="px-4 py-2 bg-rose-500/10 hover:bg-rose-500/20 text-rose-700 border border-rose-300 font-extrabold text-xs rounded-xl shadow-xs transition"
                     title="Kosongkan sebarang data mock ujian lama"
@@ -9049,6 +9139,74 @@ ${gen.assessment}`;
         onChange={handleImportArchiveJson}
         className="hidden"
       />
+
+      {/* 0. GLOBAL ACTION & DELETE CONFIRMATION MODAL (Replaces browser confirm popup) */}
+      {confirmModal.isOpen && (
+        <div className="fixed inset-0 bg-black/60 z-[100] flex items-center justify-center p-4 backdrop-blur-xs animate-in fade-in duration-150">
+          <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 max-w-md w-full overflow-hidden text-xs">
+            {/* Header */}
+            <div className={`p-5 text-white ${
+              confirmModal.confirmColor === "rose"
+                ? "bg-gradient-to-r from-rose-600 to-red-700"
+                : confirmModal.confirmColor === "amber"
+                ? "bg-gradient-to-r from-amber-600 to-orange-700"
+                : "bg-gradient-to-r from-indigo-600 to-blue-700"
+            }`}>
+              <div className="flex items-center justify-between">
+                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 text-white text-[10px] font-black uppercase tracking-wider backdrop-blur-xs">
+                  {confirmModal.confirmColor === "rose" ? "⚠️ PENGESAHAN TINDAKAN" : "ℹ️ PENGESAHAN"}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setConfirmModal((prev) => ({ ...prev, isOpen: false }))}
+                  className="text-white/80 hover:text-white text-lg font-bold transition"
+                >
+                  ✕
+                </button>
+              </div>
+              <h3 className="text-base font-black tracking-tight text-white mt-2">
+                {confirmModal.title}
+              </h3>
+            </div>
+
+            {/* Content Body */}
+            <div className="p-6 space-y-3">
+              <p className="text-slate-800 text-sm font-bold leading-snug">
+                {confirmModal.message}
+              </p>
+              {confirmModal.detail && (
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-[11px] text-slate-600 leading-relaxed">
+                  {confirmModal.detail}
+                </div>
+              )}
+
+              {/* Action Buttons */}
+              <div className="flex items-center justify-end gap-2.5 pt-4 border-t border-slate-100">
+                <button
+                  type="button"
+                  onClick={() => setConfirmModal((prev) => ({ ...prev, isOpen: false }))}
+                  className="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs rounded-xl transition"
+                >
+                  Batal
+                </button>
+                <button
+                  type="button"
+                  onClick={confirmModal.onConfirm}
+                  className={`px-5 py-2.5 text-white font-extrabold text-xs rounded-xl shadow-md transition ${
+                    confirmModal.confirmColor === "rose"
+                      ? "bg-rose-600 hover:bg-rose-700"
+                      : confirmModal.confirmColor === "amber"
+                      ? "bg-amber-600 hover:bg-amber-700"
+                      : "bg-indigo-600 hover:bg-indigo-700"
+                  }`}
+                >
+                  {confirmModal.confirmText}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 4. PURGE DRAF LAMA WARNING MODAL (Custom UI replacing browser popup) */}
       {showPurgeModal && (
