@@ -97,6 +97,12 @@ import {
   Menu,
   X,
 } from '@/components/SidebarIcons';
+import {
+  supabase,
+  isSupabaseConfigured,
+  signInWithGoogleOAuth,
+  signOutFromSupabase,
+} from '@/lib/supabaseClient';
 
 interface DskpSubjectMeta {
   name: string;
@@ -181,22 +187,10 @@ export default function ERphColorAdminApp() {
   // Hydration Mount State (Prevents Next.js Server-Client text mismatch)
   const [mounted, setMounted] = useState<boolean>(false);
 
-  // User Authentication & Session State (Initial render defaults match SSR)
-  const [authSession, setAuthSession] = useState<AuthUserSession | null>({
-    userId: 'admin1',
-    name: 'PHOON SAU PING',
-    chineseName: '潘少萍副校长 (PK1)',
-    email: 'g-760728@moe-dl.edu.my',
-    role: 'pk_pentadbiran',
-    jawatan: 'GPK1',
-    panitia: 'Pentadbiran & Kurikulum',
-    provider: 'google',
-    loginAt: '2026-01-01T00:00:00.000Z',
-    isGoogleLinked: true,
-  });
-
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(true);
-  const [currentUserId, setCurrentUserId] = useState<string>('admin1');
+  // User Authentication & Session State (Production Mode: Defaults to unauthenticated)
+  const [authSession, setAuthSession] = useState<AuthUserSession | null>(null);
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
+  const [currentUserId, setCurrentUserId] = useState<string>('');
 
   // Account Settings Modal & Google Login States
   const [showAccountModal, setShowAccountModal] = useState<boolean>(false);
@@ -268,21 +262,50 @@ export default function ERphColorAdminApp() {
     verifiedBy: '',
   });
 
-  // Hydrate client-side state from localStorage safely after initial mount
+  // Hydrate client-side state from localStorage & Supabase safely after initial mount
   useEffect(() => {
     try {
       const savedSession = localStorage.getItem('erph_auth_session_v1');
-      if (savedSession) {
+      const flag = localStorage.getItem('erph_is_authenticated_v1');
+      if (flag === 'true' && savedSession) {
         const parsed = JSON.parse(savedSession);
-        if (parsed) {
+        if (parsed && parsed.userId) {
           setAuthSession(parsed);
-          if (parsed.userId) setCurrentUserId(parsed.userId);
+          setIsAuthenticated(true);
+          setCurrentUserId(parsed.userId);
+          setWeeklyTeacherId(parsed.userId);
         }
       }
-      const flag = localStorage.getItem('erph_is_authenticated_v1');
-      if (flag !== null) {
-        setIsAuthenticated(flag === 'true');
+
+      // Live Supabase Authentication Listener (Production)
+      if (isSupabaseConfigured && supabase) {
+        supabase.auth.getSession().then(({ data: { session } }) => {
+          if (session?.user?.email) {
+            const userEmail = session.user.email.toLowerCase();
+            const matched = teachers.find((t) => t.email.toLowerCase() === userEmail);
+            if (matched) {
+              handlePerformLogin(matched, 'google');
+            } else if (userEmail === SUPERADMIN_PROFILE.email.toLowerCase()) {
+              handlePerformLogin(SUPERADMIN_PROFILE, 'google');
+            }
+          }
+        });
+
+        const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+          if (session?.user?.email) {
+            const userEmail = session.user.email.toLowerCase();
+            const matched = teachers.find((t) => t.email.toLowerCase() === userEmail);
+            if (matched) {
+              handlePerformLogin(matched, 'google');
+            } else if (userEmail === SUPERADMIN_PROFILE.email.toLowerCase()) {
+              handlePerformLogin(SUPERADMIN_PROFILE, 'google');
+            }
+          }
+        });
+
+        return () => subscription.unsubscribe();
       }
+
       const savedMatrix = localStorage.getItem('erph_yearly_matrix_records_v2');
       if (savedMatrix) {
         const parsed = JSON.parse(savedMatrix);
@@ -2311,13 +2334,29 @@ ${gen.assessment}`;
     showToast(`✅ Log masuk berjaya! Selamat datang ${teacher.name} (${provider === 'google' ? 'Google DELIMa SSO' : 'E-mel Rasmi'})`);
   };
 
-  const handlePerformLogout = () => {
+  const handleGoogleSignIn = async () => {
+    if (isSupabaseConfigured) {
+      try {
+        await signInWithGoogleOAuth();
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : 'Ralat semasa log masuk dengan Google.';
+        showToast(`⚠️ ${msg}`);
+      }
+    } else {
+      setShowGooglePickerModal(true);
+    }
+  };
+
+  const handlePerformLogout = async () => {
     setIsAuthenticated(false);
     setAuthSession(null);
+    setCurrentUserId('');
     setShowAccountModal(false);
+    await signOutFromSupabase();
     if (typeof window !== 'undefined') {
       try {
-        localStorage.setItem('erph_is_authenticated_v1', 'false');
+        localStorage.removeItem('erph_auth_session_v1');
+        localStorage.removeItem('erph_is_authenticated_v1');
       } catch (e) {}
     }
     showToast('👋 Anda telah log keluar dari sistem e-RPH.');
@@ -2487,8 +2526,8 @@ ${gen.assessment}`;
             {/* Google Authentication Button */}
             <button
               type="button"
-              onClick={() => setShowGooglePickerModal(true)}
-              className="w-full py-2.5 px-4 bg-white hover:bg-slate-50 text-slate-700 font-extrabold text-xs rounded-xl border border-slate-300 shadow-sm transition flex items-center justify-center gap-3 cursor-pointer"
+              onClick={handleGoogleSignIn}
+              className="w-full py-3 px-4 bg-white hover:bg-slate-50 text-slate-700 font-extrabold text-xs rounded-xl border border-slate-300 shadow-sm transition flex items-center justify-center gap-3 cursor-pointer"
             >
               <svg className="w-4 h-4" viewBox="0 0 24 24">
                 <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
@@ -2499,120 +2538,12 @@ ${gen.assessment}`;
               <span>Log Masuk dengan Google DELIMa MOE</span>
             </button>
 
-            {/* Quick 1-Click Demo Login Bar */}
-            <div className="pt-2 border-t border-slate-100">
-              <div className="flex items-center justify-between mb-2">
-                <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
-                  Pilih Akaun Pantas 1-Klik (Ujian Peranan & 4 Pentadbir):
-                </span>
-              </div>
-
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
-                {/* 0. Superadmin YokPoon */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    setLoginEmail('YokPoon');
-                    setLoginPassword('Admin@JBC3019');
-                    handlePerformLogin(SUPERADMIN_PROFILE, 'email');
-                  }}
-                  className="p-2.5 bg-gradient-to-r from-amber-50 to-yellow-50 hover:from-amber-100 hover:to-yellow-100 border border-amber-300 rounded-xl text-left transition col-span-2 sm:col-span-3 shadow-xs"
-                >
-                  <div className="flex items-center justify-between">
-                    <div className="text-[10px] font-black text-amber-800 flex items-center gap-1">
-                      <span>👑 SUPERADMIN KESELAMATAN</span>
-                      <span className="text-[9px] bg-amber-200/90 text-amber-950 px-1.5 py-0.2 rounded font-mono font-bold">YokPoon</span>
-                    </div>
-                    <span className="text-[9px] text-amber-700 font-mono font-bold">Admin@JBC3019</span>
-                  </div>
-                  <div className="text-xs font-black text-slate-900 mt-0.5 truncate">SUPERADMIN YOK POON (系统总管理员)</div>
-                  <div className="text-[9px] text-amber-700 font-medium">Akses Tertinggi: Baiki/Pinda Peranan Guru ICT, Reset E-mel & Kata Laluan</div>
-                </button>
-
-                {/* 1. Guru Besar */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    const gb = teachers.find((t) => t.id === 'gb1');
-                    if (gb) handlePerformLogin(gb, 'google');
-                  }}
-                  className="p-2 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-xl text-left transition"
-                >
-                  <div className="text-[9px] font-extrabold text-blue-700">🎓 GURU BESAR</div>
-                  <div className="text-xs font-bold text-slate-800 truncate">HONG WAI FUN</div>
-                  <div className="text-[9px] text-slate-500 font-medium">Pentadbir (GB)</div>
-                </button>
-
-                {/* 2. GPK Pentadbiran */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    const pk1 = teachers.find((t) => t.id === 'admin1');
-                    if (pk1) handlePerformLogin(pk1, 'google');
-                  }}
-                  className="p-2 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-xl text-left transition"
-                >
-                  <div className="text-[9px] font-extrabold text-indigo-700">🛡️ PK PENTADBIRAN</div>
-                  <div className="text-xs font-bold text-slate-800 truncate">PHOON SAU PING</div>
-                  <div className="text-[9px] text-slate-500 font-medium">Pentadbir (GPK1)</div>
-                </button>
-
-                {/* 3. GPK HEM */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    const hem = teachers.find((t) => t.id === 't3');
-                    if (hem) handlePerformLogin(hem, 'google');
-                  }}
-                  className="p-2 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-xl text-left transition"
-                >
-                  <div className="text-[9px] font-extrabold text-amber-700">📋 GPK HEM</div>
-                  <div className="text-xs font-bold text-slate-800 truncate">LOW OOI LIAN</div>
-                  <div className="text-[9px] text-slate-500 font-medium">Pentadbir (GPK HEM)</div>
-                </button>
-
-                {/* 4. GPK KK */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    const kk = teachers.find((t) => t.id === 't4');
-                    if (kk) handlePerformLogin(kk, 'google');
-                  }}
-                  className="p-2 bg-slate-50 hover:bg-blue-50 border border-slate-200 hover:border-blue-300 rounded-xl text-left transition"
-                >
-                  <div className="text-[9px] font-extrabold text-orange-700">🏅 GPK KK</div>
-                  <div className="text-xs font-bold text-slate-800 truncate">CHOI MING MING</div>
-                  <div className="text-[9px] text-slate-500 font-medium">Pentadbir (GPK KK)</div>
-                </button>
-
-                {/* 5. Guru ICT */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    const ict = teachers.find((t) => t.id === 'ict1');
-                    if (ict) handlePerformLogin(ict, 'google');
-                  }}
-                  className="p-2 bg-slate-50 hover:bg-purple-50 border border-slate-200 hover:border-purple-300 rounded-xl text-left transition"
-                >
-                  <div className="text-[9px] font-extrabold text-purple-700">💻 GURU ICT / DATA</div>
-                  <div className="text-xs font-bold text-slate-800 truncate">JACKIE WONG</div>
-                  <div className="text-[9px] text-slate-500 font-medium">Admin Sistem & Data</div>
-                </button>
-
-                {/* 6. Guru Subjek */}
-                <button
-                  type="button"
-                  onClick={() => {
-                    const g = teachers.find((t) => t.id === 't5');
-                    if (g) handlePerformLogin(g, 'google');
-                  }}
-                  className="p-2 bg-slate-50 hover:bg-emerald-50 border border-slate-200 hover:border-emerald-300 rounded-xl text-left transition"
-                >
-                  <div className="text-[9px] font-extrabold text-emerald-700">👩‍🏫 GURU SUBJEK</div>
-                  <div className="text-xs font-bold text-slate-800 truncate">ARENE YEU</div>
-                  <div className="text-[9px] text-slate-500 font-medium">Bahasa Cina (GAB)</div>
-                </button>
-              </div>
+            <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
+              <span className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                Sistem e-RPH Versi Pengeluaran 1.0
+              </span>
+              <span>KPM SJK(C)</span>
             </div>
           </div>
 
@@ -4101,48 +4032,28 @@ ${gen.assessment}`;
               );
             })()}
 
-            {/* Persona Switcher (Compact & Clean) */}
-            <div className="flex items-center gap-1.5 sm:gap-2 bg-slate-100 px-2.5 sm:px-3 py-1.5 rounded-xl border border-slate-200 max-w-[150px] sm:max-w-none">
-              <span className="text-[10px] sm:text-[11px] font-bold text-slate-500 uppercase hidden md:inline">Peranan:</span>
-              <select
-                value={currentUserId}
-                onChange={(e) => {
-                  const val = e.target.value;
-                  setCurrentUserId(val);
-                  if (val === 'superadmin') {
-                    setWeeklyTeacherId('superadmin');
-                    showToast('Beralih ke akaun: SUPERADMIN YOK POON (Sistem Keselamatan)');
-                  } else {
-                    const found = teachers.find((t) => t.id === val);
-                    if (found) {
-                      setWeeklyTeacherId(found.id);
-                      setSelectedSubjectSlug(found.subjectSlug || 'bahasa_cina_sjkc');
-                      showToast(`Beralih ke akaun: ${found.name} (${found.jawatan || found.role})`);
-                    }
-                  }
-                }}
-                className="text-xs font-bold text-slate-800 bg-transparent focus:outline-none cursor-pointer truncate max-w-[110px] sm:max-w-[220px]"
+            {/* Authenticated User Identity Pill (Production Mode) */}
+            <button
+              type="button"
+              onClick={() => setShowAccountModal(true)}
+              className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-xl border border-slate-200 transition text-left shrink-0 cursor-pointer"
+              title="Buka Tetapan Profil Akaun"
+            >
+              <div
+                suppressHydrationWarning
+                className={`w-5 h-5 rounded-full ${
+                  isSuperadmin ? 'bg-amber-500' : 'bg-cyan-600'
+                } text-white font-black text-[10px] flex items-center justify-center shrink-0`}
               >
-                {isSuperadmin && (
-                  <option value="superadmin">👑 [SUPERADMIN] YOK POON</option>
-                )}
-                {regularTeachers.map((t) => (
-                  <option key={t.id} value={t.id}>
-                    {t.jawatan === 'GB' || t.role === 'guru_besar'
-                      ? `🎓 [GURU BESAR] ${t.name}`
-                      : t.jawatan === 'GPK1'
-                      ? `🛡️ [GPK PENTADBIRAN] ${t.name}`
-                      : t.jawatan === 'GPK HEM'
-                      ? `📋 [GPK HEM] ${t.name}`
-                      : t.jawatan === 'GPK KK' || t.jawatan === 'GPK KOKO'
-                      ? `🏅 [GPK KOKURIKULUM] ${t.name}`
-                      : t.role === 'guru_ict_data'
-                      ? `💻 [GURU ICT/DATA] ${t.name}`
-                      : `👩‍🏫 [GURU] ${t.name} (${t.panitia})`}
-                  </option>
-                ))}
-              </select>
-            </div>
+                {isSuperadmin ? '👑' : currentUser.name.charAt(0)}
+              </div>
+              <span className="text-xs font-bold text-slate-800 truncate max-w-[130px] sm:max-w-[180px]">
+                {currentUser.name}
+              </span>
+              <span className="text-[10px] font-bold text-cyan-700 bg-cyan-50 px-1.5 py-0.5 rounded border border-cyan-200 uppercase hidden sm:inline-block shrink-0">
+                {isSuperadmin ? 'Superadmin' : currentUser.jawatan || currentUser.role}
+              </span>
+            </button>
           </div>
         </header>
 
