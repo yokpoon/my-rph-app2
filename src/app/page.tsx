@@ -112,6 +112,10 @@ import {
   deleteTimetableSlotFromDb,
   deleteRphRecordFromDb,
   whitelistUserInDb,
+  fetchSchoolConfigFromDb,
+  saveSchoolConfigToDb,
+  fetchAcademicWeeksFromDb,
+  saveAcademicWeeksToDb,
 } from '@/lib/supabaseClient';
 
 interface DskpSubjectMeta {
@@ -281,6 +285,16 @@ export default function ERphColorAdminApp() {
     try {
       // 1. Instant local storage hydration for all entities
       try {
+        const localSchool = localStorage.getItem('erph_school_config_v1');
+        if (localSchool) {
+          const parsedSchool = JSON.parse(localSchool);
+          if (parsedSchool && parsedSchool.name) setSchool(parsedSchool);
+        }
+        const localWeeks = localStorage.getItem('erph_academic_weeks_v1');
+        if (localWeeks) {
+          const parsedWeeks = JSON.parse(localWeeks);
+          if (Array.isArray(parsedWeeks) && parsedWeeks.length > 0) setAcademicWeeks(parsedWeeks);
+        }
         const localT = localStorage.getItem('erph_live_teachers_v1');
         if (localT) {
           const parsedT = JSON.parse(localT);
@@ -302,6 +316,19 @@ export default function ERphColorAdminApp() {
 
       // 2. Fetch full datasets from Supabase Cloud immediately on mount
       if (isSupabaseConfigured) {
+        fetchSchoolConfigFromDb().then((dbSchool) => {
+          if (dbSchool && dbSchool.name) {
+            setSchool(dbSchool);
+            try { localStorage.setItem('erph_school_config_v1', JSON.stringify(dbSchool)); } catch (_) {}
+          }
+        });
+
+        fetchAcademicWeeksFromDb().then((dbWeeks) => {
+          if (dbWeeks && dbWeeks.length > 0) {
+            setAcademicWeeks(dbWeeks);
+            try { localStorage.setItem('erph_academic_weeks_v1', JSON.stringify(dbWeeks)); } catch (_) {}
+          }
+        });
         fetchTeachersFromDb().then((dbTeachers) => {
           if (dbTeachers && dbTeachers.length > 0) {
             setTeachers((prev) => {
@@ -551,6 +578,26 @@ export default function ERphColorAdminApp() {
       }
     }
   }, [yearlyRecords, mounted]);
+
+  // Persist school config to localStorage & Supabase whenever updated
+  useEffect(() => {
+    if (mounted && typeof window !== 'undefined' && school.name) {
+      try {
+        localStorage.setItem('erph_school_config_v1', JSON.stringify(school));
+      } catch (e) {}
+      saveSchoolConfigToDb(school).catch((err) => console.warn('saveSchoolConfigToDb err:', err));
+    }
+  }, [school, mounted]);
+
+  // Persist academic weeks to localStorage & Supabase whenever updated
+  useEffect(() => {
+    if (mounted && typeof window !== 'undefined' && academicWeeks.length > 0) {
+      try {
+        localStorage.setItem('erph_academic_weeks_v1', JSON.stringify(academicWeeks));
+      } catch (e) {}
+      saveAcademicWeeksToDb(academicWeeks).catch((err) => console.warn('saveAcademicWeeksToDb err:', err));
+    }
+  }, [academicWeeks, mounted]);
 
   // Persist teachers to localStorage whenever updated
   useEffect(() => {
@@ -7852,7 +7899,15 @@ ${gen.assessment}`;
                   <div className="text-right pt-2">
                     <button
                       type="button"
-                      onClick={() => showToast('✅ Maklumat sekolah berjaya dikemaskini!')}
+                      onClick={() => {
+                        try {
+                          localStorage.setItem("erph_school_config_v1", JSON.stringify(school));
+                          localStorage.setItem("erph_academic_weeks_v1", JSON.stringify(academicWeeks));
+                        } catch (_) {}
+                        saveSchoolConfigToDb(school).catch((err) => console.warn("saveSchoolConfigToDb err:", err));
+                        saveAcademicWeeksToDb(academicWeeks).catch((err) => console.warn("saveAcademicWeeksToDb err:", err));
+                        showToast("✅ Maklumat sekolah & takwim berjaya disimpan ke pangkalan data!");
+                      }}
                       className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-bold rounded-xl shadow transition"
                     >
                       Simpan Perubahan Takwim & Kalendar
