@@ -110,6 +110,8 @@ import {
   fetchTimetableFromDb,
   saveTimetableSlotToDb,
   deleteTimetableSlotFromDb,
+  deleteRphRecordFromDb,
+  whitelistUserInDb,
 } from '@/lib/supabaseClient';
 
 interface DskpSubjectMeta {
@@ -1538,10 +1540,15 @@ ${gen.assessment}`;
 
   const handleDeleteRph = (rphId: string) => {
     if (confirm('Adakah anda pasti mahu memadam rekod e-RPH ini?')) {
-      setRphRecords((prev) => prev.filter((r) => r.id !== rphId));
+      setRphRecords((prev) => {
+        const updated = prev.filter((r) => r.id !== rphId);
+        try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(updated)); } catch (_) {}
+        return updated;
+      });
       if (previewRph?.id === rphId) {
         setPreviewRph(null);
       }
+      deleteRphRecordFromDb(rphId).catch((err) => console.warn('deleteRphRecordFromDb err:', err));
       showToast('🗑️ e-RPH telah dipadam.');
     }
   };
@@ -1966,6 +1973,34 @@ ${gen.assessment}`;
     verifiedToSave.forEach((mod) => {
       saveRphRecordToDb(mod).catch((err) => console.warn('saveRphRecordToDb err:', err));
     });
+
+    // Automatically update Yearly Matrix when verified or marked revision
+    const targetWeek = academicWeeks.find((w) => w.weekNumber === adminReviewWeek);
+    const rawDue = targetWeek?.dueDateFriday || '';
+    const dm = rawDue ? formatToDayMonth(rawDue) : '';
+    setYearlyRecords((prev) => {
+      const teacherCells = prev[teacherId] || {};
+      const newMatrixStatus = newStatus === 'DISAHKAN' ? 'TEPAT' : 'LEWAT';
+      const updatedMatrix: MatrixCellRecord = {
+        weekNumber: adminReviewWeek,
+        dueDate: rawDue ? formatToDayMonthYear(rawDue) : '',
+        submittedDateFormatted: dm,
+        status: newMatrixStatus,
+        statusLabel: newStatus === 'DISAHKAN' ? (dm + ' tepat') : (dm + ' lewat'),
+        verifiedBy: verifierTitle,
+        notes: adminFeedback || ('Disahkan oleh ' + verifierTitle),
+      };
+      const nextMap = {
+        ...prev,
+        [teacherId]: {
+          ...teacherCells,
+          [adminReviewWeek]: updatedMatrix,
+        },
+      };
+      try { localStorage.setItem('erph_yearly_matrix_records_v2', JSON.stringify(nextMap)); } catch (_) {}
+      return nextMap;
+    });
+
     setInspectTeacher(null);
     showToast(
       newStatus === 'DISAHKAN'
@@ -2006,6 +2041,33 @@ ${gen.assessment}`;
     bulkVerifiedToSave.forEach((mod) => {
       saveRphRecordToDb(mod).catch((err) => console.warn('saveRphRecordToDb err:', err));
     });
+
+    // Update yearly matrix for all verified teachers in bulk
+    const targetWeek = academicWeeks.find((w) => w.weekNumber === adminReviewWeek);
+    const rawDue = targetWeek?.dueDateFriday || "";
+    const dm = rawDue ? formatToDayMonth(rawDue) : "";
+    setYearlyRecords((prev) => {
+      const nextMap = { ...prev };
+      const verifiedTeacherIds = Array.from(new Set(bulkVerifiedToSave.map((r) => r.teacherId)));
+      verifiedTeacherIds.forEach((tId) => {
+        const tCells = nextMap[tId] || {};
+        nextMap[tId] = {
+          ...tCells,
+          [adminReviewWeek]: {
+            weekNumber: adminReviewWeek,
+            dueDate: rawDue ? formatToDayMonthYear(rawDue) : "",
+            submittedDateFormatted: dm,
+            status: "TEPAT",
+            statusLabel: dm + " tepat",
+            verifiedBy: verifierTitle,
+            notes: "Disahkan secara pukal oleh " + verifierTitle,
+          },
+        };
+      });
+      try { localStorage.setItem("erph_yearly_matrix_records_v2", JSON.stringify(nextMap)); } catch (_) {}
+      return nextMap;
+    });
+
     showToast(`⚡ Semua RPH berstatus 'DIHANTAR' untuk Minggu ${adminReviewWeek} telah DISAHKAN oleh ${verifierTitle}!`);
   };
 
@@ -2478,7 +2540,7 @@ ${gen.assessment}`;
     });
 
     const denom = onTimeCells + lateCells + missedCells;
-    const overallRate = denom > 0 ? Math.round((onTimeCells / denom) * 1000) / 10 : 100;
+    const overallRate = denom > 0 ? Math.round((onTimeCells / denom) * 1000) / 10 : 0;
 
     return {
       totalTeachers: regularTeachers.length,
