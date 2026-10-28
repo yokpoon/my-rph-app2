@@ -102,6 +102,14 @@ import {
   isSupabaseConfigured,
   signInWithGoogleOAuth,
   signOutFromSupabase,
+  fetchTeachersFromDb,
+  saveTeacherToDb,
+  deleteTeacherFromDb,
+  fetchRphRecordsFromDb,
+  saveRphRecordToDb,
+  fetchTimetableFromDb,
+  saveTimetableSlotToDb,
+  deleteTimetableSlotFromDb,
 } from '@/lib/supabaseClient';
 
 interface DskpSubjectMeta {
@@ -109,6 +117,23 @@ interface DskpSubjectMeta {
   slug: string;
   grades: string[];
 }
+
+const DEFAULT_DSKP_META: DskpSubjectMeta[] = [
+  { name: 'BAHASA CINA SJKC 华校华语', slug: 'bahasa_cina_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'BAHASA MELAYU SJKC 华校国语', slug: 'bahasa_melayu_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'BAHASA INGGERIS SJKC 华校英语', slug: 'bahasa_inggeris_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'MATEMATIK SJKC 华小数学', slug: 'matematik_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'SAINS SJKC 华校科学', slug: 'sains_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'SEJARAH SJKC 华校历史', slug: 'sejarah_sjkc', grades: ['4', '5', '6'] },
+  { name: 'RBT SJKC 华校设计与工艺', slug: 'rbt_sjkc', grades: ['4', '5', '6'] },
+  { name: 'PENDIDIKAN MORAL SJKC 华校道德教育', slug: 'pendidikan_moral_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'PENDIDIKAN SENI SJKC 华校美术', slug: 'pendidikan_seni_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'PENDIDIKAN MUZIK SJKC 华校音乐', slug: 'pendidikan_muzik_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'PENDIDIKAN JASMANI SJKC 华校体育', slug: 'pendidikan_jasmani_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'PENDIDIKAN KESIHATAN SJKC 华校健康教育', slug: 'pendidikan_kesihatan_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  { name: 'TMK SJKC 华校信息与通信技术', slug: 'tmk_sjkc', grades: ['5', '6'] },
+  { name: 'PENDIDIKAN ISLAM SJKC', slug: 'sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+];
 
 type SubjectDskpTree = Record<string, Record<string, string[]>>;
 type NavTab =
@@ -393,6 +418,75 @@ export default function ERphColorAdminApp() {
       if (savedGas) {
         setGasWebAppUrl(savedGas);
       }
+
+      // Hydrate Teachers, Timetable & RPH from localStorage immediately
+      try {
+        const localT = localStorage.getItem('erph_live_teachers_v1');
+        if (localT) {
+          const parsedT = JSON.parse(localT);
+          if (Array.isArray(parsedT) && parsedT.length > 0) setTeachers(parsedT);
+        }
+        const localTime = localStorage.getItem('erph_live_timetable_v1');
+        if (localTime) {
+          const parsedTime = JSON.parse(localTime);
+          if (Array.isArray(parsedTime) && parsedTime.length > 0) setTimetable(parsedTime);
+        }
+        const localRph = localStorage.getItem('erph_live_rph_records_v1');
+        if (localRph) {
+          const parsedRph = JSON.parse(localRph);
+          if (Array.isArray(parsedRph) && parsedRph.length > 0) setRphRecords(parsedRph);
+        }
+      } catch (err) {
+        console.warn('Local storage hydration note:', err);
+      }
+
+      // Hydrate from Cloud Database (Supabase) if configured
+      if (isSupabaseConfigured) {
+        fetchTeachersFromDb().then((dbTeachers) => {
+          if (dbTeachers && dbTeachers.length > 0) {
+            setTeachers((prev) => {
+              const combined = [...prev];
+              for (const dt of dbTeachers) {
+                const idx = combined.findIndex((t) => t.id === dt.id || t.email.toLowerCase() === dt.email.toLowerCase());
+                if (idx >= 0) combined[idx] = { ...combined[idx], ...dt };
+                else combined.push(dt);
+              }
+              try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(combined)); } catch (_) {}
+              return combined;
+            });
+          }
+        });
+
+        fetchTimetableFromDb().then((dbTimetable) => {
+          if (dbTimetable && dbTimetable.length > 0) {
+            setTimetable((prev) => {
+              const combined = [...prev];
+              for (const slot of dbTimetable) {
+                const idx = combined.findIndex((s) => s.id === slot.id);
+                if (idx >= 0) combined[idx] = { ...combined[idx], ...slot };
+                else combined.push(slot);
+              }
+              try { localStorage.setItem('erph_live_timetable_v1', JSON.stringify(combined)); } catch (_) {}
+              return combined;
+            });
+          }
+        });
+
+        fetchRphRecordsFromDb().then((dbRphs) => {
+          if (dbRphs && dbRphs.length > 0) {
+            setRphRecords((prev) => {
+              const combined = [...prev];
+              for (const r of dbRphs) {
+                const idx = combined.findIndex((x) => x.id === r.id);
+                if (idx >= 0) combined[idx] = { ...combined[idx], ...r };
+                else combined.push(r);
+              }
+              try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(combined)); } catch (_) {}
+              return combined;
+            });
+          }
+        });
+      }
     } catch (e) {
       console.error('Error hydrating session from localStorage:', e);
     } finally {
@@ -410,6 +504,33 @@ export default function ERphColorAdminApp() {
       }
     }
   }, [yearlyRecords, mounted]);
+
+  // Persist teachers to localStorage whenever updated
+  useEffect(() => {
+    if (mounted && typeof window !== 'undefined' && teachers.length > 0) {
+      try {
+        localStorage.setItem('erph_live_teachers_v1', JSON.stringify(teachers));
+      } catch (e) {}
+    }
+  }, [teachers, mounted]);
+
+  // Persist timetable to localStorage whenever updated
+  useEffect(() => {
+    if (mounted && typeof window !== 'undefined' && timetable.length > 0) {
+      try {
+        localStorage.setItem('erph_live_timetable_v1', JSON.stringify(timetable));
+      } catch (e) {}
+    }
+  }, [timetable, mounted]);
+
+  // Persist rphRecords to localStorage whenever updated
+  useEffect(() => {
+    if (mounted && typeof window !== 'undefined' && rphRecords.length > 0) {
+      try {
+        localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(rphRecords));
+      } catch (e) {}
+    }
+  }, [rphRecords, mounted]);
 
   // Takwim Sub-tab
   const [takwimTab, setTakwimTab] = useState<'mingguan' | 'profil'>('mingguan');
@@ -429,7 +550,7 @@ export default function ERphColorAdminApp() {
   };
 
   // DSKP Static JSON State (Non-cantum only)
-  const [dskpMeta, setDskpMeta] = useState<DskpSubjectMeta[]>([]);
+  const [dskpMeta, setDskpMeta] = useState<DskpSubjectMeta[]>(DEFAULT_DSKP_META);
   const [subjectData, setSubjectData] = useState<SubjectDskpTree | null>(null);
   const [loadingSubject, setLoadingSubject] = useState(false);
   const [rptRecords, setRptRecords] = useState<RptRecord[]>([]);
@@ -1119,23 +1240,28 @@ export default function ERphColorAdminApp() {
       status: nextStatus,
       updatedAt: new Date().toISOString(),
     };
-    setRphRecords((prev) => [
-      recordToSave,
-      ...prev.filter((r) => {
-        if (r.id === recordToSave.id) return false;
-        if (
-          recordToSave.slotId &&
-          !recordToSave.slotId.startsWith('custom_') &&
-          r.slotId === recordToSave.slotId &&
-          r.weekNumber === recordToSave.weekNumber &&
-          r.day === recordToSave.day &&
-          r.teacherId === recordToSave.teacherId
-        ) {
-          return false;
-        }
-        return true;
-      }),
-    ]);
+    setRphRecords((prev) => {
+      const updated = [
+        recordToSave,
+        ...prev.filter((r) => {
+          if (r.id === recordToSave.id) return false;
+          if (
+            recordToSave.slotId &&
+            !recordToSave.slotId.startsWith('custom_') &&
+            r.slotId === recordToSave.slotId &&
+            r.weekNumber === recordToSave.weekNumber &&
+            r.day === recordToSave.day &&
+            r.teacherId === recordToSave.teacherId
+          ) {
+            return false;
+          }
+          return true;
+        }),
+      ];
+      try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(updated)); } catch (_) {}
+      return updated;
+    });
+    saveRphRecordToDb(recordToSave).catch((err) => console.warn('saveRphRecordToDb err:', err));
     setPreviewRph(recordToSave);
     setDraftWeekFilter(builderWeek);
     setDraftDayFilter('ALL');
@@ -1241,17 +1367,24 @@ ${gen.assessment}`;
       }
     });
 
-    setRphRecords((prev) => [
-      ...newRecords,
-      ...prev.filter(
-        (r) =>
-          !(
-            r.teacherId === currentUser.id &&
-            r.weekNumber === builderWeek &&
-            activeWeeklySlots.some((s) => s.id === r.slotId)
-          )
-      ),
-    ]);
+    setRphRecords((prev) => {
+      const updated = [
+        ...newRecords,
+        ...prev.filter(
+          (r) =>
+            !(
+              r.teacherId === currentUser.id &&
+              r.weekNumber === builderWeek &&
+              activeWeeklySlots.some((s) => s.id === r.slotId)
+            )
+        ),
+      ];
+      try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(updated)); } catch (_) {}
+      return updated;
+    });
+    newRecords.forEach((rec) => {
+      saveRphRecordToDb(rec).catch((err) => console.warn('saveRphRecordToDb err:', err));
+    });
 
     setDraftWeekFilter(builderWeek);
     setDraftDayFilter('ALL');
@@ -1261,17 +1394,26 @@ ${gen.assessment}`;
 
   // Draft Status Update & Batch Submit Handlers
   const handleUpdateRphStatus = (rphId: string, newStatus: RphStatus) => {
-    setRphRecords((prev) =>
-      prev.map((r) =>
-        r.id === rphId
-          ? {
-              ...r,
-              status: newStatus,
-              updatedAt: new Date().toISOString(),
-            }
-          : r
-      )
-    );
+    let targetMod: RphRecord | null = null;
+    setRphRecords((prev) => {
+      const updated = prev.map((r) => {
+        if (r.id === rphId) {
+          const mod = {
+            ...r,
+            status: newStatus,
+            updatedAt: new Date().toISOString(),
+          };
+          targetMod = mod;
+          return mod;
+        }
+        return r;
+      });
+      try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(updated)); } catch (_) {}
+      return updated;
+    });
+    if (targetMod) {
+      saveRphRecordToDb(targetMod).catch((err) => console.warn('saveRphRecordToDb err:', err));
+    }
     showToast(
       newStatus === 'DIHANTAR'
         ? '🚀 e-RPH telah dihantar kepada Pentadbir untuk semakan.'
@@ -1305,17 +1447,26 @@ ${gen.assessment}`;
     }
     const unsubmittedIds = new Set(unsubmitted.map((r) => r.id));
 
-    setRphRecords((prev) =>
-      prev.map((r) =>
-        unsubmittedIds.has(r.id)
-          ? {
-              ...r,
-              status: 'DIHANTAR',
-              updatedAt: new Date().toISOString(),
-            }
-          : r
-      )
-    );
+    const submittedToSave: RphRecord[] = [];
+    setRphRecords((prev) => {
+      const updated = prev.map((r) => {
+        if (unsubmittedIds.has(r.id)) {
+          const mod = {
+            ...r,
+            status: 'DIHANTAR' as RphStatus,
+            updatedAt: new Date().toISOString(),
+          };
+          submittedToSave.push(mod);
+          return mod;
+        }
+        return r;
+      });
+      try { localStorage.setItem('erph_live_rph_records_v1', JSON.stringify(updated)); } catch (_) {}
+      return updated;
+    });
+    submittedToSave.forEach((mod) => {
+      saveRphRecordToDb(mod).catch((err) => console.warn('saveRphRecordToDb err:', err));
+    });
     showToast(
       `🚀 Semua ${unsubmitted.length} sesi e-RPH Minggu ${draftWeekFilter} telah berjaya dihantar kepada Pentadbir!`
     );
@@ -1924,23 +2075,32 @@ ${gen.assessment}`;
     e.preventDefault();
     const subj = dskpMeta.find((m) => m.slug === myNewSubjectSlug);
     if (editingTimetableSlotId) {
-      setTimetable((prev) =>
-        prev.map((s) =>
-          s.id === editingTimetableSlotId
-            ? {
-                ...s,
-                day: myNewDay,
-                timeStart: myNewTimeStart,
-                timeEnd: myNewTimeEnd,
-                grade: myNewGrade,
-                className: myNewClassName,
-                studentCount: Number(myNewStudentCount) || 30,
-                subjectSlug: myNewSubjectSlug,
-                subjectName: subj?.name || s.subjectName,
-              }
-            : s
-        )
-      );
+      let updatedSlot: TimetableSlot | null = null;
+      setTimetable((prev) => {
+        const updated = prev.map((s) => {
+          if (s.id === editingTimetableSlotId) {
+            const mod = {
+              ...s,
+              day: myNewDay,
+              timeStart: myNewTimeStart,
+              timeEnd: myNewTimeEnd,
+              grade: myNewGrade,
+              className: myNewClassName,
+              studentCount: Number(myNewStudentCount) || 30,
+              subjectSlug: myNewSubjectSlug,
+              subjectName: subj?.name || s.subjectName,
+            };
+            updatedSlot = mod;
+            return mod;
+          }
+          return s;
+        });
+        try { localStorage.setItem('erph_live_timetable_v1', JSON.stringify(updated)); } catch (_) {}
+        return updated;
+      });
+      if (updatedSlot) {
+        saveTimetableSlotToDb(updatedSlot).catch((err) => console.warn('saveTimetableSlotToDb err:', err));
+      }
       setEditingTimetableSlotId(null);
       showToast(`✅ Jadual ${myNewDay} (${myNewClassName}) berjaya dikemaskini!`);
     } else {
@@ -1959,7 +2119,12 @@ ${gen.assessment}`;
         defaultSk: myNewSk || '1.1 Kemahiran Asas Bahasa & Komunikasi',
         defaultSps: ['1.1.1 Mendengar dan memahami arahan guru.'],
       };
-      setTimetable((prev) => [...prev, newSlot]);
+      setTimetable((prev) => {
+        const updated = [...prev, newSlot];
+        try { localStorage.setItem('erph_live_timetable_v1', JSON.stringify(updated)); } catch (_) {}
+        return updated;
+      });
+      saveTimetableSlotToDb(newSlot).catch((err) => console.warn('saveTimetableSlotToDb err:', err));
       showToast(`✅ Jadual ${newSlot.day} (${newSlot.className}) berjaya ditambah!`);
     }
   };
@@ -1968,7 +2133,12 @@ ${gen.assessment}`;
     if (editingTimetableSlotId === slotId) {
       setEditingTimetableSlotId(null);
     }
-    setTimetable((prev) => prev.filter((s) => s.id !== slotId));
+    setTimetable((prev) => {
+      const updated = prev.filter((s) => s.id !== slotId);
+      try { localStorage.setItem('erph_live_timetable_v1', JSON.stringify(updated)); } catch (_) {}
+      return updated;
+    });
+    deleteTimetableSlotFromDb(slotId).catch((err) => console.warn('deleteTimetableSlotFromDb err:', err));
     showToast('Slot jadual telah dipadam.');
   };
 
@@ -2151,9 +2321,12 @@ ${gen.assessment}`;
   const handleSaveEditTeacher = (e: React.FormEvent) => {
     e.preventDefault();
     if (!editingTeacher) return;
-    setTeachers((prev) =>
-      prev.map((t) => (t.id === editingTeacher.id ? editingTeacher : t))
-    );
+    setTeachers((prev) => {
+      const updated = prev.map((t) => (t.id === editingTeacher.id ? editingTeacher : t));
+      try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(updated)); } catch (_) {}
+      return updated;
+    });
+    saveTeacherToDb(editingTeacher).catch((err) => console.warn('saveTeacherToDb err:', err));
     setEditingTeacher(null);
     showToast(`✅ Maklumat profil ${editingTeacher.name} berjaya dikemaskini!`);
   };
@@ -2168,7 +2341,12 @@ ${gen.assessment}`;
 (Tip: Anda boleh memilih untuk menukar status kepada 'Cuti' atau 'Pindah' tanpa memadam data).`)) {
       return;
     }
-    setTeachers((prev) => prev.filter((t) => t.id !== teacherId));
+    setTeachers((prev) => {
+      const updated = prev.filter((t) => t.id !== teacherId);
+      try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(updated)); } catch (_) {}
+      return updated;
+    });
+    deleteTeacherFromDb(teacherId).catch((err) => console.warn('deleteTeacherFromDb err:', err));
     showToast(`Rekod guru ${teacher?.name} telah dipadam.`);
   };
 
@@ -7823,7 +8001,12 @@ ${gen.assessment}`;
                           role: newTeacherRole,
                           status: 'AKTIF',
                         };
-                        setTeachers((prev) => [...prev, nt]);
+                        setTeachers((prev) => {
+                          const updated = [...prev, nt];
+                          try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(updated)); } catch (_) {}
+                          return updated;
+                        });
+                        saveTeacherToDb(nt).catch((err) => console.warn('saveTeacherToDb err:', err));
                         setNewTeacherName('');
                         setNewTeacherChinese('');
                         setNewTeacherEmail('');
