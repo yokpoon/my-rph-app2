@@ -756,7 +756,7 @@ export function calculateTeacherMatrixSummary(
 
   const denominator = totalSubmitted + totalMissed;
   const complianceRate =
-    denominator > 0 ? Math.round((totalOnTime / denominator) * 1000) / 10 : 100;
+    denominator > 0 ? Math.round((totalOnTime / denominator) * 1000) / 10 : 0;
 
   return {
     totalSubmitted,

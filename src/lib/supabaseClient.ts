@@ -106,6 +106,20 @@ export async function saveTeacherToDb(t: any) {
       console.warn('saveTeacherToDb error:', error);
       return false;
     }
+
+    // Automatically whitelist registered teacher email for login access
+    if (t.email && t.email.includes('@')) {
+      try {
+        await supabase.from('whitelisted_users').upsert({
+          email: t.email.toLowerCase().trim(),
+          role: t.role || 'guru',
+          name: t.name || undefined,
+        });
+      } catch (err) {
+        console.warn('Auto-whitelist note:', err);
+      }
+    }
+
     return true;
   } catch (e) {
     console.warn('saveTeacherToDb note:', e);
@@ -292,6 +306,46 @@ export async function deleteTimetableSlotFromDb(id: string) {
     await supabase.from('timetable_slots').delete().eq('id', id);
     return true;
   } catch (e) {
+    return false;
+  }
+}
+
+/**
+ * Delete RPH record from Supabase
+ */
+export async function deleteRphRecordFromDb(id: string) {
+  if (!isSupabaseConfigured || !supabase) return false;
+  try {
+    const { error } = await supabase.from('rph_records').delete().eq('id', id);
+    if (error) {
+      console.warn('deleteRphRecordFromDb error:', error);
+      return false;
+    }
+    return true;
+  } catch (e) {
+    console.warn('deleteRphRecordFromDb note:', e);
+    return false;
+  }
+}
+
+/**
+ * Whitelist a user email in whitelisted_users table
+ */
+export async function whitelistUserInDb(email: string, role: string = 'guru', name: string = '') {
+  if (!isSupabaseConfigured || !supabase) return false;
+  try {
+    const { error } = await supabase.from('whitelisted_users').upsert({
+      email: email.toLowerCase().trim(),
+      role: role.toLowerCase().trim(),
+      name: name || undefined,
+    });
+    if (error) {
+      console.warn('whitelistUserInDb error:', error);
+      return false;
+    }
+    return true;
+  } catch (e) {
+    console.warn('whitelistUserInDb note:', e);
     return false;
   }
 }
