@@ -596,6 +596,16 @@ export default function ERphColorAdminApp() {
     }
   }, [yearlyRecords, mounted]);
 
+  // Auto-sync working weeks whenever current school week changes or hydrates
+  useEffect(() => {
+    if (school && school.currentWeek) {
+      setAdminReviewWeek(school.currentWeek);
+      setBuilderWeek(school.currentWeek);
+      setBatchWeek(school.currentWeek);
+      setDraftWeekFilter(school.currentWeek);
+    }
+  }, [school.currentWeek]);
+
   // Persist school config to localStorage & Supabase whenever updated
   useEffect(() => {
     if (mounted && typeof window !== 'undefined' && school.name) {
@@ -1899,7 +1909,7 @@ ${gen.assessment}`;
   }, [teachers, rphRecords, school.currentWeek]);
 
   const teacherSummaries = useMemo(() => {
-    return teachers.map((teacher) => {
+    return regularTeachers.map((teacher) => {
       const records = rphRecords.filter(
         (r) => r.teacherId === teacher.id && r.weekNumber === adminReviewWeek
       );
@@ -1913,7 +1923,7 @@ ${gen.assessment}`;
       }
       return { teacher, filledCount: records.length, totalSlots: slots.length, status, records };
     });
-  }, [teachers, rphRecords, adminReviewWeek, timetable]);
+  }, [regularTeachers, rphRecords, adminReviewWeek, timetable]);
 
   // Helper: Retrieve weekly RPH lessons for inspection (real data only, no mock fallback)
   const getTeacherWeekRphs = useCallback(
@@ -2898,7 +2908,6 @@ ${gen.assessment}`;
                 <span className="text-xs font-extrabold text-blue-700 bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider">
                   Log Masuk DELIMa KPM
                 </span>
-                <span className="text-xs text-slate-400">Versi 2.4.0</span>
               </div>
               <h3 className="text-2xl font-extrabold text-slate-900 mt-2">Selamat Datang</h3>
               <p className="text-xs text-slate-500">
