@@ -737,6 +737,29 @@ export default function ERphColorAdminApp() {
 
   // Inline Edit Mode for Live RPH Preview
   const [isEditingRph, setIsEditingRph] = useState<boolean>(false);
+  const [editBuffer, setEditBuffer] = useState<{
+    sk: string;
+    sps: string;
+    objectives: string;
+    criteria: string;
+    induction: string;
+    activities: string;
+    closure: string;
+    emk: string;
+    bbm: string;
+    reflection: string;
+  }>({
+    sk: "",
+    sps: "",
+    objectives: "",
+    criteria: "",
+    induction: "",
+    activities: "",
+    closure: "",
+    emk: "",
+    bbm: "",
+    reflection: "",
+  });
 
   // Weekly Batch Import State
   const [weeklyTeacherId, setWeeklyTeacherId] = useState<string>('t1');
@@ -1421,6 +1444,26 @@ export default function ERphColorAdminApp() {
     preserveVerifiedStatus: boolean = false
   ) => {
     if (!previewRph) return;
+
+    // If currently editing, apply changes from editBuffer before saving
+    let currentRecord = previewRph;
+    if (isEditingRph) {
+      currentRecord = {
+        ...previewRph,
+        sk: editBuffer.sk,
+        sps: editBuffer.sps.split("\\n").filter((x) => x.trim()),
+        objectives: editBuffer.objectives.split("\\n").filter((x) => x.trim()),
+        criteria: editBuffer.criteria.split("\\n").filter((x) => x.trim()),
+        induction: editBuffer.induction,
+        activities: editBuffer.activities.split("\\n").filter((x) => x.trim()),
+        closure: editBuffer.closure,
+        emk: editBuffer.emk.split(",").map((x) => x.trim()).filter(Boolean),
+        bbm: editBuffer.bbm.split(",").map((x) => x.trim()).filter(Boolean),
+        reflection: editBuffer.reflection,
+      };
+      setPreviewRph(currentRecord);
+      setIsEditingRph(false);
+    }
     const finalSlotId = selectedSlotId || previewRph.slotId || `custom_${Date.now()}`;
     const isAlreadyVerified = previewRph.status === 'DISAHKAN';
     const nextStatus: RphStatus =
@@ -1431,7 +1474,7 @@ export default function ERphColorAdminApp() {
         : 'DRAF';
 
     const recordToSave: RphRecord = {
-      ...previewRph,
+      ...currentRecord,
       id: previewRph.id || `rph_${Date.now()}`,
       day: selectedDay,
       slotId: finalSlotId,
@@ -5795,9 +5838,9 @@ ${gen.assessment}`;
                                         <textarea
                                           rows={2}
                                           dir={rtlDir}
-                                          value={previewRph.sk}
+                                          value={editBuffer.sk}
                                           onChange={(e) => {
-                                            setPreviewRph({ ...previewRph, sk: e.target.value });
+                                            setEditBuffer({ ...editBuffer, sk: e.target.value });
                                             e.target.style.height = "auto";
                                             e.target.style.height = e.target.scrollHeight + "px";
                                           }}
@@ -5820,14 +5863,11 @@ ${gen.assessment}`;
                                     <td className={`p-3 text-slate-800 leading-relaxed ${rtlClass}`} dir={rtlDir}>
                                       {isEditingRph ? (
                                         <textarea
-                                          rows={previewRph.sps.length ? Math.max(previewRph.sps.length * 2, 3) : 3}
+                                          rows={Math.max(editBuffer.sps.split("\n").length + 1, 3)}
                                           dir={rtlDir}
-                                          value={previewRph.sps.join("\n")}
+                                          value={editBuffer.sps}
                                           onChange={(e) => {
-                                            setPreviewRph({
-                                              ...previewRph,
-                                              sps: e.target.value.split("\n").filter((x) => x.trim()),
-                                            });
+                                            setEditBuffer({ ...editBuffer, sps: e.target.value });
                                             e.target.style.height = "auto";
                                             e.target.style.height = e.target.scrollHeight + "px";
                                           }}
@@ -5854,14 +5894,11 @@ ${gen.assessment}`;
                                     <td className={`p-3 text-slate-800 leading-relaxed ${rtlClass}`} dir={rtlDir}>
                                       {isEditingRph ? (
                                         <textarea
-                                          rows={previewRph.objectives.length ? Math.max(previewRph.objectives.length * 2, 4) : 4}
+                                          rows={Math.max(editBuffer.objectives.split("\n").length + 1, 4)}
                                           dir={rtlDir}
-                                          value={previewRph.objectives.join("\n")}
+                                          value={editBuffer.objectives}
                                           onChange={(e) => {
-                                            setPreviewRph({
-                                              ...previewRph,
-                                              objectives: e.target.value.split("\n").filter((x) => x.trim()),
-                                            });
+                                            setEditBuffer({ ...editBuffer, objectives: e.target.value });
                                             e.target.style.height = "auto";
                                             e.target.style.height = e.target.scrollHeight + "px";
                                           }}
@@ -5888,14 +5925,11 @@ ${gen.assessment}`;
                                     <td className={`p-3 text-slate-800 leading-relaxed ${rtlClass}`} dir={rtlDir}>
                                       {isEditingRph ? (
                                         <textarea
-                                          rows={previewRph.criteria.length ? Math.max(previewRph.criteria.length * 2, 4) : 4}
+                                          rows={Math.max(editBuffer.criteria.split("\n").length + 1, 4)}
                                           dir={rtlDir}
-                                          value={previewRph.criteria.join("\n")}
+                                          value={editBuffer.criteria}
                                           onChange={(e) => {
-                                            setPreviewRph({
-                                              ...previewRph,
-                                              criteria: e.target.value.split("\n").filter((x) => x.trim()),
-                                            });
+                                            setEditBuffer({ ...editBuffer, criteria: e.target.value });
                                             e.target.style.height = "auto";
                                             e.target.style.height = e.target.scrollHeight + "px";
                                           }}
@@ -5926,9 +5960,9 @@ ${gen.assessment}`;
                                           <textarea
                                             rows={2}
                                             dir={rtlDir}
-                                            value={previewRph.induction}
+                                            value={editBuffer.induction}
                                             onChange={(e) => {
-                                              setPreviewRph({ ...previewRph, induction: e.target.value });
+                                              setEditBuffer({ ...editBuffer, induction: e.target.value });
                                               e.target.style.height = "auto";
                                               e.target.style.height = e.target.scrollHeight + "px";
                                             }}
@@ -5948,14 +5982,11 @@ ${gen.assessment}`;
                                         <span className="font-extrabold text-slate-900 block mb-1">Langkah / Aktiviti Utama:</span>
                                         {isEditingRph ? (
                                           <textarea
-                                            rows={previewRph.activities.length ? Math.max(previewRph.activities.length * 3, 6) : 6}
+                                            rows={Math.max(editBuffer.activities.split("\n").length + 2, 6)}
                                             dir={rtlDir}
-                                            value={previewRph.activities.join("\n")}
+                                            value={editBuffer.activities}
                                             onChange={(e) => {
-                                              setPreviewRph({
-                                                ...previewRph,
-                                                activities: e.target.value.split("\n").filter((x) => x.trim()),
-                                              });
+                                              setEditBuffer({ ...editBuffer, activities: e.target.value });
                                               e.target.style.height = "auto";
                                               e.target.style.height = e.target.scrollHeight + "px";
                                             }}
@@ -5981,9 +6012,9 @@ ${gen.assessment}`;
                                           <textarea
                                             rows={2}
                                             dir={rtlDir}
-                                            value={previewRph.closure}
+                                            value={editBuffer.closure}
                                             onChange={(e) => {
-                                              setPreviewRph({ ...previewRph, closure: e.target.value });
+                                              setEditBuffer({ ...editBuffer, closure: e.target.value });
                                               e.target.style.height = "auto";
                                               e.target.style.height = e.target.scrollHeight + "px";
                                             }}
@@ -6012,13 +6043,8 @@ ${gen.assessment}`;
                                             <textarea
                                               rows={2}
                                               dir={rtlDir}
-                                              value={previewRph.emk.join(", ")}
-                                              onChange={(e) =>
-                                                setPreviewRph({
-                                                  ...previewRph,
-                                                  emk: e.target.value.split(",").map((x) => x.trim()),
-                                                })
-                                              }
+                                              value={editBuffer.emk}
+                                              onChange={(e) => setEditBuffer({ ...editBuffer, emk: e.target.value })}
                                               className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 mt-1 resize-y ${rtlClass}`}
                                             />
                                           </div>
@@ -6027,13 +6053,8 @@ ${gen.assessment}`;
                                             <textarea
                                               rows={2}
                                               dir={rtlDir}
-                                              value={previewRph.bbm.join(", ")}
-                                              onChange={(e) =>
-                                                setPreviewRph({
-                                                  ...previewRph,
-                                                  bbm: e.target.value.split(",").map((x) => x.trim()),
-                                                })
-                                              }
+                                              value={editBuffer.bbm}
+                                              onChange={(e) => setEditBuffer({ ...editBuffer, bbm: e.target.value })}
                                               className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 mt-1 resize-y ${rtlClass}`}
                                             />
                                           </div>
@@ -6055,9 +6076,9 @@ ${gen.assessment}`;
                                         <textarea
                                           rows={3}
                                           dir={rtlDir}
-                                          value={previewRph.reflection}
+                                          value={editBuffer.reflection}
                                           onChange={(e) => {
-                                            setPreviewRph({ ...previewRph, reflection: e.target.value });
+                                            setEditBuffer({ ...editBuffer, reflection: e.target.value });
                                             e.target.style.height = "auto";
                                             e.target.style.height = e.target.scrollHeight + "px";
                                           }}
