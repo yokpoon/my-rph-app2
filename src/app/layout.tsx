@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'e-RPH SJK(C) — Sistem Pengurusan e-RPH, Jadual & Guru Ganti',
+  title: 'e-RPH SJKC YOK POON',
   description: 'Platform Pengurusan e-RPH SJK(C), Semakan PK Pentadbiran & Jadual Guru Ganti Berasaskan KPM DSKP',
 };
 
