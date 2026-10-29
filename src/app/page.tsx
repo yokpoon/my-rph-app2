@@ -34,6 +34,7 @@ import {
   parseSingleGeminiResponse,
   buildWeeklyBatchPrompt,
   parseWeeklyBatchResponse,
+  isJawiOrArabicSubject,
 } from '@/lib/promptEngine';
 import {
   KRMJ_DIMENSIONS,
@@ -5771,289 +5772,312 @@ ${gen.assessment}`;
                         </div>
 
                         {/* Official KPM Form Table - Word Document Style (Auto-scaling, Seamless In-Cell Editing) */}
-                        <div className="border border-slate-300 rounded-xl overflow-x-auto text-xs bg-white shadow-xs">
-                          <table className="w-full border-collapse">
-                            <tbody>
-                              <tr className="border-b border-slate-200">
-                                <td className="w-1/4 bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
-                                  Standard Kandungan (SK)
-                                </td>
-                                <td className="p-3 text-slate-800 leading-relaxed">
-                                  {isEditingRph ? (
-                                    <textarea
-                                      rows={2}
-                                      value={previewRph.sk}
-                                      onChange={(e) => {
-                                        setPreviewRph({ ...previewRph, sk: e.target.value });
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      onInput={(e: any) => {
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      placeholder="Standard Kandungan..."
-                                      className="w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y"
-                                    />
-                                  ) : (
-                                    previewRph.sk
-                                  )}
-                                </td>
-                              </tr>
-                              <tr className="border-b border-slate-200">
-                                <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
-                                  Standard Pembelajaran (SP)
-                                </td>
-                                <td className="p-3 text-slate-800 leading-relaxed">
-                                  {isEditingRph ? (
-                                    <textarea
-                                      rows={previewRph.sps.length ? Math.max(previewRph.sps.length * 2, 3) : 3}
-                                      value={previewRph.sps.join("\n")}
-                                      onChange={(e) => {
-                                        setPreviewRph({
-                                          ...previewRph,
-                                          sps: e.target.value.split("\n").filter((x) => x.trim()),
-                                        });
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      onInput={(e: any) => {
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      placeholder="Setiap baris satu Standard Pembelajaran (SP)..."
-                                      className="w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y"
-                                    />
-                                  ) : (
-                                    <ul className="list-disc pl-4 space-y-1">
-                                      {previewRph.sps.map((sp, idx) => (
-                                        <li key={idx}>{sp}</li>
-                                      ))}
-                                    </ul>
-                                  )}
-                                </td>
-                              </tr>
-                              <tr className="border-b border-slate-200">
-                                <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
-                                  Objektif Pembelajaran
-                                </td>
-                                <td className="p-3 text-slate-800 leading-relaxed">
-                                  {isEditingRph ? (
-                                    <textarea
-                                      rows={previewRph.objectives.length ? Math.max(previewRph.objectives.length * 2, 4) : 4}
-                                      value={previewRph.objectives.join("\n")}
-                                      onChange={(e) => {
-                                        setPreviewRph({
-                                          ...previewRph,
-                                          objectives: e.target.value.split("\n").filter((x) => x.trim()),
-                                        });
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      onInput={(e: any) => {
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      placeholder="Setiap baris satu Objektif Pembelajaran..."
-                                      className="w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y"
-                                    />
-                                  ) : (
-                                    <ul className="list-disc pl-4 space-y-1">
-                                      {previewRph.objectives.map((obj, idx) => (
-                                        <li key={idx}>{obj}</li>
-                                      ))}
-                                    </ul>
-                                  )}
-                                </td>
-                              </tr>
-                              <tr className="border-b border-slate-200">
-                                <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
-                                  Kriteria Kejayaan
-                                </td>
-                                <td className="p-3 text-slate-800 leading-relaxed">
-                                  {isEditingRph ? (
-                                    <textarea
-                                      rows={previewRph.criteria.length ? Math.max(previewRph.criteria.length * 2, 4) : 4}
-                                      value={previewRph.criteria.join("\n")}
-                                      onChange={(e) => {
-                                        setPreviewRph({
-                                          ...previewRph,
-                                          criteria: e.target.value.split("\n").filter((x) => x.trim()),
-                                        });
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      onInput={(e: any) => {
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      placeholder="Setiap baris satu Kriteria Kejayaan (Aras Rendah, Sederhana, Tinggi)..."
-                                      className="w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y"
-                                    />
-                                  ) : (
-                                    <ul className="list-disc pl-4 space-y-1">
-                                      {previewRph.criteria.map((crit, idx) => (
-                                        <li key={idx}>{crit}</li>
-                                      ))}
-                                    </ul>
-                                  )}
-                                </td>
-                              </tr>
-                              <tr className="border-b border-slate-200">
-                                <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
-                                  Aktiviti Pembelajaran (PdP)
-                                </td>
-                                <td className="p-3 text-slate-800 space-y-3 leading-relaxed">
-                                  <div>
-                                    <span className="font-extrabold text-slate-900 block mb-1">Set Induksi:</span>
-                                    {isEditingRph ? (
-                                      <textarea
-                                        rows={2}
-                                        value={previewRph.induction}
-                                        onChange={(e) => {
-                                          setPreviewRph({ ...previewRph, induction: e.target.value });
-                                          e.target.style.height = "auto";
-                                          e.target.style.height = e.target.scrollHeight + "px";
-                                        }}
-                                        onInput={(e: any) => {
-                                          e.target.style.height = "auto";
-                                          e.target.style.height = e.target.scrollHeight + "px";
-                                        }}
-                                        placeholder="Penerangan aktiviti Set Induksi..."
-                                        className="w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y"
-                                      />
-                                    ) : (
-                                      <p className="mt-0.5 text-slate-800">{previewRph.induction}</p>
-                                    )}
-                                  </div>
-
-                                  <div>
-                                    <span className="font-extrabold text-slate-900 block mb-1">Langkah / Aktiviti Utama:</span>
-                                    {isEditingRph ? (
-                                      <textarea
-                                        rows={previewRph.activities.length ? Math.max(previewRph.activities.length * 3, 6) : 6}
-                                        value={previewRph.activities.join("\n")}
-                                        onChange={(e) => {
-                                          setPreviewRph({
-                                            ...previewRph,
-                                            activities: e.target.value.split("\n").filter((x) => x.trim()),
-                                          });
-                                          e.target.style.height = "auto";
-                                          e.target.style.height = e.target.scrollHeight + "px";
-                                        }}
-                                        onInput={(e: any) => {
-                                          e.target.style.height = "auto";
-                                          e.target.style.height = e.target.scrollHeight + "px";
-                                        }}
-                                        placeholder="Setiap baris satu Langkah Aktiviti Utama PdP (PAK-21)..."
-                                        className="w-full p-2.5 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y"
-                                      />
-                                    ) : (
-                                      <ol className="list-decimal pl-4 mt-0.5 space-y-1.5">
-                                        {previewRph.activities.map((act, idx) => (
-                                          <li key={idx} className="text-slate-800 leading-relaxed">{act}</li>
-                                        ))}
-                                      </ol>
-                                    )}
-                                  </div>
-
-                                  <div>
-                                    <span className="font-extrabold text-slate-900 block mb-1">Penutup:</span>
-                                    {isEditingRph ? (
-                                      <textarea
-                                        rows={2}
-                                        value={previewRph.closure}
-                                        onChange={(e) => {
-                                          setPreviewRph({ ...previewRph, closure: e.target.value });
-                                          e.target.style.height = "auto";
-                                          e.target.style.height = e.target.scrollHeight + "px";
-                                        }}
-                                        onInput={(e: any) => {
-                                          e.target.style.height = "auto";
-                                          e.target.style.height = e.target.scrollHeight + "px";
-                                        }}
-                                        placeholder="Penerangan aktiviti Penutup..."
-                                        className="w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y"
-                                      />
-                                    ) : (
-                                      <p className="mt-0.5 text-slate-800">{previewRph.closure}</p>
-                                    )}
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr className="border-b border-slate-200">
-                                <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
-                                  EMK & BBM
-                                </td>
-                                <td className="p-3 text-slate-800 space-y-2 leading-relaxed">
-                                  {isEditingRph ? (
-                                    <>
-                                      <div>
-                                        <span className="font-bold text-slate-800">EMK:</span>
+                        {(() => {
+                          const isJawiRph = isJawiOrArabicSubject(previewRph.subjectName);
+                          const rtlClass = isJawiRph ? "text-right font-serif" : "text-left";
+                          const rtlDir = isJawiRph ? "rtl" : "ltr";
+                          return (
+                            <div className="border border-slate-300 rounded-xl overflow-x-auto text-xs bg-white shadow-xs">
+                              {isJawiRph && (
+                                <div className="bg-emerald-50 border-b border-emerald-200 px-4 py-2 text-emerald-800 text-[11px] font-bold flex items-center justify-between">
+                                  <span>🕌 Mod Pendidikan Islam (PAI) / Tulisan Jawi (RTL)</span>
+                                  <span className="text-[10px] bg-emerald-200/60 px-2 py-0.5 rounded-full">Tulisan Kanan ke Kiri</span>
+                                </div>
+                              )}
+                              <table className="w-full border-collapse">
+                                <tbody>
+                                  <tr className="border-b border-slate-200">
+                                    <td className="w-1/4 bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
+                                      Standard Kandungan (SK)
+                                    </td>
+                                    <td className={`p-3 text-slate-800 leading-relaxed ${rtlClass}`} dir={rtlDir}>
+                                      {isEditingRph ? (
                                         <textarea
                                           rows={2}
-                                          value={previewRph.emk.join(", ")}
-                                          onChange={(e) =>
-                                            setPreviewRph({
-                                              ...previewRph,
-                                              emk: e.target.value.split(",").map((x) => x.trim()),
-                                            })
-                                          }
-                                          className="w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 mt-1 resize-y"
+                                          dir={rtlDir}
+                                          value={previewRph.sk}
+                                          onChange={(e) => {
+                                            setPreviewRph({ ...previewRph, sk: e.target.value });
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          onInput={(e: any) => {
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          placeholder="Standard Kandungan..."
+                                          className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
                                         />
-                                      </div>
-                                      <div>
-                                        <span className="font-bold text-slate-800">BBM:</span>
+                                      ) : (
+                                        previewRph.sk
+                                      )}
+                                    </td>
+                                  </tr>
+                                  <tr className="border-b border-slate-200">
+                                    <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
+                                      Standard Pembelajaran (SP)
+                                    </td>
+                                    <td className={`p-3 text-slate-800 leading-relaxed ${rtlClass}`} dir={rtlDir}>
+                                      {isEditingRph ? (
                                         <textarea
-                                          rows={2}
-                                          value={previewRph.bbm.join(", ")}
-                                          onChange={(e) =>
+                                          rows={previewRph.sps.length ? Math.max(previewRph.sps.length * 2, 3) : 3}
+                                          dir={rtlDir}
+                                          value={previewRph.sps.join("\n")}
+                                          onChange={(e) => {
                                             setPreviewRph({
                                               ...previewRph,
-                                              bbm: e.target.value.split(",").map((x) => x.trim()),
-                                            })
-                                          }
-                                          className="w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 mt-1 resize-y"
+                                              sps: e.target.value.split("\n").filter((x) => x.trim()),
+                                            });
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          onInput={(e: any) => {
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          placeholder="Setiap baris satu Standard Pembelajaran (SP)..."
+                                          className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
                                         />
+                                      ) : (
+                                        <ul className={`list-disc ${isJawiRph ? "pr-4" : "pl-4"} space-y-1`}>
+                                          {previewRph.sps.map((sp, idx) => (
+                                            <li key={idx}>{sp}</li>
+                                          ))}
+                                        </ul>
+                                      )}
+                                    </td>
+                                  </tr>
+                                  <tr className="border-b border-slate-200">
+                                    <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
+                                      Objektif Pembelajaran
+                                    </td>
+                                    <td className={`p-3 text-slate-800 leading-relaxed ${rtlClass}`} dir={rtlDir}>
+                                      {isEditingRph ? (
+                                        <textarea
+                                          rows={previewRph.objectives.length ? Math.max(previewRph.objectives.length * 2, 4) : 4}
+                                          dir={rtlDir}
+                                          value={previewRph.objectives.join("\n")}
+                                          onChange={(e) => {
+                                            setPreviewRph({
+                                              ...previewRph,
+                                              objectives: e.target.value.split("\n").filter((x) => x.trim()),
+                                            });
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          onInput={(e: any) => {
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          placeholder="Setiap baris satu Objektif Pembelajaran..."
+                                          className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
+                                        />
+                                      ) : (
+                                        <ul className={`list-disc ${isJawiRph ? "pr-4" : "pl-4"} space-y-1`}>
+                                          {previewRph.objectives.map((obj, idx) => (
+                                            <li key={idx}>{obj}</li>
+                                          ))}
+                                        </ul>
+                                      )}
+                                    </td>
+                                  </tr>
+                                  <tr className="border-b border-slate-200">
+                                    <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
+                                      Kriteria Kejayaan
+                                    </td>
+                                    <td className={`p-3 text-slate-800 leading-relaxed ${rtlClass}`} dir={rtlDir}>
+                                      {isEditingRph ? (
+                                        <textarea
+                                          rows={previewRph.criteria.length ? Math.max(previewRph.criteria.length * 2, 4) : 4}
+                                          dir={rtlDir}
+                                          value={previewRph.criteria.join("\n")}
+                                          onChange={(e) => {
+                                            setPreviewRph({
+                                              ...previewRph,
+                                              criteria: e.target.value.split("\n").filter((x) => x.trim()),
+                                            });
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          onInput={(e: any) => {
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          placeholder="Setiap baris satu Kriteria Kejayaan (Aras Rendah, Sederhana, Tinggi)..."
+                                          className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
+                                        />
+                                      ) : (
+                                        <ul className={`list-disc ${isJawiRph ? "pr-4" : "pl-4"} space-y-1`}>
+                                          {previewRph.criteria.map((crit, idx) => (
+                                            <li key={idx}>{crit}</li>
+                                          ))}
+                                        </ul>
+                                      )}
+                                    </td>
+                                  </tr>
+                                  <tr className="border-b border-slate-200">
+                                    <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
+                                      Aktiviti Pembelajaran (PdP)
+                                    </td>
+                                    <td className={`p-3 text-slate-800 space-y-3 leading-relaxed ${rtlClass}`} dir={rtlDir}>
+                                      <div>
+                                        <span className="font-extrabold text-slate-900 block mb-1">Set Induksi:</span>
+                                        {isEditingRph ? (
+                                          <textarea
+                                            rows={2}
+                                            dir={rtlDir}
+                                            value={previewRph.induction}
+                                            onChange={(e) => {
+                                              setPreviewRph({ ...previewRph, induction: e.target.value });
+                                              e.target.style.height = "auto";
+                                              e.target.style.height = e.target.scrollHeight + "px";
+                                            }}
+                                            onInput={(e: any) => {
+                                              e.target.style.height = "auto";
+                                              e.target.style.height = e.target.scrollHeight + "px";
+                                            }}
+                                            placeholder="Penerangan aktiviti Set Induksi..."
+                                            className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
+                                          />
+                                        ) : (
+                                          <p className="mt-0.5 text-slate-800">{previewRph.induction}</p>
+                                        )}
                                       </div>
-                                    </>
-                                  ) : (
-                                    <>
-                                      <div><b>EMK:</b> {previewRph.emk.join(", ")}</div>
-                                      <div><b>BBM:</b> {previewRph.bbm.join(", ")}</div>
-                                    </>
-                                  )}
-                                </td>
-                              </tr>
-                              <tr>
-                                <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
-                                  Refleksi Guru
-                                </td>
-                                <td className="p-3 text-slate-800 leading-relaxed">
-                                  {isEditingRph ? (
-                                    <textarea
-                                      rows={3}
-                                      value={previewRph.reflection}
-                                      onChange={(e) => {
-                                        setPreviewRph({ ...previewRph, reflection: e.target.value });
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      onInput={(e: any) => {
-                                        e.target.style.height = "auto";
-                                        e.target.style.height = e.target.scrollHeight + "px";
-                                      }}
-                                      placeholder="Catatan refleksi pengajaran murid..."
-                                      className="w-full p-2.5 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y"
-                                    />
-                                  ) : (
-                                    previewRph.reflection
-                                  )}
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
+
+                                      <div>
+                                        <span className="font-extrabold text-slate-900 block mb-1">Langkah / Aktiviti Utama:</span>
+                                        {isEditingRph ? (
+                                          <textarea
+                                            rows={previewRph.activities.length ? Math.max(previewRph.activities.length * 3, 6) : 6}
+                                            dir={rtlDir}
+                                            value={previewRph.activities.join("\n")}
+                                            onChange={(e) => {
+                                              setPreviewRph({
+                                                ...previewRph,
+                                                activities: e.target.value.split("\n").filter((x) => x.trim()),
+                                              });
+                                              e.target.style.height = "auto";
+                                              e.target.style.height = e.target.scrollHeight + "px";
+                                            }}
+                                            onInput={(e: any) => {
+                                              e.target.style.height = "auto";
+                                              e.target.style.height = e.target.scrollHeight + "px";
+                                            }}
+                                            placeholder="Setiap baris satu Langkah Aktiviti Utama PdP (PAK-21)..."
+                                            className={`w-full p-2.5 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
+                                          />
+                                        ) : (
+                                          <ol className={`list-decimal ${isJawiRph ? "pr-4" : "pl-4"} mt-0.5 space-y-1.5`}>
+                                            {previewRph.activities.map((act, idx) => (
+                                              <li key={idx} className="text-slate-800 leading-relaxed">{act}</li>
+                                            ))}
+                                          </ol>
+                                        )}
+                                      </div>
+
+                                      <div>
+                                        <span className="font-extrabold text-slate-900 block mb-1">Penutup:</span>
+                                        {isEditingRph ? (
+                                          <textarea
+                                            rows={2}
+                                            dir={rtlDir}
+                                            value={previewRph.closure}
+                                            onChange={(e) => {
+                                              setPreviewRph({ ...previewRph, closure: e.target.value });
+                                              e.target.style.height = "auto";
+                                              e.target.style.height = e.target.scrollHeight + "px";
+                                            }}
+                                            onInput={(e: any) => {
+                                              e.target.style.height = "auto";
+                                              e.target.style.height = e.target.scrollHeight + "px";
+                                            }}
+                                            placeholder="Penerangan aktiviti Penutup..."
+                                            className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
+                                          />
+                                        ) : (
+                                          <p className="mt-0.5 text-slate-800">{previewRph.closure}</p>
+                                        )}
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr className="border-b border-slate-200">
+                                    <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
+                                      EMK & BBM
+                                    </td>
+                                    <td className={`p-3 text-slate-800 space-y-2 leading-relaxed ${rtlClass}`} dir={rtlDir}>
+                                      {isEditingRph ? (
+                                        <>
+                                          <div>
+                                            <span className="font-bold text-slate-800">EMK:</span>
+                                            <textarea
+                                              rows={2}
+                                              dir={rtlDir}
+                                              value={previewRph.emk.join(", ")}
+                                              onChange={(e) =>
+                                                setPreviewRph({
+                                                  ...previewRph,
+                                                  emk: e.target.value.split(",").map((x) => x.trim()),
+                                                })
+                                              }
+                                              className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 mt-1 resize-y ${rtlClass}`}
+                                            />
+                                          </div>
+                                          <div>
+                                            <span className="font-bold text-slate-800">BBM:</span>
+                                            <textarea
+                                              rows={2}
+                                              dir={rtlDir}
+                                              value={previewRph.bbm.join(", ")}
+                                              onChange={(e) =>
+                                                setPreviewRph({
+                                                  ...previewRph,
+                                                  bbm: e.target.value.split(",").map((x) => x.trim()),
+                                                })
+                                              }
+                                              className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 mt-1 resize-y ${rtlClass}`}
+                                            />
+                                          </div>
+                                        </>
+                                      ) : (
+                                        <>
+                                          <div><b>EMK:</b> {previewRph.emk.join(", ")}</div>
+                                          <div><b>BBM:</b> {previewRph.bbm.join(", ")}</div>
+                                        </>
+                                      )}
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
+                                      Refleksi Guru
+                                    </td>
+                                    <td className={`p-3 text-slate-800 leading-relaxed ${rtlClass}`} dir={rtlDir}>
+                                      {isEditingRph ? (
+                                        <textarea
+                                          rows={3}
+                                          dir={rtlDir}
+                                          value={previewRph.reflection}
+                                          onChange={(e) => {
+                                            setPreviewRph({ ...previewRph, reflection: e.target.value });
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          onInput={(e: any) => {
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = e.target.scrollHeight + "px";
+                                          }}
+                                          placeholder="Catatan refleksi pengajaran murid..."
+                                          className={`w-full p-2.5 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
+                                        />
+                                      ) : (
+                                        previewRph.reflection
+                                      )}
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          );
+                        })()}
                         {/* Save Actions (Supports Re-editing DISAHKAN RPH without losing verified status) */}
                         <div className="space-y-2 pt-1">
                           {previewRph.status === 'DISAHKAN' && (

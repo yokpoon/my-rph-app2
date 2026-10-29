@@ -45,6 +45,18 @@ export function isEnglishSubject(subjectName: string): boolean {
   return subjectName.toLowerCase().includes('inggeris') || subjectName.toLowerCase().includes('english');
 }
 
+export function isJawiOrArabicSubject(subjectName: string): boolean {
+  const lower = (subjectName || '').toLowerCase();
+  return (
+    lower.includes('islam') ||
+    lower.includes('pai') ||
+    lower.includes('jawi') ||
+    lower.includes('arab') ||
+    subjectName.includes('ڤنديديقن اسلام') ||
+    subjectName.includes('اسلام')
+  );
+}
+
 /**
  * 1. DETERMINISTIC RULE-BASED RPH GENERATOR (0-API / Instant Offline Mode)
  * Automatically crafts SJK(C) compliant RPH in Chinese, Malay, or English
@@ -195,9 +207,15 @@ export function generateDeterministicRph(config: SinglePromptConfig): ParsedRphC
 export function buildSingleGeminiPrompt(config: SinglePromptConfig): string {
   const isChinese = isChineseSubject(config.subjectName);
   const isEnglish = isEnglishSubject(config.subjectName);
+  const isJawi = isJawiOrArabicSubject(config.subjectName);
 
   let langRule = 'Gunakan Bahasa Melayu standard KPM sepenuhnya.';
-  if (isChinese) {
+  if (isJawi) {
+    langRule = `WAJIB DAN KRITIKAL: Subjek ini adalah Pendidikan Islam (PAI) / Bahasa Arab / Jawi.
+1. Hasilkan KESELURUHAN kandungan RPH (Objektif, Kriteria Kejayaan, Set Induksi, Langkah Aktiviti, Penutup, BBM, EMK) dalam Tulisan Jawi (خط جاوي) atau Bahasa Arab yang standard mengikut DSKP Pendidikan Islam KPM.
+2. Gunakan aksara Jawi yang tepat dan susun atur mengikut kaedah penulisan Jawi dari KANAN KE KIRI (Right-to-Left / RTL).
+3. Kekalkan format tag [OBJEKTIF], [KRITERIA_KEJAYAAN], dan lain-lain tepat seperti yang diminta.`;
+  } else if (isChinese) {
     langRule = 'Gunakan Bahasa Cina (Simplified Chinese / 简体中文) sepenuhnya yang sesuai untuk SJK(C).';
   } else if (isEnglish) {
     langRule = 'Use English exclusively conforming to the KPM CEFR syllabus.';
@@ -384,6 +402,7 @@ SP: ${s.defaultSps.join('; ')}
 Sila jana Rancangan Pengajaran Harian (RPH) MINGGU ${weekNumber} untuk ${teacherName} bagi SEMUA ${slots.length} sesi di bawah sekaligus.
 
 PERATURAN BAHASA:
+- Subjek Pendidikan Islam (PAI) / Bahasa Arab / Jawi: WAJIB jana kandungan dalam Tulisan Jawi (خط جاوي) atau Bahasa Arab mengikut format DSKP dari kanan ke kiri (RTL).
 - Subjek Bahasa Cina / Matematik / Sains / Moral / Sejarah / RBT SJK(C): Gunakan Bahasa Cina (简体中文).
 - Subjek Bahasa Melayu: Gunakan Bahasa Melayu.
 - Subjek Bahasa Inggeris: Gunakan English.
