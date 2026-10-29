@@ -529,7 +529,20 @@ export default function ERphColorAdminApp() {
             return;
           }
 
-          // 6. Fallback for newly authenticated teacher (e.g. Guru ICT)
+          // 6. Whitelist enforcement check: Reject any user not explicitly whitelisted
+          if (!whitelistRole && !dbTeacher) {
+            try {
+              await supabase.auth.signOut();
+            } catch (_) {}
+            setIsAuthenticated(false);
+            setAuthSession(null);
+            localStorage.removeItem('erph_is_authenticated_v1');
+            localStorage.removeItem('erph_auth_session_v1');
+            setLoginError(`Akaun e-mel (${userEmail}) tiada dalam Senarai Putih (Whitelist) sistem. Sila hubungi Pentadbir Sekolah untuk kebenaran akses.`);
+            return;
+          }
+
+          // 7. Whitelisted new user: allow login and initialize profile
           const googleName =
             sessionUser.user_metadata?.full_name ||
             sessionUser.user_metadata?.name ||
