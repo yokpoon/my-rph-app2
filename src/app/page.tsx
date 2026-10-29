@@ -3142,6 +3142,7 @@ ${gen.assessment}`;
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {/* 1. JAWATAN SEKOLAH (Read-Only) */}
                 <div className="bg-white p-3 rounded-xl border border-slate-200">
                   <span className="text-[10px] uppercase font-bold text-slate-400">Jawatan Sekolah</span>
                   <p className="font-bold text-slate-800 text-sm mt-0.5">{currentUser.jawatan || 'GAB'}</p>
@@ -3152,59 +3153,164 @@ ${gen.assessment}`;
                   </p>
                 </div>
 
+                {/* 2. PERANAN SISTEM (Kekal / Dikunci: Hanya Superadmin boleh ubah di sini) */}
                 <div className="bg-white p-3 rounded-xl border border-slate-200">
-                  <span className="text-[10px] uppercase font-bold text-slate-400">Panitia Utama</span>
-                  <p className="font-bold text-slate-800 text-sm mt-0.5">{currentUser.panitia}</p>
-                  <p className="text-[11px] text-slate-500">Subjek Utama e-RPH</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] uppercase font-bold text-slate-400">Peranan Sistem</span>
+                    <span className="text-[9px] font-bold text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded-full flex items-center gap-1">
+                      🔒 Dikawal Pentadbir
+                    </span>
+                  </div>
+                  <div className="mt-1">
+                    {isSuperadmin ? (
+                      <select
+                        value={currentUser.role}
+                        onChange={(e) => {
+                          const newRole = e.target.value as UserRole;
+                          const newJawatan = newRole === 'guru_besar' ? 'GB' : newRole === 'pk_pentadbiran' ? 'GPK1' : 'GAB';
+                          const updatedUser: TeacherProfile = {
+                            ...currentUser,
+                            role: newRole,
+                            jawatan: newJawatan,
+                          };
+                          setTeachers((prev) => {
+                            const list = prev.map((t) => (t.id === currentUser.id ? updatedUser : t));
+                            try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(list)); } catch (_) {}
+                            return list;
+                          });
+                          setAuthSession((prev) => prev ? { ...prev, role: newRole, jawatan: newJawatan } : prev);
+                          try {
+                            const curSession = localStorage.getItem('erph_auth_session_v1');
+                            if (curSession) {
+                              const p = JSON.parse(curSession);
+                              p.role = newRole;
+                              p.jawatan = newJawatan;
+                              localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
+                            }
+                          } catch (_) {}
+                          saveTeacherToDb(updatedUser).catch((err) => console.warn('saveTeacherToDb err:', err));
+                          showToast("✅ Peranan berjaya dikemaskini!");
+                        }}
+                        className="w-full border rounded-lg p-1.5 bg-slate-50 font-bold text-xs text-slate-800"
+                      >
+                        <option value="guru">👩‍🏫 Guru Subjek</option>
+                        <option value="pk_pentadbiran">🛡️ PK Pentadbiran</option>
+                        <option value="guru_besar">🎖️ Guru Besar</option>
+                        <option value="guru_ict_data">💻 Guru ICT / Data</option>
+                        <option value="superadmin">👑 Superadmin</option>
+                      </select>
+                    ) : (
+                      <div className="w-full py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-lg flex items-center justify-between text-xs font-bold text-slate-800">
+                        <span>
+                          {currentUser.role === 'guru_besar'
+                            ? '🎖️ Guru Besar'
+                            : currentUser.role === 'pk_pentadbiran'
+                            ? '🛡️ PK Pentadbiran'
+                            : currentUser.role === 'guru_ict_data'
+                            ? '💻 Guru ICT / Data'
+                            : currentUser.role === 'superadmin'
+                            ? '👑 Superadmin'
+                            : '👩‍🏫 Guru Subjek'}
+                        </span>
+                        <span className="text-[10px] text-slate-400 font-normal">(Kekal)</span>
+                      </div>
+                    )}
+                  </div>
+                  <p className="text-[10px] text-slate-500 mt-1">
+                    {isSuperadmin ? 'Disimpan terus ke Supabase & sesi log masuk' : 'Peranan hanya boleh ditukar oleh Pentadbir Sekolah di menu Pengurusan Guru.'}
+                  </p>
                 </div>
 
+                {/* 3. PANITIA UTAMA (Boleh Disunting oleh Guru) */}
                 <div className="bg-white p-3 rounded-xl border border-slate-200">
-                  <span className="text-[10px] uppercase font-bold text-slate-400">No. Kad Pengenalan</span>
-                  <p className="font-bold font-mono text-slate-800 text-sm mt-0.5">{currentUser.icNo || '-'}</p>
-                  <p className="text-[11px] text-slate-500">Pengenalan Rasmi Guru</p>
-                </div>
-
-                <div className="bg-white p-3 rounded-xl border border-slate-200">
-                  <span className="text-[10px] uppercase font-bold text-slate-400">Peranan Sistem</span>
-                  <div className="mt-1 flex items-center gap-2">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] uppercase font-bold text-slate-400">Panitia Utama</span>
+                    <span className="text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded-full">Boleh Disunting</span>
+                  </div>
+                  <div className="mt-1">
                     <select
-                      value={currentUser.role}
+                      value={currentUser.panitia || 'Bahasa Cina'}
                       onChange={(e) => {
-                        const newRole = e.target.value as UserRole;
-                        const newJawatan = newRole === 'guru_besar' ? 'GB' : newRole === 'pk_pentadbiran' ? 'GPK1' : 'GAB';
+                        const newPanitia = e.target.value;
                         const updatedUser: TeacherProfile = {
                           ...currentUser,
-                          role: newRole,
-                          jawatan: newJawatan,
+                          panitia: newPanitia,
                         };
                         setTeachers((prev) => {
                           const list = prev.map((t) => (t.id === currentUser.id ? updatedUser : t));
                           try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(list)); } catch (_) {}
                           return list;
                         });
-                        setAuthSession((prev) => prev ? { ...prev, role: newRole, jawatan: newJawatan } : prev);
+                        setAuthSession((prev) => prev ? { ...prev, panitia: newPanitia } : prev);
                         try {
                           const curSession = localStorage.getItem('erph_auth_session_v1');
                           if (curSession) {
                             const p = JSON.parse(curSession);
-                            p.role = newRole;
-                            p.jawatan = newJawatan;
+                            p.panitia = newPanitia;
                             localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
                           }
                         } catch (_) {}
                         saveTeacherToDb(updatedUser).catch((err) => console.warn('saveTeacherToDb err:', err));
-                        showToast(`✅ Peranan berjaya dikemaskini kepada ${newRole}!`);
+                        showToast("✅ Panitia utama berjaya dikemaskini!");
                       }}
                       className="w-full border rounded-lg p-1.5 bg-slate-50 font-bold text-xs text-slate-800"
                     >
-                      <option value="guru">👩‍🏫 Guru Subjek</option>
-                      <option value="pk_pentadbiran">🛡️ PK Pentadbiran</option>
-                      <option value="guru_besar">🎖️ Guru Besar</option>
-                      <option value="guru_ict_data">💻 Guru ICT / Data</option>
-                      <option value="superadmin">👑 Superadmin</option>
+                      <option value="Bahasa Cina">Bahasa Cina</option>
+                      <option value="Bahasa Melayu">Bahasa Melayu</option>
+                      <option value="Bahasa Inggeris">Bahasa Inggeris</option>
+                      <option value="Matematik">Matematik</option>
+                      <option value="Sains">Sains</option>
+                      <option value="Pendidikan Moral">Pendidikan Moral</option>
+                      <option value="Sejarah">Sejarah</option>
+                      <option value="RBT">RBT / TMK</option>
+                      <option value="Pendidikan Jasmani & Kesihatan">Pendidikan Jasmani & Kesihatan (PJK)</option>
+                      <option value="Pendidikan Seni Visual">Pendidikan Seni Visual (PSV)</option>
+                      <option value="Pendidikan Muzik">Pendidikan Muzik</option>
+                      <option value="Pentadbiran / Kepimpinan">Pentadbiran / Kepimpinan</option>
                     </select>
                   </div>
-                  <p className="text-[10px] text-slate-500 mt-1">Disimpan terus ke Supabase & sesi log masuk</p>
+                  <p className="text-[10px] text-slate-500 mt-1">Subjek Utama e-RPH anda</p>
+                </div>
+
+                {/* 4. NO KAD PENGENALAN (Boleh Disunting oleh Guru) */}
+                <div className="bg-white p-3 rounded-xl border border-slate-200">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] uppercase font-bold text-slate-400">No. Kad Pengenalan</span>
+                    <span className="text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded-full">Boleh Disunting</span>
+                  </div>
+                  <div className="mt-1">
+                    <input
+                      type="text"
+                      placeholder="cth: 900101011234"
+                      defaultValue={currentUser.icNo || ''}
+                      onBlur={(e) => {
+                        const newIc = e.target.value.trim();
+                        if (newIc === (currentUser.icNo || '')) return;
+                        const updatedUser: TeacherProfile = {
+                          ...currentUser,
+                          icNo: newIc,
+                        };
+                        setTeachers((prev) => {
+                          const list = prev.map((t) => (t.id === currentUser.id ? updatedUser : t));
+                          try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(list)); } catch (_) {}
+                          return list;
+                        });
+                        setAuthSession((prev) => prev ? { ...prev, icNo: newIc } : prev);
+                        try {
+                          const curSession = localStorage.getItem('erph_auth_session_v1');
+                          if (curSession) {
+                            const p = JSON.parse(curSession);
+                            p.icNo = newIc;
+                            localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
+                          }
+                        } catch (_) {}
+                        saveTeacherToDb(updatedUser).catch((err) => console.warn('saveTeacherToDb err:', err));
+                        showToast("✅ No. Kad Pengenalan berjaya disimpan!");
+                      }}
+                      className="w-full border rounded-lg p-1.5 bg-slate-50 font-mono font-bold text-xs text-slate-800 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    />
+                  </div>
+                  <p className="text-[10px] text-slate-500 mt-1">Digunakan sebagai pengenalan rasmi & kata laluan lalai log masuk</p>
                 </div>
               </div>
             </div>
