@@ -825,6 +825,7 @@ export default function ERphColorAdminApp() {
     detail?: string;
     confirmText?: string;
     confirmColor?: "rose" | "amber" | "indigo";
+    requireInputText?: string;
     onConfirm: () => void;
   }>({
     isOpen: false,
@@ -833,12 +834,15 @@ export default function ERphColorAdminApp() {
     onConfirm: () => {},
   });
 
+  const [confirmInputVal, setConfirmInputVal] = useState<string>("");
+
   const requestConfirmation = ({
     title,
     message,
     detail,
     confirmText = "Ya, Teruskan Padam",
     confirmColor = "rose",
+    requireInputText,
     onConfirm,
   }: {
     title: string;
@@ -846,8 +850,10 @@ export default function ERphColorAdminApp() {
     detail?: string;
     confirmText?: string;
     confirmColor?: "rose" | "amber" | "indigo";
+    requireInputText?: string;
     onConfirm: () => void;
   }) => {
+    setConfirmInputVal("");
     setConfirmModal({
       isOpen: true,
       title,
@@ -855,6 +861,7 @@ export default function ERphColorAdminApp() {
       detail,
       confirmText,
       confirmColor,
+      requireInputText,
       onConfirm: () => {
         setConfirmModal((prev) => ({ ...prev, isOpen: false }));
         onConfirm();
@@ -2645,13 +2652,39 @@ ${gen.assessment}`;
   };
 
   const handleRenewAcademicYear = () => {
-    const nextYear = `${Number(school.academicYear.split('/')[0]) + 1}/${Number(school.academicYear.split('/')[0]) + 2}`;
-    setSchool((prev) => ({ ...prev, academicYear: nextYear, currentWeek: 1 }));
-    setBuilderWeek(1);
-    setBatchWeek(1);
-    setDraftWeekFilter(1);
-    setAdminReviewWeek(1);
-    showToast(`🎉 Sesi Kalendar Baharu ${nextYear} dibuka! Semua ${teachers.length} rekod guru dikekalkan secara utuh.`);
+    const currentYear = school.academicYear;
+    const parts = currentYear.split('/');
+    const nextYear = parts.length === 2 
+      ? `${Number(parts[0]) + 1}/${Number(parts[1]) + 1}`
+      : `${Number(currentYear) + 1}`;
+
+    requestConfirmation({
+      title: "PERBAHARUI SESI KALENDAR BAHARU",
+      message: `Buka sesi kalendar baharu persekolahan ${nextYear}?`,
+      detail: `⚠️ AMARAN KESELAMATAN DATA:
+1. Sesi akademik akan beralih daripada ${currentYear} kepada ${nextYear}.
+2. Minggu semasa akan ditetapkan semula kepada Minggu 1.
+3. Semua senarai guru (${teachers.length} orang) dan profil panitia KEKAL SELAMAT tanpa dipadam.
+4. Pastikan anda telah mengeksport Arkib e-RPH sesi ${currentYear} ke Google Sheets / JSON sebelum bertukar sesi jika diperlukan.`,
+      confirmText: `Buka Sesi ${nextYear}`,
+      confirmColor: "amber",
+      requireInputText: "BUKA SESI BAHARU",
+      onConfirm: () => {
+        const updated = { ...school, academicYear: nextYear, currentWeek: 1 };
+        setSchool(updated);
+        try {
+          localStorage.setItem('erph_school_config_v1', JSON.stringify(updated));
+        } catch (_) {}
+        if (isSuperadmin || isPentadbir || isIct) {
+          saveSchoolConfigToDb(updated).catch((err) => console.warn('saveSchoolConfigToDb err:', err));
+        }
+        setBuilderWeek(1);
+        setBatchWeek(1);
+        setDraftWeekFilter(1);
+        setAdminReviewWeek(1);
+        showToast(`🎉 Sesi Kalendar Baharu ${nextYear} berjaya dibuka! Semua ${teachers.length} profil guru dikekalkan secara utuh.`);
+      },
+    });
   };
 
   // ==========================================
@@ -8425,41 +8458,12 @@ ${gen.assessment}`;
                 </div>
                 <div className="flex flex-wrap items-center gap-2">
                   <button
-                    onClick={handleRenewAcademicYear}
-                    className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs rounded-xl shadow transition"
-                  >
-                    🔄 Perbaharui Sesi Kalendar Baharu ({school.academicYear})
-                  </button>
-                  <button
                     type="button"
-                    onClick={() => {
-                      requestConfirmation({
-                        title: "Reset Bersih Data Ujian",
-                        message: "Adakah anda pasti untuk mengosongkan semua data mock dan memulakan pangkalan data yang bersih?",
-                        detail: "Tindakan ini akan membersihkan data ujian lama. Hanya profil pentadbir anda yang akan dikekalkan.",
-                        confirmText: "Ya, Mulakan Pangkalan Data Bersih",
-                        confirmColor: "rose",
-                        onConfirm: () => {
-                          localStorage.removeItem("erph_live_teachers_v1");
-                          localStorage.removeItem("erph_live_timetable_v1");
-                          localStorage.removeItem("erph_live_rph_records_v1");
-                          localStorage.removeItem("erph_yearly_matrix_records_v2");
-                          setTimetable([]);
-                          setRphRecords([]);
-                          setYearlyRecords({});
-                          if (currentUser) {
-                            setTeachers([currentUser]);
-                          } else {
-                            setTeachers([]);
-                          }
-                          showToast("✨ Pangkalan data bersih telah dimulakan! Hanya profil pentadbir anda dikekalkan.");
-                        },
-                      });
-                    }}
-                    className="px-4 py-2 bg-rose-500/10 hover:bg-rose-500/20 text-rose-700 border border-rose-300 font-extrabold text-xs rounded-xl shadow-xs transition"
-                    title="Kosongkan sebarang data mock ujian lama"
+                    onClick={handleRenewAcademicYear}
+                    className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs rounded-xl shadow transition cursor-pointer flex items-center gap-1.5"
                   >
-                    🧹 Reset Bersih Data Ujian
+                    <span>🔄</span>
+                    <span>Buka Sesi Kalendar Baharu</span>
                   </button>
                 </div>
               </div>
@@ -9483,8 +9487,25 @@ ${gen.assessment}`;
                 {confirmModal.message}
               </p>
               {confirmModal.detail && (
-                <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-[11px] text-slate-600 leading-relaxed">
+                <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-[11px] text-slate-600 leading-relaxed whitespace-pre-line">
                   {confirmModal.detail}
+                </div>
+              )}
+
+              {/* Typed Confirmation Safeguard */}
+              {confirmModal.requireInputText && (
+                <div className="pt-2 space-y-1.5">
+                  <label className="block text-[11px] font-bold text-slate-700">
+                    Sila taip <span className="font-mono bg-rose-100 text-rose-800 px-1.5 py-0.5 rounded font-black">{confirmModal.requireInputText}</span> untuk mengesahkan:
+                  </label>
+                  <input
+                    type="text"
+                    value={confirmInputVal}
+                    onChange={(e) => setConfirmInputVal(e.target.value)}
+                    placeholder={`Taip "${confirmModal.requireInputText}" di sini...`}
+                    className="w-full px-3 py-2 border-2 border-slate-300 focus:border-rose-500 rounded-xl font-mono font-bold text-xs focus:outline-none bg-slate-50 focus:bg-white"
+                    autoFocus
+                  />
                 </div>
               )}
 
@@ -9493,19 +9514,22 @@ ${gen.assessment}`;
                 <button
                   type="button"
                   onClick={() => setConfirmModal((prev) => ({ ...prev, isOpen: false }))}
-                  className="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs rounded-xl transition"
+                  className="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs rounded-xl transition cursor-pointer"
                 >
                   Batal
                 </button>
                 <button
                   type="button"
+                  disabled={Boolean(confirmModal.requireInputText && confirmInputVal.trim() !== confirmModal.requireInputText)}
                   onClick={confirmModal.onConfirm}
                   className={`px-5 py-2.5 text-white font-extrabold text-xs rounded-xl shadow-md transition ${
-                    confirmModal.confirmColor === "rose"
-                      ? "bg-rose-600 hover:bg-rose-700"
+                    confirmModal.requireInputText && confirmInputVal.trim() !== confirmModal.requireInputText
+                      ? "bg-slate-300 text-slate-400 cursor-not-allowed shadow-none"
+                      : confirmModal.confirmColor === "rose"
+                      ? "bg-rose-600 hover:bg-rose-700 cursor-pointer"
                       : confirmModal.confirmColor === "amber"
-                      ? "bg-amber-600 hover:bg-amber-700"
-                      : "bg-indigo-600 hover:bg-indigo-700"
+                      ? "bg-amber-600 hover:bg-amber-700 cursor-pointer"
+                      : "bg-indigo-600 hover:bg-indigo-700 cursor-pointer"
                   }`}
                 >
                   {confirmModal.confirmText}
