@@ -307,12 +307,12 @@ export const getActiveAcademicWeeks = (weeks: AcademicWeek[]): AcademicWeek[] =>
 };
 
 export const INITIAL_SCHOOL_CONFIG: SchoolConfig = {
-  code: 'JBC1001',
+  code: 'JBC3019',
   name: 'SJKC YOK POON',
   chineseName: '育本国民型华文小学',
   ppd: 'SUNGAI RENGIT, 81620 PENGERANG JOHOR',
   academicYear: CURRENT_ACADEMIC_YEAR,
-  currentWeek: 24,
+  currentWeek: 38,
   groupType: 'KUMPULAN_B',
 };
 
