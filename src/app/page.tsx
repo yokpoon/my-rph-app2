@@ -5782,14 +5782,42 @@ ${gen.assessment}`;
 
                           <div className="flex items-center gap-1.5">
                             <button
-                              onClick={() => setIsEditingRph(!isEditingRph)}
-                              className={`px-2.5 py-1 text-xs font-bold rounded-lg border transition ${
-                                isEditingRph
-                                  ? 'bg-emerald-600 text-white border-emerald-600'
-                                  : 'bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200'
-                              }`}
+                              type="button"
+                              onClick={() => {
+                                if (!isEditingRph) {
+                                  setEditBuffer({
+                                    sk: previewRph.sk || "",
+                                    sps: (previewRph.sps || []).join("\n"),
+                                    objectives: (previewRph.objectives || []).join("\n"),
+                                    criteria: (previewRph.criteria || []).join("\n"),
+                                    induction: previewRph.induction || "",
+                                    activities: (previewRph.activities || []).join("\n"),
+                                    closure: previewRph.closure || "",
+                                    emk: (previewRph.emk || []).join(", "),
+                                    bbm: (previewRph.bbm || []).join(", "),
+                                    reflection: previewRph.reflection || "",
+                                  });
+                                  setIsEditingRph(true);
+                                } else {
+                                  setPreviewRph({
+                                    ...previewRph,
+                                    sk: editBuffer.sk,
+                                    sps: editBuffer.sps.split("\n").filter((x) => x.trim()),
+                                    objectives: editBuffer.objectives.split("\n").filter((x) => x.trim()),
+                                    criteria: editBuffer.criteria.split("\n").filter((x) => x.trim()),
+                                    induction: editBuffer.induction,
+                                    activities: editBuffer.activities.split("\n").filter((x) => x.trim()),
+                                    closure: editBuffer.closure,
+                                    emk: editBuffer.emk.split(",").map((x) => x.trim()).filter(Boolean),
+                                    bbm: editBuffer.bbm.split(",").map((x) => x.trim()).filter(Boolean),
+                                    reflection: editBuffer.reflection,
+                                  });
+                                  setIsEditingRph(false);
+                                }
+                              }}
+                              className={`px-2.5 py-1 text-xs font-bold rounded-lg border transition ${isEditingRph ? "bg-emerald-600 text-white border-emerald-600 shadow-xs" : "bg-slate-100 text-slate-700 border-slate-200 hover:bg-slate-200"}`}
                             >
-                              {isEditingRph ? '✓ Selesai' : '✏️ Edit'}
+                              {isEditingRph ? "✓ Selesai Edit" : "✏️ Edit"}
                             </button>
                             <button
                               onClick={() => exportSingleRphToDocx(previewRph, school.name)}
