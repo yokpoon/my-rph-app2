@@ -630,13 +630,12 @@ export default function ERphColorAdminApp() {
     }
   }, [school.currentWeek]);
 
-  // Persist school config to localStorage & Supabase whenever updated
+  // Persist school config to localStorage whenever updated
   useEffect(() => {
     if (mounted && typeof window !== 'undefined' && school.name) {
       try {
         localStorage.setItem('erph_school_config_v1', JSON.stringify(school));
       } catch (e) {}
-      saveSchoolConfigToDb(school).catch((err) => console.warn('saveSchoolConfigToDb err:', err));
     }
   }, [school, mounted]);
 
@@ -886,6 +885,16 @@ export default function ERphColorAdminApp() {
       SUPERADMIN_PROFILE
     );
   }, [teachers, currentUserId, authSession]);
+
+  // Role booleans: Superadmin has top-level privileges; 4 management positions (GB, GPK1, GPK HEM, GPK KK) are Pentadbir by default
+  const isSuperadmin = currentUser.role === 'superadmin' || currentUser.id === 'superadmin';
+  const isPentadbir =
+    isSuperadmin ||
+    currentUser.role === 'pk_pentadbiran' ||
+    currentUser.role === 'guru_besar' ||
+    (currentUser.jawatan && PENTADBIR_JAWATAN.includes(currentUser.jawatan));
+  const isIct = isSuperadmin || currentUser.role === 'guru_ict_data';
+  const isGuru = !isSuperadmin && !isPentadbir && !isIct;
 
   // Regular teachers list excluding superadmin (for matrix, roster, and general selection)
   const regularTeachers = useMemo(() => {
@@ -2532,12 +2541,19 @@ ${gen.assessment}`;
   };
 
   const handleSetCurrentWeek = (weekNum: number) => {
-    setSchool((prev) => ({ ...prev, currentWeek: weekNum }));
+    const updated = { ...school, currentWeek: weekNum };
+    setSchool(updated);
+    try {
+      localStorage.setItem('erph_school_config_v1', JSON.stringify(updated));
+    } catch (_) {}
+    if (isSuperadmin || isPentadbir || isIct) {
+      saveSchoolConfigToDb(updated).catch((err) => console.warn('saveSchoolConfigToDb err:', err));
+    }
     setBuilderWeek(weekNum);
     setBatchWeek(weekNum);
     setDraftWeekFilter(weekNum);
     setAdminReviewWeek(weekNum);
-    showToast(`⭐ Minggu ${weekNum} kini ditetapkan sebagai Minggu Akademik Semasa.`);
+    showToast("⭐ Minggu " + weekNum + " kini ditetapkan sebagai Minggu Akademik Semasa.");
   };
 
   // ==========================================
@@ -3843,15 +3859,7 @@ ${gen.assessment}`;
     </div>
   );
 
-  // Role booleans: Superadmin has top-level privileges; 4 management positions (GB, GPK1, GPK HEM, GPK KK) are Pentadbir by default
-  const isSuperadmin = currentUser.role === 'superadmin' || currentUser.id === 'superadmin';
-  const isPentadbir =
-    isSuperadmin ||
-    currentUser.role === 'pk_pentadbiran' ||
-    currentUser.role === 'guru_besar' ||
-    (currentUser.jawatan && PENTADBIR_JAWATAN.includes(currentUser.jawatan));
-  const isIct = isSuperadmin || currentUser.role === 'guru_ict_data';
-  const isGuru = !isSuperadmin && !isPentadbir && !isIct;
+
 
   // Hydration guard: ensures identical output between SSR and client initial paint
   if (!mounted) {
