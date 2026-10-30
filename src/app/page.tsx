@@ -283,13 +283,12 @@ export default function ERphColorAdminApp() {
     confirmPass: '',
   });
 
-  // Dark Theme Mode State (Murmura data-theme="light" | "dark")
+  // Dark Theme Mode State (Murmura data-theme="light" | "dark") - Default is strictly light; configured per user preference
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     if (typeof window !== 'undefined') {
       try {
         const saved = localStorage.getItem('murmura_theme_v1');
-        if (saved) return saved === 'dark';
-        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        return saved === 'dark';
       } catch (_) {}
     }
     return false;

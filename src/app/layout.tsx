@@ -26,7 +26,7 @@ export default function RootLayout({
               (function() {
                 try {
                   var saved = localStorage.getItem('murmura_theme_v1');
-                  var isDark = saved ? saved === 'dark' : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                  var isDark = saved === 'dark';
                   var theme = isDark ? 'dark' : 'light';
                   document.documentElement.setAttribute('data-theme', theme);
                   if (isDark) document.documentElement.classList.add('dark');
