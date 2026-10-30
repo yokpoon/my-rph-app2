@@ -3065,7 +3065,7 @@ ${gen.assessment}`;
   };
 
   const renderLoginPage = () => (
-    <div className="min-h-screen bg-[#f1f2ef] flex items-center justify-center p-4 sm:p-6 text-[#16191d] relative overflow-hidden">
+    <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center p-4 sm:p-6 text-[var(--text)] relative overflow-hidden transition-colors duration-300">
       {/* Murmura Ambient Mesh */}
       <div className="murmura-mesh" aria-hidden="true">
         <i className="murmura-mesh__a" />
@@ -4038,7 +4038,7 @@ ${gen.assessment}`;
   // Hydration guard: ensures identical output between SSR and client initial paint
   if (!mounted) {
     return (
-      <div className="min-h-screen bg-[#f1f2ef] flex items-center justify-center text-[#16191d] font-sans">
+      <div className="min-h-screen bg-[var(--bg)] flex items-center justify-center text-[var(--text)] font-sans transition-colors duration-300">
         <div className="flex flex-col items-center gap-3">
           <div className="w-12 h-12 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center">
             <img src="https://i.imgur.com/ZYMvxRE.png" alt="Logo SJKC Yok Poon" className="w-full h-full object-contain" />
@@ -4068,7 +4068,7 @@ ${gen.assessment}`;
   }
 
   return (
-    <div className="flex h-screen bg-[#f1f2ef] text-[#16191d] antialiased overflow-hidden relative">
+    <div className="flex h-screen bg-[var(--bg)] text-[var(--text)] antialiased overflow-hidden relative transition-colors duration-300">
       {/* MURMURA AMBIENT RADIAL MESH BACKGROUND */}
       <div className="murmura-mesh" aria-hidden="true">
         <i className="murmura-mesh__a" />

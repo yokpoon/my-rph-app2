@@ -134,37 +134,68 @@ body {
   color: var(--text);
 }
 
-:root[data-theme='dark'] .bg-white {
+:root[data-theme='dark'] .bg-white,
+:root[data-theme='dark'] [class*="bg-white"] {
   background-color: var(--float) !important;
   color: var(--text) !important;
   border-color: var(--line) !important;
 }
 
 :root[data-theme='dark'] .bg-slate-50,
-:root[data-theme='dark'] .bg-slate-50\/70 {
+:root[data-theme='dark'] .bg-slate-100,
+:root[data-theme='dark'] .bg-slate-50\/70,
+:root[data-theme='dark'] .bg-slate-50\/40,
+:root[data-theme='dark'] .bg-blue-50,
+:root[data-theme='dark'] .bg-blue-50\/40,
+:root[data-theme='dark'] .bg-blue-50\/70,
+:root[data-theme='dark'] .bg-blue-50\/80,
+:root[data-theme='dark'] .bg-amber-50,
+:root[data-theme='dark'] .bg-amber-50\/60,
+:root[data-theme='dark'] .bg-emerald-50,
+:root[data-theme='dark'] .bg-emerald-50\/60,
+:root[data-theme='dark'] .bg-rose-50,
+:root[data-theme='dark'] .bg-rose-50\/60 {
   background-color: var(--well) !important;
   color: var(--text) !important;
   border-color: var(--line) !important;
 }
 
 :root[data-theme='dark'] .text-slate-800,
-:root[data-theme='dark'] .text-slate-900 {
+:root[data-theme='dark'] .text-slate-900,
+:root[data-theme='dark'] .text-blue-900,
+:root[data-theme='dark'] .text-blue-950,
+:root[data-theme='dark'] .text-indigo-900,
+:root[data-theme='dark'] .text-gray-900,
+:root[data-theme='dark'] .text-gray-800 {
   color: var(--text) !important;
 }
 
 :root[data-theme='dark'] .text-slate-700,
-:root[data-theme='dark'] .text-slate-600 {
-  color: #d1d5db !important;
+:root[data-theme='dark'] .text-slate-600,
+:root[data-theme='dark'] .text-blue-700,
+:root[data-theme='dark'] .text-blue-800,
+:root[data-theme='dark'] .text-indigo-700,
+:root[data-theme='dark'] .text-gray-700,
+:root[data-theme='dark'] .text-gray-600 {
+  color: #c5cbd0 !important;
 }
 
 :root[data-theme='dark'] .text-slate-500,
-:root[data-theme='dark'] .text-slate-400 {
+:root[data-theme='dark'] .text-slate-400,
+:root[data-theme='dark'] .text-gray-500,
+:root[data-theme='dark'] .text-gray-400 {
   color: var(--muted) !important;
 }
 
 :root[data-theme='dark'] .border-slate-200,
 :root[data-theme='dark'] .border-slate-300,
-:root[data-theme='dark'] .border-slate-100 {
+:root[data-theme='dark'] .border-slate-100,
+:root[data-theme='dark'] .border-blue-200,
+:root[data-theme='dark'] .border-blue-300,
+:root[data-theme='dark'] .border-amber-200,
+:root[data-theme='dark'] .border-emerald-200,
+:root[data-theme='dark'] .border-rose-200,
+:root[data-theme='dark'] .border-gray-200 {
   border-color: var(--line) !important;
 }
 
@@ -174,6 +205,25 @@ body {
   background-color: var(--solid) !important;
   color: var(--text) !important;
   border-color: var(--line-2) !important;
+}
+
+:root[data-theme='dark'] select option {
+  background-color: #191b1f !important;
+  color: #eef0ee !important;
+}
+
+:root[data-theme='dark'] table {
+  color: var(--text) !important;
+}
+
+:root[data-theme='dark'] th {
+  background-color: var(--solid) !important;
+  color: var(--text) !important;
+  border-color: var(--line) !important;
+}
+
+:root[data-theme='dark'] td {
+  border-color: var(--line) !important;
 }
 
 /* Floating Clean Header (no full-width white block) */
