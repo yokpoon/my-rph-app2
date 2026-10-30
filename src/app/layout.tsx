@@ -12,8 +12,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ms" suppressHydrationWarning>
-      <body className="antialiased selection:bg-cyan-500 selection:text-white" suppressHydrationWarning>
+    <html lang="ms" data-theme="light" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased selection:bg-[#f2b740] selection:text-[#16191d]" suppressHydrationWarning>
         {children}
       </body>
     </html>

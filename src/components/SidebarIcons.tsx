@@ -62,19 +62,14 @@ export function SidebarNavItem({
   onClick,
   title,
 }: SidebarNavItemProps) {
-  const activeGradient =
+  // Murmura Dock & Pill palette:
+  // Dock surface: #16191d, Butter accent: #f2b740, Pine accent: #11745a
+  const activeStyle =
     colorScheme === 'amber'
-      ? 'bg-gradient-to-r from-amber-500 to-indigo-600 text-white shadow-md shadow-amber-500/25'
+      ? 'bg-[#f2b740] text-[#16191d] shadow-md shadow-[#f2b740]/25'
       : colorScheme === 'purple'
-      ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-md shadow-purple-500/25'
-      : 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-md shadow-cyan-500/25';
-
-  const activeIndicatorBar =
-    colorScheme === 'amber'
-      ? 'bg-amber-300'
-      : colorScheme === 'purple'
-      ? 'bg-purple-300'
-      : 'bg-cyan-300';
+      ? 'bg-[#11745a] text-[#f6f7f5] shadow-md shadow-[#11745a]/25'
+      : 'bg-[#f2b740] text-[#16191d] shadow-md shadow-[#f2b740]/20';
 
   if (!expanded) {
     return (
@@ -83,18 +78,25 @@ export function SidebarNavItem({
         onClick={onClick}
         title={title || label}
         aria-current={active ? 'page' : undefined}
-        className={`murmura-nav-btn w-11 h-11 mx-auto rounded-xl flex items-center justify-center group relative select-none ${
+        className={`murmura-nav-btn w-12 h-12 mx-auto rounded-full flex items-center justify-center group relative select-none ${
           active
-            ? `${activeGradient} font-bold`
-            : 'text-[#869ab0] hover:text-white hover:bg-[#252f38]'
+            ? 'bg-white/15 text-[#f6f7f5] opacity-100 font-bold'
+            : 'text-[#f6f7f5]/70 hover:text-[#f6f7f5] hover:bg-white/10 opacity-80 hover:opacity-100'
         }`}
       >
         <span className="murmura-nav-icon flex items-center justify-center">
           {icon}
         </span>
-        {/* Subtle notification dot for items with badges in mini mode */}
+        {/* Murmura butter active indicator dot on right edge */}
+        {active && (
+          <span
+            aria-hidden="true"
+            className="absolute right-1 top-1/2 -translate-y-1/2 w-1.5 h-1.5 rounded-full bg-[#f2b740]"
+          />
+        )}
+        {/* Coral dot for items with badges in mini dock mode */}
         {badge && !active && (
-          <span className="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-cyan-400 ring-2 ring-[#1a2229]" />
+          <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-[#c43c30] ring-2 ring-[#16191d]" />
         )}
       </button>
     );
@@ -106,29 +108,26 @@ export function SidebarNavItem({
       onClick={onClick}
       title={title || label}
       aria-current={active ? 'page' : undefined}
-      className={`murmura-nav-btn relative w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-left group select-none overflow-hidden ${
+      className={`murmura-nav-btn relative w-full flex items-center gap-3 px-3.5 py-2.5 rounded-full text-left group select-none overflow-hidden ${
         active
-          ? `${activeGradient} font-semibold`
-          : 'text-[#869ab0] hover:text-white hover:bg-[#252f38]'
+          ? `${activeStyle} font-bold`
+          : 'text-[#f6f7f5]/75 hover:text-[#f6f7f5] hover:bg-white/10'
       }`}
     >
-      {active && (
-        <span
-          aria-hidden="true"
-          className={`
-            absolute left-0 top-2 bottom-2 w-1 rounded-r-full ${activeIndicatorBar}
-            transition-all duration-300
-          `}
-        />
-      )}
       <span
         className={`murmura-nav-icon shrink-0 ${
-          active ? 'text-white' : 'text-[#869ab0] group-hover:text-cyan-400'
+          active ? 'text-current' : 'text-[#f6f7f5]/75 group-hover:text-[#f2b740]'
         }`}
       >
         {icon}
       </span>
-      <span className="truncate text-xs font-medium flex-1 text-slate-100">{label}</span>
+      <span
+        className={`truncate text-xs flex-1 ${
+          active ? 'font-bold text-current' : 'font-semibold text-[#f6f7f5]'
+        }`}
+      >
+        {label}
+      </span>
       {badge && <span className="ml-auto shrink-0">{badge}</span>}
     </button>
   );

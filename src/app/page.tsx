@@ -3001,55 +3001,66 @@ ${gen.assessment}`;
   };
 
   const renderLoginPage = () => (
-    <div className="min-h-screen bg-gradient-to-br from-[#0c141f] via-[#152233] to-[#0d1726] flex items-center justify-center p-4 sm:p-6 text-slate-800">
-      <div className="w-full max-w-4xl bg-white rounded-3xl shadow-2xl overflow-hidden border border-slate-200/80 grid grid-cols-1 lg:grid-cols-12 animate-fade-in">
-        {/* Left Branding Panel (5 cols) */}
-        <div className="lg:col-span-5 bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900 p-8 text-white flex flex-col justify-between relative overflow-hidden">
-          <div className="absolute -top-16 -left-16 w-48 h-48 bg-cyan-500/20 rounded-full blur-2xl"></div>
-          <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-indigo-500/20 rounded-full blur-2xl"></div>
+    <div className="min-h-screen bg-[#f1f2ef] flex items-center justify-center p-4 sm:p-6 text-[#16191d] relative overflow-hidden">
+      {/* Murmura Ambient Mesh */}
+      <div className="murmura-mesh" aria-hidden="true">
+        <i className="murmura-mesh__a" />
+        <i className="murmura-mesh__b" />
+        <i className="murmura-mesh__c" />
+      </div>
+
+      <div className="relative z-10 w-full max-w-4xl bg-white/85 backdrop-blur-xl rounded-[28px] shadow-[0_24px_60px_-18px_rgba(20,24,28,0.28)] overflow-hidden border border-white/80 grid grid-cols-1 lg:grid-cols-12 animate-fade-in">
+        {/* Left Branding Panel (5 cols) — Murmura Charcoal Ink */}
+        <div className="lg:col-span-5 bg-[#16191d] p-8 text-[#f6f7f5] flex flex-col justify-between relative overflow-hidden">
+          <div className="absolute -top-16 -left-16 w-48 h-48 bg-[#11745a]/25 rounded-full blur-2xl"></div>
+          <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-[#f2b740]/20 rounded-full blur-2xl"></div>
 
           <div className="relative z-10 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-tr from-cyan-400 to-blue-600 flex items-center justify-center text-white font-black text-xl shadow-lg border border-cyan-300/30">
-                R
+              <div className="w-12 h-12 rounded-2xl bg-white p-1.5 flex items-center justify-center shadow-lg border border-white/20 shrink-0">
+                <img
+                  src="https://i.imgur.com/ZYMvxRE.png"
+                  alt="Logo SJKC Yok Poon"
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
-                <h1 className="text-xl font-black tracking-tight">e-RPH SJK(C)</h1>
-                <p className="text-xs text-cyan-300 font-semibold">{school.name}</p>
+                <h1 className="text-xl font-black tracking-tight text-[#f6f7f5]">e-RPH SJK(C)</h1>
+                <p className="text-xs text-[#f2b740] font-bold">{school.name}</p>
               </div>
             </div>
 
             <div className="pt-6">
-              <span className="bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 text-[10px] px-2.5 py-1 rounded-full font-bold uppercase tracking-wider">
+              <span className="bg-[#f2b740] text-[#16191d] text-[10px] px-3 py-1 rounded-full font-extrabold uppercase tracking-wider">
                 Sesi Akademik {school.academicYear}
               </span>
-              <h2 className="text-2xl font-black text-white mt-3 leading-snug">
+              <h2 className="text-2xl font-black text-[#f6f7f5] mt-3 leading-snug">
                 Sistem Pengurusan e-RPH & Jadual Guru
               </h2>
-              <p className="text-xs text-slate-300 mt-2 leading-relaxed">
+              <p className="text-xs text-[#a6abaa] mt-2 leading-relaxed">
                 Portal digital bersepadu Rancangan Pengajaran Harian SJK(C) berasaskan DSKP KPM, dilengkapi pengesahan pentadbir, dan matriks penghantaran tahunan rasmi.
               </p>
             </div>
           </div>
 
-          <div className="relative z-10 pt-6 border-t border-slate-700/60 text-[11px] text-slate-400 space-y-1">
-            <p className="font-semibold text-slate-200">{school.chineseName}</p>
+          <div className="relative z-10 pt-6 border-t border-white/10 text-[11px] text-[#a6abaa] space-y-1">
+            <p className="font-semibold text-[#f6f7f5]">{school.chineseName}</p>
             <p>{school.ppd}</p>
-            <p className="text-[10px] text-slate-500 pt-1">KOD SEKOLAH: <b>{school.code}</b></p>
+            <p className="text-[10px] text-[#868b8a] pt-1">KOD SEKOLAH: <b className="text-[#f2b740]">{school.code}</b></p>
           </div>
         </div>
 
         {/* Right Form Panel (7 cols) */}
-        <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between bg-white">
+        <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between bg-white/75 backdrop-blur-md">
           <div className="space-y-6">
             <div>
               <div className="flex items-center justify-between">
-                <span className="text-xs font-extrabold text-blue-700 bg-blue-50 px-3 py-1 rounded-full uppercase tracking-wider">
+                <span className="text-xs font-extrabold text-[#11745a] bg-[#cde9e4]/60 border border-[#11745a]/20 px-3 py-1 rounded-full uppercase tracking-wider">
                   Log Masuk DELIMa KPM
                 </span>
               </div>
-              <h3 className="text-2xl font-extrabold text-slate-900 mt-2">Selamat Datang</h3>
-              <p className="text-xs text-slate-500">
+              <h3 className="text-2xl font-extrabold text-[#16191d] mt-2">Selamat Datang</h3>
+              <p className="text-xs text-[#5b6064]">
                 Sila log masuk menggunakan akaun DELIMa rasmi atau Google Workspace anda.
               </p>
             </div>
@@ -3126,7 +3137,7 @@ ${gen.assessment}`;
 
               <button
                 type="submit"
-                className="w-full py-3 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-extrabold text-xs rounded-xl shadow-md transition flex items-center justify-center gap-2"
+                className="w-full py-3 bg-[#16191d] hover:bg-[#252930] text-[#f6f7f5] font-extrabold text-xs rounded-full shadow-md transition flex items-center justify-center gap-2"
               >
                 <span>Log Masuk Rasmi</span>
                 <span>→</span>
@@ -3963,10 +3974,13 @@ ${gen.assessment}`;
   // Hydration guard: ensures identical output between SSR and client initial paint
   if (!mounted) {
     return (
-      <div className="min-h-screen bg-[#0f141a] flex items-center justify-center text-white font-sans">
+      <div className="min-h-screen bg-[#f1f2ef] flex items-center justify-center text-[#16191d] font-sans">
         <div className="flex flex-col items-center gap-3">
-          <div className="w-10 h-10 border-4 border-cyan-500 border-t-transparent rounded-full animate-spin"></div>
-          <p className="text-xs font-bold text-slate-400 tracking-wider uppercase">Memuatkan Sistem e-RPH SJK(C)...</p>
+          <div className="w-12 h-12 rounded-2xl bg-white p-1.5 shadow-md flex items-center justify-center">
+            <img src="https://i.imgur.com/ZYMvxRE.png" alt="Logo SJKC Yok Poon" className="w-full h-full object-contain" />
+          </div>
+          <div className="w-6 h-6 border-3 border-[#16191d] border-t-[#f2b740] rounded-full animate-spin"></div>
+          <p className="text-xs font-extrabold text-[#5b6064] tracking-wider uppercase">Memuatkan e-RPH SJKC YOK POON...</p>
         </div>
       </div>
     );
@@ -3990,56 +4004,69 @@ ${gen.assessment}`;
   }
 
   return (
-    <div className="flex h-screen bg-[#f4f6f9] text-slate-800 antialiased overflow-hidden">
+    <div className="flex h-screen bg-[#f1f2ef] text-[#16191d] antialiased overflow-hidden relative">
+      {/* MURMURA AMBIENT RADIAL MESH BACKGROUND */}
+      <div className="murmura-mesh" aria-hidden="true">
+        <i className="murmura-mesh__a" />
+        <i className="murmura-mesh__b" />
+        <i className="murmura-mesh__c" />
+      </div>
+
       {/* TOAST POPUP */}
       {toast && (
-        <div className="fixed top-5 right-5 z-50 bg-slate-900/95 text-white text-xs px-4 py-3 rounded-2xl shadow-2xl border border-slate-700 flex items-center gap-3 backdrop-blur-md animate-fade-in">
+        <div className="fixed top-5 right-5 z-50 bg-[#16191d] text-[#f6f7f5] text-xs px-4 py-3 rounded-full shadow-[0_24px_60px_-18px_rgba(20,24,28,0.4)] border border-white/15 flex items-center gap-3 backdrop-blur-md animate-fade-in">
           <span>{toast}</span>
-          <button onClick={() => setToast(null)} className="text-slate-400 hover:text-white font-bold ml-2">
+          <button onClick={() => setToast(null)} className="text-[#a6abaa] hover:text-white font-bold ml-2">
             ✕
           </button>
         </div>
       )}
 
-      {/* SIDEBAR (Dark Color Admin Style) */}
+      {/* SIDEBAR / FLOATING DOCK (Murmura Charcoal Dock Style) */}
       {/* MOBILE BACKDROP */}
       {mobileMenuOpen && (
         <div
           onClick={() => setMobileMenuOpen(false)}
-          className="fixed inset-0 bg-black/60 z-40 lg:hidden backdrop-blur-sm transition-opacity"
+          className="fixed inset-0 bg-[#101214]/45 z-40 lg:hidden backdrop-blur-sm transition-opacity"
         />
       )}
 
-      {/* SIDEBAR (Responsive Off-Canvas on Mobile, Collapsible Mini + Hover Expand on Desktop) */}
+      {/* SIDEBAR (Responsive Off-Canvas Sheet on Mobile, Floating Rounded Dock on Desktop) */}
       <aside
         onMouseEnter={() => setIsSidebarHovered(true)}
         onMouseLeave={() => setIsSidebarHovered(false)}
-        className={`fixed inset-y-0 left-0 z-40 bg-[#1a2229] text-[#a8b2bc] flex flex-col border-r border-[#12181d] select-none transition-all duration-300 ease-in-out shrink-0 ${
+        className={`fixed z-40 murmura-dock-surface text-[#f6f7f5] flex flex-col select-none transition-all duration-300 ease-[cubic-bezier(0.2,0.8,0.2,1)] shrink-0 ${
           mobileMenuOpen
-            ? 'translate-x-0 w-72 sm:w-80 shadow-2xl z-50'
-            : '-translate-x-full lg:translate-x-0'
+            ? 'inset-y-2 left-2 rounded-[28px] translate-x-0 w-72 sm:w-80 shadow-2xl z-50 border border-white/10'
+            : 'inset-y-0 left-0 -translate-x-full lg:translate-x-0 lg:top-3.5 lg:bottom-3.5 lg:left-3.5'
         } ${
           isSidebarExpanded
-            ? 'lg:w-72 lg:shadow-2xl lg:shadow-black/60'
-            : 'lg:w-[72px]'
+            ? 'lg:w-72 lg:rounded-[28px] lg:shadow-[0_24px_60px_-18px_rgba(0,0,0,0.65)] border border-white/10'
+            : 'lg:w-[68px] lg:rounded-[34px] border border-white/10'
         }`}
       >
-        {/* Sidebar Brand Header */}
+        {/* Sidebar Brand Header with School Logo https://i.imgur.com/ZYMvxRE.png */}
         <div
-          className={`h-16 flex items-center border-b border-[#242e38] bg-[#151c22] shrink-0 transition-all ${
+          className={`h-16 flex items-center border-b border-white/10 shrink-0 transition-all ${
             isSidebarExpanded ? 'justify-between px-3.5' : 'justify-center px-0'
           }`}
         >
           <div className="flex items-center gap-3 overflow-hidden min-w-0">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-blue-600 flex items-center justify-center text-white font-black text-base shadow-md shadow-cyan-500/20 shrink-0">
-              R
+            <div className="w-10 h-10 rounded-2xl bg-white p-1 flex items-center justify-center shadow-md shrink-0">
+              <img
+                src="https://i.imgur.com/ZYMvxRE.png"
+                alt="Logo SJKC Yok Poon"
+                className="w-full h-full object-contain"
+              />
             </div>
             {isSidebarExpanded && (
               <div className="leading-tight overflow-hidden whitespace-nowrap animate-fade-in">
-                <h1 className="text-white font-black tracking-wide text-sm">
-                  e-RPH
+                <h1 className="text-[#f6f7f5] font-extrabold tracking-tight text-sm">
+                  e-RPH SJKC YOK POON
                 </h1>
-                <p className="text-[10px] text-[#788896] truncate max-w-[130px]">{school.name}</p>
+                <p className="text-[10px] text-[#f2b740] font-semibold truncate max-w-[145px]">
+                  {school.chineseName || school.name}
+                </p>
               </div>
             )}
           </div>
@@ -4051,15 +4078,15 @@ ${gen.assessment}`;
               <button
                 type="button"
                 onClick={toggleSidebarPin}
-                className={`hidden lg:flex items-center justify-center w-8 h-8 rounded-lg transition ${
+                className={`hidden lg:flex items-center justify-center w-8 h-8 rounded-full transition ${
                   isSidebarPinned
-                    ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30'
-                    : 'text-slate-400 hover:text-white hover:bg-[#252f38]'
+                    ? 'bg-[#f2b740] text-[#16191d]'
+                    : 'text-[#a6abaa] hover:text-white hover:bg-white/10'
                 }`}
                 title={isSidebarPinned ? 'Nyah-pin Sidebar (Auto-Sembunyi)' : 'Pin Sidebar Sentiasa Terbuka'}
               >
                 {isSidebarPinned ? (
-                  <Pin className="w-4 h-4 fill-cyan-400" />
+                  <Pin className="w-4 h-4 fill-current" />
                 ) : (
                   <PinOff className="w-4 h-4" />
                 )}
@@ -4069,7 +4096,7 @@ ${gen.assessment}`;
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="lg:hidden text-slate-400 hover:text-white p-1.5 rounded-lg transition"
+                className="lg:hidden text-[#a6abaa] hover:text-white p-1.5 rounded-full hover:bg-white/10 transition"
                 title="Tutup Menu"
               >
                 <X className="w-5 h-5" />
@@ -4079,37 +4106,37 @@ ${gen.assessment}`;
         </div>
 
         {/* Current Active Persona Card */}
-        <div className="p-2.5 border-b border-[#242e38] bg-[#1a2229] shrink-0">
+        <div className="p-2.5 border-b border-white/10 shrink-0">
           {!isSidebarExpanded ? (
             <div className="flex items-center justify-center">
               <div
                 suppressHydrationWarning
                 title={`${currentUser.name} (${currentUser.jawatan || currentUser.role})`}
-                className={`w-10 h-10 rounded-xl ${
+                className={`w-10 h-10 rounded-full ${
                   isSuperadmin
-                    ? 'bg-gradient-to-br from-amber-400 to-yellow-600 shadow-amber-500/20'
-                    : 'bg-gradient-to-br from-cyan-500 to-blue-600 shadow-cyan-500/20'
-                } flex items-center justify-center text-white font-bold text-sm shadow cursor-pointer transition-transform hover:scale-105`}
+                    ? 'bg-[#f2b740] text-[#16191d]'
+                    : 'bg-[#11745a] text-[#f6f7f5]'
+                } flex items-center justify-center font-extrabold text-sm shadow cursor-pointer transition-transform hover:scale-105`}
               >
                 {isSuperadmin ? '👑' : currentUser.name.charAt(0)}
               </div>
             </div>
           ) : (
-            <div className="flex items-center gap-3 bg-[#222c36] p-2.5 rounded-xl border border-[#2b3744]">
+            <div className="flex items-center gap-3 bg-white/[0.06] p-2.5 rounded-2xl border border-white/10">
               <div
                 suppressHydrationWarning
-                className={`w-9 h-9 rounded-xl ${
+                className={`w-9 h-9 rounded-full ${
                   isSuperadmin
-                    ? 'bg-gradient-to-br from-amber-400 to-yellow-600'
-                    : 'bg-gradient-to-br from-indigo-500 to-cyan-500'
-                } flex items-center justify-center text-white font-bold text-xs shrink-0 shadow`}
+                    ? 'bg-[#f2b740] text-[#16191d]'
+                    : 'bg-[#11745a] text-[#f6f7f5]'
+                } flex items-center justify-center font-extrabold text-xs shrink-0 shadow`}
               >
                 {isSuperadmin ? '👑' : currentUser.name.charAt(0)}
               </div>
               <div className="overflow-hidden leading-tight flex-1">
-                <p className="text-white text-xs font-bold truncate">{currentUser.name}</p>
-                <p className="text-[11px] text-[#869ab0] truncate">{currentUser.chineseName}</p>
-                <p className="text-[10px] font-bold text-cyan-400 uppercase mt-0.5 tracking-wider truncate" suppressHydrationWarning>
+                <p className="text-[#f6f7f5] text-xs font-bold truncate">{currentUser.name}</p>
+                <p className="text-[11px] text-[#a6abaa] truncate">{currentUser.chineseName}</p>
+                <p className="text-[10px] font-bold text-[#f2b740] uppercase mt-0.5 tracking-wider truncate" suppressHydrationWarning>
                   {isSuperadmin
                     ? '👑 Superadmin Sistem'
                     : currentUser.jawatan === 'GB' || currentUser.role === 'guru_besar'
@@ -4486,7 +4513,7 @@ ${gen.assessment}`;
         </nav>
 
         {/* Sidebar User Settings & Logout Footer */}
-        <div className="p-2.5 border-t border-[#242e38] bg-[#151c22] space-y-2 shrink-0">
+        <div className="p-2.5 border-t border-white/10 space-y-2 shrink-0">
           {!isSidebarExpanded ? (
             <div className="flex flex-col items-center gap-2">
               {/* User Settings Icon Button */}
@@ -4496,7 +4523,7 @@ ${gen.assessment}`;
                   setShowAccountModal(true);
                   setMobileMenuOpen(false);
                 }}
-                className="w-11 h-11 rounded-xl bg-[#1e2730] hover:bg-[#25313d] border border-[#2b3744] text-cyan-400 hover:text-cyan-300 flex items-center justify-center transition group shadow-sm"
+                className="w-11 h-11 rounded-full bg-white/[0.08] hover:bg-white/15 border border-white/10 text-[#f2b740] flex items-center justify-center transition group shadow-sm"
                 title={`Tetapan Akaun (${currentUser.name})`}
               >
                 <Settings className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
@@ -4509,7 +4536,7 @@ ${gen.assessment}`;
                   setMobileMenuOpen(false);
                   handlePerformLogout();
                 }}
-                className="w-11 h-11 rounded-xl bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 hover:text-rose-200 border border-rose-500/30 flex items-center justify-center transition"
+                className="w-11 h-11 rounded-full bg-[#c43c30]/20 hover:bg-[#c43c30]/35 text-[#ff8f80] border border-[#c43c30]/40 flex items-center justify-center transition"
                 title="Log Keluar dari Sistem"
               >
                 <LogOut className="w-5 h-5" />
@@ -4524,24 +4551,24 @@ ${gen.assessment}`;
                   setShowAccountModal(true);
                   setMobileMenuOpen(false);
                 }}
-                className="w-full flex items-center justify-between p-2.5 rounded-xl bg-[#1e2730] hover:bg-[#25313d] border border-[#2b3744] text-left transition group shadow-sm"
+                className="w-full flex items-center justify-between p-2.5 rounded-2xl bg-white/[0.06] hover:bg-white/12 border border-white/10 text-left transition group shadow-sm"
                 title="Buka Tetapan Akaun Pengguna"
               >
                 <div className="flex items-center gap-2.5 min-w-0">
-                  <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-600 to-blue-700 flex items-center justify-center text-white font-extrabold text-xs shadow-xs shrink-0">
+                  <div className="w-8 h-8 rounded-full bg-[#11745a] flex items-center justify-center text-[#f6f7f5] font-extrabold text-xs shadow-xs shrink-0">
                     {currentUser.name.charAt(0)}
                   </div>
                   <div className="min-w-0 leading-tight">
-                    <p className="text-xs font-bold text-white truncate max-w-[130px] group-hover:text-cyan-400 transition">
+                    <p className="text-xs font-bold text-[#f6f7f5] truncate max-w-[130px] group-hover:text-[#f2b740] transition">
                       {currentUser.name}
                     </p>
-                    <p className="text-[10px] text-cyan-400 font-medium flex items-center gap-1">
+                    <p className="text-[10px] text-[#f2b740] font-semibold flex items-center gap-1">
                       <Settings className="w-3 h-3" />
                       <span>Tetapan Akaun</span>
                     </p>
                   </div>
                 </div>
-                <Settings className="w-4 h-4 text-[#6b7b8a] group-hover:text-cyan-400 group-hover:rotate-45 transition-all duration-300" />
+                <Settings className="w-4 h-4 text-[#a6abaa] group-hover:text-[#f2b740] group-hover:rotate-45 transition-all duration-300" />
               </button>
 
               {/* Logout Button */}
@@ -4551,14 +4578,14 @@ ${gen.assessment}`;
                   setMobileMenuOpen(false);
                   handlePerformLogout();
                 }}
-                className="w-full py-2 px-3 bg-rose-500/10 hover:bg-rose-500/20 text-rose-300 hover:text-rose-200 border border-rose-500/30 rounded-xl text-xs font-bold transition flex items-center justify-center gap-2 group"
+                className="w-full py-2 px-3 bg-[#c43c30]/20 hover:bg-[#c43c30]/30 text-[#ff8f80] hover:text-white border border-[#c43c30]/40 rounded-full text-xs font-bold transition flex items-center justify-center gap-2 group"
                 title="Log Keluar dari Sistem"
               >
                 <LogOut className="w-4 h-4 group-hover:-translate-x-0.5 transition-transform" />
                 <span>Log Keluar</span>
               </button>
 
-              <div className="text-[10px] text-[#546270] text-center pt-0.5">
+              <div className="text-[10px] text-[#868b8a] text-center pt-0.5">
                 KPM SJK(C) • {school.academicYear}
               </div>
             </>
@@ -4568,27 +4595,36 @@ ${gen.assessment}`;
 
       {/* MAIN CONTENT AREA */}
       <div
-        className={`flex-1 flex flex-col min-w-0 overflow-hidden transition-all duration-300 ease-in-out ${
-          isSidebarPinned ? 'lg:pl-72' : 'lg:pl-[72px]'
+        className={`relative z-10 flex-1 flex flex-col min-w-0 overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.2,0.8,0.2,1)] ${
+          isSidebarPinned ? 'lg:pl-[308px]' : 'lg:pl-[96px]'
         }`}
       >
-        {/* TOP HEADER BAR */}
-        <header className="h-16 bg-white border-b border-slate-200 flex items-center justify-between px-3 sm:px-6 sticky top-0 z-30 shadow-sm shrink-0">
+        {/* TOP HEADER BAR (Murmura Translucent Glass Header) */}
+        <header className="h-16 murmura-header-glass flex items-center justify-between px-3 sm:px-6 sticky top-0 z-30 shrink-0">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1 mr-2">
             {/* Mobile Hamburger Toggle Button */}
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 border border-slate-200 focus:outline-none shrink-0"
+              className="lg:hidden p-2 rounded-full text-[#16191d] bg-white/80 hover:bg-white border border-black/10 shadow-xs focus:outline-none shrink-0"
               aria-label="Buka Menu Navigasi"
             >
               <Menu className="w-5 h-5" />
             </button>
 
+            {/* School Logo Badge in Header */}
+            <div className="w-9 h-9 rounded-xl bg-white p-1 border border-black/10 shadow-xs flex items-center justify-center shrink-0">
+              <img
+                src="https://i.imgur.com/ZYMvxRE.png"
+                alt="Logo SJKC Yok Poon"
+                className="w-full h-full object-contain"
+              />
+            </div>
+
             <div className="min-w-0 flex-1 overflow-hidden">
               <h2
                 key={`header-title-${activeNav}`}
-                className="murmura-header-title text-xs sm:text-base font-extrabold text-slate-800 truncate"
+                className="murmura-header-title text-xs sm:text-base font-extrabold text-[#16191d] tracking-tight truncate"
                 title="Halaman Semasa"
               >
                 {activeNav === 'dashboard' && (isGuru ? 'Dashboard Guru Subjek' : isIct ? 'Dashboard Guru ICT / Data' : 'Dashboard Pentadbir')}
@@ -4601,13 +4637,14 @@ ${gen.assessment}`;
                 {activeNav === 'settings' && 'Pengurusan Takwim Sekolah'}
                 {activeNav === 'roster' && 'Senarai Guru & Peranan'}
               </h2>
-              <span className="bg-cyan-50 text-cyan-700 border border-cyan-200 text-[9px] px-1.5 py-0.2 rounded font-bold inline-block sm:hidden">
+              <span className="bg-[#f2b740] text-[#16191d] text-[9px] px-1.5 py-0.2 rounded-full font-extrabold inline-block sm:hidden">
                 M.{school.currentWeek}
               </span>
             </div>
 
-            <span className="bg-cyan-50 text-cyan-700 border border-cyan-200 text-xs px-2.5 py-0.5 rounded-full font-bold hidden sm:inline-block shrink-0">
-              Minggu Semasa: {school.currentWeek}
+            <span className="bg-[#16191d] text-[#f6f7f5] text-xs px-3 py-1 rounded-full font-bold hidden sm:inline-flex items-center gap-1.5 shrink-0 shadow-xs">
+              <span className="w-2 h-2 rounded-full bg-[#f2b740]" />
+              <span>Minggu Semasa: {school.currentWeek}</span>
             </span>
           </div>
 
@@ -4629,16 +4666,16 @@ ${gen.assessment}`;
                 <div className="relative">
                   <button
                     onClick={() => setShowNotificationMenu(!showNotificationMenu)}
-                    className={`relative w-9 h-9 rounded-xl flex items-center justify-center transition ${
+                    className={`relative w-10 h-10 rounded-full flex items-center justify-center transition ${
                       hasAlert
-                        ? 'bg-amber-500 text-slate-950 font-black shadow-md shadow-amber-500/20'
-                        : 'bg-slate-100 hover:bg-slate-200 text-slate-600'
+                        ? 'bg-[#f2b740] text-[#16191d] font-black shadow-md shadow-[#f2b740]/30'
+                        : 'bg-white/80 hover:bg-white border border-black/10 text-[#16191d]'
                     }`}
                     title="Pemberitahuan Status e-RPH"
                   >
                     <span>🔔</span>
                     {hasAlert && (
-                      <span className="absolute -top-1 -right-1 w-4 h-4 bg-rose-600 text-white rounded-full text-[9px] font-black flex items-center justify-center border-2 border-white">
+                      <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#c43c30] text-white rounded-full text-[9px] font-black flex items-center justify-center border-2 border-[#f1f2ef]">
                         {hasGuruAlert ? '!' : metrics.waitingReview}
                       </span>
                     )}
@@ -4646,10 +4683,10 @@ ${gen.assessment}`;
 
                   {/* Notification Drawer */}
                   {showNotificationMenu && (
-                    <div className="absolute right-0 mt-2 w-80 bg-white rounded-2xl shadow-xl border border-slate-200 p-4 z-50 text-xs space-y-3">
+                    <div className="absolute right-0 mt-2 w-80 bg-white/95 backdrop-blur-xl rounded-[24px] shadow-[0_24px_60px_-18px_rgba(20,24,28,0.3)] border border-black/10 p-4 z-50 text-xs space-y-3">
                       <div className="flex items-center justify-between border-b pb-2">
-                        <span className="font-extrabold text-slate-800">Pemberitahuan e-RPH</span>
-                        <span className="text-[10px] bg-slate-100 px-2 py-0.5 rounded font-bold text-slate-600">
+                        <span className="font-extrabold text-[#16191d]">Pemberitahuan e-RPH</span>
+                        <span className="text-[10px] bg-[#f2b740] px-2 py-0.5 rounded-full font-extrabold text-[#16191d]">
                           Minggu {school.currentWeek}
                         </span>
                       </div>
@@ -4657,8 +4694,8 @@ ${gen.assessment}`;
                       {isGuru ? (
                         <div className="space-y-2">
                           {isSubmittedOrVerified ? (
-                            <div className="bg-emerald-50 border border-emerald-200 p-3 rounded-xl space-y-1">
-                              <span className="bg-emerald-600 text-white font-extrabold text-[9px] px-1.5 py-0.5 rounded">
+                            <div className="bg-emerald-50 border border-emerald-200 p-3 rounded-2xl space-y-1">
+                              <span className="bg-[#11745a] text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full">
                                 SELESAI
                               </span>
                               <p className="font-bold text-slate-800 mt-1">
@@ -4669,8 +4706,8 @@ ${gen.assessment}`;
                               </p>
                             </div>
                           ) : (
-                            <div className="bg-amber-50 border border-amber-200 p-3 rounded-xl space-y-2">
-                              <span className="bg-amber-500 text-slate-950 font-extrabold text-[9px] px-1.5 py-0.5 rounded">
+                            <div className="bg-amber-50 border border-amber-200 p-3 rounded-2xl space-y-2">
+                              <span className="bg-[#f2b740] text-[#16191d] font-extrabold text-[9px] px-2 py-0.5 rounded-full">
                                 PERINGATAN PENGHANTARAN
                               </span>
                               <p className="font-bold text-slate-800">
@@ -4684,7 +4721,7 @@ ${gen.assessment}`;
                                   navigateTo('rph-drafts');
                                   setShowNotificationMenu(false);
                                 }}
-                                className="w-full text-center py-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg text-xs transition"
+                                className="w-full text-center py-2 bg-[#16191d] hover:bg-[#262b31] text-white font-bold rounded-full text-xs transition"
                               >
                                 Semak & Hantar Draf Sekarang →
                               </button>
@@ -4694,8 +4731,8 @@ ${gen.assessment}`;
                       ) : (
                         <div className="space-y-2">
                           {metrics.waitingReview > 0 ? (
-                            <div className="bg-blue-50 border border-blue-200 p-3 rounded-xl space-y-2">
-                              <span className="bg-blue-600 text-white font-extrabold text-[9px] px-1.5 py-0.5 rounded">
+                            <div className="bg-blue-50 border border-blue-200 p-3 rounded-2xl space-y-2">
+                              <span className="bg-[#1f68a8] text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full">
                                 SEMAKAN PENTADBIR
                               </span>
                               <p className="font-bold text-slate-800">
@@ -4709,7 +4746,7 @@ ${gen.assessment}`;
                                   navigateTo('admin-review');
                                   setShowNotificationMenu(false);
                                 }}
-                                className="w-full text-center py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg text-xs transition"
+                                className="w-full text-center py-2 bg-[#11745a] hover:bg-[#0e5f49] text-white font-bold rounded-full text-xs transition"
                               >
                                 Buka Pusat Semakan Pentadbir →
                               </button>
@@ -4727,25 +4764,25 @@ ${gen.assessment}`;
               );
             })()}
 
-            {/* Authenticated User Identity Pill (Production Mode) */}
+            {/* Authenticated User Identity Pill (Murmura .me Pill Style) */}
             <button
               type="button"
               onClick={() => setShowAccountModal(true)}
-              className="flex items-center gap-2 bg-slate-100 hover:bg-slate-200 px-3 py-1.5 rounded-xl border border-slate-200 transition text-left shrink-0 cursor-pointer"
+              className="flex items-center gap-2 bg-white/85 hover:bg-white pl-1.5 pr-3 py-1 rounded-full border border-black/10 shadow-xs transition text-left shrink-0 cursor-pointer"
               title="Buka Tetapan Profil Akaun"
             >
               <div
                 suppressHydrationWarning
-                className={`w-5 h-5 rounded-full ${
-                  isSuperadmin ? 'bg-amber-500' : 'bg-cyan-600'
-                } text-white font-black text-[10px] flex items-center justify-center shrink-0`}
+                className={`w-7 h-7 rounded-full ${
+                  isSuperadmin ? 'bg-[#f2b740] text-[#16191d]' : 'bg-[#16191d] text-[#f6f7f5]'
+                } font-black text-[11px] flex items-center justify-center shrink-0`}
               >
                 {isSuperadmin ? '👑' : currentUser.name.charAt(0)}
               </div>
-              <span className="text-xs font-bold text-slate-800 truncate max-w-[130px] sm:max-w-[180px]">
+              <span className="text-xs font-bold text-[#16191d] truncate max-w-[120px] sm:max-w-[170px]">
                 {currentUser.name}
               </span>
-              <span className="text-[10px] font-bold text-cyan-700 bg-cyan-50 px-1.5 py-0.5 rounded border border-cyan-200 uppercase hidden sm:inline-block shrink-0">
+              <span className="text-[10px] font-extrabold text-[#11745a] bg-[#cde9e4]/70 px-2 py-0.5 rounded-full uppercase hidden sm:inline-block shrink-0">
                 {isSuperadmin ? 'Superadmin' : currentUser.jawatan || currentUser.role}
               </span>
             </button>
@@ -4753,7 +4790,7 @@ ${gen.assessment}`;
         </header>
 
         {/* MAIN BODY CONTAINER */}
-        <main className="p-3 sm:p-6 flex-1 overflow-y-auto min-w-0">
+        <main className="p-3 sm:p-6 pb-24 lg:pb-8 flex-1 overflow-y-auto min-w-0">
           <div key={activeNav} className="murmura-view-transition space-y-4 sm:space-y-6">
 
 
@@ -8704,6 +8741,138 @@ ${gen.assessment}`;
 
           </div>
         </main>
+
+        {/* MURMURA-STYLE MOBILE BOTTOM NAVIGATION BAR (.mnav) */}
+        <nav
+          aria-label="Navigasi Pantas Mudah Alih"
+          className="lg:hidden fixed bottom-0 left-0 right-0 z-30 h-16 murmura-mnav-surface px-2 flex items-center justify-around select-none"
+        >
+          {/* 1. Dashboard / Home */}
+          <button
+            type="button"
+            onClick={() => navigateTo('dashboard')}
+            aria-current={activeNav === 'dashboard' ? 'page' : undefined}
+            className={`relative flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-[10px] font-bold transition ${
+              activeNav === 'dashboard' ? 'text-[#16191d]' : 'text-[#5b6064]'
+            }`}
+          >
+            {activeNav === 'dashboard' && (
+              <span className="absolute top-0 w-7 h-[3px] bg-[#16191d] rounded-b-full" />
+            )}
+            <LayoutDashboard className="w-5 h-5" />
+            <span>Utama</span>
+          </button>
+
+          {/* 2. Second Quick Slot */}
+          {isSuperadmin ? (
+            <button
+              type="button"
+              onClick={() => navigateTo('admin-review')}
+              aria-current={activeNav === 'admin-review' ? 'page' : undefined}
+              className={`relative flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-[10px] font-bold transition ${
+                activeNav === 'admin-review' ? 'text-[#16191d]' : 'text-[#5b6064]'
+              }`}
+            >
+              {activeNav === 'admin-review' && (
+                <span className="absolute top-0 w-7 h-[3px] bg-[#16191d] rounded-b-full" />
+              )}
+              <ShieldCheck className="w-5 h-5" />
+              <span>Semakan</span>
+              {metrics.waitingReview > 0 && (
+                <span className="absolute top-1.5 right-4 bg-[#f2b740] text-[#16191d] text-[9px] font-extrabold px-1.5 rounded-full">
+                  {metrics.waitingReview}
+                </span>
+              )}
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={() => navigateTo('my-timetable')}
+              aria-current={activeNav === 'my-timetable' ? 'page' : undefined}
+              className={`relative flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-[10px] font-bold transition ${
+                activeNav === 'my-timetable' ? 'text-[#16191d]' : 'text-[#5b6064]'
+              }`}
+            >
+              {activeNav === 'my-timetable' && (
+                <span className="absolute top-0 w-7 h-[3px] bg-[#16191d] rounded-b-full" />
+              )}
+              <CalendarDays className="w-5 h-5" />
+              <span>Jadual</span>
+            </button>
+          )}
+
+          {/* 3. Center Raised Butter Action Pill (.mnav__new) */}
+          <button
+            type="button"
+            onClick={() => navigateTo(isSuperadmin ? 'yearly-matrix' : 'rph-builder')}
+            aria-current={
+              activeNav === (isSuperadmin ? 'yearly-matrix' : 'rph-builder') ? 'page' : undefined
+            }
+            className="flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-[10px] font-extrabold text-[#16191d]"
+          >
+            <span className="w-10 h-10 -mt-3 rounded-full bg-[#f2b740] text-[#16191d] shadow-md shadow-[#f2b740]/40 border-2 border-[#f1f2ef] flex items-center justify-center transition-transform active:scale-95">
+              {isSuperadmin ? (
+                <LineChart className="w-5 h-5" />
+              ) : (
+                <Sparkles className="w-5 h-5" />
+              )}
+            </span>
+            <span>{isSuperadmin ? 'Matriks' : 'Bina RPH'}</span>
+          </button>
+
+          {/* 4. Fourth Quick Slot */}
+          {isSuperadmin || isPentadbir ? (
+            <button
+              type="button"
+              onClick={() => navigateTo(isSuperadmin ? 'settings' : 'admin-review')}
+              aria-current={
+                activeNav === (isSuperadmin ? 'settings' : 'admin-review') ? 'page' : undefined
+              }
+              className={`relative flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-[10px] font-bold transition ${
+                activeNav === (isSuperadmin ? 'settings' : 'admin-review')
+                  ? 'text-[#16191d]'
+                  : 'text-[#5b6064]'
+              }`}
+            >
+              {activeNav === (isSuperadmin ? 'settings' : 'admin-review') && (
+                <span className="absolute top-0 w-7 h-[3px] bg-[#16191d] rounded-b-full" />
+              )}
+              {isSuperadmin ? (
+                <CalendarRange className="w-5 h-5" />
+              ) : (
+                <ShieldCheck className="w-5 h-5" />
+              )}
+              <span>{isSuperadmin ? 'Takwim' : 'Semakan'}</span>
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={() => navigateTo('rph-drafts')}
+              aria-current={activeNav === 'rph-drafts' ? 'page' : undefined}
+              className={`relative flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-[10px] font-bold transition ${
+                activeNav === 'rph-drafts' ? 'text-[#16191d]' : 'text-[#5b6064]'
+              }`}
+            >
+              {activeNav === 'rph-drafts' && (
+                <span className="absolute top-0 w-7 h-[3px] bg-[#16191d] rounded-b-full" />
+              )}
+              <FileEdit className="w-5 h-5" />
+              <span>Draf RPH</span>
+            </button>
+          )}
+
+          {/* 5. More / Full Menu Drawer */}
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(true)}
+            className={`relative flex-1 h-full flex flex-col items-center justify-center gap-0.5 text-[10px] font-bold transition ${
+              mobileMenuOpen ? 'text-[#16191d]' : 'text-[#5b6064]'
+            }`}
+          >
+            <Menu className="w-5 h-5" />
+            <span>Menu</span>
+          </button>
+        </nav>
       </div>
 
       {/* =====================================================================

@@ -3,17 +3,130 @@
 @tailwind utilities;
 
 :root {
+  --font: "Urbanist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans SC", sans-serif;
+  --bg: #f1f2ef;
+  --mesh-a: #cde9e4;
+  --mesh-b: #f3e3c8;
+  --mesh-c: #d3e6f3;
+  --glass: rgba(255, 255, 255, 0.72);
+  --glass-2: rgba(255, 255, 255, 0.86);
+  --glass-3: rgba(255, 255, 255, 0.94);
+  --solid: #f6f7f4;
+  --float: #fdfdfb;
+  --well: rgba(22, 26, 30, 0.06);
+  --line: rgba(22, 26, 30, 0.09);
+  --line-2: rgba(22, 26, 30, 0.16);
+  --rim: rgba(255, 255, 255, 0.85);
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.78) inset, 0 24px 48px -30px rgba(30, 40, 45, 0.28);
+  --shadow-pop: 0 24px 60px -18px rgba(20, 24, 28, 0.3), 0 2px 6px rgba(20, 24, 28, 0.08);
+  --text: #16191d;
+  --muted: #5b6064;
+  --faint: #696e72;
+  --butter: #f2b740;
+  --on-butter: #16191d;
+  --pine: #11745a;
+  --on-pine: #f6f7f5;
+  --coral: #c43c30;
+  --on-coral: #f6f7f5;
+  --sea: #1f68a8;
+  --on-sea: #f6f7f5;
+  --lilac: #0b7a87;
+  --on-lilac: #f6f7f5;
+  --dock: #16191d;
+  --on-dock: #f6f7f5;
+  --pill: #16191d;
+  --on-pill: #f6f7f5;
   --murmura-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
   --murmura-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 body {
-  background-color: #f3f4f7;
-  color: #2d353c;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Custom sleek scrollbar for e-RPH look */
+::selection {
+  background: var(--butter);
+  color: #16191d;
+}
+
+/* ==========================================================================
+   MURMURA AMBIENT RADIAL MESH BACKGROUND
+   ========================================================================== */
+.murmura-mesh {
+  z-index: 0;
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+.murmura-mesh i {
+  filter: blur(60px);
+  opacity: 0.95;
+  will-change: transform;
+  border-radius: 50%;
+  position: absolute;
+}
+.murmura-mesh__a {
+  background: radial-gradient(closest-side, var(--mesh-a), transparent);
+  width: 62vmax;
+  height: 62vmax;
+  top: -24vmax;
+  left: -18vmax;
+}
+.murmura-mesh__b {
+  background: radial-gradient(closest-side, var(--mesh-b), transparent);
+  width: 70vmax;
+  height: 70vmax;
+  bottom: -30vmax;
+  right: -24vmax;
+}
+.murmura-mesh__c {
+  background: radial-gradient(closest-side, var(--mesh-c), transparent);
+  width: 46vmax;
+  height: 46vmax;
+  top: -16vmax;
+  right: 8vmax;
+}
+
+/* ==========================================================================
+   MURMURA GLASSMORPHISM CARDS & SURFACES
+   ========================================================================== */
+.murmura-view-transition .bg-white.rounded-2xl,
+.murmura-view-transition .bg-white.rounded-3xl {
+  background-color: var(--glass-2) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-color: var(--rim) !important;
+  box-shadow: var(--shadow) !important;
+  border-radius: 24px !important;
+}
+
+.murmura-header-glass {
+  background: var(--glass-2);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--line);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.7) inset;
+}
+
+.murmura-dock-surface {
+  background: var(--dock);
+  color: var(--on-dock);
+  box-shadow: 0 20px 44px -18px rgba(0, 0, 0, 0.48);
+}
+
+.murmura-mnav-surface {
+  background: rgba(246, 247, 244, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--line-2);
+  box-shadow: 0 -10px 30px -15px rgba(20, 24, 28, 0.14);
+}
+
+/* Custom sleek scrollbar for Murmura look */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -22,11 +135,11 @@ body {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: rgba(22, 25, 29, 0.18);
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: rgba(22, 25, 29, 0.34);
 }
 
 /* ==========================================================================
@@ -114,10 +227,11 @@ body {
     background-color 0.28s var(--murmura-ease),
     color 0.22s var(--murmura-ease),
     transform 0.28s var(--murmura-spring),
-    box-shadow 0.28s var(--murmura-ease);
+    box-shadow 0.28s var(--murmura-ease),
+    opacity 0.22s var(--murmura-ease);
 }
 .murmura-nav-btn:active {
-  transform: scale(0.96);
+  transform: scale(0.95);
 }
 .murmura-nav-icon {
   transition: transform 0.38s var(--murmura-spring), color 0.22s var(--murmura-ease);
