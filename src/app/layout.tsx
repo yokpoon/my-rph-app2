@@ -20,6 +20,22 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var saved = localStorage.getItem('murmura_theme_v1');
+                  var isDark = saved ? saved === 'dark' : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+                  var theme = isDark ? 'dark' : 'light';
+                  document.documentElement.setAttribute('data-theme', theme);
+                  if (isDark) document.documentElement.classList.add('dark');
+                  else document.documentElement.classList.remove('dark');
+                } catch (e) {}
+              })();
+            `,
+          }}
+        />
       </head>
       <body className="antialiased selection:bg-[#f2b740] selection:text-[#16191d]" suppressHydrationWarning>
         {children}

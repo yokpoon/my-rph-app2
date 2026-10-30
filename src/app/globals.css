@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================================================
+   1. LIGHT MODE TOKENS (DEFAULT — UNTOUCHED)
+   ========================================================================== */
 :root {
   --font: "Urbanist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans SC", sans-serif;
   --bg: #f1f2ef;
@@ -41,29 +44,37 @@
   color-scheme: light;
 }
 
-:root[data-theme='dark'] {
-  --bg: #101214;
-  --mesh-a: rgba(11, 122, 135, 0.3);
-  --mesh-b: rgba(242, 183, 64, 0.12);
-  --mesh-c: rgba(31, 104, 168, 0.3);
-  --glass: rgba(255, 255, 255, 0.05);
-  --glass-2: rgba(255, 255, 255, 0.09);
-  --glass-3: #212428;
-  --solid: #191b1f;
-  --float: #1f2226;
-  --well: rgba(255, 255, 255, 0.06);
-  --line: rgba(255, 255, 255, 0.08);
-  --line-2: rgba(255, 255, 255, 0.16);
-  --rim: rgba(255, 255, 255, 0.07);
-  --shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 24px 48px -30px rgba(0, 0, 0, 0.7);
-  --shadow-pop: 0 24px 60px -18px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.08);
-  --text: #eef0ee;
-  --muted: #a6abaa;
-  --faint: #868b8a;
-  --dock: rgba(255, 255, 255, 0.08);
-  --on-dock: #eef0ee;
-  --pill: #eef0ee;
-  --on-pill: #16191d;
+/* ==========================================================================
+   2. FRESH DARK MODE DESIGN SYSTEM (BUILT FROM SCRATCH)
+   4-Tier Elevation:
+     Canvas (#0b0e14) -> Card (#151922) -> Well (#1d2330) -> Pill (#262e3d)
+     Inputs recessed (#0e1218) with high-contrast #384357 borders
+   ========================================================================== */
+:root[data-theme='dark'],
+html.dark,
+[data-theme='dark'] {
+  --bg: #0b0e14;
+  --mesh-a: rgba(14, 116, 144, 0.18);
+  --mesh-b: rgba(217, 119, 6, 0.10);
+  --mesh-c: rgba(37, 99, 235, 0.18);
+  --glass: rgba(21, 25, 34, 0.85);
+  --glass-2: #151922;
+  --glass-3: #1d2330;
+  --solid: #0e1218;
+  --float: #151922;
+  --well: #1d2330;
+  --line: #2a3241;
+  --line-2: #384357;
+  --rim: #2a3241;
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.06) inset, 0 20px 40px -24px rgba(0, 0, 0, 0.75);
+  --shadow-pop: 0 24px 60px -16px rgba(0, 0, 0, 0.85), 0 0 0 1px #2a3241;
+  --text: #f0f6fc;
+  --muted: #9198a1;
+  --faint: #6e7681;
+  --dock: #12161f;
+  --on-dock: #f0f6fc;
+  --pill: #f0f6fc;
+  --on-pill: #0b0e14;
   color-scheme: dark;
 }
 
@@ -72,7 +83,7 @@ body {
   color: var(--text);
   font-family: var(--font);
   -webkit-font-smoothing: antialiased;
-  transition: background-color 0.3s var(--murmura-ease), color 0.3s var(--murmura-ease);
+  transition: background-color 0.25s var(--murmura-ease), color 0.25s var(--murmura-ease);
 }
 
 ::selection {
@@ -81,7 +92,7 @@ body {
 }
 
 /* ==========================================================================
-   MURMURA AMBIENT RADIAL MESH BACKGROUND
+   3. MURMURA AMBIENT RADIAL MESH BACKGROUND
    ========================================================================== */
 .murmura-mesh {
   z-index: 0;
@@ -120,11 +131,10 @@ body {
 }
 
 /* ==========================================================================
-   MURMURA GLASSMORPHISM CARDS & SURFACES
+   4. LIGHT MODE GLASSMORPHISM CARDS & NAVIGATION SURFACES
    ========================================================================== */
-.murmura-view-transition .bg-white.rounded-2xl,
-.murmura-view-transition .bg-white.rounded-3xl,
-:root[data-theme='dark'] .murmura-view-transition .bg-white {
+:root:not([data-theme='dark']) .murmura-view-transition .bg-white.rounded-2xl,
+:root:not([data-theme='dark']) .murmura-view-transition .bg-white.rounded-3xl {
   background-color: var(--glass-2) !important;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -134,99 +144,6 @@ body {
   color: var(--text);
 }
 
-:root[data-theme='dark'] .bg-white,
-:root[data-theme='dark'] [class*="bg-white"] {
-  background-color: var(--float) !important;
-  color: var(--text) !important;
-  border-color: var(--line) !important;
-}
-
-:root[data-theme='dark'] .bg-slate-50,
-:root[data-theme='dark'] .bg-slate-100,
-:root[data-theme='dark'] .bg-slate-50\/70,
-:root[data-theme='dark'] .bg-slate-50\/40,
-:root[data-theme='dark'] .bg-blue-50,
-:root[data-theme='dark'] .bg-blue-50\/40,
-:root[data-theme='dark'] .bg-blue-50\/70,
-:root[data-theme='dark'] .bg-blue-50\/80,
-:root[data-theme='dark'] .bg-amber-50,
-:root[data-theme='dark'] .bg-amber-50\/60,
-:root[data-theme='dark'] .bg-emerald-50,
-:root[data-theme='dark'] .bg-emerald-50\/60,
-:root[data-theme='dark'] .bg-rose-50,
-:root[data-theme='dark'] .bg-rose-50\/60 {
-  background-color: var(--well) !important;
-  color: var(--text) !important;
-  border-color: var(--line) !important;
-}
-
-:root[data-theme='dark'] .text-slate-800,
-:root[data-theme='dark'] .text-slate-900,
-:root[data-theme='dark'] .text-blue-900,
-:root[data-theme='dark'] .text-blue-950,
-:root[data-theme='dark'] .text-indigo-900,
-:root[data-theme='dark'] .text-gray-900,
-:root[data-theme='dark'] .text-gray-800 {
-  color: var(--text) !important;
-}
-
-:root[data-theme='dark'] .text-slate-700,
-:root[data-theme='dark'] .text-slate-600,
-:root[data-theme='dark'] .text-blue-700,
-:root[data-theme='dark'] .text-blue-800,
-:root[data-theme='dark'] .text-indigo-700,
-:root[data-theme='dark'] .text-gray-700,
-:root[data-theme='dark'] .text-gray-600 {
-  color: #c5cbd0 !important;
-}
-
-:root[data-theme='dark'] .text-slate-500,
-:root[data-theme='dark'] .text-slate-400,
-:root[data-theme='dark'] .text-gray-500,
-:root[data-theme='dark'] .text-gray-400 {
-  color: var(--muted) !important;
-}
-
-:root[data-theme='dark'] .border-slate-200,
-:root[data-theme='dark'] .border-slate-300,
-:root[data-theme='dark'] .border-slate-100,
-:root[data-theme='dark'] .border-blue-200,
-:root[data-theme='dark'] .border-blue-300,
-:root[data-theme='dark'] .border-amber-200,
-:root[data-theme='dark'] .border-emerald-200,
-:root[data-theme='dark'] .border-rose-200,
-:root[data-theme='dark'] .border-gray-200 {
-  border-color: var(--line) !important;
-}
-
-:root[data-theme='dark'] input,
-:root[data-theme='dark'] select,
-:root[data-theme='dark'] textarea {
-  background-color: var(--solid) !important;
-  color: var(--text) !important;
-  border-color: var(--line-2) !important;
-}
-
-:root[data-theme='dark'] select option {
-  background-color: #191b1f !important;
-  color: #eef0ee !important;
-}
-
-:root[data-theme='dark'] table {
-  color: var(--text) !important;
-}
-
-:root[data-theme='dark'] th {
-  background-color: var(--solid) !important;
-  color: var(--text) !important;
-  border-color: var(--line) !important;
-}
-
-:root[data-theme='dark'] td {
-  border-color: var(--line) !important;
-}
-
-/* Floating Clean Header (no full-width white block) */
 .murmura-header-glass {
   background: transparent;
   border-bottom: 1px solid var(--line);
@@ -238,14 +155,6 @@ body {
   box-shadow: 0 20px 44px -18px rgba(0, 0, 0, 0.48);
 }
 
-:root[data-theme='dark'] .murmura-dock-surface {
-  background: rgba(22, 25, 29, 0.92);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--line);
-  box-shadow: 0 24px 60px -18px rgba(0, 0, 0, 0.85);
-}
-
 .murmura-mnav-surface {
   background: rgba(246, 247, 244, 0.88);
   backdrop-filter: blur(20px);
@@ -254,14 +163,507 @@ body {
   box-shadow: 0 -10px 30px -15px rgba(20, 24, 28, 0.14);
 }
 
-:root[data-theme='dark'] .murmura-mnav-surface {
-  background: rgba(16, 18, 20, 0.88);
-  border-top: 1px solid var(--line);
-  box-shadow: 0 -10px 30px -15px rgba(0, 0, 0, 0.6);
-  color: var(--text);
+/* ==========================================================================
+   5. COMPLETE DARK MODE UI ARCHITECTURE (EXACT SELECTORS, ZERO BLEED)
+   ========================================================================== */
+
+/* 5.1 Default Borders & Dividers in Dark Mode */
+:root[data-theme='dark'] *,
+:root[data-theme='dark'] ::before,
+:root[data-theme='dark'] ::after {
+  border-color: #2a3241;
 }
 
-/* Custom sleek scrollbar for Murmura look */
+:root[data-theme='dark'] .divide-y > :not([hidden]) ~ :not([hidden]),
+:root[data-theme='dark'] .divide-slate-100 > :not([hidden]) ~ :not([hidden]),
+:root[data-theme='dark'] .divide-slate-200 > :not([hidden]) ~ :not([hidden]) {
+  border-color: #262e3d !important;
+}
+
+/* 5.2 Navigation Dock & Mobile Bar in Dark Mode */
+:root[data-theme='dark'] .murmura-dock-surface {
+  background: #12161f !important;
+  border: 1px solid #2a3241 !important;
+  box-shadow: 0 24px 60px -18px rgba(0, 0, 0, 0.9) !important;
+}
+
+:root[data-theme='dark'] .murmura-mnav-surface {
+  background: rgba(15, 19, 26, 0.95) !important;
+  border-top: 1px solid #2a3241 !important;
+  box-shadow: 0 -10px 30px -15px rgba(0, 0, 0, 0.8) !important;
+  color: #f0f6fc !important;
+}
+
+/* 5.3 Tier 1: Primary Card Surfaces (.bg-white & high-opacity white glass) */
+:root[data-theme='dark'] .bg-white:not(.h-full),
+:root[data-theme='dark'] .bg-white\/75,
+:root[data-theme='dark'] .bg-white\/80,
+:root[data-theme='dark'] .bg-white\/85,
+:root[data-theme='dark'] .bg-white\/90,
+:root[data-theme='dark'] .bg-white\/95,
+:root[data-theme='dark'] .bg-\[\#f6f7f4\] {
+  background-color: #151922 !important;
+  color: #f0f6fc !important;
+  border-color: #2a3241 !important;
+}
+
+/* Keep progress bar fills inside dark/gradient KPI cards bright white */
+:root[data-theme='dark'] .bg-black\/20 > .bg-white.h-full {
+  background-color: #ffffff !important;
+}
+
+/* Nested .bg-white inside another .bg-white gets elevated Tier 2 surface (#1d2330) with clear border */
+:root[data-theme='dark'] .bg-white .bg-white:not(.h-full):not(input):not(select):not(textarea) {
+  background-color: #1d2330 !important;
+  border-color: #323c4e !important;
+}
+
+/* 5.4 Tier 2: Secondary Wells & Inner Containers (.bg-slate-50 & subtle black tints) */
+:root[data-theme='dark'] .bg-slate-50,
+:root[data-theme='dark'] .bg-slate-50\/40,
+:root[data-theme='dark'] .bg-slate-50\/60,
+:root[data-theme='dark'] .bg-slate-50\/70,
+:root[data-theme='dark'] .bg-black\/\[0\.03\],
+:root[data-theme='dark'] .bg-black\/\[0\.04\],
+:root[data-theme='dark'] .bg-black\/\[0\.05\],
+:root[data-theme='dark'] .bg-black\/\[0\.07\],
+:root[data-theme='dark'] .bg-black\/\[0\.08\] {
+  background-color: #1d2330 !important;
+  color: #e6edf3 !important;
+  border-color: #323c4e !important;
+}
+
+/* 5.5 Tier 3: Neutral Pills, Secondary Buttons & Table Headers (.bg-slate-100..300) */
+:root[data-theme='dark'] .bg-slate-100,
+:root[data-theme='dark'] .bg-slate-100\/80,
+:root[data-theme='dark'] .bg-slate-200,
+:root[data-theme='dark'] .bg-slate-200\/90,
+:root[data-theme='dark'] .bg-slate-300 {
+  background-color: #262e3d !important;
+  color: #f0f6fc !important;
+  border-color: #3b4659 !important;
+}
+
+/* 5.6 Tier 4: Form Inputs, Selects & Textareas (Deep Recessed Well + Crisp Border) */
+:root[data-theme='dark'] input:not([type='checkbox']):not([type='radio']),
+:root[data-theme='dark'] select,
+:root[data-theme='dark'] textarea {
+  background-color: #0e1218 !important;
+  color: #f0f6fc !important;
+  border-color: #3b4659 !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4) inset !important;
+}
+
+:root[data-theme='dark'] input:not([type='checkbox']):not([type='radio']):focus,
+:root[data-theme='dark'] select:focus,
+:root[data-theme='dark'] textarea:focus,
+:root[data-theme='dark'] .focus\:bg-white:focus {
+  background-color: #121821 !important;
+  color: #ffffff !important;
+  border-color: #58a6ff !important;
+  outline: none !important;
+}
+
+:root[data-theme='dark'] input::placeholder,
+:root[data-theme='dark'] textarea::placeholder {
+  color: #6e7681 !important;
+  opacity: 1 !important;
+}
+
+:root[data-theme='dark'] select option {
+  background-color: #151922 !important;
+  color: #f0f6fc !important;
+}
+
+:root[data-theme='dark'] input[type='checkbox'],
+:root[data-theme='dark'] input[type='radio'] {
+  accent-color: #3b82f6;
+  background-color: #0e1218;
+  border-color: #4b5563;
+}
+
+/* 5.7 High-Contrast Dark Mode Typography Hierarchy */
+/* Primary Headings & Dark Text -> Crisp White (#f0f6fc) */
+:root[data-theme='dark'] .text-\[\#16191d\],
+:root[data-theme='dark'] .text-slate-950,
+:root[data-theme='dark'] .text-slate-900,
+:root[data-theme='dark'] .text-slate-800 {
+  color: #f0f6fc !important;
+}
+
+/* Keep dark text on bright gold/amber/emerald pills */
+:root[data-theme='dark'] .bg-\[\#f2b740\].text-\[\#16191d\],
+:root[data-theme='dark'] .bg-\[\#f2b740\] .text-\[\#16191d\],
+:root[data-theme='dark'] .bg-amber-300.text-slate-950,
+:root[data-theme='dark'] .bg-amber-400.text-slate-950,
+:root[data-theme='dark'] .bg-amber-400.text-slate-900,
+:root[data-theme='dark'] .bg-emerald-400.text-slate-950 {
+  color: #0b0e14 !important;
+}
+
+/* Secondary Body & Label Text -> High-Contrast Silver (#c9d1d9) */
+:root[data-theme='dark'] .text-slate-700,
+:root[data-theme='dark'] .text-slate-600,
+:root[data-theme='dark'] .text-\[\#5b6064\],
+:root[data-theme='dark'] .text-\[\#546270\] {
+  color: #c9d1d9 !important;
+}
+
+/* Muted / Helper / Caption Text -> Clear Slate (#8b949e) */
+:root[data-theme='dark'] .text-slate-500,
+:root[data-theme='dark'] .text-slate-400,
+:root[data-theme='dark'] .text-\[\#868b8a\],
+:root[data-theme='dark'] .text-\[\#a6abaa\] {
+  color: #8b949e !important;
+}
+
+:root[data-theme='dark'] .text-slate-300 {
+  color: #484f58 !important;
+}
+
+/* 5.8 Neutral Borders in Dark Mode */
+:root[data-theme='dark'] .border-slate-100,
+:root[data-theme='dark'] .border-slate-200,
+:root[data-theme='dark'] .border-slate-200\/80,
+:root[data-theme='dark'] .border-black\/10,
+:root[data-theme='dark'] .border-black\/15,
+:root[data-theme='dark'] .border-\[\#f1f2ef\] {
+  border-color: #2a3241 !important;
+}
+
+:root[data-theme='dark'] .border-slate-300,
+:root[data-theme='dark'] .border-slate-600,
+:root[data-theme='dark'] .border-slate-700 {
+  border-color: #3b4659 !important;
+}
+
+/* 5.9 Active Dark Buttons & Selected Day Tabs (bg-slate-900, bg-slate-800, bg-[#16191d]) */
+/* Make dark buttons & selected day tabs pop against dark cards */
+:root[data-theme='dark'] button.bg-slate-900,
+:root[data-theme='dark'] button.bg-slate-800,
+:root[data-theme='dark'] button.bg-\[\#16191d\] {
+  background-color: #2563eb !important;
+  color: #ffffff !important;
+  border-color: #60a5fa !important;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.35) !important;
+}
+
+:root[data-theme='dark'] button.bg-slate-900:hover,
+:root[data-theme='dark'] button.bg-slate-800:hover,
+:root[data-theme='dark'] button.bg-\[\#16191d\]:hover {
+  background-color: #1d4ed8 !important;
+  border-color: #93c5fd !important;
+}
+
+/* Badges/Spans with bg-[#16191d] (e.g. GAB role pill, day count badge) */
+:root[data-theme='dark'] span.bg-\[\#16191d\] {
+  background-color: #262e3d !important;
+  color: #f0f6fc !important;
+  border: 1px solid #3b4659 !important;
+}
+
+/* Mobile bottom nav active top indicator bar */
+:root[data-theme='dark'] .murmura-mnav-surface span.bg-\[\#16191d\] {
+  background-color: #f2b740 !important;
+  border: none !important;
+}
+
+/* 5.10 Semantic Color Family 1: BLUE / SKY / CYAN */
+:root[data-theme='dark'] .bg-blue-50,
+:root[data-theme='dark'] .bg-blue-50\/20,
+:root[data-theme='dark'] .bg-blue-50\/30,
+:root[data-theme='dark'] .bg-blue-50\/40,
+:root[data-theme='dark'] .bg-blue-50\/50,
+:root[data-theme='dark'] .bg-blue-50\/70,
+:root[data-theme='dark'] .bg-blue-50\/80,
+:root[data-theme='dark'] .bg-cyan-50,
+:root[data-theme='dark'] .bg-\[\#d3e6f3\]\/60 {
+  background-color: rgba(37, 99, 235, 0.16) !important;
+  color: #e6edf3 !important;
+  border-color: rgba(59, 130, 246, 0.4) !important;
+}
+
+:root[data-theme='dark'] .bg-blue-100,
+:root[data-theme='dark'] .bg-blue-100\/70,
+:root[data-theme='dark'] .bg-sky-100,
+:root[data-theme='dark'] .bg-cyan-100,
+:root[data-theme='dark'] .bg-\[\#cffafe\],
+:root[data-theme='dark'] .bg-\[\#a5f3fc\] {
+  background-color: rgba(37, 99, 235, 0.25) !important;
+  color: #93c5fd !important;
+  border-color: rgba(96, 165, 250, 0.45) !important;
+}
+
+:root[data-theme='dark'] .text-blue-600,
+:root[data-theme='dark'] .text-blue-700,
+:root[data-theme='dark'] .text-blue-800,
+:root[data-theme='dark'] .text-blue-900,
+:root[data-theme='dark'] .text-blue-950,
+:root[data-theme='dark'] .text-sky-900,
+:root[data-theme='dark'] .text-cyan-600,
+:root[data-theme='dark'] .text-cyan-700,
+:root[data-theme='dark'] .text-cyan-800,
+:root[data-theme='dark'] .text-cyan-900,
+:root[data-theme='dark'] .text-\[\#1f68a8\],
+:root[data-theme='dark'] .text-\[\#155e75\] {
+  color: #79c0ff !important;
+}
+
+:root[data-theme='dark'] .border-blue-100,
+:root[data-theme='dark'] .border-blue-200,
+:root[data-theme='dark'] .border-blue-200\/80,
+:root[data-theme='dark'] .border-blue-300,
+:root[data-theme='dark'] .border-sky-300,
+:root[data-theme='dark'] .border-cyan-300,
+:root[data-theme='dark'] .border-\[\#67e8f9\] {
+  border-color: rgba(59, 130, 246, 0.4) !important;
+}
+
+/* 5.11 Semantic Color Family 2: INDIGO / PURPLE & LIGHT GRADIENTS */
+:root[data-theme='dark'] .bg-indigo-50,
+:root[data-theme='dark'] .bg-indigo-50\/60,
+:root[data-theme='dark'] .bg-purple-50 {
+  background-color: rgba(99, 102, 241, 0.15) !important;
+  color: #e6edf3 !important;
+  border-color: rgba(129, 140, 248, 0.38) !important;
+}
+
+:root[data-theme='dark'] .bg-indigo-100,
+:root[data-theme='dark'] .bg-purple-100 {
+  background-color: rgba(99, 102, 241, 0.26) !important;
+  color: #c7d2fe !important;
+  border-color: rgba(129, 140, 248, 0.45) !important;
+}
+
+:root[data-theme='dark'] .text-indigo-500,
+:root[data-theme='dark'] .text-indigo-600,
+:root[data-theme='dark'] .text-indigo-700,
+:root[data-theme='dark'] .text-indigo-800,
+:root[data-theme='dark'] .text-indigo-900,
+:root[data-theme='dark'] .text-indigo-950,
+:root[data-theme='dark'] .text-purple-600,
+:root[data-theme='dark'] .text-purple-700,
+:root[data-theme='dark'] .text-purple-800,
+:root[data-theme='dark'] .text-purple-900 {
+  color: #a5b4fc !important;
+}
+
+:root[data-theme='dark'] .border-indigo-100,
+:root[data-theme='dark'] .border-indigo-200,
+:root[data-theme='dark'] .border-indigo-200\/80,
+:root[data-theme='dark'] .border-indigo-300,
+:root[data-theme='dark'] .border-purple-200,
+:root[data-theme='dark'] .border-purple-300 {
+  border-color: rgba(129, 140, 248, 0.38) !important;
+}
+
+/* Override Light Pastel Gradients (e.g. RPT Minggu Banner, Modal Headers) */
+:root[data-theme='dark'] .from-indigo-50\/90,
+:root[data-theme='dark'] .from-blue-50 {
+  background-image: linear-gradient(
+    to right,
+    rgba(49, 46, 129, 0.45),
+    rgba(30, 58, 138, 0.4),
+    rgba(12, 74, 110, 0.45)
+  ) !important;
+  background-color: #171d2b !important;
+  border-color: rgba(99, 102, 241, 0.4) !important;
+}
+
+/* 5.12 Semantic Color Family 3: EMERALD / GREEN / PINE */
+:root[data-theme='dark'] .bg-emerald-50,
+:root[data-theme='dark'] .bg-emerald-50\/40,
+:root[data-theme='dark'] .bg-emerald-50\/60,
+:root[data-theme='dark'] .bg-emerald-50\/80,
+:root[data-theme='dark'] .bg-\[\#cde9e4\]\/60,
+:root[data-theme='dark'] .bg-\[\#cde9e4\]\/70 {
+  background-color: rgba(16, 185, 129, 0.14) !important;
+  color: #e6edf3 !important;
+  border-color: rgba(52, 211, 153, 0.38) !important;
+}
+
+:root[data-theme='dark'] .bg-emerald-100,
+:root[data-theme='dark'] .bg-emerald-200\/60,
+:root[data-theme='dark'] .bg-\[\#dcfce7\],
+:root[data-theme='dark'] .bg-\[\#bbf7d0\] {
+  background-color: rgba(16, 185, 129, 0.24) !important;
+  color: #6ee7b7 !important;
+  border-color: rgba(52, 211, 153, 0.45) !important;
+}
+
+:root[data-theme='dark'] .text-emerald-600,
+:root[data-theme='dark'] .text-emerald-700,
+:root[data-theme='dark'] .text-emerald-800,
+:root[data-theme='dark'] .text-emerald-900,
+:root[data-theme='dark'] .text-emerald-950,
+:root[data-theme='dark'] .text-\[\#11745a\],
+:root[data-theme='dark'] .text-\[\#166534\] {
+  color: #6ee7b7 !important;
+}
+
+:root[data-theme='dark'] .border-emerald-200,
+:root[data-theme='dark'] .border-emerald-300,
+:root[data-theme='dark'] .border-\[\#86efac\] {
+  border-color: rgba(52, 211, 153, 0.4) !important;
+}
+
+/* 5.13 Semantic Color Family 4: AMBER / YELLOW / ORANGE */
+:root[data-theme='dark'] .bg-amber-50,
+:root[data-theme='dark'] .bg-amber-50\/50,
+:root[data-theme='dark'] .bg-amber-50\/60,
+:root[data-theme='dark'] .bg-amber-50\/70 {
+  background-color: rgba(245, 158, 11, 0.14) !important;
+  color: #e6edf3 !important;
+  border-color: rgba(251, 191, 36, 0.38) !important;
+}
+
+:root[data-theme='dark'] .bg-amber-100,
+:root[data-theme='dark'] .bg-amber-200,
+:root[data-theme='dark'] .bg-orange-100,
+:root[data-theme='dark'] .bg-\[\#fef3c7\],
+:root[data-theme='dark'] .bg-\[\#fde68a\] {
+  background-color: rgba(245, 158, 11, 0.24) !important;
+  color: #fcd34d !important;
+  border-color: rgba(251, 191, 36, 0.45) !important;
+}
+
+:root[data-theme='dark'] .text-amber-700,
+:root[data-theme='dark'] .text-amber-800,
+:root[data-theme='dark'] .text-amber-900,
+:root[data-theme='dark'] .text-amber-950,
+:root[data-theme='dark'] .text-orange-900,
+:root[data-theme='dark'] .text-\[\#855c00\],
+:root[data-theme='dark'] .text-\[\#92400e\] {
+  color: #fcd34d !important;
+}
+
+:root[data-theme='dark'] .border-amber-200,
+:root[data-theme='dark'] .border-amber-200\/80,
+:root[data-theme='dark'] .border-amber-300,
+:root[data-theme='dark'] .border-orange-300,
+:root[data-theme='dark'] .border-\[\#fde68a\] {
+  border-color: rgba(251, 191, 36, 0.4) !important;
+}
+
+/* 5.14 Semantic Color Family 5: ROSE / RED */
+:root[data-theme='dark'] .bg-rose-50,
+:root[data-theme='dark'] .bg-rose-50\/60,
+:root[data-theme='dark'] .bg-rose-50\/80 {
+  background-color: rgba(244, 63, 94, 0.14) !important;
+  color: #e6edf3 !important;
+  border-color: rgba(251, 113, 133, 0.38) !important;
+}
+
+:root[data-theme='dark'] .bg-rose-100,
+:root[data-theme='dark'] .bg-rose-200,
+:root[data-theme='dark'] .bg-\[\#fee2e2\],
+:root[data-theme='dark'] .bg-\[\#fca5a5\] {
+  background-color: rgba(244, 63, 94, 0.24) !important;
+  color: #fda4af !important;
+  border-color: rgba(251, 113, 133, 0.45) !important;
+}
+
+:root[data-theme='dark'] .text-rose-600,
+:root[data-theme='dark'] .text-rose-700,
+:root[data-theme='dark'] .text-rose-800,
+:root[data-theme='dark'] .text-rose-900,
+:root[data-theme='dark'] .text-\[\#c43c30\],
+:root[data-theme='dark'] .text-\[\#991b1b\] {
+  color: #fda4af !important;
+}
+
+:root[data-theme='dark'] .border-rose-200,
+:root[data-theme='dark'] .border-rose-300,
+:root[data-theme='dark'] .border-\[\#fca5a5\] {
+  border-color: rgba(251, 113, 133, 0.4) !important;
+}
+
+/* 5.15 Hover & Group-Hover States in Dark Mode (Prevent White Flash on Hover) */
+:root[data-theme='dark'] .hover\:bg-white:hover,
+:root[data-theme='dark'] .hover\:bg-slate-50:hover,
+:root[data-theme='dark'] .hover\:bg-slate-100:hover,
+:root[data-theme='dark'] .hover\:bg-black\/\[0\.03\]:hover,
+:root[data-theme='dark'] .hover\:bg-black\/\[0\.08\]:hover {
+  background-color: #262e3d !important;
+}
+
+:root[data-theme='dark'] .hover\:bg-slate-200:hover,
+:root[data-theme='dark'] .hover\:bg-slate-300:hover {
+  background-color: #323c4e !important;
+}
+
+:root[data-theme='dark'] .hover\:bg-blue-50:hover,
+:root[data-theme='dark'] .hover\:bg-blue-50\/40:hover,
+:root[data-theme='dark'] .hover\:bg-blue-50\/50:hover,
+:root[data-theme='dark'] .hover\:bg-blue-50\/70:hover,
+:root[data-theme='dark'] .hover\:bg-blue-100:hover,
+:root[data-theme='dark'] .group:hover .group-hover\:bg-blue-50\/70 {
+  background-color: #1e293b !important;
+}
+
+:root[data-theme='dark'] .hover\:bg-indigo-100:hover {
+  background-color: rgba(99, 102, 241, 0.32) !important;
+}
+
+:root[data-theme='dark'] .hover\:bg-emerald-50:hover,
+:root[data-theme='dark'] .hover\:bg-emerald-100:hover,
+:root[data-theme='dark'] .hover\:bg-\[\#bbf7d0\]:hover {
+  background-color: rgba(16, 185, 129, 0.32) !important;
+}
+
+:root[data-theme='dark'] .hover\:bg-amber-100:hover,
+:root[data-theme='dark'] .hover\:bg-amber-200:hover,
+:root[data-theme='dark'] .hover\:bg-\[\#fde68a\]:hover {
+  background-color: rgba(245, 158, 11, 0.32) !important;
+}
+
+:root[data-theme='dark'] .hover\:bg-rose-50:hover,
+:root[data-theme='dark'] .hover\:bg-rose-100:hover,
+:root[data-theme='dark'] .hover\:bg-rose-200:hover,
+:root[data-theme='dark'] .hover\:bg-\[\#fca5a5\]:hover {
+  background-color: rgba(244, 63, 94, 0.32) !important;
+}
+
+:root[data-theme='dark'] .hover\:bg-\[\#a5f3fc\]:hover {
+  background-color: rgba(6, 182, 212, 0.32) !important;
+}
+
+:root[data-theme='dark'] .hover\:text-\[\#16191d\]:hover,
+:root[data-theme='dark'] .hover\:text-slate-900:hover,
+:root[data-theme='dark'] .hover\:text-slate-800:hover,
+:root[data-theme='dark'] .hover\:text-slate-700:hover,
+:root[data-theme='dark'] .hover\:text-slate-600:hover {
+  color: #ffffff !important;
+}
+
+/* 5.16 Tables & Sticky Columns in Dark Mode */
+:root[data-theme='dark'] table {
+  color: #e6edf3 !important;
+  border-color: #2a3241 !important;
+}
+
+:root[data-theme='dark'] thead,
+:root[data-theme='dark'] th:not(.bg-amber-300) {
+  background-color: #1c222e !important;
+  color: #e6edf3 !important;
+  border-color: #2e3748 !important;
+}
+
+:root[data-theme='dark'] td {
+  border-color: #262e3d !important;
+}
+
+/* Sticky columns in Yearly Matrix table must be 100% opaque so scrolling cells never bleed through */
+:root[data-theme='dark'] td.sticky.bg-white {
+  background-color: #151922 !important;
+}
+:root[data-theme='dark'] tr.group:hover td.sticky.bg-white {
+  background-color: #1e2636 !important;
+}
+
+/* ==========================================================================
+   6. CUSTOM SCROLLBARS & VIEW TRANSITION ANIMATIONS
+   ========================================================================== */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -274,15 +676,14 @@ body {
   border-radius: 9999px;
 }
 :root[data-theme='dark'] ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.22);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(22, 25, 29, 0.34);
 }
-
-/* ==========================================================================
-   MURMURA-STYLE SMOOTH VIEW & STAGGERED CARD TRANSITIONS
-   ========================================================================== */
+:root[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.36);
+}
 
 @keyframes murmuraPageEnter {
   0% {
@@ -317,13 +718,11 @@ body {
   }
 }
 
-/* Main route view wrapper */
 .murmura-view-transition {
   animation: murmuraPageEnter 0.45s var(--murmura-ease) both;
   will-change: transform, opacity;
 }
 
-/* Staggered cascade for top-level sections and grid cards inside the active tab */
 .murmura-view-transition > div > * {
   animation: murmuraCardRise 0.55s var(--murmura-ease) both;
 }
@@ -335,7 +734,6 @@ body {
 .murmura-view-transition > div > *:nth-child(5) { animation-delay: 0.18s; }
 .murmura-view-transition > div > *:nth-child(6) { animation-delay: 0.22s; }
 
-/* Stagger individual stat/metric cards inside grids */
 .murmura-view-transition .grid > * {
   animation: murmuraCardRise 0.52s var(--murmura-ease) both;
 }
@@ -346,12 +744,10 @@ body {
 .murmura-view-transition .grid > *:nth-child(5) { animation-delay: 0.19s; }
 .murmura-view-transition .grid > *:nth-child(6) { animation-delay: 0.23s; }
 
-/* Header title micro-transition when switching menu */
 .murmura-header-title {
   animation: murmuraHeaderSlide 0.32s var(--murmura-ease) both;
 }
 
-/* Native View Transitions API cross-fade tuning (when supported by browser) */
 ::view-transition-old(root) {
   animation: 140ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
 }
@@ -359,7 +755,6 @@ body {
   animation: 260ms cubic-bezier(0.2, 0.8, 0.2, 1) both fade-in;
 }
 
-/* Smooth Sidebar Nav Item Pill & Spring Icon Physics */
 .murmura-nav-btn {
   transition:
     background-color 0.28s var(--murmura-ease),
@@ -388,172 +783,4 @@ body {
   .murmura-header-title {
     animation: none !important;
   }
-}
-
-
-/* ==========================================================================
-   DIRECT & UNCONDITIONAL DARK THEME COMPONENT OVERRIDES
-   ========================================================================== */
-html.dark,
-[data-theme='dark'],
-.dark {
-  --bg: #101214;
-  --mesh-a: rgba(11, 122, 135, 0.3);
-  --mesh-b: rgba(242, 183, 64, 0.12);
-  --mesh-c: rgba(31, 104, 168, 0.3);
-  --glass: rgba(255, 255, 255, 0.05);
-  --glass-2: rgba(255, 255, 255, 0.09);
-  --glass-3: #212428;
-  --solid: #191b1f;
-  --float: #1f2226;
-  --well: rgba(255, 255, 255, 0.06);
-  --line: rgba(255, 255, 255, 0.08);
-  --line-2: rgba(255, 255, 255, 0.16);
-  --rim: rgba(255, 255, 255, 0.07);
-  --text: #eef0ee;
-  --muted: #a6abaa;
-  --faint: #868b8a;
-  --dock: rgba(255, 255, 255, 0.08);
-  --on-dock: #eef0ee;
-  --pill: #eef0ee;
-  --on-pill: #16191d;
-  color-scheme: dark;
-}
-
-/* Force dark card containers */
-html.dark .bg-white,
-[data-theme='dark'] .bg-white,
-.dark .bg-white,
-html.dark [class*="bg-white"],
-[data-theme='dark'] [class*="bg-white"],
-.dark [class*="bg-white"] {
-  background-color: #1a1d21 !important;
-  color: #eef0ee !important;
-  border-color: rgba(255, 255, 255, 0.1) !important;
-}
-
-/* Force inner secondary boxes (like KrMJ, Sivik, SK/Objektif previews, etc) */
-html.dark .bg-slate-50,
-[data-theme='dark'] .bg-slate-50,
-.dark .bg-slate-50,
-html.dark [class*="bg-slate-50"],
-[data-theme='dark'] [class*="bg-slate-50"],
-.dark [class*="bg-slate-50"],
-html.dark .bg-slate-100,
-[data-theme='dark'] .bg-slate-100,
-.dark .bg-slate-100,
-html.dark [class*="bg-blue-50"],
-[data-theme='dark'] [class*="bg-blue-50"],
-.dark [class*="bg-blue-50"],
-html.dark [class*="bg-indigo-50"],
-[data-theme='dark'] [class*="bg-indigo-50"],
-.dark [class*="bg-indigo-50"],
-html.dark [class*="bg-amber-50"],
-[data-theme='dark'] [class*="bg-amber-50"],
-.dark [class*="bg-amber-50"],
-html.dark [class*="bg-emerald-50"],
-[data-theme='dark'] [class*="bg-emerald-50"],
-.dark [class*="bg-emerald-50"] {
-  background-color: rgba(255, 255, 255, 0.06) !important;
-  color: #eef0ee !important;
-  border-color: rgba(255, 255, 255, 0.12) !important;
-}
-
-/* Force input, select, textarea */
-html.dark input,
-[data-theme='dark'] input,
-.dark input,
-html.dark select,
-[data-theme='dark'] select,
-.dark select,
-html.dark textarea,
-[data-theme='dark'] textarea,
-.dark textarea {
-  background-color: #14171a !important;
-  color: #f1f3f5 !important;
-  border-color: rgba(255, 255, 255, 0.18) !important;
-}
-
-html.dark textarea::placeholder,
-[data-theme='dark'] textarea::placeholder,
-.dark textarea::placeholder,
-html.dark input::placeholder,
-[data-theme='dark'] input::placeholder,
-.dark input::placeholder {
-  color: #7d848a !important;
-}
-
-html.dark select option,
-[data-theme='dark'] select option,
-.dark select option {
-  background-color: #191b1f !important;
-  color: #eef0ee !important;
-}
-
-/* Force text readability in dark mode */
-html.dark .text-slate-900,
-[data-theme='dark'] .text-slate-900,
-.dark .text-slate-900,
-html.dark .text-slate-800,
-[data-theme='dark'] .text-slate-800,
-.dark .text-slate-800,
-html.dark .text-indigo-950,
-[data-theme='dark'] .text-indigo-950,
-.dark .text-indigo-950,
-html.dark .text-blue-900,
-[data-theme='dark'] .text-blue-900,
-.dark .text-blue-900,
-html.dark .text-gray-900,
-[data-theme='dark'] .text-gray-900,
-.dark .text-gray-900 {
-  color: #ffffff !important;
-}
-
-html.dark .text-slate-700,
-[data-theme='dark'] .text-slate-700,
-.dark .text-slate-700,
-html.dark .text-slate-600,
-[data-theme='dark'] .text-slate-600,
-.dark .text-slate-600,
-html.dark .text-indigo-800,
-[data-theme='dark'] .text-indigo-800,
-.dark .text-indigo-800,
-html.dark .text-indigo-700,
-[data-theme='dark'] .text-indigo-700,
-.dark .text-indigo-700,
-html.dark .text-blue-700,
-[data-theme='dark'] .text-blue-700,
-.dark .text-blue-700,
-html.dark .text-gray-700,
-[data-theme='dark'] .text-gray-700,
-.dark .text-gray-700 {
-  color: #d2d7dc !important;
-}
-
-html.dark .text-slate-500,
-[data-theme='dark'] .text-slate-500,
-.dark .text-slate-500,
-html.dark .text-slate-400,
-[data-theme='dark'] .text-slate-400,
-.dark .text-slate-400,
-html.dark .text-indigo-600,
-[data-theme='dark'] .text-indigo-600,
-.dark .text-indigo-600,
-html.dark .text-indigo-500,
-[data-theme='dark'] .text-indigo-500,
-.dark .text-indigo-500 {
-  color: #9ea5ab !important;
-}
-
-/* Borders */
-html.dark [class*="border-slate-"],
-[data-theme='dark'] [class*="border-slate-"],
-.dark [class*="border-slate-"],
-html.dark [class*="border-indigo-"],
-[data-theme='dark'] [class*="border-indigo-"],
-.dark [class*="border-indigo-"],
-html.dark [class*="border-blue-"],
-[data-theme='dark'] [class*="border-blue-"],
-.dark [class*="border-blue-"] {
-  border-color: rgba(255, 255, 255, 0.1) !important;
 }
