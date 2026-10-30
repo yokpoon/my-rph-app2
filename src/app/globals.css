@@ -389,3 +389,171 @@ body {
     animation: none !important;
   }
 }
+
+
+/* ==========================================================================
+   DIRECT & UNCONDITIONAL DARK THEME COMPONENT OVERRIDES
+   ========================================================================== */
+html.dark,
+[data-theme='dark'],
+.dark {
+  --bg: #101214;
+  --mesh-a: rgba(11, 122, 135, 0.3);
+  --mesh-b: rgba(242, 183, 64, 0.12);
+  --mesh-c: rgba(31, 104, 168, 0.3);
+  --glass: rgba(255, 255, 255, 0.05);
+  --glass-2: rgba(255, 255, 255, 0.09);
+  --glass-3: #212428;
+  --solid: #191b1f;
+  --float: #1f2226;
+  --well: rgba(255, 255, 255, 0.06);
+  --line: rgba(255, 255, 255, 0.08);
+  --line-2: rgba(255, 255, 255, 0.16);
+  --rim: rgba(255, 255, 255, 0.07);
+  --text: #eef0ee;
+  --muted: #a6abaa;
+  --faint: #868b8a;
+  --dock: rgba(255, 255, 255, 0.08);
+  --on-dock: #eef0ee;
+  --pill: #eef0ee;
+  --on-pill: #16191d;
+  color-scheme: dark;
+}
+
+/* Force dark card containers */
+html.dark .bg-white,
+[data-theme='dark'] .bg-white,
+.dark .bg-white,
+html.dark [class*="bg-white"],
+[data-theme='dark'] [class*="bg-white"],
+.dark [class*="bg-white"] {
+  background-color: #1a1d21 !important;
+  color: #eef0ee !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Force inner secondary boxes (like KrMJ, Sivik, SK/Objektif previews, etc) */
+html.dark .bg-slate-50,
+[data-theme='dark'] .bg-slate-50,
+.dark .bg-slate-50,
+html.dark [class*="bg-slate-50"],
+[data-theme='dark'] [class*="bg-slate-50"],
+.dark [class*="bg-slate-50"],
+html.dark .bg-slate-100,
+[data-theme='dark'] .bg-slate-100,
+.dark .bg-slate-100,
+html.dark [class*="bg-blue-50"],
+[data-theme='dark'] [class*="bg-blue-50"],
+.dark [class*="bg-blue-50"],
+html.dark [class*="bg-indigo-50"],
+[data-theme='dark'] [class*="bg-indigo-50"],
+.dark [class*="bg-indigo-50"],
+html.dark [class*="bg-amber-50"],
+[data-theme='dark'] [class*="bg-amber-50"],
+.dark [class*="bg-amber-50"],
+html.dark [class*="bg-emerald-50"],
+[data-theme='dark'] [class*="bg-emerald-50"],
+.dark [class*="bg-emerald-50"] {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+  color: #eef0ee !important;
+  border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Force input, select, textarea */
+html.dark input,
+[data-theme='dark'] input,
+.dark input,
+html.dark select,
+[data-theme='dark'] select,
+.dark select,
+html.dark textarea,
+[data-theme='dark'] textarea,
+.dark textarea {
+  background-color: #14171a !important;
+  color: #f1f3f5 !important;
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+
+html.dark textarea::placeholder,
+[data-theme='dark'] textarea::placeholder,
+.dark textarea::placeholder,
+html.dark input::placeholder,
+[data-theme='dark'] input::placeholder,
+.dark input::placeholder {
+  color: #7d848a !important;
+}
+
+html.dark select option,
+[data-theme='dark'] select option,
+.dark select option {
+  background-color: #191b1f !important;
+  color: #eef0ee !important;
+}
+
+/* Force text readability in dark mode */
+html.dark .text-slate-900,
+[data-theme='dark'] .text-slate-900,
+.dark .text-slate-900,
+html.dark .text-slate-800,
+[data-theme='dark'] .text-slate-800,
+.dark .text-slate-800,
+html.dark .text-indigo-950,
+[data-theme='dark'] .text-indigo-950,
+.dark .text-indigo-950,
+html.dark .text-blue-900,
+[data-theme='dark'] .text-blue-900,
+.dark .text-blue-900,
+html.dark .text-gray-900,
+[data-theme='dark'] .text-gray-900,
+.dark .text-gray-900 {
+  color: #ffffff !important;
+}
+
+html.dark .text-slate-700,
+[data-theme='dark'] .text-slate-700,
+.dark .text-slate-700,
+html.dark .text-slate-600,
+[data-theme='dark'] .text-slate-600,
+.dark .text-slate-600,
+html.dark .text-indigo-800,
+[data-theme='dark'] .text-indigo-800,
+.dark .text-indigo-800,
+html.dark .text-indigo-700,
+[data-theme='dark'] .text-indigo-700,
+.dark .text-indigo-700,
+html.dark .text-blue-700,
+[data-theme='dark'] .text-blue-700,
+.dark .text-blue-700,
+html.dark .text-gray-700,
+[data-theme='dark'] .text-gray-700,
+.dark .text-gray-700 {
+  color: #d2d7dc !important;
+}
+
+html.dark .text-slate-500,
+[data-theme='dark'] .text-slate-500,
+.dark .text-slate-500,
+html.dark .text-slate-400,
+[data-theme='dark'] .text-slate-400,
+.dark .text-slate-400,
+html.dark .text-indigo-600,
+[data-theme='dark'] .text-indigo-600,
+.dark .text-indigo-600,
+html.dark .text-indigo-500,
+[data-theme='dark'] .text-indigo-500,
+.dark .text-indigo-500 {
+  color: #9ea5ab !important;
+}
+
+/* Borders */
+html.dark [class*="border-slate-"],
+[data-theme='dark'] [class*="border-slate-"],
+.dark [class*="border-slate-"],
+html.dark [class*="border-indigo-"],
+[data-theme='dark'] [class*="border-indigo-"],
+.dark [class*="border-indigo-"],
+html.dark [class*="border-blue-"],
+[data-theme='dark'] [class*="border-blue-"],
+.dark [class*="border-blue-"] {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}

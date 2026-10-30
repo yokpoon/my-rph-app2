@@ -4068,7 +4068,8 @@ ${gen.assessment}`;
   }
 
   return (
-    <div className="flex h-screen bg-[var(--bg)] text-[var(--text)] antialiased overflow-hidden relative transition-colors duration-300">
+    <div data-theme={isDarkMode ? "dark" : "light"} className={`flex h-screen bg-[var(--bg)] text-[var(--text)] antialiased overflow-hidden relative transition-colors duration-300 ${isDarkMode ? "dark" : ""}`}>
+      {/* Enforce dark text and input contrast */}
       {/* MURMURA AMBIENT RADIAL MESH BACKGROUND */}
       <div className="murmura-mesh" aria-hidden="true">
         <i className="murmura-mesh__a" />
