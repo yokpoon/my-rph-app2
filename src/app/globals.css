@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --murmura-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --murmura-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
 body {
   background-color: #f3f4f7;
   color: #2d353c;
@@ -22,4 +27,113 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+/* ==========================================================================
+   MURMURA-STYLE SMOOTH VIEW & STAGGERED CARD TRANSITIONS
+   ========================================================================== */
+
+@keyframes murmuraPageEnter {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0) scale(0.992);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes murmuraCardRise {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0) scale(0.985);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes murmuraHeaderSlide {
+  0% {
+    opacity: 0;
+    transform: translate3d(-8px, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Main route view wrapper */
+.murmura-view-transition {
+  animation: murmuraPageEnter 0.45s var(--murmura-ease) both;
+  will-change: transform, opacity;
+}
+
+/* Staggered cascade for top-level sections and grid cards inside the active tab */
+.murmura-view-transition > div > * {
+  animation: murmuraCardRise 0.55s var(--murmura-ease) both;
+}
+
+.murmura-view-transition > div > *:nth-child(1) { animation-delay: 0.02s; }
+.murmura-view-transition > div > *:nth-child(2) { animation-delay: 0.06s; }
+.murmura-view-transition > div > *:nth-child(3) { animation-delay: 0.10s; }
+.murmura-view-transition > div > *:nth-child(4) { animation-delay: 0.14s; }
+.murmura-view-transition > div > *:nth-child(5) { animation-delay: 0.18s; }
+.murmura-view-transition > div > *:nth-child(6) { animation-delay: 0.22s; }
+
+/* Stagger individual stat/metric cards inside grids */
+.murmura-view-transition .grid > * {
+  animation: murmuraCardRise 0.52s var(--murmura-ease) both;
+}
+.murmura-view-transition .grid > *:nth-child(1) { animation-delay: 0.03s; }
+.murmura-view-transition .grid > *:nth-child(2) { animation-delay: 0.07s; }
+.murmura-view-transition .grid > *:nth-child(3) { animation-delay: 0.11s; }
+.murmura-view-transition .grid > *:nth-child(4) { animation-delay: 0.15s; }
+.murmura-view-transition .grid > *:nth-child(5) { animation-delay: 0.19s; }
+.murmura-view-transition .grid > *:nth-child(6) { animation-delay: 0.23s; }
+
+/* Header title micro-transition when switching menu */
+.murmura-header-title {
+  animation: murmuraHeaderSlide 0.32s var(--murmura-ease) both;
+}
+
+/* Native View Transitions API cross-fade tuning (when supported by browser) */
+::view-transition-old(root) {
+  animation: 140ms cubic-bezier(0.4, 0, 1, 1) both fade-out;
+}
+::view-transition-new(root) {
+  animation: 260ms cubic-bezier(0.2, 0.8, 0.2, 1) both fade-in;
+}
+
+/* Smooth Sidebar Nav Item Pill & Spring Icon Physics */
+.murmura-nav-btn {
+  transition:
+    background-color 0.28s var(--murmura-ease),
+    color 0.22s var(--murmura-ease),
+    transform 0.28s var(--murmura-spring),
+    box-shadow 0.28s var(--murmura-ease);
+}
+.murmura-nav-btn:active {
+  transform: scale(0.96);
+}
+.murmura-nav-icon {
+  transition: transform 0.38s var(--murmura-spring), color 0.22s var(--murmura-ease);
+}
+.murmura-nav-btn:hover .murmura-nav-icon {
+  transform: scale(1.14) translate3d(1px, 0, 0);
+}
+.murmura-nav-btn[aria-current="page"] .murmura-nav-icon {
+  transform: scale(1.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .murmura-view-transition,
+  .murmura-view-transition > div > *,
+  .murmura-view-transition .grid > *,
+  .murmura-header-title {
+    animation: none !important;
+  }
 }

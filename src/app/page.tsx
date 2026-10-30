@@ -223,11 +223,33 @@ export default function ERphColorAdminApp() {
   const isSidebarExpanded = mobileMenuOpen || isSidebarPinned || isSidebarHovered;
 
   const navigateTo = (tab: NavTab) => {
-    setActiveNav(tab);
-    try {
-      localStorage.setItem('erph_active_nav_tab_v1', tab);
-    } catch (_) {}
-    setMobileMenuOpen(false);
+    if (tab === activeNav) {
+      setMobileMenuOpen(false);
+      return;
+    }
+    const applySwitch = () => {
+      setActiveNav(tab);
+      try {
+        localStorage.setItem('erph_active_nav_tab_v1', tab);
+      } catch (_) {}
+      setMobileMenuOpen(false);
+      if (typeof window !== 'undefined') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    };
+    if (
+      typeof document !== 'undefined' &&
+      'startViewTransition' in document &&
+      typeof (document as any).startViewTransition === 'function'
+    ) {
+      try {
+        (document as any).startViewTransition(() => {
+          applySwitch();
+        });
+        return;
+      } catch (_) {}
+    }
+    applySwitch();
   };
 
   // 4 Management / Pentadbir positions: GB, GPK1, GPK HEM, GPK KK (or GPK KOKO)
@@ -4564,7 +4586,11 @@ ${gen.assessment}`;
             </button>
 
             <div className="min-w-0 flex-1 overflow-hidden">
-              <h2 className="text-xs sm:text-base font-extrabold text-slate-800 truncate" title="Halaman Semasa">
+              <h2
+                key={`header-title-${activeNav}`}
+                className="murmura-header-title text-xs sm:text-base font-extrabold text-slate-800 truncate"
+                title="Halaman Semasa"
+              >
                 {activeNav === 'dashboard' && (isGuru ? 'Dashboard Guru Subjek' : isIct ? 'Dashboard Guru ICT / Data' : 'Dashboard Pentadbir')}
                 {activeNav === 'rph-builder' && 'Penjana & Import e-RPH'}
                 {activeNav === 'rph-drafts' && 'Buku Draf e-RPH Saya'}
@@ -4727,7 +4753,8 @@ ${gen.assessment}`;
         </header>
 
         {/* MAIN BODY CONTAINER */}
-        <main className="p-3 sm:p-6 space-y-4 sm:space-y-6 flex-1 overflow-y-auto min-w-0">
+        <main className="p-3 sm:p-6 flex-1 overflow-y-auto min-w-0">
+          <div key={activeNav} className="murmura-view-transition space-y-4 sm:space-y-6">
 
 
           {/* =====================================================================
@@ -8675,6 +8702,7 @@ ${gen.assessment}`;
           )}
 
 
+          </div>
         </main>
       </div>
 
