@@ -6587,30 +6587,30 @@ ${gen.assessment}`;
               VIEW: SEMAK & SUNTING DRAF e-RPH (Feature 1: Filter by Advance Weeks & Day)
              ===================================================================== */}
           {activeNav === 'rph-drafts' && (
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-6">
               {/* Header Filter Bar */}
-              <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 space-y-4">
-                <div className="flex flex-wrap items-center justify-between gap-4 border-b border-slate-100 pb-3">
-                  <div>
-                    <span className="text-[10px] font-bold uppercase text-cyan-600 bg-cyan-50 px-2.5 py-0.5 rounded-full">
+              <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-4 sm:p-6 space-y-4 overflow-hidden">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3 border-b border-slate-100 pb-3">
+                  <div className="min-w-0">
+                    <span className="text-[10px] font-bold uppercase text-[#11745a] bg-[#cde9e4]/70 px-2.5 py-0.5 rounded-full">
                       Buku Rekod Mengajar Digital
                     </span>
-                    <h3 className="text-base font-extrabold text-slate-800 mt-1">
+                    <h3 className="text-sm sm:text-base font-extrabold text-[#16191d] mt-1 break-words">
                       Semak & Edit Draf e-RPH ({currentUser.name})
                     </h3>
-                    <p className="text-xs text-slate-400">
+                    <p className="text-xs text-[#5b6064]">
                       Saring mengikut minggu dan hari untuk melihat, mengubah suai atau mencetak draf sesi pengajaran anda.
                     </p>
                   </div>
 
                   {/* WEEK SELECTOR DROPDOWN & BATCH SUBMIT */}
-                  <div className="flex flex-wrap items-center gap-2">
-                    <div className="flex items-center gap-2 bg-slate-50 border border-slate-200 px-3 py-1.5 rounded-xl">
-                      <label className="text-xs font-bold text-slate-700">Pilih Minggu:</label>
+                  <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 w-full lg:w-auto min-w-0">
+                    <div className="flex items-center gap-2 bg-[#f6f7f4] border border-black/10 px-3 py-1.5 rounded-2xl w-full sm:w-auto min-w-0">
+                      <label className="text-xs font-bold text-[#16191d] shrink-0">Pilih Minggu:</label>
                       <select
                         value={draftWeekFilter}
                         onChange={(e) => setDraftWeekFilter(Number(e.target.value))}
-                        className="text-xs font-bold bg-white border border-slate-300 rounded-lg px-2.5 py-1 text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="flex-1 min-w-0 w-full text-xs font-bold bg-white border border-slate-300 rounded-xl px-2.5 py-1.5 text-[#16191d] truncate focus:outline-none focus:ring-2 focus:ring-[#16191d]"
                       >
                         {activeAcademicWeeks.map((w) => (
                           <option key={w.weekNumber} value={w.weekNumber}>
@@ -6624,7 +6624,7 @@ ${gen.assessment}`;
                       <button
                         type="button"
                         onClick={handleBatchSubmitWeekDrafts}
-                        className="px-3.5 py-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-extrabold text-xs rounded-xl shadow-md transition flex items-center gap-1.5"
+                        className="w-full sm:w-auto justify-center px-4 py-2.5 bg-[#16191d] hover:bg-[#252930] text-[#f6f7f5] font-extrabold text-xs rounded-full shadow-md transition flex items-center gap-1.5 shrink-0"
                         title="Hantar semua draf minggu ini kepada Pentadbir serentak"
                       >
                         <span>🚀</span>
@@ -6636,16 +6636,16 @@ ${gen.assessment}`;
 
                 {/* Day Filter Buttons */}
                 <div>
-                  <label className="block text-xs font-bold text-slate-700 mb-2">
+                  <label className="block text-xs font-bold text-[#16191d] mb-2">
                     Saring Mengikut Hari Persekolahan:
                   </label>
                   <div className="grid grid-cols-3 sm:grid-cols-6 gap-1.5 sm:gap-2">
                     <button
                       onClick={() => setDraftDayFilter('ALL')}
-                      className={`py-2 px-3 text-xs font-bold rounded-xl border transition ${
+                      className={`py-2 px-2.5 text-[11px] sm:text-xs font-bold rounded-full border transition truncate ${
                         draftDayFilter === 'ALL'
-                          ? 'bg-slate-900 text-white border-slate-900 shadow-sm'
-                          : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
+                          ? 'bg-[#16191d] text-[#f6f7f5] border-[#16191d] shadow-xs'
+                          : 'bg-white/80 text-[#16191d] border-black/10 hover:bg-white'
                       }`}
                     >
                       🌟 Semua Hari
@@ -6658,16 +6658,16 @@ ${gen.assessment}`;
                         <button
                           key={day}
                           onClick={() => setDraftDayFilter(day)}
-                          className={`py-2 px-3 text-xs font-bold rounded-xl border transition flex items-center justify-between ${
+                          className={`py-2 px-2.5 text-[11px] sm:text-xs font-bold rounded-full border transition flex items-center justify-between gap-1 ${
                             draftDayFilter === day
-                              ? 'bg-blue-600 text-white border-blue-600 shadow-sm'
-                              : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
+                              ? 'bg-[#f2b740] text-[#16191d] border-[#f2b740] shadow-xs'
+                              : 'bg-white/80 text-[#16191d] border-black/10 hover:bg-white'
                           }`}
                         >
-                          <span>{day}</span>
+                          <span className="truncate">{day}</span>
                           <span
-                            className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
-                              draftDayFilter === day ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'
+                            className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono shrink-0 ${
+                              draftDayFilter === day ? 'bg-[#16191d] text-[#f6f7f5]' : 'bg-black/[0.07] text-[#16191d]'
                             }`}
                           >
                             {countForDay}
@@ -6681,7 +6681,7 @@ ${gen.assessment}`;
 
               {/* List of Draft Records */}
               {myDraftsForWeek.length === 0 ? (
-                <div className="bg-white rounded-2xl border border-dashed border-slate-300 p-12 text-center space-y-3">
+                <div className="bg-white rounded-2xl border border-dashed border-slate-300 p-8 sm:p-12 text-center space-y-3">
                   <div className="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-2xl mx-auto">
                     📝
                   </div>
@@ -6696,7 +6696,7 @@ ${gen.assessment}`;
                       setBuilderWeek(draftWeekFilter);
                       setActiveNav('rph-builder');
                     }}
-                    className="px-4 py-2 bg-blue-600 text-white text-xs font-bold rounded-xl shadow"
+                    className="px-4 py-2 bg-[#16191d] text-[#f6f7f5] text-xs font-bold rounded-full shadow"
                   >
                     Bina e-RPH untuk Minggu {draftWeekFilter} →
                   </button>
@@ -6706,48 +6706,50 @@ ${gen.assessment}`;
                   {myDraftsForWeek.map((draft) => (
                     <div
                       key={draft.id}
-                      className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 space-y-4 hover:border-blue-300 transition"
+                      className="bg-white rounded-2xl border border-slate-200 shadow-sm p-4 sm:p-5 space-y-3.5 hover:border-blue-300 transition overflow-hidden"
                     >
-                      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
-                        <div className="flex items-center gap-3">
-                          <span className="font-extrabold text-blue-700 bg-blue-50 border border-blue-200 px-3 py-1 rounded-xl text-xs">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-slate-100 pb-3">
+                        {/* Slot Info & Status Pill */}
+                        <div className="flex flex-wrap items-center gap-2 min-w-0">
+                          <span className="font-extrabold text-[#1f68a8] bg-[#d3e6f3]/60 border border-[#1f68a8]/20 px-2.5 py-1 rounded-full text-[11px] sm:text-xs whitespace-nowrap">
                             {draft.day} • {draft.timeStart} – {draft.timeEnd}
                           </span>
-                          <span className="font-extrabold text-slate-900 text-sm">
+                          <span className="font-extrabold text-[#16191d] text-xs sm:text-sm bg-black/[0.05] px-2.5 py-0.5 rounded-full">
                             {draft.className}
                           </span>
-                          <span className="text-xs font-semibold text-slate-600">
-                            • {draft.subjectName}
+                          <span className="text-xs font-bold text-[#5b6064] break-words">
+                            {draft.subjectName}
                           </span>
-                        </div>
-
-                        <div className="flex items-center gap-2">
                           <span
-                            className={`border px-3 py-1 rounded-full text-xs font-bold ${
+                            className={`ml-auto sm:ml-0 border px-2.5 py-0.5 rounded-full text-[11px] font-extrabold whitespace-nowrap ${
                               draft.status === 'DISAHKAN'
                                 ? 'bg-emerald-50 text-emerald-700 border-emerald-300'
                                 : draft.status === 'DIHANTAR'
                                 ? 'bg-blue-50 text-blue-700 border-blue-300'
                                 : draft.status === 'PEMBETULAN'
                                 ? 'bg-rose-50 text-rose-700 border-rose-300'
-                                : 'bg-amber-50 text-amber-700 border-amber-300'
+                                : 'bg-[#f2b740]/25 text-[#855c00] border-[#f2b740]'
                             }`}
                           >
                             Status: {draft.status}
                           </span>
+                        </div>
 
+                        {/* Wrapping Action Buttons */}
+                        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
                           <button
                             onClick={() => setEditingDraftRecord(draft)}
-                            className="px-3.5 py-1.5 bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs rounded-xl shadow-sm transition"
+                            className="px-3 py-1.5 bg-[#1f68a8] hover:bg-[#19558a] text-white font-bold text-[11px] sm:text-xs rounded-full shadow-xs transition flex items-center gap-1 whitespace-nowrap"
                           >
-                            ✏️ Edit
+                            <span>✏️</span>
+                            <span>Edit</span>
                           </button>
 
                           {(draft.status === 'DRAF' || draft.status === 'PEMBETULAN') ? (
                             <button
                               type="button"
                               onClick={() => handleUpdateRphStatus(draft.id, 'DIHANTAR')}
-                              className="px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-xs rounded-xl shadow-sm transition flex items-center gap-1"
+                              className="px-3 py-1.5 bg-[#16191d] hover:bg-[#262b31] text-[#f6f7f5] font-extrabold text-[11px] sm:text-xs rounded-full shadow-xs transition flex items-center gap-1 whitespace-nowrap"
                               title="Hantar e-RPH ini kepada Pentadbir untuk semakan & pengesahan"
                             >
                               <span>🚀</span>
@@ -6757,7 +6759,7 @@ ${gen.assessment}`;
                             <button
                               type="button"
                               onClick={() => handleUpdateRphStatus(draft.id, 'DRAF')}
-                              className="px-3 py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-300 font-bold text-xs rounded-xl transition flex items-center gap-1"
+                              className="px-3 py-1.5 bg-amber-50 hover:bg-amber-100 text-amber-800 border border-amber-300 font-bold text-[11px] sm:text-xs rounded-full transition flex items-center gap-1 whitespace-nowrap"
                               title="Tarik balik e-RPH ke status Draf untuk disunting semula"
                             >
                               <span>↩️</span>
@@ -6766,20 +6768,20 @@ ${gen.assessment}`;
                           ) : null}
                           <button
                             onClick={() => exportSingleRphToDocx(draft, school.name)}
-                            className="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow-sm transition"
+                            className="px-3 py-1.5 bg-[#11745a] hover:bg-[#0e5f49] text-white font-bold text-[11px] sm:text-xs rounded-full shadow-xs transition whitespace-nowrap"
                           >
                             ⬇ .DOCX
                           </button>
                           <button
                             onClick={() => openPrintableRphWindow(draft, school.name, currentUser.name)}
-                            className="px-3 py-1.5 bg-slate-800 hover:bg-slate-900 text-white font-bold text-xs rounded-xl shadow-sm transition"
+                            className="px-3 py-1.5 bg-white hover:bg-slate-50 text-[#16191d] border border-black/15 font-bold text-[11px] sm:text-xs rounded-full shadow-xs transition whitespace-nowrap"
                           >
                             🖨️ Cetak
                           </button>
                           <button
                             type="button"
                             onClick={() => handleDeleteRph(draft.id)}
-                            className="px-2.5 py-1.5 bg-rose-50 hover:bg-rose-100 text-rose-600 font-bold text-xs rounded-xl border border-rose-200 transition"
+                            className="px-2.5 py-1.5 bg-rose-50 hover:bg-rose-100 text-[#c43c30] font-bold text-[11px] sm:text-xs rounded-full border border-rose-200 transition whitespace-nowrap"
                             title="Padam draf / rekod e-RPH ini secara kekal"
                           >
                             🗑️ Padam
