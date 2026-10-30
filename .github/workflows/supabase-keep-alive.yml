@@ -1,0 +1,16 @@
+name: Keep Supabase Database Active (Holiday Ping)
+
+on:
+  schedule:
+    # Runs every Monday and Thursday at 00:00 UTC (08:00 MYT)
+    - cron: '0 0 * * 1,4'
+  workflow_dispatch: # Allows manual trigger anytime from GitHub Actions tab
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Keep-Alive API Endpoint
+        run: |
+          echo "Sending keep-alive ping to Supabase..."
+          curl -f -s -S "https://my-rph-app2.vercel.app/api/cron/keep-alive" || echo "Ping request executed"

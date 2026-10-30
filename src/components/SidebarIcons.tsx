@@ -18,6 +18,9 @@ import {
   ChevronLeft,
   X,
   Menu,
+  Sun,
+  Moon,
+  Check,
 } from 'lucide-react';
 
 export {
@@ -39,6 +42,9 @@ export {
   ChevronLeft,
   X,
   Menu,
+  Sun,
+  Moon,
+  Check,
 };
 
 export interface SidebarNavItemProps {

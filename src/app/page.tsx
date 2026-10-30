@@ -97,6 +97,9 @@ import {
   PinOff,
   Menu,
   X,
+  Sun,
+  Moon,
+  Check,
 } from '@/components/SidebarIcons';
 import {
   supabase,
@@ -280,6 +283,61 @@ export default function ERphColorAdminApp() {
     confirmPass: '',
   });
 
+  // Dark Theme Mode State (Murmura data-theme="light" | "dark")
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('murmura_theme_v1');
+        if (saved) return saved === 'dark';
+        return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      } catch (_) {}
+    }
+    return false;
+  });
+
+  // Apply dark mode theme class & dataset to <html> element
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      const themeVal = isDarkMode ? 'dark' : 'light';
+      document.documentElement.dataset.theme = themeVal;
+      if (isDarkMode) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      try {
+        localStorage.setItem('murmura_theme_v1', themeVal);
+      } catch (_) {}
+    }
+  }, [isDarkMode]);
+
+  // Read status for notifications: keeps track of cleared notification alerts
+  const [isNotificationsRead, setIsNotificationsRead] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        return localStorage.getItem('erph_notifications_read_v1') === 'true';
+      } catch (_) {}
+    }
+    return false;
+  });
+
+  const handleToggleDarkMode = async () => {
+    const nextMode = !isDarkMode;
+    setIsDarkMode(nextMode);
+    showToast(nextMode ? '🌙 Mod Gelap (Dark Mode) diaktifkan' : '☀️ Mod Cerah (Light Mode) diaktifkan');
+
+    // Save preference to Supabase user metadata if signed in
+    if (isSupabaseConfigured && supabase) {
+      try {
+        await supabase.auth.updateUser({
+          data: { theme: nextMode ? 'dark' : 'light' },
+        });
+      } catch (err) {
+        console.warn('Sync theme to Supabase error:', err);
+      }
+    }
+  };
+
   // Persistent App State - Clean Production Start (Populated live by Admin)
   const [school, setSchool] = useState<SchoolConfig>(() => {
     if (typeof window !== 'undefined') {
@@ -444,6 +502,12 @@ export default function ERphColorAdminApp() {
         const resolveUserFromSession = async (sessionUser: any) => {
           if (!sessionUser?.email) return;
           const userEmail = sessionUser.email.toLowerCase();
+
+          // Sync theme preference from Supabase user_metadata if available
+          const prefTheme = sessionUser.user_metadata?.theme;
+          if (prefTheme === 'dark' || prefTheme === 'light') {
+            setIsDarkMode(prefTheme === 'dark');
+          }
 
           // 1. Fetch latest teachers from DB first to get correct configured role
           let dbTeacher: any = null;
@@ -4051,8 +4115,13 @@ ${gen.assessment}`;
             isSidebarExpanded ? 'justify-between px-3.5' : 'justify-center px-0'
           }`}
         >
-          <div className="flex items-center gap-3 overflow-hidden min-w-0">
-            <div className="w-10 h-10 rounded-2xl bg-white p-1 flex items-center justify-center shadow-md shrink-0">
+          <button
+            type="button"
+            onClick={() => navigateTo('dashboard')}
+            className="flex items-center gap-3 overflow-hidden min-w-0 text-left group cursor-pointer"
+            title="Kembali ke Dashboard Utama"
+          >
+            <div className="w-10 h-10 rounded-2xl bg-white p-1 flex items-center justify-center shadow-md shrink-0 group-hover:scale-105 transition-transform">
               <img
                 src="https://i.imgur.com/ZYMvxRE.png"
                 alt="Logo SJKC Yok Poon"
@@ -4061,7 +4130,7 @@ ${gen.assessment}`;
             </div>
             {isSidebarExpanded && (
               <div className="leading-tight overflow-hidden whitespace-nowrap animate-fade-in">
-                <h1 className="text-[#f6f7f5] font-extrabold tracking-tight text-sm">
+                <h1 className="text-[#f6f7f5] font-extrabold tracking-tight text-sm group-hover:text-[#f2b740] transition-colors">
                   e-RPH SJKC YOK POON
                 </h1>
                 <p className="text-[10px] text-[#f2b740] font-semibold truncate max-w-[145px]">
@@ -4069,7 +4138,7 @@ ${gen.assessment}`;
                 </p>
               </div>
             )}
-          </div>
+          </button>
 
           {/* Action buttons (Pin on Desktop, Close on Mobile) */}
           {isSidebarExpanded && (
@@ -4516,6 +4585,20 @@ ${gen.assessment}`;
         <div className="p-2.5 border-t border-white/10 space-y-2 shrink-0">
           {!isSidebarExpanded ? (
             <div className="flex flex-col items-center gap-2">
+              {/* Dark Mode Toggle Button */}
+              <button
+                type="button"
+                onClick={handleToggleDarkMode}
+                className="w-11 h-11 rounded-full bg-white/[0.08] hover:bg-white/15 border border-white/10 text-[#f2b740] flex items-center justify-center transition group shadow-sm"
+                title={isDarkMode ? 'Tukar ke Mod Cerah (Light Mode)' : 'Tukar ke Mod Gelap (Dark Mode)'}
+              >
+                {isDarkMode ? (
+                  <Sun className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
+                ) : (
+                  <Moon className="w-5 h-5 group-hover:-rotate-12 transition-transform duration-300" />
+                )}
+              </button>
+
               {/* User Settings Icon Button */}
               <button
                 type="button"
@@ -4544,6 +4627,31 @@ ${gen.assessment}`;
             </div>
           ) : (
             <>
+              {/* Dark Mode Toggle Button */}
+              <button
+                type="button"
+                onClick={handleToggleDarkMode}
+                className="w-full flex items-center justify-between p-2.5 rounded-2xl bg-white/[0.06] hover:bg-white/12 border border-white/10 text-left transition group shadow-sm"
+                title="Tukar Tema Paparan"
+              >
+                <div className="flex items-center gap-2.5">
+                  <div className="w-8 h-8 rounded-full bg-[#f2b740]/20 text-[#f2b740] flex items-center justify-center text-xs font-bold shrink-0">
+                    {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+                  </div>
+                  <div className="leading-tight">
+                    <p className="text-xs font-bold text-[#f6f7f5]">
+                      {isDarkMode ? 'Mod Cerah' : 'Mod Gelap'}
+                    </p>
+                    <p className="text-[10px] text-[#a6abaa]">
+                      {isDarkMode ? 'Tukar ke latar cerah' : 'Tukar ke latar gelap'}
+                    </p>
+                  </div>
+                </div>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white/10 text-[#f2b740]">
+                  {isDarkMode ? 'GELAP' : 'CERAH'}
+                </span>
+              </button>
+
               {/* User Settings Button */}
               <button
                 type="button"
@@ -4599,17 +4707,22 @@ ${gen.assessment}`;
           isSidebarPinned ? 'lg:pl-[308px]' : 'lg:pl-[96px]'
         }`}
       >
-        {/* TOP HEADER BAR (Murmura Translucent Glass Header) */}
-        <header className="h-16 murmura-header-glass flex items-center justify-between px-3 sm:px-6 sticky top-0 z-30 shrink-0">
+        {/* TOP HEADER BAR (Clean Floating Island Header) */}
+        <header className="h-16 flex items-center justify-between px-3 sm:px-6 sticky top-0 z-30 shrink-0">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1 mr-2">
-            {/* School Logo Badge in Header */}
-            <div className="w-9 h-9 rounded-xl bg-white p-1 border border-black/10 shadow-xs flex items-center justify-center shrink-0">
+            {/* School Logo Badge in Header - clickable back to home */}
+            <button
+              type="button"
+              onClick={() => navigateTo('dashboard')}
+              className="w-10 h-10 rounded-2xl bg-white/90 hover:bg-white p-1 border border-black/10 shadow-xs flex items-center justify-center shrink-0 cursor-pointer transition-transform hover:scale-105 active:scale-95"
+              title="Klik untuk kembali ke Menu Utama"
+            >
               <img
                 src="https://i.imgur.com/ZYMvxRE.png"
                 alt="Logo SJKC Yok Poon"
                 className="w-full h-full object-contain"
               />
-            </div>
+            </button>
 
             <div className="min-w-0 flex-1 overflow-hidden">
               <h2
@@ -4639,8 +4752,22 @@ ${gen.assessment}`;
           </div>
 
           {/* Right Header: Role Switcher & Notification Bell */}
-          <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
-            {/* Notification Bell (Pemberitahuan e-RPH) */}
+          <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+            {/* Dark Mode Quick Toggle Button in Header */}
+            <button
+              type="button"
+              onClick={handleToggleDarkMode}
+              className="w-10 h-10 rounded-full flex items-center justify-center bg-white/80 hover:bg-white border border-black/10 shadow-xs text-[#16191d] transition-transform active:scale-95 cursor-pointer"
+              title={isDarkMode ? 'Tukar ke Mod Cerah' : 'Tukar ke Mod Gelap'}
+            >
+              {isDarkMode ? (
+                <Sun className="w-4 h-4 text-[#f2b740]" />
+              ) : (
+                <Moon className="w-4 h-4 text-[#5b6064]" />
+              )}
+            </button>
+
+            {/* Notification Bell (Murmura Style with Mark All Read) */}
             {(() => {
               const currentTeacherRphs = rphRecords.filter(
                 (r) => r.teacherId === currentUser.id && r.weekNumber === school.currentWeek
@@ -4650,109 +4777,145 @@ ${gen.assessment}`;
               );
               const hasGuruAlert = isGuru && !isSubmittedOrVerified;
               const hasAdminAlert = !isGuru && metrics.waitingReview > 0;
-              const hasAlert = hasGuruAlert || hasAdminAlert;
+              const hasActiveAlert = (hasGuruAlert || hasAdminAlert) && !isNotificationsRead;
 
               return (
                 <div className="relative">
                   <button
                     onClick={() => setShowNotificationMenu(!showNotificationMenu)}
-                    className={`relative w-10 h-10 rounded-full flex items-center justify-center transition ${
-                      hasAlert
+                    className={`relative w-10 h-10 rounded-full flex items-center justify-center transition border border-black/10 shadow-xs ${
+                      hasActiveAlert
                         ? 'bg-[#f2b740] text-[#16191d] font-black shadow-md shadow-[#f2b740]/30'
-                        : 'bg-white/80 hover:bg-white border border-black/10 text-[#16191d]'
+                        : 'bg-white/80 hover:bg-white text-[#16191d]'
                     }`}
                     title="Pemberitahuan Status e-RPH"
                   >
                     <span>🔔</span>
-                    {hasAlert && (
-                      <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#c43c30] text-white rounded-full text-[9px] font-black flex items-center justify-center border-2 border-[#f1f2ef]">
+                    {hasActiveAlert && (
+                      <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#c43c30] text-white rounded-full text-[9px] font-black flex items-center justify-center border-2 border-white">
                         {hasGuruAlert ? '!' : metrics.waitingReview}
                       </span>
                     )}
                   </button>
 
-                  {/* Notification Drawer (Responsive: Centered under header on Mobile, Right-aligned on Desktop) */}
+                  {/* Murmura-styled Notification Popover */}
                   {showNotificationMenu && (
                     <>
                       <div
                         className="fixed inset-0 z-40"
                         onClick={() => setShowNotificationMenu(false)}
                       />
-                      <div className="fixed left-3 right-3 top-[68px] sm:absolute sm:left-auto sm:right-0 sm:top-full sm:mt-2 sm:w-80 bg-white/95 backdrop-blur-xl rounded-[24px] shadow-[0_24px_60px_-18px_rgba(20,24,28,0.3)] border border-black/10 p-4 z-50 text-xs space-y-3">
-                        <div className="flex items-center justify-between border-b pb-2">
-                          <span className="font-extrabold text-[#16191d]">Pemberitahuan e-RPH</span>
-                          <span className="text-[10px] bg-[#f2b740] px-2 py-0.5 rounded-full font-extrabold text-[#16191d]">
-                            Minggu {school.currentWeek}
-                          </span>
+                      <div className="fixed left-3 right-3 top-[68px] sm:absolute sm:left-auto sm:right-0 sm:top-full sm:mt-2.5 sm:w-[360px] bg-white/95 backdrop-blur-xl rounded-[26px] shadow-[0_24px_60px_-18px_rgba(20,24,28,0.35)] border border-black/10 p-4 z-50 text-xs space-y-3">
+                        {/* Header with Title and "Mark all read" button */}
+                        <div className="flex items-center justify-between border-b border-black/10 pb-3">
+                          <div className="flex items-center gap-2">
+                            <span className="font-extrabold text-[#16191d] text-sm">Notifications</span>
+                            {hasActiveAlert && (
+                              <span className="w-2 h-2 rounded-full bg-[#c43c30]" />
+                            )}
+                          </div>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              setIsNotificationsRead(true);
+                              try {
+                                localStorage.setItem('erph_notifications_read_v1', 'true');
+                              } catch (_) {}
+                              showToast('✓ Semua pemberitahuan telah ditandakan sebagai dibaca.');
+                            }}
+                            className="px-3 py-1 bg-black/[0.04] hover:bg-black/[0.08] text-[#5b6064] hover:text-[#16191d] rounded-full text-[11px] font-bold border border-black/10 transition"
+                          >
+                            Mark all read
+                          </button>
                         </div>
 
-                        {isGuru ? (
-                          <div className="space-y-2">
-                            {isSubmittedOrVerified ? (
-                              <div className="bg-emerald-50 border border-emerald-200 p-3 rounded-2xl space-y-1">
-                                <span className="bg-[#11745a] text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full">
-                                  SELESAI
+                        {/* List of Notification Items */}
+                        <div className="space-y-2 max-h-[60vh] overflow-y-auto pr-0.5">
+                          {isGuru ? (
+                            isSubmittedOrVerified ? (
+                              <div className="flex items-start gap-3 p-2.5 rounded-2xl hover:bg-black/[0.03] transition">
+                                <span className="w-9 h-9 rounded-full bg-[#11745a]/15 text-[#11745a] flex items-center justify-center shrink-0">
+                                  <ShieldCheck className="w-4 h-4" />
                                 </span>
-                                <p className="font-bold text-slate-800 mt-1">
-                                  e-RPH Minggu {school.currentWeek} telah dihantar/disahkan.
-                                </p>
-                                <p className="text-slate-600 text-[11px]">
-                                  Terima kasih atas komitmen dan penghantaran tepat pada masanya.
-                                </p>
+                                <div className="space-y-0.5 flex-1 min-w-0">
+                                  <p className="font-bold text-[#16191d] leading-tight">
+                                    e-RPH Minggu {school.currentWeek} telah disahkan
+                                  </p>
+                                  <p className="text-[11px] text-[#5b6064]">
+                                    Semua sesi PdP anda lengkap dan diperakui pentadbir.
+                                  </p>
+                                  <p className="text-[10px] text-[#a6abaa] font-semibold pt-1">
+                                    Selesai tepat waktu
+                                  </p>
+                                </div>
                               </div>
                             ) : (
-                              <div className="bg-amber-50 border border-amber-200 p-3 rounded-2xl space-y-2">
-                                <span className="bg-[#f2b740] text-[#16191d] font-extrabold text-[9px] px-2 py-0.5 rounded-full">
-                                  PERINGATAN PENGHANTARAN
+                              <div className="flex items-start gap-3 p-2.5 rounded-2xl bg-amber-50/70 border border-amber-200/80 transition">
+                                <span className="w-9 h-9 rounded-full bg-[#f2b740]/30 text-[#855c00] flex items-center justify-center shrink-0">
+                                  <FileEdit className="w-4 h-4" />
                                 </span>
-                                <p className="font-bold text-slate-800">
-                                  e-RPH Minggu {school.currentWeek} Belum Dihantar
-                                </p>
-                                <p className="text-slate-600 text-[11px]">
-                                  Anda mempunyai {currentTeacherRphs.length} rekod PdP draf bagi minggu ini. Sila hantar sebelum tarikh akhir Jumaat.
-                                </p>
-                                <button
-                                  onClick={() => {
-                                    navigateTo('rph-drafts');
-                                    setShowNotificationMenu(false);
-                                  }}
-                                  className="w-full text-center py-2 bg-[#16191d] hover:bg-[#262b31] text-white font-bold rounded-full text-xs transition"
-                                >
-                                  Semak & Hantar Draf Sekarang →
-                                </button>
+                                <div className="space-y-1 flex-1 min-w-0">
+                                  <div className="flex items-center justify-between">
+                                    <p className="font-extrabold text-[#16191d] leading-tight">
+                                      Peringatan Hantar e-RPH
+                                    </p>
+                                    <span className="text-[9px] bg-[#f2b740] text-[#16191d] font-black px-1.5 py-0.2 rounded-full">
+                                      Minggu {school.currentWeek}
+                                    </span>
+                                  </div>
+                                  <p className="text-[11px] text-[#5b6064] leading-relaxed">
+                                    Anda mempunyai {currentTeacherRphs.length} draf belum dihantar. Sila hantar sebelum tarikh akhir Jumaat.
+                                  </p>
+                                  <button
+                                    onClick={() => {
+                                      navigateTo('rph-drafts');
+                                      setShowNotificationMenu(false);
+                                    }}
+                                    className="w-full text-center py-2 mt-1 bg-[#16191d] hover:bg-[#252930] text-[#f6f7f5] font-bold rounded-full text-xs transition"
+                                  >
+                                    Semak & Hantar Draf Sekarang →
+                                  </button>
+                                </div>
                               </div>
-                            )}
-                          </div>
-                        ) : (
-                          <div className="space-y-2">
-                            {metrics.waitingReview > 0 ? (
-                              <div className="bg-blue-50 border border-blue-200 p-3 rounded-2xl space-y-2">
-                                <span className="bg-[#1f68a8] text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full">
-                                  SEMAKAN PENTADBIR
+                            )
+                          ) : (
+                            metrics.waitingReview > 0 ? (
+                              <div className="flex items-start gap-3 p-2.5 rounded-2xl bg-blue-50/70 border border-blue-200/80 transition">
+                                <span className="w-9 h-9 rounded-full bg-[#1f68a8]/20 text-[#1f68a8] flex items-center justify-center shrink-0">
+                                  <ShieldCheck className="w-4 h-4" />
                                 </span>
-                                <p className="font-bold text-slate-800">
-                                  {metrics.waitingReview} Guru Menunggu Semakan
-                                </p>
-                                <p className="text-slate-600 text-[11px]">
-                                  Guru telah menghantar e-RPH Minggu {school.currentWeek} untuk disemak dan diberi pengesahan cop rasmi.
-                                </p>
-                                <button
-                                  onClick={() => {
-                                    navigateTo('admin-review');
-                                    setShowNotificationMenu(false);
-                                  }}
-                                  className="w-full text-center py-2 bg-[#11745a] hover:bg-[#0e5f49] text-white font-bold rounded-full text-xs transition"
-                                >
-                                  Buka Pusat Semakan Pentadbir →
-                                </button>
+                                <div className="space-y-1 flex-1 min-w-0">
+                                  <div className="flex items-center justify-between">
+                                    <p className="font-extrabold text-[#16191d] leading-tight">
+                                      {metrics.waitingReview} Guru Menunggu Semakan
+                                    </p>
+                                    <span className="text-[9px] bg-[#1f68a8] text-white font-black px-1.5 py-0.2 rounded-full">
+                                      M.{school.currentWeek}
+                                    </span>
+                                  </div>
+                                  <p className="text-[11px] text-[#5b6064] leading-relaxed">
+                                    Guru telah menghantar e-RPH Minggu {school.currentWeek} untuk disemak dan diberi pengesahan cop rasmi.
+                                  </p>
+                                  <button
+                                    onClick={() => {
+                                      navigateTo('admin-review');
+                                      setShowNotificationMenu(false);
+                                    }}
+                                    className="w-full text-center py-2 mt-1 bg-[#11745a] hover:bg-[#0e5f49] text-white font-bold rounded-full text-xs transition"
+                                  >
+                                    Buka Pusat Semakan Pentadbir →
+                                  </button>
+                                </div>
                               </div>
                             ) : (
-                              <div className="py-6 text-center text-slate-400">
-                                <p>✨ Tiada e-RPH baharu menunggu semakan pada masa ini.</p>
+                              <div className="py-6 text-center text-[#a6abaa] space-y-1">
+                                <p className="text-xl">✨</p>
+                                <p className="font-bold text-xs text-[#5b6064]">Tiada semakan tertunggak</p>
+                                <p className="text-[11px]">Semua e-RPH minggu ini telah disemak sepenuhnya.</p>
                               </div>
-                            )}
-                          </div>
-                        )}
+                            )
+                          )}
+                        </div>
                       </div>
                     </>
                   )}
