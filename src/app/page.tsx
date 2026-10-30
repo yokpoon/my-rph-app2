@@ -4585,20 +4585,6 @@ ${gen.assessment}`;
         <div className="p-2.5 border-t border-white/10 space-y-2 shrink-0">
           {!isSidebarExpanded ? (
             <div className="flex flex-col items-center gap-2">
-              {/* Dark Mode Toggle Button */}
-              <button
-                type="button"
-                onClick={handleToggleDarkMode}
-                className="w-11 h-11 rounded-full bg-white/[0.08] hover:bg-white/15 border border-white/10 text-[#f2b740] flex items-center justify-center transition group shadow-sm"
-                title={isDarkMode ? 'Tukar ke Mod Cerah (Light Mode)' : 'Tukar ke Mod Gelap (Dark Mode)'}
-              >
-                {isDarkMode ? (
-                  <Sun className="w-5 h-5 group-hover:rotate-45 transition-transform duration-300" />
-                ) : (
-                  <Moon className="w-5 h-5 group-hover:-rotate-12 transition-transform duration-300" />
-                )}
-              </button>
-
               {/* User Settings Icon Button */}
               <button
                 type="button"
@@ -4627,31 +4613,6 @@ ${gen.assessment}`;
             </div>
           ) : (
             <>
-              {/* Dark Mode Toggle Button */}
-              <button
-                type="button"
-                onClick={handleToggleDarkMode}
-                className="w-full flex items-center justify-between p-2.5 rounded-2xl bg-white/[0.06] hover:bg-white/12 border border-white/10 text-left transition group shadow-sm"
-                title="Tukar Tema Paparan"
-              >
-                <div className="flex items-center gap-2.5">
-                  <div className="w-8 h-8 rounded-full bg-[#f2b740]/20 text-[#f2b740] flex items-center justify-center text-xs font-bold shrink-0">
-                    {isDarkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-                  </div>
-                  <div className="leading-tight">
-                    <p className="text-xs font-bold text-[#f6f7f5]">
-                      {isDarkMode ? 'Mod Cerah' : 'Mod Gelap'}
-                    </p>
-                    <p className="text-[10px] text-[#a6abaa]">
-                      {isDarkMode ? 'Tukar ke latar cerah' : 'Tukar ke latar gelap'}
-                    </p>
-                  </div>
-                </div>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-white/10 text-[#f2b740]">
-                  {isDarkMode ? 'GELAP' : 'CERAH'}
-                </span>
-              </button>
-
               {/* User Settings Button */}
               <button
                 type="button"

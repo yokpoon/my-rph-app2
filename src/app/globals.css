@@ -317,16 +317,13 @@ body {
   color: #c1c1a9 !important;
 }
 
-/* Muted / Helper / Caption Text -> Warm Slate Gray (#8b8a87) */
+/* Secondary / Caption / Helper Text -> Pale Sage Khaki (#c1c1a9) */
 :root[data-theme='dark'] .text-slate-500,
 :root[data-theme='dark'] .text-slate-400,
+:root[data-theme='dark'] .text-slate-300,
 :root[data-theme='dark'] .text-\[\#868b8a\],
 :root[data-theme='dark'] .text-\[\#a6abaa\] {
-  color: #8b8a87 !important;
-}
-
-:root[data-theme='dark'] .text-slate-300 {
-  color: #555552 !important;
+  color: #c1c1a9 !important;
 }
 
 /* 5.8 Neutral Borders in Dark Mode (#3a3936 and #6a6a67) */
@@ -667,6 +664,97 @@ body {
 }
 :root[data-theme='dark'] tr.group:hover td.sticky.bg-white {
   background-color: #323230 !important;
+}
+
+/* 5.17 Dashboard KPI Metric Cards & Quick Action Gradients */
+:root[data-theme='dark'] .from-\[\#10b981\].to-\[\#059669\] {
+  background-image: linear-gradient(135deg, rgba(16, 185, 129, 0.16), rgba(5, 150, 105, 0.06)) !important;
+  background-color: #272727 !important;
+  border: 1px solid rgba(168, 230, 184, 0.35) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5) !important;
+}
+:root[data-theme='dark'] .from-\[\#10b981\].to-\[\#059669\] h3 {
+  color: #e3e2c3 !important;
+}
+:root[data-theme='dark'] .from-\[\#10b981\].to-\[\#059669\] .text-emerald-200 {
+  color: #a8e6b8 !important;
+}
+:root[data-theme='dark'] .from-\[\#10b981\].to-\[\#059669\] .text-emerald-100 {
+  color: #c1c1a9 !important;
+}
+
+:root[data-theme='dark'] .from-\[\#8b5cf6\].to-\[\#6d28d9\] {
+  background-image: linear-gradient(135deg, rgba(139, 92, 246, 0.16), rgba(109, 40, 217, 0.06)) !important;
+  background-color: #272727 !important;
+  border: 1px solid rgba(199, 190, 245, 0.35) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5) !important;
+}
+:root[data-theme='dark'] .from-\[\#8b5cf6\].to-\[\#6d28d9\] h3 {
+  color: #e3e2c3 !important;
+}
+:root[data-theme='dark'] .from-\[\#8b5cf6\].to-\[\#6d28d9\] .text-purple-200 {
+  color: #c7bef5 !important;
+}
+:root[data-theme='dark'] .from-\[\#8b5cf6\].to-\[\#6d28d9\] .text-purple-100 {
+  color: #c1c1a9 !important;
+}
+
+:root[data-theme='dark'] .from-\[\#06b6d4\].to-\[\#2563eb\] {
+  background-image: linear-gradient(135deg, rgba(6, 182, 212, 0.16), rgba(37, 99, 235, 0.06)) !important;
+  background-color: #272727 !important;
+  border: 1px solid rgba(165, 203, 245, 0.35) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5) !important;
+}
+:root[data-theme='dark'] .from-\[\#06b6d4\].to-\[\#2563eb\] h3 {
+  color: #e3e2c3 !important;
+}
+:root[data-theme='dark'] .from-\[\#06b6d4\].to-\[\#2563eb\] .text-cyan-200 {
+  color: #9ec8f5 !important;
+}
+:root[data-theme='dark'] .from-\[\#06b6d4\].to-\[\#2563eb\] .text-cyan-100 {
+  color: #c1c1a9 !important;
+}
+
+:root[data-theme='dark'] .bg-\[\#1e293b\] {
+  background-color: #272727 !important;
+  border: 1px solid #4a4945 !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5) !important;
+  color: #e3e2c3 !important;
+}
+:root[data-theme='dark'] .bg-\[\#1e293b\] h3 {
+  color: #e3e2c3 !important;
+}
+:root[data-theme='dark'] .bg-\[\#1e293b\] .text-slate-400 {
+  color: #c1c1a9 !important;
+}
+
+:root[data-theme='dark'] .from-blue-600.to-indigo-700 {
+  background-image: linear-gradient(135deg, rgba(37, 99, 235, 0.18), rgba(99, 102, 241, 0.08)) !important;
+  background-color: #272727 !important;
+  border: 1px solid rgba(165, 203, 245, 0.35) !important;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5) !important;
+}
+:root[data-theme='dark'] .from-blue-600.to-indigo-700 h3 {
+  color: #e3e2c3 !important;
+}
+:root[data-theme='dark'] .from-blue-600.to-indigo-700 .text-blue-100 {
+  color: #c1c1a9 !important;
+}
+:root[data-theme='dark'] .from-blue-600.to-indigo-700 button.bg-white {
+  background-color: #e3e2c3 !important;
+  color: #141413 !important;
+}
+
+/* Badges inside KPI cards */
+:root[data-theme='dark'] .bg-white\/20 {
+  background-color: rgba(227, 226, 195, 0.14) !important;
+  color: #e3e2c3 !important;
+  border: 1px solid rgba(227, 226, 195, 0.25) !important;
+}
+
+/* Progress bar track inside KPI cards */
+:root[data-theme='dark'] .bg-black\/20 {
+  background-color: rgba(20, 20, 19, 0.6) !important;
 }
 
 /* ==========================================================================
