@@ -4602,16 +4602,6 @@ ${gen.assessment}`;
         {/* TOP HEADER BAR (Murmura Translucent Glass Header) */}
         <header className="h-16 murmura-header-glass flex items-center justify-between px-3 sm:px-6 sticky top-0 z-30 shrink-0">
           <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1 mr-2">
-            {/* Mobile Hamburger Toggle Button */}
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(true)}
-              className="lg:hidden p-2 rounded-full text-[#16191d] bg-white/80 hover:bg-white border border-black/10 shadow-xs focus:outline-none shrink-0"
-              aria-label="Buka Menu Navigasi"
-            >
-              <Menu className="w-5 h-5" />
-            </button>
-
             {/* School Logo Badge in Header */}
             <div className="w-9 h-9 rounded-xl bg-white p-1 border border-black/10 shadow-xs flex items-center justify-center shrink-0">
               <img
@@ -4681,84 +4671,90 @@ ${gen.assessment}`;
                     )}
                   </button>
 
-                  {/* Notification Drawer */}
+                  {/* Notification Drawer (Responsive: Centered under header on Mobile, Right-aligned on Desktop) */}
                   {showNotificationMenu && (
-                    <div className="absolute right-0 mt-2 w-80 bg-white/95 backdrop-blur-xl rounded-[24px] shadow-[0_24px_60px_-18px_rgba(20,24,28,0.3)] border border-black/10 p-4 z-50 text-xs space-y-3">
-                      <div className="flex items-center justify-between border-b pb-2">
-                        <span className="font-extrabold text-[#16191d]">Pemberitahuan e-RPH</span>
-                        <span className="text-[10px] bg-[#f2b740] px-2 py-0.5 rounded-full font-extrabold text-[#16191d]">
-                          Minggu {school.currentWeek}
-                        </span>
-                      </div>
+                    <>
+                      <div
+                        className="fixed inset-0 z-40"
+                        onClick={() => setShowNotificationMenu(false)}
+                      />
+                      <div className="fixed left-3 right-3 top-[68px] sm:absolute sm:left-auto sm:right-0 sm:top-full sm:mt-2 sm:w-80 bg-white/95 backdrop-blur-xl rounded-[24px] shadow-[0_24px_60px_-18px_rgba(20,24,28,0.3)] border border-black/10 p-4 z-50 text-xs space-y-3">
+                        <div className="flex items-center justify-between border-b pb-2">
+                          <span className="font-extrabold text-[#16191d]">Pemberitahuan e-RPH</span>
+                          <span className="text-[10px] bg-[#f2b740] px-2 py-0.5 rounded-full font-extrabold text-[#16191d]">
+                            Minggu {school.currentWeek}
+                          </span>
+                        </div>
 
-                      {isGuru ? (
-                        <div className="space-y-2">
-                          {isSubmittedOrVerified ? (
-                            <div className="bg-emerald-50 border border-emerald-200 p-3 rounded-2xl space-y-1">
-                              <span className="bg-[#11745a] text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full">
-                                SELESAI
-                              </span>
-                              <p className="font-bold text-slate-800 mt-1">
-                                e-RPH Minggu {school.currentWeek} telah dihantar/disahkan.
-                              </p>
-                              <p className="text-slate-600 text-[11px]">
-                                Terima kasih atas komitmen dan penghantaran tepat pada masanya.
-                              </p>
-                            </div>
-                          ) : (
-                            <div className="bg-amber-50 border border-amber-200 p-3 rounded-2xl space-y-2">
-                              <span className="bg-[#f2b740] text-[#16191d] font-extrabold text-[9px] px-2 py-0.5 rounded-full">
-                                PERINGATAN PENGHANTARAN
-                              </span>
-                              <p className="font-bold text-slate-800">
-                                e-RPH Minggu {school.currentWeek} Belum Dihantar
-                              </p>
-                              <p className="text-slate-600 text-[11px]">
-                                Anda mempunyai {currentTeacherRphs.length} rekod PdP draf bagi minggu ini. Sila hantar sebelum tarikh akhir Jumaat.
-                              </p>
-                              <button
-                                onClick={() => {
-                                  navigateTo('rph-drafts');
-                                  setShowNotificationMenu(false);
-                                }}
-                                className="w-full text-center py-2 bg-[#16191d] hover:bg-[#262b31] text-white font-bold rounded-full text-xs transition"
-                              >
-                                Semak & Hantar Draf Sekarang →
-                              </button>
-                            </div>
-                          )}
-                        </div>
-                      ) : (
-                        <div className="space-y-2">
-                          {metrics.waitingReview > 0 ? (
-                            <div className="bg-blue-50 border border-blue-200 p-3 rounded-2xl space-y-2">
-                              <span className="bg-[#1f68a8] text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full">
-                                SEMAKAN PENTADBIR
-                              </span>
-                              <p className="font-bold text-slate-800">
-                                {metrics.waitingReview} Guru Menunggu Semakan
-                              </p>
-                              <p className="text-slate-600 text-[11px]">
-                                Guru telah menghantar e-RPH Minggu {school.currentWeek} untuk disemak dan diberi pengesahan cop rasmi.
-                              </p>
-                              <button
-                                onClick={() => {
-                                  navigateTo('admin-review');
-                                  setShowNotificationMenu(false);
-                                }}
-                                className="w-full text-center py-2 bg-[#11745a] hover:bg-[#0e5f49] text-white font-bold rounded-full text-xs transition"
-                              >
-                                Buka Pusat Semakan Pentadbir →
-                              </button>
-                            </div>
-                          ) : (
-                            <div className="py-6 text-center text-slate-400">
-                              <p>✨ Tiada e-RPH baharu menunggu semakan pada masa ini.</p>
-                            </div>
-                          )}
-                        </div>
-                      )}
-                    </div>
+                        {isGuru ? (
+                          <div className="space-y-2">
+                            {isSubmittedOrVerified ? (
+                              <div className="bg-emerald-50 border border-emerald-200 p-3 rounded-2xl space-y-1">
+                                <span className="bg-[#11745a] text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full">
+                                  SELESAI
+                                </span>
+                                <p className="font-bold text-slate-800 mt-1">
+                                  e-RPH Minggu {school.currentWeek} telah dihantar/disahkan.
+                                </p>
+                                <p className="text-slate-600 text-[11px]">
+                                  Terima kasih atas komitmen dan penghantaran tepat pada masanya.
+                                </p>
+                              </div>
+                            ) : (
+                              <div className="bg-amber-50 border border-amber-200 p-3 rounded-2xl space-y-2">
+                                <span className="bg-[#f2b740] text-[#16191d] font-extrabold text-[9px] px-2 py-0.5 rounded-full">
+                                  PERINGATAN PENGHANTARAN
+                                </span>
+                                <p className="font-bold text-slate-800">
+                                  e-RPH Minggu {school.currentWeek} Belum Dihantar
+                                </p>
+                                <p className="text-slate-600 text-[11px]">
+                                  Anda mempunyai {currentTeacherRphs.length} rekod PdP draf bagi minggu ini. Sila hantar sebelum tarikh akhir Jumaat.
+                                </p>
+                                <button
+                                  onClick={() => {
+                                    navigateTo('rph-drafts');
+                                    setShowNotificationMenu(false);
+                                  }}
+                                  className="w-full text-center py-2 bg-[#16191d] hover:bg-[#262b31] text-white font-bold rounded-full text-xs transition"
+                                >
+                                  Semak & Hantar Draf Sekarang →
+                                </button>
+                              </div>
+                            )}
+                          </div>
+                        ) : (
+                          <div className="space-y-2">
+                            {metrics.waitingReview > 0 ? (
+                              <div className="bg-blue-50 border border-blue-200 p-3 rounded-2xl space-y-2">
+                                <span className="bg-[#1f68a8] text-white font-extrabold text-[9px] px-2 py-0.5 rounded-full">
+                                  SEMAKAN PENTADBIR
+                                </span>
+                                <p className="font-bold text-slate-800">
+                                  {metrics.waitingReview} Guru Menunggu Semakan
+                                </p>
+                                <p className="text-slate-600 text-[11px]">
+                                  Guru telah menghantar e-RPH Minggu {school.currentWeek} untuk disemak dan diberi pengesahan cop rasmi.
+                                </p>
+                                <button
+                                  onClick={() => {
+                                    navigateTo('admin-review');
+                                    setShowNotificationMenu(false);
+                                  }}
+                                  className="w-full text-center py-2 bg-[#11745a] hover:bg-[#0e5f49] text-white font-bold rounded-full text-xs transition"
+                                >
+                                  Buka Pusat Semakan Pentadbir →
+                                </button>
+                              </div>
+                            ) : (
+                              <div className="py-6 text-center text-slate-400">
+                                <p>✨ Tiada e-RPH baharu menunggu semakan pada masa ini.</p>
+                              </div>
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    </>
                   )}
                 </div>
               );
