@@ -424,7 +424,7 @@ export default function ERphColorAdminApp() {
           const parsedT = JSON.parse(localT);
           if (Array.isArray(parsedT) && parsedT.length > 0) {
             const praDefault = INITIAL_TEACHERS.find((t) => t.id === 'pra1');
-            if (praDefault && !parsedT.some((t: TeacherProfile) => t.id === 'pra1' || t.role === 'guru_prasekolah')) {
+            if (praDefault && !parsedT.some((t: TeacherProfile) => t.id === 'pra1' || t.jawatan === 'GURU PRASEKOLAH' || t.role === 'guru_prasekolah')) {
               parsedT.push(praDefault);
             }
             setTeachers(parsedT);
@@ -1019,6 +1019,7 @@ export default function ERphColorAdminApp() {
   const [newTeacherEmail, setNewTeacherEmail] = useState('');
   const [newTeacherPanitia, setNewTeacherPanitia] = useState('Bahasa Cina');
   const [newTeacherRole, setNewTeacherRole] = useState<UserRole>('guru');
+  const [newTeacherJawatan, setNewTeacherJawatan] = useState<TeacherJawatan>('GAB');
 
   const currentUser: TeacherProfile = useMemo(() => {
     if (authSession) {
@@ -1047,11 +1048,25 @@ export default function ERphColorAdminApp() {
     );
   }, [teachers, currentUserId, authSession]);
 
-  // Strictly isolated Prasekolah (KSPK) vs Primary School (KSSR) UI mode
+  // Strictly isolated Prasekolah (KSPK) vs Primary School (KSSR) UI mode based on Jawatan Sekolah
   const isPrasekolahTeacher = useMemo(() => {
+    // 1. If Jawatan is set to GURU PRASEKOLAH, strictly load Prasekolah UI
+    if (currentUser.jawatan === 'GURU PRASEKOLAH') return true;
+    // 2. If Jawatan is GAB or other Primary positions, strictly load GAB / Primary UI
+    if (
+      currentUser.jawatan === 'GAB' ||
+      currentUser.jawatan === 'GB' ||
+      currentUser.jawatan === 'GPK1' ||
+      currentUser.jawatan === 'GPK HEM' ||
+      currentUser.jawatan === 'GPK KK' ||
+      currentUser.jawatan === 'GPK KOKO' ||
+      currentUser.jawatan === 'G GANTI'
+    ) {
+      return false;
+    }
+    // 3. Fallback for legacy data where jawatan was not populated
     return (
       currentUser.role === 'guru_prasekolah' ||
-      currentUser.jawatan === 'GURU PRASEKOLAH' ||
       (currentUser.panitia || '').toLowerCase().includes('prasekolah') ||
       (currentUser.subjectSlug || '').startsWith('kspk')
     );
@@ -3614,86 +3629,27 @@ ${gen.assessment}`;
                   </p>
                 </div>
 
-                {/* 2. PERANAN SISTEM */}
+                {/* 2. PERANAN SISTEM (Read-Only) */}
                 <div className="bg-white p-3 rounded-xl border border-slate-200">
                   <div className="flex items-center justify-between">
                     <span className="text-[10px] uppercase font-bold text-slate-400">Peranan Sistem</span>
-                    <span className="text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded-full flex items-center gap-1">
-                      Boleh Ditukar
+                    <span className="text-[9px] font-bold text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded-full">
+                      Ditetapkan Pentadbir
                     </span>
                   </div>
-                  <div className="mt-1">
-                    <select
-                      value={currentUser.role}
-                      onChange={(e) => {
-                        const newRole = e.target.value as UserRole;
-                        const isPra = newRole === 'guru_prasekolah';
-                        const newJawatan: TeacherJawatan =
-                          newRole === 'guru_besar'
-                            ? 'GB'
-                            : newRole === 'pk_pentadbiran'
-                            ? 'GPK1'
-                            : isPra
-                            ? 'GURU PRASEKOLAH'
-                            : 'GAB';
-                        const newPanitia = isPra
-                          ? 'Prasekolah (KSPK)'
-                          : (currentUser.panitia || '').toLowerCase().includes('prasekolah')
-                          ? 'Bahasa Cina'
-                          : currentUser.panitia || 'Bahasa Cina';
-                        const newSubj = isPra
-                          ? 'kspk_perbualan_awal'
-                          : (currentUser.subjectSlug || '').startsWith('kspk')
-                          ? 'bahasa_cina_sjkc'
-                          : currentUser.subjectSlug || 'bahasa_cina_sjkc';
-
-                        const updatedUser: TeacherProfile = {
-                          ...currentUser,
-                          role: newRole,
-                          jawatan: newJawatan,
-                          panitia: newPanitia,
-                          subjectSlug: newSubj,
-                        };
-                        setTeachers((prev) => {
-                          const exists = prev.some((t) => t.id === currentUser.id);
-                          const list = exists
-                            ? prev.map((t) => (t.id === currentUser.id ? updatedUser : t))
-                            : [...prev, updatedUser];
-                          try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(list)); } catch (_) {}
-                          return list;
-                        });
-                        setAuthSession((prev) =>
-                          prev ? { ...prev, role: newRole, jawatan: newJawatan, panitia: newPanitia } : prev
-                        );
-                        try {
-                          const curSession = localStorage.getItem('erph_auth_session_v1');
-                          if (curSession) {
-                            const p = JSON.parse(curSession);
-                            p.role = newRole;
-                            p.jawatan = newJawatan;
-                            p.panitia = newPanitia;
-                            localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
-                          }
-                        } catch (_) {}
-                        saveTeacherToDb(updatedUser).catch((err) => console.warn('saveTeacherToDb err:', err));
-                        showToast(
-                          isPra
-                            ? '🧒 Ditukar kepada UI Khas Guru Prasekolah (KSPK)!'
-                            : '📘 Ditukar kepada UI Sekolah Rendah (KSSR)!'
-                        );
-                      }}
-                      className="w-full border rounded-lg p-1.5 bg-slate-50 font-bold text-xs text-slate-800"
-                    >
-                      <option value="guru">👩‍🏫 Guru Subjek (Sekolah Rendah)</option>
-                      <option value="guru_prasekolah">🧒 Guru Prasekolah (KSPK)</option>
-                      <option value="pk_pentadbiran">🛡️ PK Pentadbiran</option>
-                      <option value="guru_besar">🎖️ Guru Besar</option>
-                      <option value="guru_ict_data">💻 Guru ICT / Data</option>
-                      <option value="superadmin">👑 Superadmin</option>
-                    </select>
-                  </div>
+                  <p className="font-bold text-slate-800 text-sm mt-1">
+                    {currentUser.role === 'superadmin'
+                      ? '👑 Superadmin'
+                      : currentUser.role === 'guru_besar'
+                      ? '🎖️ Guru Besar'
+                      : currentUser.role === 'pk_pentadbiran'
+                      ? '🛡️ PK Pentadbiran'
+                      : currentUser.role === 'guru_ict_data'
+                      ? '💻 Guru ICT / Data'
+                      : '👩‍🏫 Guru Subjek'}
+                  </p>
                   <p className="text-[10px] text-slate-500 mt-1">
-                    Tukar kepada Guru Prasekolah untuk membuka UI khas KSPK.
+                    Hanya Admin, Guru ICT dan Pentadbir boleh mengubah peranan di Pengurusan Senarai Guru.
                   </p>
                 </div>
 
@@ -3705,32 +3661,13 @@ ${gen.assessment}`;
                   </div>
                   <div className="mt-1">
                     <select
-                      value={currentUser.panitia || 'Bahasa Cina'}
+                      value={currentUser.panitia || (isPrasekolahTeacher ? 'Prasekolah (KSPK)' : 'Bahasa Cina')}
+                      disabled={isPrasekolahTeacher}
                       onChange={(e) => {
                         const newPanitia = e.target.value;
-                        const isPra = newPanitia.toLowerCase().includes('prasekolah');
-                        const nextRole: UserRole = isPra
-                          ? 'guru_prasekolah'
-                          : currentUser.role === 'guru_prasekolah'
-                          ? 'guru'
-                          : currentUser.role;
-                        const nextJawatan: TeacherJawatan | undefined = isPra
-                          ? 'GURU PRASEKOLAH'
-                          : currentUser.jawatan === 'GURU PRASEKOLAH'
-                          ? 'GAB'
-                          : currentUser.jawatan;
-                        const nextSubj = isPra
-                          ? 'kspk_perbualan_awal'
-                          : (currentUser.subjectSlug || '').startsWith('kspk')
-                          ? 'bahasa_cina_sjkc'
-                          : currentUser.subjectSlug || 'bahasa_cina_sjkc';
-
                         const updatedUser: TeacherProfile = {
                           ...currentUser,
                           panitia: newPanitia,
-                          role: nextRole,
-                          jawatan: nextJawatan,
-                          subjectSlug: nextSubj,
                         };
                         setTeachers((prev) => {
                           const exists = prev.some((t) => t.id === currentUser.id);
@@ -3741,45 +3678,46 @@ ${gen.assessment}`;
                           return list;
                         });
                         setAuthSession((prev) =>
-                          prev
-                            ? { ...prev, panitia: newPanitia, role: nextRole, jawatan: nextJawatan }
-                            : prev
+                          prev ? { ...prev, panitia: newPanitia } : prev
                         );
                         try {
                           const curSession = localStorage.getItem('erph_auth_session_v1');
                           if (curSession) {
                             const p = JSON.parse(curSession);
                             p.panitia = newPanitia;
-                            p.role = nextRole;
-                            p.jawatan = nextJawatan;
                             localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
                           }
                         } catch (_) {}
                         saveTeacherToDb(updatedUser).catch((err) => console.warn('saveTeacherToDb err:', err));
-                        showToast(
-                          isPra
-                            ? '🧒 Panitia Prasekolah dipilih — UI Khas Prasekolah diaktifkan!'
-                            : '✅ Panitia utama berjaya dikemaskini!'
-                        );
+                        showToast(`Panitia utama dikemaskini kepada: ${newPanitia}`);
                       }}
-                      className="w-full border rounded-lg p-1.5 bg-slate-50 font-bold text-xs text-slate-800"
+                      className="w-full border rounded-lg p-1.5 bg-slate-50 font-bold text-xs text-slate-800 disabled:opacity-75"
                     >
-                      <option value="Bahasa Cina">Bahasa Cina</option>
-                      <option value="Bahasa Melayu">Bahasa Melayu</option>
-                      <option value="Bahasa Inggeris">Bahasa Inggeris</option>
-                      <option value="Matematik">Matematik</option>
-                      <option value="Sains">Sains</option>
-                      <option value="Pendidikan Moral">Pendidikan Moral</option>
-                      <option value="Sejarah">Sejarah</option>
-                      <option value="RBT">RBT / TMK</option>
-                      <option value="Pendidikan Jasmani & Kesihatan">Pendidikan Jasmani & Kesihatan (PJK)</option>
-                      <option value="Pendidikan Seni Visual">Pendidikan Seni Visual (PSV)</option>
-                      <option value="Pendidikan Muzik">Pendidikan Muzik</option>
-                      <option value="Prasekolah (KSPK)">🧒 Prasekolah (KSPK)</option>
-                      <option value="Pentadbiran / Kepimpinan">Pentadbiran / Kepimpinan</option>
+                      {isPrasekolahTeacher ? (
+                        <option value="Prasekolah (KSPK)">🧒 Prasekolah (KSPK)</option>
+                      ) : (
+                        <>
+                          <option value="Bahasa Cina">Bahasa Cina</option>
+                          <option value="Bahasa Melayu">Bahasa Melayu</option>
+                          <option value="Bahasa Inggeris">Bahasa Inggeris</option>
+                          <option value="Matematik">Matematik</option>
+                          <option value="Sains">Sains</option>
+                          <option value="Pendidikan Moral">Pendidikan Moral</option>
+                          <option value="Sejarah">Sejarah</option>
+                          <option value="RBT">RBT / TMK</option>
+                          <option value="Pendidikan Jasmani & Kesihatan">Pendidikan Jasmani & Kesihatan (PJK)</option>
+                          <option value="Pendidikan Seni Visual">Pendidikan Seni Visual (PSV)</option>
+                          <option value="Pendidikan Muzik">Pendidikan Muzik</option>
+                          <option value="Pentadbiran / Kepimpinan">Pentadbiran / Kepimpinan</option>
+                        </>
+                      )}
                     </select>
                   </div>
-                  <p className="text-[10px] text-slate-500 mt-1">Subjek Utama e-RPH anda</p>
+                  <p className="text-[10px] text-slate-500 mt-1">
+                    {isPrasekolahTeacher
+                      ? 'Ditetapkan automatik mengikut Jawatan Guru Prasekolah.'
+                      : 'Subjek Utama e-RPH anda'}
+                  </p>
                 </div>
 
                 {/* 4. NO KAD PENGENALAN (Boleh Disunting oleh Guru) */}
@@ -5045,73 +4983,22 @@ ${gen.assessment}`;
               <span className="w-2 h-2 rounded-full bg-[#f2b740]" />
               <span>Minggu Semasa: {school.currentWeek}</span>
             </span>
+
+            {/* Peringkat / Jawatan Badge */}
+            <span
+              className={`text-xs px-3 py-1 rounded-full font-bold hidden md:inline-flex items-center gap-1.5 shrink-0 shadow-xs ${
+                isPrasekolahTeacher
+                  ? 'bg-amber-400 text-slate-950'
+                  : 'bg-blue-100 text-blue-900'
+              }`}
+            >
+              <span>{isPrasekolahTeacher ? '🧒' : '🏫'}</span>
+              <span>{isPrasekolahTeacher ? 'Prasekolah (KSPK)' : currentUser.jawatan || 'Sekolah Rendah (GAB)'}</span>
+            </span>
           </div>
 
-          {/* Right Header: UI Mode Switcher, Dark Mode & Notification Bell */}
+          {/* Right Header: Dark Mode & Notification Bell */}
           <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
-            {/* Segmented UI Mode Switcher: Sekolah Rendah (KSSR) vs Prasekolah (KSPK) */}
-            <div className="flex items-center bg-white/90 border border-black/10 rounded-full p-0.5 shadow-xs">
-              <button
-                type="button"
-                onClick={() => {
-                  if (!isPrasekolahTeacher) return;
-                  const primaryTeacher =
-                    teachers.find(
-                      (t) =>
-                        t.id !== 'pra1' &&
-                        t.role === 'guru' &&
-                        !(t.panitia || '').toLowerCase().includes('prasekolah')
-                    ) ||
-                    teachers.find(
-                      (t) =>
-                        t.id !== 'pra1' &&
-                        t.role !== 'guru_prasekolah' &&
-                        !(t.panitia || '').toLowerCase().includes('prasekolah')
-                    ) ||
-                    INITIAL_TEACHERS.find((t) => t.role === 'guru') ||
-                    INITIAL_TEACHERS[0];
-                  if (primaryTeacher) {
-                    handlePerformLogin(primaryTeacher, 'email');
-                    showToast(`📘 Paparan Sekolah Rendah (KSSR) diaktifkan (${primaryTeacher.name})`);
-                  }
-                }}
-                className={`px-2.5 sm:px-3 py-1 rounded-full text-[11px] font-extrabold transition flex items-center gap-1 cursor-pointer ${
-                  !isPrasekolahTeacher
-                    ? 'bg-[#16191d] text-white shadow-xs'
-                    : 'text-slate-600 hover:text-slate-900'
-                }`}
-                title="Paparan Asal Guru Sekolah Rendah (Tahun 1 - 6 KSSR)"
-              >
-                <span>📘</span>
-                <span className="hidden sm:inline">Sekolah Rendah</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => {
-                  if (isPrasekolahTeacher) return;
-                  const praTeacher =
-                    teachers.find(
-                      (t) =>
-                        t.id === 'pra1' ||
-                        t.role === 'guru_prasekolah' ||
-                        (t.panitia || '').toLowerCase().includes('prasekolah')
-                    ) || INITIAL_TEACHERS.find((t) => t.id === 'pra1');
-                  if (praTeacher) {
-                    handlePerformLogin(praTeacher, 'email');
-                    showToast(`🧒 Paparan Khas Guru Prasekolah (KSPK) diaktifkan (${praTeacher.name})`);
-                  }
-                }}
-                className={`px-2.5 sm:px-3 py-1 rounded-full text-[11px] font-extrabold transition flex items-center gap-1 cursor-pointer ${
-                  isPrasekolahTeacher
-                    ? 'bg-amber-400 text-slate-950 shadow-xs'
-                    : 'text-slate-600 hover:text-slate-900'
-                }`}
-                title="Paparan Khas Guru Prasekolah (KSPK)"
-              >
-                <span>🧒</span>
-                <span className="hidden sm:inline">Prasekolah (KSPK)</span>
-              </button>
-            </div>
             {/* Dark Mode Quick Toggle Button in Header */}
             <button
               type="button"
@@ -9423,6 +9310,54 @@ ${gen.assessment}`;
                       />
                     </div>
                     <div>
+                      <label className="block font-bold text-slate-700 mb-1">Jawatan Sekolah</label>
+                      <select
+                        value={newTeacherJawatan}
+                        onChange={(e) => {
+                          const j = e.target.value as TeacherJawatan;
+                          setNewTeacherJawatan(j);
+                          if (j === 'GURU PRASEKOLAH') {
+                            setNewTeacherPanitia('Prasekolah (KSPK)');
+                            setNewTeacherRole('guru');
+                          } else if (j === 'GB') {
+                            setNewTeacherRole('guru_besar');
+                          } else if (['GPK1', 'GPK HEM', 'GPK KOKO', 'GPK KK'].includes(j)) {
+                            setNewTeacherRole('pk_pentadbiran');
+                          } else {
+                            if (newTeacherPanitia === 'Prasekolah (KSPK)') {
+                              setNewTeacherPanitia('Bahasa Cina');
+                            }
+                            if (newTeacherRole === 'guru_besar' || newTeacherRole === 'pk_pentadbiran') {
+                              setNewTeacherRole('guru');
+                            }
+                          }
+                        }}
+                        className="w-full border rounded-lg p-2 bg-white font-bold"
+                      >
+                        <option value="GAB">GAB (Guru Akademik Biasa - Sekolah Rendah)</option>
+                        <option value="GURU PRASEKOLAH">🧒 GURU PRASEKOLAH (KSPK)</option>
+                        <option value="GB">GB (Guru Besar / Pengetua)</option>
+                        <option value="GPK1">GPK1 (PK Pentadbiran)</option>
+                        <option value="GPK HEM">GPK HEM</option>
+                        <option value="GPK KK">GPK KK (GPK Kokurikulum)</option>
+                        <option value="GPK KOKO">GPK KOKO</option>
+                        <option value="G GANTI">G GANTI (Guru Ganti)</option>
+                      </select>
+                    </div>
+                    <div>
+                      <label className="block font-bold text-slate-700 mb-1">Peranan (Role)</label>
+                      <select
+                        value={newTeacherRole}
+                        onChange={(e) => setNewTeacherRole(e.target.value as any)}
+                        className="w-full border rounded-lg p-2 bg-white font-semibold"
+                      >
+                        <option value="guru">Guru Subjek / GAB</option>
+                        <option value="pk_pentadbiran">PK Pentadbiran</option>
+                        <option value="guru_besar">Guru Besar</option>
+                        <option value="guru_ict_data">Guru ICT / Data</option>
+                      </select>
+                    </div>
+                    <div>
                       <label className="block font-bold text-slate-700 mb-1">Panitia</label>
                       <select
                         value={newTeacherPanitia}
@@ -9437,21 +9372,11 @@ ${gen.assessment}`;
                         <option value="Pendidikan Moral">Pendidikan Moral</option>
                         <option value="Sejarah">Sejarah</option>
                         <option value="RBT">RBT / TMK</option>
+                        <option value="Pendidikan Jasmani & Kesihatan">Pendidikan Jasmani & Kesihatan (PJK)</option>
+                        <option value="Pendidikan Seni Visual">Pendidikan Seni Visual (PSV)</option>
+                        <option value="Pendidikan Muzik">Pendidikan Muzik</option>
                         <option value="Prasekolah (KSPK)">🧒 Prasekolah (KSPK)</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block font-bold text-slate-700 mb-1">Peranan (Role)</label>
-                      <select
-                        value={newTeacherRole}
-                        onChange={(e) => setNewTeacherRole(e.target.value as any)}
-                        className="w-full border rounded-lg p-2 bg-white font-semibold"
-                      >
-                        <option value="guru">Guru Subjek (Sekolah Rendah)</option>
-                        <option value="guru_prasekolah">🧒 Guru Prasekolah (KSPK)</option>
-                        <option value="pk_pentadbiran">PK Pentadbiran</option>
-                        <option value="guru_besar">Guru Besar</option>
-                        <option value="guru_ict_data">Guru ICT / Data</option>
+                        <option value="Pentadbiran / Kepimpinan">Pentadbiran / Kepimpinan</option>
                       </select>
                     </div>
                   </div>
@@ -9460,16 +9385,16 @@ ${gen.assessment}`;
                       type="button"
                       onClick={() => {
                         if (!newTeacherName.trim()) return;
-                        const isPraRole = newTeacherRole === 'guru_prasekolah' || newTeacherPanitia.toLowerCase().includes('prasekolah');
+                        const isPra = newTeacherJawatan === 'GURU PRASEKOLAH';
                         const nt: TeacherProfile = {
                           id: `t_${Date.now()}`,
                           name: newTeacherName.trim(),
                           chineseName: newTeacherChinese.trim() || '老师',
                           email: newTeacherEmail.trim() || `g-${Date.now()}@moe-dl.edu.my`,
-                          panitia: isPraRole ? 'Prasekolah (KSPK)' : newTeacherPanitia,
-                          subjectSlug: isPraRole ? 'kspk_perbualan_awal' : 'bahasa_cina_sjkc',
-                          role: isPraRole ? 'guru_prasekolah' : newTeacherRole,
-                          jawatan: isPraRole ? 'GURU PRASEKOLAH' : 'GAB',
+                          panitia: isPra ? 'Prasekolah (KSPK)' : newTeacherPanitia,
+                          subjectSlug: isPra ? 'kspk_perbualan_awal' : 'bahasa_cina_sjkc',
+                          role: newTeacherRole,
+                          jawatan: newTeacherJawatan,
                           status: 'AKTIF',
                         };
                         setTeachers((prev) => {
@@ -9481,7 +9406,7 @@ ${gen.assessment}`;
                         setNewTeacherName('');
                         setNewTeacherChinese('');
                         setNewTeacherEmail('');
-                        showToast(`✅ ${nt.name} (${nt.role}) telah didaftarkan!`);
+                        showToast(`✅ ${nt.name} (${nt.jawatan}) telah didaftarkan!`);
                       }}
                       className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl shadow transition"
                     >
@@ -9496,6 +9421,7 @@ ${gen.assessment}`;
                     <thead className="bg-slate-50 border-b border-slate-200 text-slate-600 uppercase font-bold">
                       <tr>
                         <th className="py-3 px-4">Nama Guru</th>
+                        <th className="py-3 px-4">Jawatan</th>
                         <th className="py-3 px-4">Peranan</th>
                         <th className="py-3 px-4">Panitia Utama</th>
                         <th className="py-3 px-4">E-mel Rasmi</th>
@@ -9506,7 +9432,7 @@ ${gen.assessment}`;
                     <tbody className="divide-y divide-slate-100">
                       {teachers.length === 0 ? (
                         <tr>
-                          <td colSpan={6} className="py-10 text-center text-slate-400">
+                          <td colSpan={7} className="py-10 text-center text-slate-400">
                             <p className="font-bold text-sm text-slate-600">Pangkalan data guru masih kosong.</p>
                             <p className="text-xs mt-1">Sila gunakan borang "+ DAFTAR GURU BAHARU" di atas untuk mendaftarkan guru sekolah.</p>
                           </td>
@@ -9521,14 +9447,29 @@ ${gen.assessment}`;
                           <td className="py-3 px-4">
                             <span
                               className={`inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold ${
+                                t.jawatan === 'GURU PRASEKOLAH'
+                                  ? 'bg-amber-100 text-amber-900 border border-amber-300'
+                                  : t.jawatan === 'GAB'
+                                  ? 'bg-blue-50 text-blue-800 border border-blue-200'
+                                  : ['GB', 'GPK1', 'GPK HEM', 'GPK KK', 'GPK KOKO'].includes(t.jawatan || '')
+                                  ? 'bg-purple-100 text-purple-900 border border-purple-200'
+                                  : 'bg-slate-100 text-slate-700'
+                              }`}
+                            >
+                              {t.jawatan || (t.role === 'guru_prasekolah' ? 'GURU PRASEKOLAH' : 'GAB')}
+                            </span>
+                          </td>
+                          <td className="py-3 px-4">
+                            <span
+                              className={`inline-block px-2.5 py-0.5 rounded-full text-[11px] font-bold ${
                                 t.role === 'guru_besar'
                                   ? 'bg-rose-100 text-rose-800'
                                   : t.role === 'pk_pentadbiran'
                                   ? 'bg-amber-100 text-amber-800'
                                   : t.role === 'guru_ict_data'
                                   ? 'bg-purple-100 text-purple-800'
-                                  : t.role === 'guru_prasekolah' || (t.panitia || '').toLowerCase().includes('prasekolah')
-                                  ? 'bg-emerald-100 text-emerald-800'
+                                  : t.role === 'superadmin'
+                                  ? 'bg-indigo-100 text-indigo-800'
                                   : 'bg-cyan-100 text-cyan-800'
                               }`}
                             >
@@ -9538,8 +9479,8 @@ ${gen.assessment}`;
                                 ? 'PK Pentadbiran'
                                 : t.role === 'guru_ict_data'
                                 ? 'Guru ICT / Data'
-                                : t.role === 'guru_prasekolah' || (t.panitia || '').toLowerCase().includes('prasekolah')
-                                ? '🧒 Guru Prasekolah'
+                                : t.role === 'superadmin'
+                                ? 'Superadmin'
                                 : 'Guru Subjek'}
                             </span>
                           </td>
@@ -9805,17 +9746,21 @@ ${gen.assessment}`;
                   <select
                     value={editingTeacher.jawatan || 'GAB'}
                     onChange={(e) => {
-                      const newJ = e.target.value as any;
+                      const newJ = e.target.value as TeacherJawatan;
                       let newRole = editingTeacher.role;
                       if (newJ === 'GB') newRole = 'guru_besar';
                       else if (['GPK1', 'GPK HEM', 'GPK KOKO', 'GPK KK'].includes(newJ)) newRole = 'pk_pentadbiran';
-                      else if (newJ === 'GURU PRASEKOLAH') newRole = 'guru_prasekolah';
+                      else if (newJ === 'GURU PRASEKOLAH') {
+                        if (newRole !== 'guru_ict_data') newRole = 'guru';
+                      } else if (newJ === 'GAB' || newJ === 'G GANTI') {
+                        if (newRole !== 'guru_ict_data') newRole = 'guru';
+                      }
                       setEditingTeacher({
                         ...editingTeacher,
                         jawatan: newJ,
                         role: newRole,
-                        panitia: newJ === 'GURU PRASEKOLAH' ? 'Prasekolah (KSPK)' : editingTeacher.panitia,
-                        subjectSlug: newJ === 'GURU PRASEKOLAH' ? 'kspk_perbualan_awal' : editingTeacher.subjectSlug,
+                        panitia: newJ === 'GURU PRASEKOLAH' ? 'Prasekolah (KSPK)' : (editingTeacher.panitia === 'Prasekolah (KSPK)' ? 'Bahasa Cina' : editingTeacher.panitia),
+                        subjectSlug: newJ === 'GURU PRASEKOLAH' ? 'kspk_perbualan_awal' : (editingTeacher.subjectSlug?.startsWith('kspk') ? 'bahasa_cina_sjkc' : editingTeacher.subjectSlug),
                       });
                     }}
                     className="w-full border rounded-lg p-2 bg-slate-50 font-bold"
@@ -9883,21 +9828,17 @@ ${gen.assessment}`;
                 <div>
                   <label className="block font-bold text-slate-700 mb-1">Peranan (Role)</label>
                   <select
-                    value={editingTeacher.role}
+                    value={editingTeacher.role === ('guru_prasekolah' as any) ? 'guru' : editingTeacher.role}
                     onChange={(e) => {
                       const nextR = e.target.value as UserRole;
                       setEditingTeacher({
                         ...editingTeacher,
                         role: nextR,
-                        jawatan: nextR === 'guru_prasekolah' ? 'GURU PRASEKOLAH' : editingTeacher.jawatan,
-                        panitia: nextR === 'guru_prasekolah' ? 'Prasekolah (KSPK)' : editingTeacher.panitia,
-                        subjectSlug: nextR === 'guru_prasekolah' ? 'kspk_perbualan_awal' : editingTeacher.subjectSlug,
                       });
                     }}
                     className="w-full border rounded-lg p-2 bg-slate-50 font-bold"
                   >
-                    <option value="guru">Guru Subjek (Sekolah Rendah)</option>
-                    <option value="guru_prasekolah">🧒 Guru Prasekolah (KSPK)</option>
+                    <option value="guru">Guru Subjek / GAB</option>
                     <option value="pk_pentadbiran">PK Pentadbiran</option>
                     <option value="guru_besar">Guru Besar</option>
                     <option value="guru_ict_data">Guru ICT / Data</option>

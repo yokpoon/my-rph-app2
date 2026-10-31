@@ -640,7 +640,7 @@ export const INITIAL_TEACHERS: TeacherProfile[] = [
     email: 'pra@moe-dl.edu.my',
     panitia: 'Prasekolah (KSPK)',
     subjectSlug: 'kspk_perbualan_awal',
-    role: 'guru_prasekolah',
+    role: 'guru',
     jawatan: 'GURU PRASEKOLAH',
     penyemakGroupId: 'k1',
     penyemakGroupName: 'KUMPULAN 1',
