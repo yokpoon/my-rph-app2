@@ -872,11 +872,152 @@ body {
   transform: scale(1.08);
 }
 
+/* ==========================================================================
+   7. MURMURA NOTIFICATION BELL (.ibtn.ibtn--glass.magnetic & .dot-badge)
+   ========================================================================== */
+.murmura-ibtn-bell {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.70);
+  border: 1px solid rgba(255, 255, 255, 0.82);
+  color: #16191d;
+  display: inline-grid;
+  place-items: center;
+  position: relative;
+  flex: none;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.75) inset, 0 8px 20px -10px rgba(20, 24, 28, 0.14);
+  transition:
+    background-color 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.murmura-ibtn-bell:hover {
+  background: rgba(255, 255, 255, 0.90);
+}
+
+.murmura-ibtn-bell[aria-expanded="true"] {
+  background: #16191d;
+  color: #f6f7f5;
+  border-color: #16191d;
+}
+
+:root[data-theme='dark'] .murmura-ibtn-bell {
+  background: #272727;
+  border: 1px solid #4a4945;
+  color: #e3e2c3;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset, 0 10px 24px -10px rgba(0, 0, 0, 0.65);
+}
+
+:root[data-theme='dark'] .murmura-ibtn-bell:hover {
+  background: #323230;
+  border-color: #6a6a67;
+}
+
+:root[data-theme='dark'] .murmura-ibtn-bell[aria-expanded="true"] {
+  background: #e3e2c3;
+  color: #141413;
+  border-color: #e3e2c3;
+}
+
+.murmura-bell-ico {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+  width: 20px;
+  height: 20px;
+  transform-origin: 50% 20%;
+}
+
+@keyframes murmuraBellPop {
+  0% {
+    transform: scale(0.72) rotate(-10deg);
+  }
+  45% {
+    transform: scale(1.12) rotate(8deg);
+  }
+  75% {
+    transform: scale(0.96) rotate(-4deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.murmura-bell-ico.is-popping {
+  animation: murmuraBellPop 0.55s cubic-bezier(0.34, 1.85, 0.64, 1);
+}
+
+.murmura-ibtn-bell:hover .murmura-bell-ico:not(.is-popping) {
+  animation: murmuraBellPop 0.55s cubic-bezier(0.34, 1.85, 0.64, 1);
+}
+
+.murmura-dot-badge {
+  background: #c43c30;
+  width: 9px;
+  height: 9px;
+  box-shadow: 0 0 0 2px #f1f2ef;
+  border-radius: 50%;
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  pointer-events: none;
+}
+
+:root[data-theme='dark'] .murmura-dot-badge {
+  background: #c8402f;
+  box-shadow: 0 0 0 2px #272727;
+}
+
+@keyframes murmuraPopOpen {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -4px, 0) scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes murmuraRowRise {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 8px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.murmura-pop-dialog {
+  transform-origin: calc(100% - 23px) 0px;
+  animation: murmuraPopOpen 0.32s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.murmura-pop-row {
+  animation: murmuraRowRise 0.34s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.murmura-pop-row:nth-child(1) { animation-delay: 0.02s; }
+.murmura-pop-row:nth-child(2) { animation-delay: 0.06s; }
+.murmura-pop-row:nth-child(3) { animation-delay: 0.10s; }
+
 @media (prefers-reduced-motion: reduce) {
   .murmura-view-transition,
   .murmura-view-transition > div > *,
   .murmura-view-transition .grid > *,
-  .murmura-header-title {
+  .murmura-header-title,
+  .murmura-bell-ico.is-popping,
+  .murmura-ibtn-bell:hover .murmura-bell-ico:not(.is-popping),
+  .murmura-pop-dialog,
+  .murmura-pop-row {
     animation: none !important;
   }
 }

@@ -5028,20 +5028,37 @@ ${gen.assessment}`;
               return (
                 <div className="relative">
                   <button
-                    onClick={() => setShowNotificationMenu(!showNotificationMenu)}
-                    className={`relative w-10 h-10 rounded-full flex items-center justify-center transition border border-black/10 shadow-xs ${
-                      hasActiveAlert
-                        ? 'bg-[#f2b740] text-[#16191d] font-black shadow-md shadow-[#f2b740]/30'
-                        : 'bg-white/80 hover:bg-white text-[#16191d]'
-                    }`}
-                    title="Pemberitahuan Status e-RPH"
+                    type="button"
+                    id="btn-bell"
+                    aria-label={hasActiveAlert ? 'Notifications, unread' : 'Notifications'}
+                    aria-haspopup="dialog"
+                    aria-expanded={showNotificationMenu}
+                    title="Notifications"
+                    onPointerMove={(e) => {
+                      const rect = e.currentTarget.getBoundingClientRect();
+                      const x = (e.clientX - rect.left - rect.width / 2) * 0.24;
+                      const y = (e.clientY - rect.top - rect.height / 2) * 0.3;
+                      e.currentTarget.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0)`;
+                    }}
+                    onPointerLeave={(e) => {
+                      e.currentTarget.style.transform = 'translate3d(0px, 0px, 0)';
+                    }}
+                    onClick={(e) => {
+                      const svg = e.currentTarget.querySelector('svg');
+                      if (svg) {
+                        svg.classList.remove('is-popping');
+                        void svg.getBoundingClientRect();
+                        svg.classList.add('is-popping');
+                      }
+                      setShowNotificationMenu(!showNotificationMenu);
+                    }}
+                    className="murmura-ibtn-bell"
                   >
-                    <span>🔔</span>
-                    {hasActiveAlert && (
-                      <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-[#c43c30] text-white rounded-full text-[9px] font-black flex items-center justify-center border-2 border-white">
-                        {hasGuruAlert ? '!' : metrics.waitingReview}
-                      </span>
-                    )}
+                    <svg className="murmura-bell-ico" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2h-15z" />
+                      <path d="M10 20.5a2 2 0 0 0 4 0" />
+                    </svg>
+                    {hasActiveAlert && <span className="murmura-dot-badge" id="bell-badge" />}
                   </button>
 
                   {/* Murmura-styled Notification Popover */}
@@ -5051,17 +5068,22 @@ ${gen.assessment}`;
                         className="fixed inset-0 z-40"
                         onClick={() => setShowNotificationMenu(false)}
                       />
-                      <div className="fixed left-3 right-3 top-[68px] sm:absolute sm:left-auto sm:right-0 sm:top-full sm:mt-2.5 sm:w-[360px] bg-white/95 backdrop-blur-xl rounded-[26px] shadow-[0_24px_60px_-18px_rgba(20,24,28,0.35)] border border-black/10 p-4 z-50 text-xs space-y-3">
+                      <div
+                        role="dialog"
+                        aria-label="Notifications"
+                        className="murmura-pop-dialog fixed left-3 right-3 top-[68px] sm:absolute sm:left-auto sm:right-0 sm:top-full sm:mt-2 sm:w-[360px] bg-white/95 backdrop-blur-xl rounded-[18px] shadow-[0_24px_60px_-18px_rgba(20,24,28,0.35),0_0_0_1px_rgba(22,26,30,0.09)] border border-black/10 p-3 z-50 text-xs space-y-2.5"
+                      >
                         {/* Header with Title and "Mark all read" button */}
-                        <div className="flex items-center justify-between border-b border-black/10 pb-3">
+                        <div className="flex items-center justify-between px-2 pt-1 pb-2 border-b border-black/10">
                           <div className="flex items-center gap-2">
-                            <span className="font-extrabold text-[#16191d] text-sm">Notifications</span>
+                            <span className="font-bold text-[#16191d] text-[15px]">Notifications</span>
                             {hasActiveAlert && (
                               <span className="w-2 h-2 rounded-full bg-[#c43c30]" />
                             )}
                           </div>
                           <button
                             type="button"
+                            disabled={!hasActiveAlert}
                             onClick={() => {
                               setIsNotificationsRead(true);
                               try {
@@ -5069,47 +5091,50 @@ ${gen.assessment}`;
                               } catch (_) {}
                               showToast('✓ Semua pemberitahuan telah ditandakan sebagai dibaca.');
                             }}
-                            className="px-3 py-1 bg-black/[0.04] hover:bg-black/[0.08] text-[#5b6064] hover:text-[#16191d] rounded-full text-[11px] font-bold border border-black/10 transition"
+                            className="px-3.5 py-1.5 bg-white/70 hover:bg-black/[0.06] disabled:opacity-45 disabled:cursor-not-allowed text-[#16191d] rounded-full text-[12px] font-semibold border border-black/15 transition"
                           >
                             Mark all read
                           </button>
                         </div>
 
                         {/* List of Notification Items */}
-                        <div className="space-y-2 max-h-[60vh] overflow-y-auto pr-0.5">
+                        <div className="space-y-1 max-h-[60vh] overflow-y-auto">
                           {isGuru ? (
                             isSubmittedOrVerified ? (
-                              <div className="flex items-start gap-3 p-2.5 rounded-2xl hover:bg-black/[0.03] transition">
-                                <span className="w-9 h-9 rounded-full bg-[#11745a]/15 text-[#11745a] flex items-center justify-center shrink-0">
+                              <div className="murmura-pop-row flex items-start gap-3 p-2.5 rounded-xl hover:bg-black/[0.04] transition">
+                                <span className="relative w-[34px] h-[34px] rounded-full border border-black/15 text-[#11745a] flex items-center justify-center shrink-0">
                                   <ShieldCheck className="w-4 h-4" />
                                 </span>
                                 <div className="space-y-0.5 flex-1 min-w-0">
-                                  <p className="font-bold text-[#16191d] leading-tight">
+                                  <p className="font-semibold text-[#16191d] text-[13px] leading-tight">
                                     e-RPH Minggu {school.currentWeek} telah disahkan
                                   </p>
-                                  <p className="text-[11px] text-[#5b6064]">
+                                  <p className="text-[12px] text-[#5b6064]">
                                     Semua sesi PdP anda lengkap dan diperakui pentadbir.
                                   </p>
-                                  <p className="text-[10px] text-[#a6abaa] font-semibold pt-1">
+                                  <p className="text-[11px] text-[#a6abaa] font-medium pt-0.5">
                                     Selesai tepat waktu
                                   </p>
                                 </div>
                               </div>
                             ) : (
-                              <div className="flex items-start gap-3 p-2.5 rounded-2xl bg-amber-50/70 border border-amber-200/80 transition">
-                                <span className="w-9 h-9 rounded-full bg-[#f2b740]/30 text-[#855c00] flex items-center justify-center shrink-0">
+                              <div className="murmura-pop-row flex items-start gap-3 p-2.5 rounded-xl hover:bg-black/[0.04] transition">
+                                <span className="relative w-[34px] h-[34px] rounded-full border border-black/15 text-[#16191d] flex items-center justify-center shrink-0">
                                   <FileEdit className="w-4 h-4" />
+                                  {hasActiveAlert && (
+                                    <span className="absolute -top-0.5 -right-0.5 w-[9px] h-[9px] rounded-full bg-[#c43c30] ring-2 ring-white" />
+                                  )}
                                 </span>
                                 <div className="space-y-1 flex-1 min-w-0">
                                   <div className="flex items-center justify-between">
-                                    <p className="font-extrabold text-[#16191d] leading-tight">
+                                    <p className="font-semibold text-[#16191d] text-[13px] leading-tight">
                                       Peringatan Hantar e-RPH
                                     </p>
-                                    <span className="text-[9px] bg-[#f2b740] text-[#16191d] font-black px-1.5 py-0.2 rounded-full">
+                                    <span className="text-[10px] bg-[#f2b740] text-[#16191d] font-bold px-2 py-0.5 rounded-full">
                                       Minggu {school.currentWeek}
                                     </span>
                                   </div>
-                                  <p className="text-[11px] text-[#5b6064] leading-relaxed">
+                                  <p className="text-[12px] text-[#5b6064] leading-relaxed">
                                     Anda mempunyai {currentTeacherRphs.length} draf belum dihantar. Sila hantar sebelum tarikh akhir Jumaat.
                                   </p>
                                   <button
@@ -5126,20 +5151,23 @@ ${gen.assessment}`;
                             )
                           ) : (
                             metrics.waitingReview > 0 ? (
-                              <div className="flex items-start gap-3 p-2.5 rounded-2xl bg-blue-50/70 border border-blue-200/80 transition">
-                                <span className="w-9 h-9 rounded-full bg-[#1f68a8]/20 text-[#1f68a8] flex items-center justify-center shrink-0">
+                              <div className="murmura-pop-row flex items-start gap-3 p-2.5 rounded-xl hover:bg-black/[0.04] transition">
+                                <span className="relative w-[34px] h-[34px] rounded-full border border-black/15 text-[#16191d] flex items-center justify-center shrink-0">
                                   <ShieldCheck className="w-4 h-4" />
+                                  {hasActiveAlert && (
+                                    <span className="absolute -top-0.5 -right-0.5 w-[9px] h-[9px] rounded-full bg-[#c43c30] ring-2 ring-white" />
+                                  )}
                                 </span>
                                 <div className="space-y-1 flex-1 min-w-0">
                                   <div className="flex items-center justify-between">
-                                    <p className="font-extrabold text-[#16191d] leading-tight">
+                                    <p className="font-semibold text-[#16191d] text-[13px] leading-tight">
                                       {metrics.waitingReview} Guru Menunggu Semakan
                                     </p>
-                                    <span className="text-[9px] bg-[#1f68a8] text-white font-black px-1.5 py-0.2 rounded-full">
+                                    <span className="text-[10px] bg-[#1f68a8] text-white font-bold px-2 py-0.5 rounded-full">
                                       M.{school.currentWeek}
                                     </span>
                                   </div>
-                                  <p className="text-[11px] text-[#5b6064] leading-relaxed">
+                                  <p className="text-[12px] text-[#5b6064] leading-relaxed">
                                     Guru telah menghantar e-RPH Minggu {school.currentWeek} untuk disemak dan diberi pengesahan cop rasmi.
                                   </p>
                                   <button
@@ -5154,10 +5182,9 @@ ${gen.assessment}`;
                                 </div>
                               </div>
                             ) : (
-                              <div className="py-6 text-center text-[#a6abaa] space-y-1">
-                                <p className="text-xl">✨</p>
-                                <p className="font-bold text-xs text-[#5b6064]">Tiada semakan tertunggak</p>
-                                <p className="text-[11px]">Semua e-RPH minggu ini telah disemak sepenuhnya.</p>
+                              <div className="murmura-pop-row py-6 text-center text-[#a6abaa] space-y-1">
+                                <p className="font-semibold text-[13px] text-[#16191d]">You’re all caught up.</p>
+                                <p className="text-[12px] text-[#5b6064]">Semua e-RPH minggu ini telah disemak sepenuhnya.</p>
                               </div>
                             )
                           )}
