@@ -110,10 +110,23 @@ export async function exportSingleRphToDocx(rph: RphRecord, schoolName: string =
               createDocxRow('Standard Kandungan (SK)', rph.sk),
               createDocxRow('Standard Pembelajaran (SP)', rph.sps, true),
               createDocxRow('Objektif Pembelajaran', rph.objectives, true),
-              createDocxRow('Kriteria Kejayaan', rph.criteria, true),
-              createDocxRow('Set Induksi', rph.induction),
-              createDocxRow('Aktiviti Utama PdP (PAK-21)', rph.activities, false),
-              createDocxRow('Penutup', rph.closure),
+              createDocxRow(
+                (rph.grade === 'PRA' || (rph.subjectSlug || '').startsWith('kspk'))
+                  ? 'Kriteria Kejayaan (1 - 2 Kriteria)'
+                  : 'Kriteria Kejayaan',
+                rph.criteria,
+                true
+              ),
+              ...((rph.grade === 'PRA' || (rph.subjectSlug || '').startsWith('kspk') || (!rph.induction && !rph.closure))
+                ? [createDocxRow('Aktiviti Pembelajaran (PdP)', rph.activities.map((a, i) => {
+                    const cleaned = a.replace(/^(?:Langkah\s*\d+[\s:–\-\.]*|步骤\s*\d+[\s:–\-\.]*|Step\s*\d+[\s:–\-\.]*)/i, '').trim();
+                    return /^\d+[\.\)]\s*/.test(cleaned) ? cleaned : `${i + 1}. ${cleaned}`;
+                  }), false)]
+                : [
+                    createDocxRow('Set Induksi', rph.induction),
+                    createDocxRow('Aktiviti Utama PdP (PAK-21)', rph.activities, false),
+                    createDocxRow('Penutup', rph.closure),
+                  ]),
               createDocxRow('Elemen Merentas Kurikulum (EMK)', rph.emk.join(', ')),
               createDocxRow('Bahan Bantu Mengajar (BBM)', rph.bbm.join(', ')),
               createDocxRow('Pentaksiran Bilik Darjah (PBD)', rph.assessment),
@@ -162,9 +175,16 @@ export function openPrintableRphWindow(rph: RphRecord, schoolName: string, teach
     <tr><td class="label">Standard Pembelajaran (SP)</td><td>${rph.sps.map((s) => `• ${s}`).join('<br/>')}</td></tr>
     <tr><td class="label">Objektif Pembelajaran</td><td>${rph.objectives.map((o) => `• ${o}`).join('<br/>')}</td></tr>
     <tr><td class="label">Kriteria Kejayaan</td><td>${rph.criteria.map((c) => `• ${c}`).join('<br/>')}</td></tr>
-    <tr><td class="label">Set Induksi</td><td>${rph.induction}</td></tr>
+    ${
+      (rph.grade === 'PRA' || (rph.subjectSlug || '').startsWith('kspk') || !rph.induction && !rph.closure)
+        ? `<tr><td class="label">Aktiviti Pembelajaran (PdP)</td><td>${rph.activities.map((a, i) => {
+            const cleaned = a.replace(/^(?:Langkah\s*\d+[\s:–\-\.]*|步骤\s*\d+[\s:–\-\.]*|Step\s*\d+[\s:–\-\.]*)/i, '').trim();
+            return /^\d+[\.\)]\s*/.test(cleaned) ? cleaned : `${i + 1}. ${cleaned}`;
+          }).join('<br/>')}</td></tr>`
+        : `<tr><td class="label">Set Induksi</td><td>${rph.induction}</td></tr>
     <tr><td class="label">Aktiviti Utama (PAK-21)</td><td>${rph.activities.map((a, i) => `${i + 1}. ${a}`).join('<br/>')}</td></tr>
-    <tr><td class="label">Penutup</td><td>${rph.closure}</td></tr>
+    <tr><td class="label">Penutup</td><td>${rph.closure}</td></tr>`
+    }
     <tr><td class="label">EMK & BBM</td><td><b>EMK:</b> ${rph.emk.join(', ')}<br/><b>BBM:</b> ${rph.bbm.join(', ')}</td></tr>
     <tr><td class="label">Pentaksiran (PBD)</td><td>${rph.assessment}</td></tr>
     <tr><td class="label">Refleksi</td><td>${rph.reflection}</td></tr>

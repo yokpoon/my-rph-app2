@@ -210,5 +210,103 @@
       "5",
       "6"
     ]
+  },
+  {
+    "name": "PRASEKOLAH (KSPK) 幼教全科",
+    "slug": "kspk_prasekolah",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - SOSIOEMOSI 幼教情绪与社交",
+    "slug": "kspk_sosioemosi",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - FIZIKAL & PENJAGAAN KESIHATAN 幼教体能与健康",
+    "slug": "kspk_fizikal",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - KREATIVITI & ESTETIKA 幼教创意与美感",
+    "slug": "kspk_kreativiti",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - SAINS & MATEMATIK AWAL (KOGNITIF) 幼教认知与数理",
+    "slug": "kspk_kognitif",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - BAHASA MELAYU 幼教国语",
+    "slug": "kspk_bahasa_melayu",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - BAHASA INGGERIS 幼教英语",
+    "slug": "kspk_bahasa_inggeris",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - BAHASA CINA 幼教华语",
+    "slug": "kspk_bahasa_cina",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - PENDIDIKAN MORAL 幼教道德教育",
+    "slug": "kspk_pendidikan_moral",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - PENDIDIKAN ISLAM 幼教伊斯兰教育",
+    "slug": "kspk_pendidikan_islam",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - PENDIDIKAN KHAS (PPKI) 幼教特殊教育",
+    "slug": "kspk_ppki",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - PERBUALAN AWAL 晨谈/早会 (Rutin)",
+    "slug": "kspk_perbualan_awal",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - REHAT & PENGURUSAN DIRI 休息与自理 (Rutin)",
+    "slug": "kspk_rehat",
+    "grades": [
+      "PRA"
+    ]
+  },
+  {
+    "name": "PRASEKOLAH - AKTIVITI PENUTUP 结束与反思 (Rutin)",
+    "slug": "kspk_penutup",
+    "grades": [
+      "PRA"
+    ]
   }
 ]

@@ -1,0 +1,436 @@
+{
+  "PRA": {
+    "SE 1.5 Memahami kepelbagaian": [
+      "SE 1.5.1 Mengenal komuniti setempat"
+    ],
+    "FK 1.1 Memahami kepentingan koordinasi dalam pergerakan": [
+      "FK 1.1.2 Melakukan pergerakan lokomotor dan bukan lokomotor"
+    ],
+    "FK 3.1 Melaksanakan aktiviti gabungan pergerakan badan": [
+      "FK 3.1.1 Melakukan gabungan pergerakan lokomotor dan bukan lokomotor mengikut muzik atau tanpa muzik"
+    ],
+    "KF 1.1 Mengumpul maklumat matematik dalam kehidupan harian": [
+      "KF 1.1.2* Mengenal nombor.",
+      "KF 1.1.3* Memahami nombor dalam persekitaran."
+    ],
+    "KF 2.1 Mengurus maklumat matematik dalam persekitaran.": [
+      "KF 2.1.3 Menyatakan kombinasi nombor dalam lingkungan sepuluh.",
+      "KF 2.1.5 Menggunakan bentuk geometri untuk menghasilkan reka bentuk secara kreatif."
+    ],
+    "KF 2.2 Membuat hubung kait antara maklumat berkaitan kejadian alam.": [
+      "KF 2.2.3 Berkomunikasi untuk menyampaikan idea dan dapatan pemerhatian.",
+      "KF 2.2.1 Mengelas tumbuhan dan haiwan mengikut ciri.",
+      "KF 2.2.2 Memahami hubungan antara kejadian alam dengan manusia."
+    ],
+    "BI 3.1 Display print and book awareness": [
+      "BI 3.1.1* Read, recognise and understand common labels,signs, logos and symbols."
+    ],
+    "SE 1.1 Mengenali emosi diri sendiri.": [
+      "SE 1.1.1 Mengetahui pelbagai jenis emosi.",
+      "SE 1.1.2 Mengenal pasti emosi sendiri.",
+      "SE 1.1.3 Menyatakan sebab terjadinya emosi tertentu.",
+      "SE 1.1.4 Meneroka minat dan kekuatan diri sendiri."
+    ],
+    "SE 1.2 Memahami perbezaan perasaan orang lain.": [
+      "SE 1.2.1 Mengenal pasti emosi orang lain.",
+      "SE 1.2.2 Memahami keperluan dan perasaan orang lain."
+    ],
+    "SE 1.3 Memahami rutin dan peraturan aktiviti.": [
+      "SE 1.3.1 Memahami rutin harian.",
+      "SE 1.3.2 Memahami peraturan aktiviti."
+    ],
+    "SE 2.1 Meluahkan perasaan sendiri.": [
+      "SE 2.1.1 Menyatakan sesuatu yang disukai dan tidak disukai.",
+      "SE 2.1.2 Meluahkan perasaan sendiri dengan cara yang sesuai."
+    ],
+    "SE 2.2 Meluahkan perasaan terhadap orang lain.": [
+      "SE 2.2.1 Menunjukkan rasa prihatin terhadap orang yang rapat dengannya."
+    ],
+    "SE 3.1 Menunjukkan kebolehan untuk mengawal diri.": [
+      "SE 3.1.1 Menunjukkan kebolehan mengawal emosi sendiri.",
+      "SE 3.1.2 Menunjukkan sikap positif semasa berdepan dengan situasi yang tidak menyenangkan.",
+      "SE 3.1.3 Menunjukkan sikap mengawal diri semasa melaksanakan aktiviti kumpulan."
+    ],
+    "SE 3.2 Menggunakan kemahiran sosial.": [
+      "SE 3.2.1 Menunjukkan kebolehan berinteraksi.",
+      "SE 3.2.2 Menunjukkan kebolehan menyertai sesuatu permainan yang sedang berlangsung (play entry).",
+      "SE 3.2.3 Menunjukkan sikap empati terhadap rakan."
+    ],
+    "FK 1.1 Memahami kepentingan koordinasi dalam pergerakan.": [
+      "FK 1.1.1 Meniru pelbagai aktiviti pergerakan berdasarkan konsep pergerakan.",
+      "FK 1.1.2 Melakukan pergerakan lokomotor dan bukan lokomotor."
+    ],
+    "FK 1.2 Meniru pelbagai kemahiran manipulasi alatan.": [
+      "FK 1.2.1 Meniru pelbagai aktiviti yang melibatkan alatan.",
+      "FK 1.2.2 Melakukan pelbagai aktiviti menggunakan anggota badan dan alatan."
+    ],
+    "FK 1.3 Memerhati dan mengetahui cara hidup yang sihat dan selamat.": [
+      "FK 1.3.1 Mengetahui makanan dan minuman yang sihat dan selamat.",
+      "FK 1.3.2 Mengetahui sentuhan selamat dan sentuhan tidak selamat.",
+      "FK 1.3.3 Mengenali jenis penyakit dan cara mencegah penyakit.",
+      "FK 1.3.4 Mengenal pasti cara mengelak daripada kecederaan semasa aktiviti harian."
+    ],
+    "FK 2.1 Melakukan pergerakan badan dengan selamat untuk memenuhi keperluan aktiviti harian.": [
+      "FK 2.1.1 Melakukan pelbagai aktiviti yang melibatkan koordinasi, kawalan badan, kesedaran ruang dan ketangkasan dengan selamat."
+    ],
+    "FK 2.2 Menggunakan alatan dengan cekap.": [
+      "FK 2.2.1 Mengaplikasi kemahiran manipulasi dalam aktiviti harian.",
+      "FK 2.2.2 Menggunakan alatan dengan betul dan selamat."
+    ],
+    "FK 2.3 Mengamalkan cara hidup yang sihat dan selamat.": [
+      "FK 2.3.1 Mengamalkan pemakanan sihat dan selamat.",
+      "FK 2.3.2 Mengaplikasikan kemahiran mengatakan TIDAK kepada sentuhan yang tidak selamat."
+    ],
+    "FK 3.1 Melaksanakan aktiviti gabungan pergerakan badan menggunakan pelbagai bahan dan alatan.": [
+      "FK 3.1.1 Melakukan pergerakan badan mengikut imaginasi.",
+      "FK 3.1.2 Melakukan pelbagai permainan menggunakan bahan dan peralatan ubah suai yang selamat."
+    ],
+    "PI 1.1 Mengetahui Asas Al-Quran.": [
+      "PI 1.1.1 Mengenal huruf hijaiyah tunggal.",
+      "PI 1.1.2 Mengenal huruf hijaiyah tunggal berbaris satu.",
+      "PI 1.1.3 Melafaz Surah Al-Fatihah dengan betul."
+    ],
+    "PI 1.2 Mengetahui Rukun Iman dan Rukun Islam.": [
+      "PI 1.2.1 Menyatakan Rukun Iman.",
+      "PI 1.2.2 Menyatakan Rukun Islam."
+    ],
+    "PI 1.3 Mengetahui dan memahami ibadah dalam kehidupan harian.": [
+      "PI 1.3.1 Mengenal anggota wuduk.",
+      "PI 1.3.2 Melakukan wuduk dengan betul dan tertib.",
+      "PI 1.3.3 Meniru perlakuan dalam solat."
+    ],
+    "PI 1.4 Mengenal Nabi Muhammad SAW dan keluarga baginda.": [
+      "PI 1.4.1 Menyatakan latar belakang Nabi Muhammad SAW.",
+      "PI 1.4.2 Menyatakan nama ahli keluarga terdekat Nabi Muhammad SAW."
+    ],
+    "PI 2.1 Mengamalkan cara beriman kepada Allah SWT dan Nabi Muhammad SAW dalam kehidupan harian.": [
+      "PI 2.1.1 Melafaz kalimah syahadah.",
+      "PI 2.1.2 Melafaz kalimah bagi memuji keesaan dan kebesaran Allah SWT.",
+      "PI 2.1.3 Menyatakan sifat wajib bagi Nabi Muhammad SAW."
+    ],
+    "PI 2.2 Mengamalkan adab dalam kehidupan seharian.": [
+      "PI 2.2.1 Mempamerkan adab dalam aktiviti harian.",
+      "PI 2.2.2 Melafaz doa dalam aktiviti harian."
+    ],
+    "PM 1.1 Mengetahui nilai murni yang perlu ada dalam diri sendiri.": [
+      "PM 1.1.1 Menyatakan cara menyayangi diri.",
+      "PM 1.1.2 Menyatakan contoh sikap rajin.",
+      "PM 1.1.3 Menyatakan tentang perlakuan kebaikan bersikap jujur"
+    ],
+    "PM 1.2 Memahami nilai murni dalam interaksi dengan orang lain.": [
+      "PM 1.2.1 Menyatakan cara menunjukkan kasih sayang kepada orang lain.",
+      "PM 1.2.2 Menyatakan keperluan orang lain.",
+      "PM 1.2.3 Menyatakan cara menunjukkan sikap hormat kepada orang lain dalam pelbagai situasi."
+    ],
+    "PM 1.3 Memahami nilai kasih sayang dalam penjagaan alam sekitar.": [
+      "PM 1.3.1 Menyatakan cara menyayangi alam sekitar."
+    ],
+    "PM 2.1 Mengamalkan nilai murni dalam diri sendiri.": [
+      "PM 2.1.1 Mengamalkan perlakuan sayang kepada diri sendiri.",
+      "PM 2.1.2 Bercakap benar dalam kehidupan.",
+      "PM 2.1.3 Melaksanakan tugasan dengan rajin."
+    ],
+    "PM 2.2 Mengamalkan nilai murni terhadap orang lain.": [
+      "PM 2.2.1 Menunjukkan keprihatinan terhadap orang lain.",
+      "PM 2.2.2 Menunjukkan percakapan dan perlakuan yang sopan terhadap orang lain."
+    ],
+    "PM 2.3 Mengamalkan penjagaan alam sekitar.": [
+      "PM 2.3.1 Melaksanakan aktiviti memelihara dan memulihara alam sekitar."
+    ],
+    "KW 1.1 Memahami hak dan tanggungjawab terhadap diri sendiri.": [
+      "KW 1.1.1 Menyatakan keperluan diri sendiri.",
+      "KW 1.1.2 Menyatakan tanggungjawab terhadap diri."
+    ],
+    "KW 1.2 Memahami tanggungjawab terhadap keluarga.": [
+      "KW 1.2.1 Mengenali ahli keluarga.",
+      "KW 1.2.2 Mengetahui peranan ahli keluarga.",
+      "KW 1.2.3 Menyatakan tanggungjawab diri terhadap ahli keluarga."
+    ],
+    "KW 1.3 Memahami hubungan diri dengan komuniti.": [
+      "KW 1.3.1 Mengenali rakan sekelas.",
+      "KW 1.3.2 Mengetahui tanggungjawab sebagai warga sekolah."
+    ],
+    "KW 1.4 Memahami dan mengetahui berkaitan negara Malaysia.": [
+      "KW 1.4.1 Mengetahui identiti dan lambang negara.",
+      "KW 1.4.2 Mengetahui mercu tanda di Malaysia.",
+      "KW 1.4.3 Mengetahui Hari Kebangsaan dan Hari Malaysia."
+    ],
+    "KW 2.1 Melaksanakan tanggungjawab terhadap keluarga.": [
+      "KW 2.1.1 Menghormati dan menghargai ahli keluarga.",
+      "KW 2.1.2 Melibatkan diri dalam tugasan di rumah."
+    ],
+    "KW 2.2 Melaksanakan tanggungjawab terhadap komuniti.": [
+      "KW 2.2.1 Menghormati dan menghargai warga sekolah."
+    ],
+    "KW 2.3 Melaksanakan tanggungjawab terhadap negara.": [
+      "KW 2.3.1 Mempamerkan sikap hormat terhadap lambang dan identiti negara."
+    ],
+    "BM 1.1 Mendengar dan memberikan respons.": [
+      "BM 1.1.1*\tMendengar dan memberi respons terhadap bunyi atau rangsangan dalam persekitaran.",
+      "BM 1.1.2*\tMendengar bunyi abjad, suku kata, perkataan, frasa dan ayat mudah.",
+      "BM 1.1.3\tMendengar dan memahami cerita kanak-kanak.",
+      "BM 1.1.4\tMemberi respons yang sesuai dalam pelbagai situasi."
+    ],
+    "BM 2.1 Bertutur untuk menyampaikan sesuatu dengan jelas.": [
+      "BM 2.1.1 Mengajuk pelbagai bunyi atau rangsangan di persekitaran.",
+      "BM 2.1.2* Meniru pertuturan yang biasa digunakan dalam kehidupan harian.",
+      "BM 2.1.3 Menyanyikan lagu kanak-kanak.",
+      "BM 2.1.4* Bertutur menggunakan ayat mudah dalam kehidupan seharian."
+    ],
+    "BM 3.1 Menguasai kemahiran prabaca.": [
+      "BM 3.1.1* Mengenali dan memahami tanda dan makna simbol dalam kehidupan harian.",
+      "BM 3.1.2 Mengenali ciri asas dan cara mengendalikan buku.",
+      "BM 3.1.3* Membaca dengan cara yang betul."
+    ],
+    "BM 3.2 Memahami teks dan maksudnya.": [
+      "BM 3.2.1* Mengenali bentuk dan nama huruf.",
+      "BM 3.2.2* Mengenal dan membunyikan suku kata.",
+      "BM 3.2.3* Mengenal dan membaca perkataan yang mempunyai suku kata terbuka dan suku kata tertutup.",
+      "BM 3.2.4* Membaca dan memahami maksud perkataan dengan bantuan visual atau bahan.",
+      "BM 3.2.5 Memahami dan memberi respons kepada cerita yang dibaca dalam bentuk cetakan atau digital."
+    ],
+    "BM 4.1 Menguasai kemahiran pratulis.": [
+      "BM 4.1.1* Menulis dengan postur dan cara pegangan alat tulis yang sesuai.",
+      "BM 4.1.2* Mengkoordinasi pergerakan mata dengan tangan semasa menggunakan alat tulis"
+    ],
+    "BM 4.2 Menggunakan kemahiran asas penulisan.": [
+      "BM 4.2.1* Menulis huruf dengan cara yang betul.",
+      "BM 4.2.2* Menyalin perkataan."
+    ],
+    "BI 1.1 Recognise the sounds in songs and spoken language.": [
+      "BI 1.1.1*\tListen and recognise sounds, letters, words, phrases and simple sentences.",
+      "BI 1.1.2*\tListen and recognise sounds in monosyllable words.",
+      "BI 1.1.3 Listen and recognise rhymes and songs."
+    ],
+    "BI 1.2 Understand and respond to spoken language.": [
+      "BI 1.2.1* Listen and follow or respond to questions, requests, instructions or rejections."
+    ],
+    "BI 2.1 Communicate simple information.": [
+      "BI 2.1.1* Use words and sentences to express oneself.",
+      "BI 2.1.2 Participate in daily conversations.",
+      "BI 2.1.3 Recite simple nursery rhymes or sing songs."
+    ],
+    "BI 3.1 Display print and book awareness.": [
+      "BI 3.1.1*\tRecognise and understand common symbols.",
+      "BI 3.1.2\tDemonstrate book-handling skills and recognise the basic features of a book.",
+      "BI 3.1.3*\tUnderstand illustrations or images.",
+      "BI 3.1.4\tRead in the correct manner."
+    ],
+    "BI 3.2 Understand texts and their meanings.": [
+      "BI 3.2.1* Recognise the shapes, names and sounds of letters of the alphabet.",
+      "BI 3.2.2* Read and understand meaning of words with help of visuals or materials.",
+      "BI 3.2.3 Read and understand words."
+    ],
+    "BI 4.1 Display prewriting skills.": [
+      "BI 4.1.1* Use writing tools correctly.",
+      "BI 4.1.2* Coordinating hand and eye movements while using writing instruments."
+    ],
+    "BI 4.2 Develop basic writing skills.": [
+      "BI 4.2.1* Write letters of the alphabet.",
+      "BI 4.2.2* Copy words in legible print."
+    ],
+    "KF 1.1 Mengumpul maklumat matematik dalam kehidupan harian.": [
+      "KF 1.1.1*    Membandingkan objek dalam persekitaran.",
+      "KF 1.1.2*\tMengenal nombor.",
+      "KF 1.1.3* Memahami nombor dalam persekitaran.",
+      "KF 1.1.4* Mengecam dan mengenal pasti bentuk asas.",
+      "KF 1.1.5* Mengetahui kedudukan objek dalam ruang.",
+      "KF 1.1.6 Menyatakan masa dalam sehari.",
+      "KF 1.1.7 Menyebut nama hari dalam seminggu."
+    ],
+    "KF 1.2 Mengumpul maklumat tentang kejadian alam.": [
+      "KF 1.2.1 Meneroka kejadian alam.",
+      "KF 1.2.2 Merekod maklumat pemerhatian dalam bentuk lukisan, simbol dan tulisan secara digital dan bukan digital."
+    ],
+    "KF 1.3 Mengumpul maklumat tentang hasil warisan.": [
+      "KF 1.3.1 Memerhatikan ciri-ciri objek dalam kehidupan di persekitaran.",
+      "KF 1.3.2 Mengenal peranti digital."
+    ],
+    "KF 2.1 Mengurus maklumat matematik dalam kehidupan seharian.": [
+      "KF 2.1.1* Menyusun objek di persekitaran mengikut urutan.",
+      "KF 2.1.2* Mengelas objek di persekitaran mengikut ciri tertentu.",
+      "KF 2.1.3* Mengenal dan membina pola dengan menggunakan objek di persekitaran.",
+      "KF 2.1.4 Melakukan operasi tambah dan tolak dalam lingkungan 10."
+    ],
+    "KF 2.3 Membuat hubung kait antara maklumat hasil warisan.": [
+      "KF 2.3.1 Mengelas objek di persekitaran mengikut ciri dan fungsinya.",
+      "KF 2.3.2 Memahami hubungan antara objek di persekitaran dengan kehidupan.",
+      "KF 2.3.3 Mengenal wang Malaysia.",
+      "KF 2.3.4 Menggunakan peranti digital dengan selamat."
+    ],
+    "KF 3.1 Menyelesaikan masalah dalam kehidupan seharian.": [
+      "KF 3.1.1 Mengenal pasti masalah yang dihadapi.",
+      "KF 3.1.2 Menjana idea untuk menyelesaikan masalah.",
+      "KF 3.1.3 Melaksanakan tindakan penyelesaian masalah.",
+      "KF 3.1.4 Membuat refleksi tentang proses penyelesaian masalah."
+    ],
+    "KE 1.1 Menunjukkan minat terhadap keindahan alam sekitar.": [
+      "KE 1.1.1 Menceritakan pengalaman meneroka keindahan alam sekitar."
+    ],
+    "KE 1.2 Menunjukkan minat terhadap karya seni dalam pelbagai media.": [
+      "KE 1.2.1 Mengenal kepelbagaian warna, bentuk, tekstur dalam karya seni visual.",
+      "KE 1.2.2 Mengenal pelbagai bunyi atau rangsangan di persekitaran.",
+      "KE 1.2.3 Meniru pelbagai pergerakan mengikut rentak muzik.",
+      "KE 1.2.4 Meniru pelbagai watak drama atau cerita."
+    ],
+    "KE 2.2 Mempamerkan daya imaginasi dalam penghasilan karya seni.": [
+      "KE 2.1.1 Mempamerkan daya imaginasi dalam menghasilkan karya seni.",
+      "KE 2.2.1 Menggunakan pelbagai teknik atau media untuk menghasilkan karya seni visual.",
+      "KE 2.2.2 Menyanyikan lagu.",
+      "KE 2.2.3 Melakonkan pelbagai watak mengikut imaginasi dan kreativiti."
+    ],
+    "KE 3.1 Menunjukkan penghargaan terhadap karya seni.": [
+      "KE 3.1.1 Bercerita tentang karya seni sendiri.",
+      "KE 3.1.2 Mempamerkan penghargaan terhadap karya seni sendiri dan orang lain."
+    ],
+    "PD 1.1 Mengetahui cara makan dan minum yang betul.": [
+      "PD 1.1.1 Mengenal peralatan makan dan minum.",
+      "PD 1.1.2 Menyatakan cara makan dan minum dengan menggunakan peralatan yang sesuai."
+    ],
+    "PD 1.2 Mengetahui cara penggunaan tandas.": [
+      "PD 1.2.1 Menyatakan cara menggunakan tandas duduk atau cangkung dengan betul.",
+      "PD 1.2.2 Menyatakan keinginan ke tandas."
+    ],
+    "PD 1.3 Mengetahui kepentingan menjaga kebersihan diri.": [
+      "PD 1.3.1 Mengenal alatan dan bahan kebersihan diri.",
+      "PD 1.3.2 Menyatakan kegunaan alatan dan bahan kebersihan diri.",
+      "PD 1.3.3 Membezakan anggota badan yang bersih dan kotor.",
+      "PD 1.3.4 Membezakan pakaian yang bersih dan kotor.",
+      "PD 1.3.5 Menyatakan perasaan terhadap pakaian yang dipakai."
+    ],
+    "PD 1.4 Mengetahui cara menjaga kebersihan persekitaran.": [
+      "PD 1.4.1 Mengenal persekitaran yang bersih dan kotor.",
+      "PD 1.4.2 Menyatakan alatan kebersihan dan kegunaannya."
+    ],
+    "PD 1.5 Mengetahui cara mengurus kekemasan diri.": [
+      "PD 1.5.1 Mengenal alatan penjagaan kekemasan diri.",
+      "PD 1.5.2 Menyatakan cara menggunakan alatan penjagaan kekemasan diri dengan betul.",
+      "PD 1.5.3 Menyatakan ciri-ciri kekemasan diri."
+    ],
+    "PD 1.6 Memahami kondisi badan.": [
+      "PD 1.6.1 Menyatakan ketidakselesaan fizikal.",
+      "PD 1.6.2 Mengenal pasti keadaan kesihatan diri.",
+      "PD 1.6.3 Menyatakan cara penggunaan ubat-ubatan dengan betul dan selamat."
+    ],
+    "PD 1.7 Memahami keselamatan diri dan peralatan sokongan.": [
+      "PD 1.7.1 Mengenal bahagian anggota badan.",
+      "PD 1.7.2 Menyatakan kesesuaian tempat untuk memakai dan menanggalkan pakaian.",
+      "PD 1.7.3 Mengenal peralatan sokongan.",
+      "PD 1.7.4 Menyatakan cara menjaga peralatan sokongan.",
+      "PD 1.7.5 Mengenal alatan yang boleh mendatangkan risiko kecederaan di persekitaran.",
+      "PD 1.7.6 Menyatakan cara menggunakan alatan yang boleh mendatangkan risiko kecederaan dengan betul."
+    ],
+    "PD 1.8 Mengenal kemudahan awam dalam kehidupan.": [
+      "PD 1.8.1 Mengenal kemudahan awam.",
+      "PD 1.8.2 Menyatakan cara menggunakan kemudahan awam dengan betul."
+    ],
+    "PD 2.1 Mengamalkan cara makan dan minum yang betul.": [
+      "PD 2.1.1 Mengamalkan cara makan dan minum yang betul menggunakan peralatan yang sesuai."
+    ],
+    "PD 2.2 Mengamalkan pengurusan diri ke tandas.": [
+      "PD 2.2.1 Menggunakan tandas duduk atau cangkung dengan betul.",
+      "PD 2.2.2 Mengamalkan kebersihan diri selepas ke tandas."
+    ],
+    "PD 2.3 Mengamalkan cara menjaga kebersihan diri.": [
+      "PD 2.3.1 Mempraktikkan cara mencuci tangan dengan betul.",
+      "PD 2.3.2 Mempraktikkan cara menggosok gigi dengan betul.",
+      "PD 2.3.3 Mempraktikkan cara menjaga kebersihan pakaian."
+    ],
+    "PD 2.5 Mengamalkan cara menjaga kebersihan persekitaran.": [
+      "PD 2.4.1 Menjaga kebersihan persekitaran bilik darjah."
+    ],
+    "PD 2.5 Mempraktikkan cara memakai pakaian.": [
+      "PD 2.5.1 Menanggalkan kasut, stoking dan selipar dengan betul.",
+      "PD 2.5.2 Memakai kasut, stoking dan selipar dengan betul.",
+      "PD 2.5.3 Menanggalkan baju dan seluar dengan betul.",
+      "PD 2.5.4 Memakai baju dan seluar dengan betul.",
+      "PD 2.5.5 Membutang, membuka dan menutup zip pakaian dengan betul."
+    ],
+    "PD 2.6 Mengamalkan gaya hidup yang sihat dan selamat.": [
+      "PD 2.6.1 Mempraktikkan cara penggunaan ubat-ubatan dengan betul dan selamat.",
+      "PD 2.6.2 Mempraktikkan cara menjaga peralatan sokongan dengan betul.",
+      "PD 2.6.3 Mempraktikkan cara menggunakan alatan yang boleh mendatangkan risiko kecederaan dengan betul.",
+      "PD 2.6.4 Menggunakan kemudahan awam dengan betul dan selamat."
+    ],
+    "BS 1.1 Menunjukkan peningkatan kemahiran mendengar melalui proses memerhati dan meniru.": [
+      "BS 1.1.1 Memerhati dan memberi respons kepada kehadiran bunyi dan getaran.",
+      "BS 1.1.2 Memerhati dan memberi respons terhadap pertuturan.",
+      "BS 1.1.3 Meniru gerakan bibir berdasarkan pertuturan orang lain dalam pelbagai situasi."
+    ],
+    "BS 1.2 Menunjukkan peningkatan kemahiran berisyarat atau bertutur melalui proses memerhati dan meniru.": [
+      "BS 1.2.1 Memerhati dan menghasilkan isyarat atau bunyi pertuturan.",
+      "BS 1.2.2 Menyebut dan mengisyaratkan terhadap perkataan yang boleh difahami."
+    ],
+    "BS 1.3 Memerhati dan menguasai kemahiran praisyarat.": [
+      "BS 1.3.1 Meniru pergerakan jari dan tangan.",
+      "BS 1.3.2 Melakukan pergerakan jari dan tangan.",
+      "BS 1.3.3 Mengecam dan mengisyaratkan iskata berdasarkan 5 parameter."
+    ],
+    "BS 2.1 Memahami dan menggunakan bahasa isyarat.": [
+      "BS 2.1.1 Mengisyaratkan huruf.",
+      "BS 2.1.2 Mengisyaratkan nombor 0 hingga 10.",
+      "BS 2.1.3 Mengisyaratkan nama sendiri.",
+      "BS 2.1.4 Mengisyaratkan nama dan gelaran orang lain.",
+      "BS 2.1.5 Mengeja nama sendiri."
+    ],
+    "BS 2.2 Berkomunikasi dengan menggunakan bahasa isyarat": [
+      "BS 2.2.1 Menggunakan bahasa isyarat untuk berkomunikasi dalam kehidupan harian."
+    ],
+    "BR 1.1 Mengenal dan menguasai prabraille untuk pembelajaran Braille.": [
+      "BR 1.1.1 Mengenal konsep asas prabraille.",
+      "BR 1.1.2 Meneroka objek untuk meningkatkan kepekaan sentuhan dan kecekatan jari.",
+      "BR 1.1.3 Melakukan aktiviti untuk meningkatkan kekuatan tangan dan pergelangan tangan.",
+      "BR 1.1.4 Meneroka objek dengan menggunakan jari untuk meningkatkan ketangkasan jari.",
+      "BR 1.1.5 Melakukan aktiviti untuk melatih kemahiran pengasingan jari."
+    ],
+    "BR 1.2 Menguasai kemahiran asas membaca Braille.": [
+      "BR 1.2.1 Mempraktikkan kemahiran pembezalayanan taktil dan kawalan kekuatan jari.",
+      "BR 1.2.2 Mempraktikkan pergerakan tangan dan kawalan kekuatan tangan untuk meningkatkan kemahiran menjejak."
+    ],
+    "BR 1.3 Menguasai kemahiran asas menulis Braille": [
+      "BR 1.3.1 Mengenal bahagian asas dan fungsi mesin Braille.",
+      "BR 1.3.2 Mengetahui cara menggunakan mesin Braille"
+    ],
+    "BR 2.1 Mengaplikasi tulisan Braille untuk membaca": [
+      "BR 2.1.1 Menggunakan Kod Braille Gred 1 untuk mengenal huruf dan tanda huruf besar.",
+      "BR 2.1.2 Menggunakan Kod Braille Gred 1 untuk mengenal tanda angka dan nombor.",
+      "BR 2.1.3 Membaca perkataan dalam Braille."
+    ],
+    "BR 2.2 Mengaplikasi tulisan Braille untuk menulis": [
+      "BR 2.2.1 Menulis huruf Braille dengan menggunakan huruf dan tanda huruf besar.",
+      "BR 2.2.2 Menyalin perkataan dan ayat Braille."
+    ],
+    "OM 1.1 Meneroka bunyi di persekitaran untuk meningkatkan deria mendengar.": [
+      "OM 1.1.1 Mengecam bunyi di persekitaran.",
+      "OM 1.1.2 Mengecam kelantangan bunyi.",
+      "OM 1.1.3 Menyatakan arah bunyi."
+    ],
+    "OM 1.2 Meneroka persekitaran untuk meningkatkan kemahiran membeza pelbagai bau di persekitaran.": [
+      "OM 1.2.1 Mengenal pasti pelbagai jenis bau di persekitaran",
+      "OM 1.2.2 Mengenal pasti tempat melalui deria bau."
+    ],
+    "OM 1.3 Meneroka persekitaran untuk meningkatkan persepsi deria sentuhan.": [
+      "OM 1.3.1 Menggunakan persepsi sentuhan untuk memahami persekitaran."
+    ],
+    "OM 1.4 Meneroka dan memahami pelbagai petunjuk kekal (landmark) dan petanda (clue) di persekitaran.": [
+      "OM 1.4.1 Mengenal pasti dan menamakan petunjuk kekal (landmark) di persekitaran.",
+      "OM 1.4.2 Mengenal pasti dan menamakan petanda (clue) yang berada di persekitaran."
+    ],
+    "OM 1.5 Mengetahui cara bergerak di persekitaran.": [
+      "OM 1.5.1 Menyatakan pelbagai cara bergerak dari satu tempat ke satu tempat yang lain."
+    ],
+    "OM 1.6 Mengetahui kemahiran menggunakan tongkat putih.": [
+      "OM 1.6.1 Mengenal bahagian tongkat putih.",
+      "OM 1.6.2 Mengetahui cara memegang tongkat putih."
+    ],
+    "OM 2.2 Menggunakan persepsi deria untuk bergerak dengan selamat dalam persekitaran.": [
+      "OM 2.1.1 Bergerak dalam persekitaran menggunakan pelbagai persepsi deria.",
+      "OM 2.2.1 Bergerak berpandukan petunjuk kekal (landmark) dan petanda (clue) dengan selamat."
+    ],
+    "OM 2.3 Menguasai kemahiran asas pratongkat.": [
+      "OM 2.3.1 Menggunakan tongkat putih dengan pemandu celik untuk bergerak dengan selamat.",
+      "OM 2.3.2 Menggunakan tongkat putih tanpa pemandu celik untuk bergerak dengan selamat.",
+      "OM 2.3.3 Mengaplikasikan kemahiran melindungi diri semasa bergerak dalam persekitaran."
+    ]
+  }
+}

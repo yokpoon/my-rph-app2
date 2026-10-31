@@ -1,4 +1,4 @@
-export type UserRole = 'guru' | 'pk_pentadbiran' | 'guru_besar' | 'guru_ict_data' | 'superadmin';
+export type UserRole = 'guru' | 'guru_prasekolah' | 'pk_pentadbiran' | 'guru_besar' | 'guru_ict_data' | 'superadmin';
 export type RphStatus = 'BELUM_HANTAR' | 'DRAF' | 'DIHANTAR' | 'DISAHKAN' | 'PEMBETULAN';
 
 export interface SchoolConfig {
@@ -11,7 +11,7 @@ export interface SchoolConfig {
   groupType: 'KUMPULAN_A' | 'KUMPULAN_B';
 }
 
-export type TeacherJawatan = 'GB' | 'GPK1' | 'GPK HEM' | 'GPK KOKO' | 'GPK KK' | 'GAB' | 'G GANTI';
+export type TeacherJawatan = 'GB' | 'GPK1' | 'GPK HEM' | 'GPK KOKO' | 'GPK KK' | 'GAB' | 'GURU PRASEKOLAH' | 'G GANTI';
 
 export interface AuthUserSession {
   userId: string;
@@ -185,6 +185,22 @@ export interface TimetableSlot {
   defaultSps: string[];
 }
 
+export type CurriculumType = 'KSSR' | 'KSPK';
+
+export interface KspkSlot {
+  slot_number: number;
+  slot_name: string; // e.g. 'Perbualan Awal (Rutin)', 'Aktiviti Fizikal / Luar', 'Aktiviti Pembelajaran', etc.
+  duration: number; // in minutes
+  tunjang_utama?: string;
+  tunjang_kesepaduan?: string;
+  sp_list: string[];
+  aktiviti: string;
+  impak?: string;
+  slot_type?: 'PERBUALAN_AWAL' | 'REHAT' | 'PENUTUP' | 'PEMBELAJARAN' | 'FIZIKAL';
+  selected_activities?: string[];
+  custom_note?: string;
+}
+
 export interface RphRecord {
   id: string;
   slotId: string;
@@ -199,6 +215,9 @@ export interface RphRecord {
   studentCount?: number; // Number of students in class
   subjectSlug: string;
   subjectName: string;
+  // Curriculum Type Switch: KSSR (Tahun 1-6) vs KSPK (Prasekolah)
+  curriculumType?: CurriculumType;
+  // KSSR Layout Fields
   sk: string;
   sps: string[];
   objectives: string[];
@@ -210,6 +229,13 @@ export interface RphRecord {
   bbm: string[];
   assessment: string;
   reflection: string;
+  // KSPK Day-Flow Daily Header
+  tema?: string;
+  subtema?: string;
+  pendekatan?: string;
+  // KSPK Dynamic Slot Matrix (Array of slots)
+  slots?: KspkSlot[];
+  // Workflow Status
   status: RphStatus;
   verifiedBy?: string;
   verifierFeedback?: string;
@@ -316,8 +342,7 @@ export const INITIAL_SCHOOL_CONFIG: SchoolConfig = {
   groupType: 'KUMPULAN_B',
 };
 
-export const INITIAL_TEACHERS: TeacherProfile[] = [];
-const DEPRECATED_TEACHERS: TeacherProfile[] = [
+export const INITIAL_TEACHERS: TeacherProfile[] = [
   {
     id: 'gb1',
     bil: 1,
@@ -606,6 +631,22 @@ const DEPRECATED_TEACHERS: TeacherProfile[] = [
     penyemakName: 'PHOON SAU PING',
     status: 'AKTIF',
   },
+  {
+    id: 'pra1',
+    bil: 19,
+    icNo: '950815015522',
+    name: 'CIKGU PRASEKOLAH',
+    chineseName: '学前教育班老师 (Guru Prasekolah)',
+    email: 'pra@moe-dl.edu.my',
+    panitia: 'Prasekolah (KSPK)',
+    subjectSlug: 'kspk_perbualan_awal',
+    role: 'guru_prasekolah',
+    jawatan: 'GURU PRASEKOLAH',
+    penyemakGroupId: 'k1',
+    penyemakGroupName: 'KUMPULAN 1',
+    penyemakName: 'HONG WAI FUN',
+    status: 'AKTIF',
+  },
 ];
 
 // Helper to format YYYY-MM-DD to DD-MM (or DD-MM-YY)
@@ -768,8 +809,7 @@ export function calculateTeacherMatrixSummary(
   };
 }
 
-export const INITIAL_TIMETABLE: TimetableSlot[] = [];
-const DEPRECATED_TIMETABLE: TimetableSlot[] = [
+export const INITIAL_TIMETABLE: TimetableSlot[] = [
   // Tan Mei Ling (t1) - Bahasa Cina & Pendidikan Moral
   {
     id: 'slot_t1_mon_1',
@@ -1039,10 +1079,100 @@ const DEPRECATED_TIMETABLE: TimetableSlot[] = [
     defaultSk: '1.0 计算机系统与网络安全',
     defaultSps: ['1.1 认识互联网基本原理及网络安全防范措施'],
   },
+  // Cikgu Prasekolah (pra1) - Jadual Harian KSPK Prasekolah
+  {
+    id: 'slot_pra1_mon_1',
+    teacherId: 'pra1',
+    day: 'ISNIN',
+    period: 1,
+    timeStart: '08:00',
+    timeEnd: '08:20',
+    grade: 'PRA',
+    className: 'Prasekolah Ceria (幼教班)',
+    studentCount: 25,
+    subjectSlug: 'kspk_perbualan_awal',
+    subjectName: 'PRASEKOLAH - PERBUALAN AWAL 晨谈/早会 (Rutin)',
+    defaultSk: 'PA 1.1 Rutin Asas, Sahsiah & Patriotisme',
+    defaultSps: ['PA 1.1.1 Beratur berdisiplin, memberi salam, bertukar ucapan selamat, dan membaca doa ringkas.'],
+  },
+  {
+    id: 'slot_pra1_mon_2',
+    teacherId: 'pra1',
+    day: 'ISNIN',
+    period: 2,
+    timeStart: '08:20',
+    timeEnd: '09:00',
+    grade: 'PRA',
+    className: 'Prasekolah Ceria (幼教班)',
+    studentCount: 25,
+    subjectSlug: 'kspk_bahasa_melayu',
+    subjectName: 'PRASEKOLAH - BAHASA MELAYU 幼教国语',
+    defaultSk: 'BM 1.1 Mendengar dan memberi respons terhadap pelbagai bunyi di persekitaran',
+    defaultSps: ['BM 1.1.1 Mengenal pasti pelbagai bunyi di persekitaran'],
+  },
+  {
+    id: 'slot_pra1_mon_3',
+    teacherId: 'pra1',
+    day: 'ISNIN',
+    period: 3,
+    timeStart: '09:00',
+    timeEnd: '09:40',
+    grade: 'PRA',
+    className: 'Prasekolah Ceria (幼教班)',
+    studentCount: 25,
+    subjectSlug: 'kspk_kognitif',
+    subjectName: 'PRASEKOLAH - SAINS & MATEMATIK AWAL (KOGNITIF) 幼教认知与数理',
+    defaultSk: 'MA 1.1 Memadankan objek',
+    defaultSps: ['MA 1.1.1 Memadankan objek berpasangan yang sama'],
+  },
+  {
+    id: 'slot_pra1_mon_4',
+    teacherId: 'pra1',
+    day: 'ISNIN',
+    period: 4,
+    timeStart: '09:40',
+    timeEnd: '10:20',
+    grade: 'PRA',
+    className: 'Prasekolah Ceria (幼教班)',
+    studentCount: 25,
+    subjectSlug: 'kspk_rehat',
+    subjectName: 'PRASEKOLAH - REHAT & PENGURUSAN DIRI 休息与自理 (Rutin)',
+    defaultSk: 'RH 1.1 Kebersihan Tangan & Disiplin',
+    defaultSps: ['RH 1.1.1 Membasuh tangan menggunakan sabun mengikut teknik 7 langkah sebelum dan selepas makan.'],
+  },
+  {
+    id: 'slot_pra1_mon_5',
+    teacherId: 'pra1',
+    day: 'ISNIN',
+    period: 5,
+    timeStart: '10:20',
+    timeEnd: '11:20',
+    grade: 'PRA',
+    className: 'Prasekolah Ceria (幼教班)',
+    studentCount: 25,
+    subjectSlug: 'kspk_kreativiti',
+    subjectName: 'PRASEKOLAH - KREATIVITI & ESTETIKA 幼教创意与美感',
+    defaultSk: 'KE 1.1 Menyanyikan lagu daripada pelbagai repertoir',
+    defaultSps: ['KE 1.1.1 Meniru pelbagai ton suara manusia'],
+  },
+  {
+    id: 'slot_pra1_mon_6',
+    teacherId: 'pra1',
+    day: 'ISNIN',
+    period: 6,
+    timeStart: '11:20',
+    timeEnd: '11:30',
+    grade: 'PRA',
+    className: 'Prasekolah Ceria (幼教班)',
+    studentCount: 25,
+    subjectSlug: 'kspk_penutup',
+    subjectName: 'PRASEKOLAH - AKTIVITI PENUTUP 结束与反思 (Rutin)',
+    defaultSk: 'PN 1.1 Refleksi Pembelajaran & Penghargaan Karakter (KP2027)',
+    defaultSps: ['PN 1.1.1 Soal jawab refleksi apa yang dipelajari dan aktiviti yang paling digemari hari ini.'],
+  },
 ];
 
-export const INITIAL_RPH_RECORDS: RphRecord[] = [];
-const DEPRECATED_RPH_RECORDS: RphRecord[] = [
+export const INITIAL_RPH_RECORDS: RphRecord[] = [
   // Wong Kah Wai (admin1) - Rekod RPH Pengajaran Pentadbir (Sejarah)
   {
     id: 'rph_admin1_1',

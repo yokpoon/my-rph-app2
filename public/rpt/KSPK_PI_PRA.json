@@ -1,0 +1,674 @@
+[
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 1,
+    "week_label": "Minggu 1",
+    "theme": "Minggu Orientasi & Transisi Prasekolah",
+    "sk_codes": [
+      "PI 2.2"
+    ],
+    "sp_codes": [
+      "PI 2.2.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Susun kasut, Siram bunga / kebun, Lap meja dan kerusi, sapu lantai,\n[KEMAHIRAN 1 MEMAHAMI] | Aktiviti kebersihan diri, kemas permainan, kemas alat tulis"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 2,
+    "week_label": "Minggu 2",
+    "theme": "Pengenalan Sukatan, Rutin Kelas & Amalan 3S",
+    "sk_codes": [
+      "PI 2.2"
+    ],
+    "sp_codes": [
+      "PI 2.2.2"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Baca doa belajar, baca doa sebelum dan selepas makan, doa masuk dan keluar tandas,baca doa sebelum pulang"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 3,
+    "week_label": "Minggu 3",
+    "theme": "Program Guru Penyayang & Mengenal Rakan",
+    "sk_codes": [
+      "PI 1.5"
+    ],
+    "sp_codes": [
+      "PI 1.5.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Tayangan video/slaid, Permainan kad huruf jawi"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 4,
+    "week_label": "Minggu 4",
+    "theme": "Amalan Kebersihan Diri & Nilai Murni",
+    "sk_codes": [
+      "PI 1.3"
+    ],
+    "sp_codes": [
+      "PI 1.3.3"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Tayangan video ibadah puasa (Upin dan Ipin)"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 5,
+    "week_label": "Minggu 5",
+    "theme": "Diri Saya (Perihal Diri & Anggota Badan)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEGETAHUI DAN MEMAHAMI] | Simulasi / tayangan video tentang kepentingan penampilan dan kebersihan diri"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 6,
+    "week_label": "Minggu 6",
+    "theme": "Diri Saya (Kebersihan Diri & Kesihatan Fizikal)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Simulasi / sesi soal jawab tentang situasi kebersihan dan keselamatan, peers"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 7,
+    "week_label": "Minggu 7",
+    "theme": "Diri Saya (Emosi Diri, Minat & Potensi)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEGETAHUI DAN MEMAHAMI] | Tayangan video  / Gunting gambar aktiviti"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 8,
+    "week_label": "Minggu 8",
+    "theme": "Keluarga Saya (Keluarga Terdekat & Salasilah)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Tolong guru dan ppm di kelas dan luar kelas"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 9,
+    "week_label": "Minggu 9",
+    "theme": "Keluarga Saya (Rumah Saya & Tanggungjawab)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEMAHAMI] | Simulasi jual beli pelbagai barang keperluan / kehendak yang bersesuaian"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 10,
+    "week_label": "Minggu 10",
+    "theme": "Sekolah Saya (Kawasan Sekolah & Warga Sekolah)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEMAHAMI] | Main puzzle - perkara asas (makanan, tempat tinggal dan pendidikan)"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 11,
+    "week_label": "Minggu 11",
+    "theme": "Sekolah Saya (Peraturan & Keselamatan di Sekolah)",
+    "sk_codes": [
+      "PI 1.2"
+    ],
+    "sp_codes": [
+      "PI 1.2.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Menyanyi lagu Rukun Iman dan menonton video\n[KEMAHIRAN 2 MENGAMALKAN] | Menolong ibu bapa menyapu rumah."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 12,
+    "week_label": "Minggu 12",
+    "theme": "Kawan Saya (Hubungan Mesra, Hormat & Kerjasama)",
+    "sk_codes": [
+      "PI 1.2"
+    ],
+    "sp_codes": [
+      "PI 1.2.2"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Menyanyi lagu Rukun Islam dan menonton video"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 13,
+    "week_label": "Minggu 13",
+    "theme": "Makanan & Minuman (Khasiat Makanan & Adab Makan)",
+    "sk_codes": [
+      "PI 2.1"
+    ],
+    "sp_codes": [
+      "PI 2.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Menyanyi lagu kalimah syahadah dan menonton video"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 14,
+    "week_label": "Minggu 14",
+    "theme": "Pakaian & Aksesori Tradisional/Moden",
+    "sk_codes": [
+      "PI 2.1"
+    ],
+    "sp_codes": [
+      "PI 2.1.2"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Berselawat dan zikir bersama-sama guru dan kawan-kawan sekelas"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 15,
+    "week_label": "Minggu 15",
+    "theme": "Kebersihan Persekitaran & Kesihatan Diri",
+    "sk_codes": [
+      "PI 1.5"
+    ],
+    "sp_codes": [
+      "PI 1.5.2"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Bermain kad sukukata jawi"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 16,
+    "week_label": "Minggu 16",
+    "theme": "Haiwan Peliharaan & Haiwan Jinak",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Menonton video, simulasi"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 17,
+    "week_label": "Minggu 17",
+    "theme": "Haiwan Liar & Haiwan Air",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Boneka, Tayangan video 'Serigala dengan biri-biri'"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 18,
+    "week_label": "Minggu 18",
+    "theme": "Dunia Serangga & Burung",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEMAHAMI] | Carta Salasilah Keluarga"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 19,
+    "week_label": "Minggu 19",
+    "theme": "Tumbuh-tumbuhan (Sayur-sayuran & Buah-buahan)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEMAHAMI] | Aktiviti bersama ibubapa di rumah - Buku skrap"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 20,
+    "week_label": "Minggu 20",
+    "theme": "Tumbuh-tumbuhan (Bunga-bungaan & Pokok Rimba)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Menyanyikan lagu saya sayang keluarga"
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 21,
+    "week_label": "Minggu 21",
+    "theme": "Kenderaan Darat (Bas, Kereta, Kereta Api)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Pancing Huruf Hijaiyah\nMurid memancing kad huruf dan menyebut huruf yang diperoleh.\n[KEMAHIRAN 1 MEMAHAMI] | Aktiviti: Kotak Patriotik\nMurid mengenal bendera, jata negara dan bunga raya."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 22,
+    "week_label": "Minggu 22",
+    "theme": "Kenderaan Udara & Kenderaan Air",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.2"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Tapak Bunyi Hijaiyah\nMurid melompat pada kad huruf dan menyebut bunyi: ba, bi, bu.\n[KEMAHIRAN 1 MEMAHAMI] | Aktiviti: Jelajah Malaysia Mini\nMurid mengenal KLCC, Menara Alor Setar, Putrajaya."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 23,
+    "week_label": "Minggu 23",
+    "theme": "Kemudahan Awam & Keselamatan Jalan Raya",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.3"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Surah Bergema\nGuru baca ayat, murid ulang secara berkumpulan dengan irama lembut.\n[KEMAHIRAN 2 MENGAMALKAN] | Aktiviti: Hormat Jalur Gemilang\nMurid berdiri tegak dan menyanyikan lagu Negaraku."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 24,
+    "week_label": "Minggu 24",
+    "theme": "Sambutan Bulan Kemerdekaan & Lambang Negara",
+    "sk_codes": [
+      "PI 1.5"
+    ],
+    "sp_codes": [
+      "PI 1.5.3"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Jejak & Salin\nMurid menjejak perkataan hijaiyah menggunakan pen berwarna dan menyalin."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 25,
+    "week_label": "Minggu 25",
+    "theme": "Warisan Budaya, Kaum & Perayaan di Malaysia",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Rantaian Kasih Sayang\nMurid melukis perbuatan menyayangi rakan, ibu bapa dan guru."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 26,
+    "week_label": "Minggu 26",
+    "theme": "Pekerjaan Beruniform (Polis, Bomba, Doktor, Tentera)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Siapa Perlukan Apa?\nMurid padankan gambar orang dan keperluan mereka."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 27,
+    "week_label": "Minggu 27",
+    "theme": "Pekerjaan Tradisional & Sektor Awam/Swasta",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Lakonan Hormat\nMurid berlakon situasi memberi salam, bertanya sopan dan membantu."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 28,
+    "week_label": "Minggu 28",
+    "theme": "Alam Sekitar (Cuaca, Awan & Pelangi)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Aktiviti: Bulatan Idea\nMurid berkongsi pendapat, rakan lain mendengar tanpa menyampuk."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 29,
+    "week_label": "Minggu 29",
+    "theme": "Alam Sekitar (Bumi, Sumber Air, Bukit & Pantai)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Aktiviti: Kawan Prihatin\nMurid bantu rakan dalam situasi lakonan (jatuh, sedih)."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 30,
+    "week_label": "Minggu 30",
+    "theme": "Sains & Teknologi (Bentuk, Saiz & Warna)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Aktiviti: Kad Ajaib Bahasa Sopan\nMurid bina ayat menggunakan perkataan sopan."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 31,
+    "week_label": "Minggu 31",
+    "theme": "Sains & Teknologi (Eksplorasi Deria & Magnet)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEMAHAMI] | Aktiviti: Peta Malaysia Ceria\nMurid mewarna peta dan menyebut nama negara."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 32,
+    "week_label": "Minggu 32",
+    "theme": "Alat Digital, Komputer & Keselamatan Teknologi",
+    "sk_codes": [
+      "PI 1.4"
+    ],
+    "sp_codes": [
+      "PI 1.4.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Kisah Rasul Kesayangan\nGuru bercerita kisah ringkas Nabi menggunakan buku bergambar atau kad cerita.\nMurid menyebut perkara baik yang dilakukan Nabi seperti jujur, penyayang dan amanah.\n[KEMAHIRAN 2 MENGAMALKAN] | Aktiviti: Lakonan Situasi\nMurid berlakon cara guna taman permainan dengan betul."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 33,
+    "week_label": "Minggu 33",
+    "theme": "Seni Kraf Tangan Tradisional & Origami",
+    "sk_codes": [
+      "PI 2.1"
+    ],
+    "sp_codes": [
+      "PI 2.1.3"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Aktiviti: Nyanyian 4 Sifat Rasul\nMurid menyanyi lagu mudah:\nSidik, Amanah, Tabligh, Fatanah.\nMurid menghafal melalui gerakan tangan.\n[KEMAHIRAN 2 MENGAMALKAN] | Aktiviti: Kad Ucapan Jiran\nMurid melukis dan menulis mesej hormat kepada jiran."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 34,
+    "week_label": "Minggu 34",
+    "theme": "Muzik Tradisional, Nyanyian & Pergerakan Kreatif",
+    "sk_codes": [
+      "PI 1.4"
+    ],
+    "sp_codes": [
+      "PI 1.4.2"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Pokok Keluarga Rasul\nMurid menyusun gambar Nabi, Khadijah, Fatimah, Hasan, Husain.\nMurid menyebut nama ahli keluarga terdekat Nabi."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 35,
+    "week_label": "Minggu 35",
+    "theme": "Permainan Tradisional & Sukaneka Prasekolah",
+    "sk_codes": [
+      "PI 1.3"
+    ],
+    "sp_codes": [
+      "PI 1.3.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Stesen Wuduk Mini\nGuru tunjuk langkah wuduk.\nMurid praktik satu persatu secara bergilir."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 36,
+    "week_label": "Minggu 36",
+    "theme": "Sayangi Alam Sekitar (Amalan 3R & Kitar Semula)",
+    "sk_codes": [
+      "PI 1.3"
+    ],
+    "sp_codes": [
+      "PI 1.3.2"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Solat Bersama Saya\nGuru menunjukkan pergerakan solat.\nMurid ikut bersama-sama."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 37,
+    "week_label": "Minggu 37",
+    "theme": "Pengukuhan Nilai Murni & Empati Kemasyarakatan",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Bincang Gambar Alam\nMurid melihat gambar sungai bersih & kotor.\nMurid menyatakan mana yang baik dan mengapa."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 38,
+    "week_label": "Minggu 38",
+    "theme": "Persediaan Melangkah ke Tahun 1 (Literasi & Numerasi)",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MENGETAHUI DAN MEMAHAMI] | Aktiviti: Poster Cinta Alam\nMurid melukis aktiviti seperti buang sampah, siram pokok, jimat air."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 39,
+    "week_label": "Minggu 39",
+    "theme": "Pengukuhan Sosioemosi & Kemahiran Berdikari",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 2 MENGAMALKAN] | Aktiviti: Gotong-Royong Mini\nMurid membersih kawasan kelas / taman sekolah."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 40,
+    "week_label": "Minggu 40",
+    "theme": "Karnival Bakat & Pameran Hasil Kerja Murid",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEMAHAMI] | Aktiviti: Saya Murid Bertanggungjawab\nMurid menyusun kad perbuatan baik di sekolah."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 41,
+    "week_label": "Minggu 41",
+    "theme": "Minggu Penilaian Akhir & Pelaporan Pentaksiran PBD",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEMAHAMI] | Aktiviti: Lawatan Mini Sekolah\nMurid mengenal perpustakaan, tandas, taman permainan dan cara menjaga."
+  },
+  {
+    "subject_code": "KSPK_PI",
+    "subject_name": "Prasekolah - Pendidikan Islam",
+    "grade": "PRA",
+    "academic_year": 2026,
+    "week_number": 42,
+    "week_label": "Minggu 42",
+    "theme": "Majlis Konvokesyen & Aktiviti Akhir Persekolahan",
+    "sk_codes": [
+      "PI 1.1"
+    ],
+    "sp_codes": [
+      "PI 1.1.1"
+    ],
+    "remarks": "[KEMAHIRAN 1 MEMAHAMI] | Aktiviti: Model Kejiranan Saya\nMurid bina model kejiranan menggunakan blok."
+  }
+]

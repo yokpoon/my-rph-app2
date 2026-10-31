@@ -28,6 +28,12 @@ export interface ParsedRphContent {
   assessment: string;
 }
 
+export function isPreschool(grade: string, subjectName?: string): boolean {
+  const g = (grade || '').toUpperCase();
+  const s = (subjectName || '').toLowerCase();
+  return g.includes('PRA') || s.includes('prasekolah') || s.includes('kspk');
+}
+
 export function isChineseSubject(subjectName: string): boolean {
   const lower = subjectName.toLowerCase();
   return (
@@ -63,6 +69,167 @@ export function isJawiOrArabicSubject(subjectName: string): boolean {
  * and injects KrMJ (JPNJ) & Nilai Sivik (KPM) when selected.
  */
 export function generateDeterministicRph(config: SinglePromptConfig): ParsedRphContent {
+  const isPra = isPreschool(config.grade, config.subjectName);
+
+  if (isPra) {
+    const sLower = (config.subjectName || '').toLowerCase();
+    
+    // 1. Routine Slot: Perbualan Awal (100 Minit / Minggu)
+    if (sLower.includes('perbualan')) {
+      return {
+        objectives: [
+          'Murid dapat mempraktikkan rutin asas harian dan menyatakan perasaan diri dalam perbualan pagi.',
+          'Murid dapat berkomunikasi dan berinteraksi secara sopan bersama guru dan rakan.'
+        ],
+        criteria: [
+          'Murid dapat memberi salam, merekod kehadiran, dan menyatakan emosi harian.',
+          'Murid dapat bertutur dengan sopan dan mematuhi peraturan asas kelas.'
+        ],
+        induction: '',
+        activities: [
+          '1. Beratur berdisiplin, memberi salam, bertukar ucapan selamat, dan membaca doa ringkas.',
+          '2. Merekod kehadiran kendiri, membaca kalendar (hari, tarikh), dan mencatat cuaca semasa.',
+          '3. Aktiviti "Roda Emosi" / semakan perasaan murid (meletakkan kad nama pada ikon emosi).',
+          '4. Semakan kebersihan diri dan menyanyikan lagu Negaraku / lagu sekolah.',
+          '5. Perkongsian idea mengikut tema mingguan dan peringatan peraturan kelas.'
+        ],
+        closure: '',
+        emk: ['Nilai Murni (Disiplin, Hormat)', 'Sosioemosi', 'Patriotisme'],
+        bbm: ['Carta Kalendar', 'Roda Emosi', 'Kad Nama Murid', 'Carta Kehadiran'],
+        assessment: 'Pemerhatian sahsiah, interaksi lisan & senarai semak adab'
+      };
+    }
+
+    // 2. Routine Slot: Rehat & Pengurusan Diri (200 Minit / Minggu)
+    if (sLower.includes('rehat')) {
+      return {
+        objectives: [
+          'Murid dapat mengamalkan adab pemakanan sihat dan kebersihan diri sebelum serta selepas makan.',
+          'Murid dapat mengamalkan tanggungjawab kendiri dan konsep sifar pembaziran (zero waste).'
+        ],
+        criteria: [
+          'Murid dapat mencuci tangan dengan teknik 7 langkah dan membaca doa makan dengan tertib.',
+          'Murid dapat mengelap meja makan dan meletakkan alatan ke dalam besen bertingkat selepas makan.'
+        ],
+        induction: '',
+        activities: [
+          '1. Membasuh tangan menggunakan sabun mengikut teknik 7 langkah sebelum makan.',
+          '2. Beratur mengambil makanan berkhasiat dengan tertib dan membaca doa makan bersama guru/PPM.',
+          '3. Makan dengan sopan, menghargai makanan seimbang, dan mengelakkan pembaziran.',
+          '4. Mengelap meja makan sendiri dengan tuala basah dan meletakkan alatan ke dalam besen bertingkat.',
+          '5. Menggosok gigi/berkumur bersih serta mengisi semula air minuman.'
+        ],
+        closure: '',
+        emk: ['Pendidikan Kesihatan & Kebersihan', 'Nilai Murni (Kesyukuran, Berdikari)', 'Kelestarian Global (Zero Waste)'],
+        bbm: ['Sabun Cuci Tangan', 'Tuala Meja', 'Besen Bertingkat', 'Carta 7 Langkah Membasuh Tangan'],
+        assessment: 'Pemerhatian amalan kebersihan, pengurusan kendiri & senarai semak adab'
+      };
+    }
+
+    // 3. Routine Slot: Aktiviti Penutup (50 Minit / Minggu)
+    if (sLower.includes('penutup')) {
+      return {
+        objectives: [
+          'Murid dapat membuat refleksi ringkas tentang aktiviti pembelajaran yang dilalui sepanjang hari.',
+          'Murid dapat mengemas ruang pembelajaran dan mengamalkan adab bersurai secara tertib.'
+        ],
+        criteria: [
+          'Murid dapat menyatakan aktiviti pembelajaran yang paling digemari hari ini.',
+          'Murid dapat mengemas barang peribadi dan alatan kelas serta bersalaman dengan guru/PPM.'
+        ],
+        induction: '',
+        activities: [
+          '1. Sesi soal jawab refleksi apa yang dipelajari dan aktiviti yang paling digemari murid hari ini.',
+          '2. Guru memberi pujian/bintang atas tingkah laku positif, kerjasama, dan kerajinan murid.',
+          '3. Mengemas alatan permainan/pembelajaran, menyusun kerusi meja, dan mengutip sampah di lantai.',
+          '4. Memeriksa beg sekolah sendiri bagi memastikan buku, botol air, dan bekas makanan tidak tertinggal.',
+          '5. Membaca doa penutup, menyanyikan lagu selamat pulang, dan bersalaman / handshake routine bersama guru & PPM.'
+        ],
+        closure: '',
+        emk: ['Nilai Murni (Berdikari, Bertanggungjawab)', 'Sosioemosi', 'Komunikasi'],
+        bbm: ['Carta Ganjaran / Bintang Karakter', 'Lagu Selamat Pulang', 'Doa Penutup'],
+        assessment: 'Pemerhatian refleksi lisan, kekemasan kendiri & adab bersurai'
+      };
+    }
+    const spText = config.sps.join('; ') || 'Standard Pembelajaran Prasekolah';
+    const isChinese = isChineseSubject(config.subjectName);
+    const isEnglish = isEnglishSubject(config.subjectName);
+
+    if (isChinese) {
+      return {
+        objectives: [
+          `在教学活动结束前，幼儿能够根据所学标准：${spText}。`,
+          `幼儿能够在教师引导及同侪互动下，积极参与并完成课堂游戏或操作任务。`,
+        ],
+        criteria: [
+          `幼儿能够听懂指令并尝试回答或完成 1 项关键操作任务。`,
+          `幼儿能够自信地与同伴互动并展示学习成果。`,
+        ],
+        induction: '',
+        activities: [
+          `1. 教师展示趣味实物/多媒体绘本图片，激发幼儿对主题的好奇心与旧经验。`,
+          `2. 教师示范关键技能与动作，引导幼儿轮流模仿与观察。`,
+          `3. 幼儿分组或个别进行趣味感官探索与操作活动，体验学习乐趣。`,
+          `4. 幼儿在教师鼓励下展示自己的作品或表达想法，建立自信心。`,
+          `5. 教师与幼儿回顾今日活动重点，给予星级赞赏与正向回馈。`,
+        ],
+        closure: '',
+        emk: ['道德价值（合作、礼貌）', '创造与革新', '语言能力'],
+        bbm: ['实物教具', '词卡与图卡', '感官教具/绘本'],
+        assessment: '观察评估（Checklist）、口头问答与幼儿作品展示（Pentaksiran PBD Prasekolah）',
+      };
+    }
+
+    if (isEnglish) {
+      return {
+        objectives: [
+          `By the end of the lesson, pupils will be able to: ${spText}.`,
+          `Pupils will participate actively in guided communicative and hands-on activities.`,
+        ],
+        criteria: [
+          `Pupils can recognize and respond to simple verbal cues or target words with guidance.`,
+          `Pupils can perform the hands-on task or sing/chant confidently.`,
+        ],
+        induction: '',
+        activities: [
+          `1. Teacher sings a catchy action song or shows flashcards to capture children's interest.`,
+          `2. Teacher demonstrates the key skill/target vocabulary through interactive role-play.`,
+          `3. Pupils explore learning materials in small groups with teacher guidance.`,
+          `4. Pupils take turns to present their work or perform actions to peers.`,
+          `5. Teacher recaps target words and praises pupils' active participation.`,
+        ],
+        closure: '',
+        emk: ['Language', 'Values', 'Creativity and Innovation'],
+        bbm: ['Flashcards', 'Real-world Objects', 'Storybook / Multimedia'],
+        assessment: 'Continuous Classroom Observation & Pupil Artifacts (Preschool PBD)',
+      };
+    }
+
+    // Default Malay Prasekolah
+    return {
+      objectives: [
+        `Pada akhir pembelajaran, murid dapat: ${spText}.`,
+        `Murid dapat melibatkan diri secara aktif dalam aktiviti bermain sambil belajar dengan bimbingan guru.`,
+      ],
+      criteria: [
+        `Murid dapat menyebut atau melakukan sekurang-kurangnya 1 kemahiran asas berdasarkan SP.`,
+        `Murid dapat menyempurnakan aktiviti penerokaan atau lembaran kerja secara berdikari atau bersama rakan.`,
+      ],
+      induction: '',
+      activities: [
+        `1. Guru memperdengarkan lagu kanak-kanak / menunjukkan objek maujud bagi menarik minat murid terhadap tema pembelajaran.`,
+        `2. Guru memberi bimbingan awal, menunjuk cara pelaksanaan aktiviti, dan bersoal jawab secara interaktif.`,
+        `3. Murid menjalankan aktiviti penerokaan / manipulatif secara hands-on dalam kumpulan kecil.`,
+        `4. Murid berkongsi dan menunjukkan hasil aktiviti kepada rakan sekelas dengan dorongan guru.`,
+        `5. Guru mengimbas kembali pembelajaran hari ini serta memberi pujian dan token bintang atas usaha murid.`,
+      ],
+      closure: '',
+      emk: ['Nilai Murni (Berdikari, Kerjasama)', 'Kreativiti dan Inovasi', 'Bahasa'],
+      bbm: ['Bahan Maujud', 'Kad Imbasan Bergambar', 'Alatan Manipulatif'],
+      assessment: 'Pemerhatian Senarai Semak & Hasil Kerja Murid (Pentaksiran Perkembangan Prasekolah)',
+    };
+  }
+
   const spSummary = config.sps.map((s) => s.replace(/^[\d.]+\s*/, '')).join('；');
   const strategy = config.pedagogy || 'PAK-21 Think-Pair-Share & 合作学习';
 
@@ -255,6 +422,59 @@ export function buildSingleGeminiPrompt(config: SinglePromptConfig): string {
       ? `\n${extraCriteriaBlocks.join('\n\n')}\n`
       : '';
 
+  const isPra = isPreschool(config.grade, config.subjectName);
+
+  if (isPra) {
+    return `Anda adalah pakar perancang kurikulum Prasekolah Kebangsaan KPM (KSPK).
+Sila bina Rancangan Pengajaran Harian (RPH) Prasekolah berdasarkan maklumat berikut:
+
+- Peringkat: Prasekolah (KSPK) ${config.className ? `(${config.className})` : ''}
+- Mata Pelajaran / Tunjang: ${config.subjectName}
+- Standard Kandungan (SK): ${config.sk}
+- Standard Pembelajaran (SP):
+${config.sps.map((sp, i) => `  ${i + 1}. ${sp}`).join('\n')}
+- Pendekatan PdP: ${config.pedagogy || 'Belajar Melalui Bermain & Bertema'}
+${config.customNote ? `- Nota Guru: ${config.customNote}` : ''}
+${extraSection}
+PANDUAN BAHASA:
+${langRule}
+
+PANDUAN FORMAT KHAS PRASEKOLAH (KSPK):
+1. [OBJEKTIF]: 1-2 objektif pembelajaran prasekolah yang ringkas dan bersesuaian dengan perkembangan kanak-kanak.
+2. [KRITERIA_KEJAYAAN]: CUKUP 1 HINGGA 2 KRITERIA SAHAJA (JANGAN buat beza aras Rendah/Sederhana/Tinggi; murid prasekolah tidak dibezakan aras tegar).
+3. [LANGKAH_AKTIVITI]: Hasilkan format aliran hari berterusan dalam bentuk senarai nombor 1 hingga 5 (nombor listing 1., 2., 3., 4., 5. SAHAJA, JANGAN masukkan perkataan "Langkah") yang MERANGKUMI KESELURUHAN aktiviti.
+4. [EMK], [BBM], [PENTAKSIRAN]: Lengkapkan mengikut DSKP Prasekolah (pemerhatian, senarai semak, hasil kerja).
+
+ARAHAN FORMAT WAJIB:
+Balas dengan MENGEKALKAN TAG DI BAWAH secara tepat tanpa teks perbualan tambahan:
+
+===MULA_RPH===
+[OBJEKTIF]
+• [Objektif 1 ringkas & boleh dicapai]
+• [Objektif 2]
+
+[KRITERIA_KEJAYAAN]
+• [Kriteria 1 yang jelas]
+• [Kriteria 2]
+
+[LANGKAH_AKTIVITI]
+1. [Menarik perhatian murid menggunakan bahan maujud/lagu/soal jawab]
+2. [Penerangan & tunjuk cara guru secara interaktif]
+3. [Murid menjalankan aktiviti hands-on/bermain sambil belajar secara manipulatif]
+4. [Murid berkongsi hasil kerja atau bercerita]
+5. [Imbas kembali pembelajaran & pujian peneguhan positif]
+
+[EMK]
+• [Senaraikan 2-3 Elemen Merentas Kurikulum]
+
+[BBM]
+• [Bahan maujud / kad imbasan / alatan sensori]
+
+[PENTAKSIRAN]
+• [Pemerhatian / Senarai Semak / Hasil Kerja]
+===TAMAT_RPH===`;
+  }
+
   return `Anda adalah pakar perancang kurikulum KPM untuk Sekolah Jenis Kebangsaan Cina (SJKC).
 Sila bina Rancangan Pengajaran Harian (RPH) berdasarkan maklumat berikut:
 
@@ -328,9 +548,11 @@ export function parseSingleGeminiResponse(rawText: string, fallbackConfig?: Sing
       .filter((line) => line.length > 0);
 
   const objectives = cleanList(extractSection('OBJEKTIF', 'KRITERIA_KEJAYAAN'));
-  const criteria = cleanList(extractSection('KRITERIA_KEJAYAAN', 'SET_INDUKSI'));
+  // Kriteria Kejayaan may directly transition to SET_INDUKSI (KSSR) or LANGKAH_AKTIVITI (Prasekolah)
+  const criteria = cleanList(extractSection('KRITERIA_KEJAYAAN', 'SET_INDUKSI|LANGKAH_AKTIVITI'));
   const induction = extractSection('SET_INDUKSI', 'LANGKAH_AKTIVITI').replace(/^[\s•\*\-\–\—]+\s*/, '').trim();
-  const activities = cleanList(extractSection('LANGKAH_AKTIVITI', 'PENUTUP'));
+  // Langkah Aktiviti may transition to PENUTUP (KSSR) or EMK (Prasekolah)
+  const activities = cleanList(extractSection('LANGKAH_AKTIVITI', 'PENUTUP|EMK'));
   const closure = extractSection('PENUTUP', 'EMK').replace(/^[\s•\*\-\–\—]+\s*/, '').trim();
   const emk = cleanList(extractSection('EMK', 'BBM'));
   const bbm = cleanList(extractSection('BBM', 'PENTAKSIRAN'));

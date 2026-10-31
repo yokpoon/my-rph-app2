@@ -61,6 +61,7 @@ import {
   KPM_TAKWIM_2026_KUMPULAN_B,
   extractTakwimFromFile,
 } from '@/lib/takwimExtractor';
+import { KSPK_ROUTINE_PRESETS, KspkRoutinePresetItem } from '@/lib/kspkPresets';
 import {
   fetchRptJson,
   getEffectiveRpt,
@@ -143,6 +144,21 @@ const DEFAULT_DSKP_META: DskpSubjectMeta[] = [
   { name: 'PENDIDIKAN KESIHATAN SJKC 华校健康教育', slug: 'pendidikan_kesihatan_sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
   { name: 'TMK SJKC 华校信息与通信技术', slug: 'tmk_sjkc', grades: ['5', '6'] },
   { name: 'PENDIDIKAN ISLAM SJKC', slug: 'sjkc', grades: ['1', '2', '3', '4', '5', '6'] },
+  // Prasekolah (KSPK)
+  { name: 'PRASEKOLAH (KSPK) 幼教全科', slug: 'kspk_prasekolah', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - PERBUALAN AWAL 晨谈/早会 (Rutin)', slug: 'kspk_perbualan_awal', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - REHAT & PENGURUSAN DIRI 休息与自理 (Rutin)', slug: 'kspk_rehat', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - AKTIVITI PENUTUP 结束与反思 (Rutin)', slug: 'kspk_penutup', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - SOSIOEMOSI 幼教情绪与社交', slug: 'kspk_sosioemosi', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - FIZIKAL & PENJAGAAN KESIHATAN 幼教体能与健康', slug: 'kspk_fizikal', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - KREATIVITI & ESTETIKA 幼教创意与美感', slug: 'kspk_kreativiti', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - SAINS & MATEMATIK AWAL (KOGNITIF) 幼教认知与数理', slug: 'kspk_kognitif', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - BAHASA MELAYU 幼教国语', slug: 'kspk_bahasa_melayu', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - BAHASA INGGERIS 幼教英语', slug: 'kspk_bahasa_inggeris', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - BAHASA CINA 幼教华语', slug: 'kspk_bahasa_cina', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - PENDIDIKAN MORAL 幼教道德教育', slug: 'kspk_pendidikan_moral', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - PENDIDIKAN ISLAM 幼教伊斯兰教育', slug: 'kspk_pendidikan_islam', grades: ['PRA'] },
+  { name: 'PRASEKOLAH - PENDIDIKAN KHAS (PPKI) 幼教特殊教育', slug: 'kspk_ppki', grades: ['PRA'] },
 ];
 
 type SubjectDskpTree = Record<string, Record<string, string[]>>;
@@ -350,9 +366,9 @@ export default function ERphColorAdminApp() {
     }
     return INITIAL_SCHOOL_CONFIG;
   });
-  const [teachers, setTeachers] = useState<TeacherProfile[]>([]);
-  const [timetable, setTimetable] = useState<TimetableSlot[]>([]);
-  const [rphRecords, setRphRecords] = useState<RphRecord[]>([]);
+  const [teachers, setTeachers] = useState<TeacherProfile[]>(INITIAL_TEACHERS);
+  const [timetable, setTimetable] = useState<TimetableSlot[]>(INITIAL_TIMETABLE);
+  const [rphRecords, setRphRecords] = useState<RphRecord[]>(INITIAL_RPH_RECORDS);
 
   // Academic Weeks Management (Feature 1 & 2: Weeks 1 - 45, Weeks 43-45 hidden unless Friday date set)
   const [academicWeeks, setAcademicWeeks] = useState<AcademicWeek[]>(INITIAL_ACADEMIC_WEEKS);
@@ -406,12 +422,26 @@ export default function ERphColorAdminApp() {
         const localT = localStorage.getItem('erph_live_teachers_v1');
         if (localT) {
           const parsedT = JSON.parse(localT);
-          if (Array.isArray(parsedT) && parsedT.length > 0) setTeachers(parsedT);
+          if (Array.isArray(parsedT) && parsedT.length > 0) {
+            const praDefault = INITIAL_TEACHERS.find((t) => t.id === 'pra1');
+            if (praDefault && !parsedT.some((t: TeacherProfile) => t.id === 'pra1' || t.role === 'guru_prasekolah')) {
+              parsedT.push(praDefault);
+            }
+            setTeachers(parsedT);
+          }
         }
         const localTime = localStorage.getItem('erph_live_timetable_v1');
         if (localTime) {
           const parsedTime = JSON.parse(localTime);
-          if (Array.isArray(parsedTime) && parsedTime.length > 0) setTimetable(parsedTime);
+          if (Array.isArray(parsedTime) && parsedTime.length > 0) {
+            const praSlots = INITIAL_TIMETABLE.filter((s) => s.teacherId === 'pra1');
+            for (const ps of praSlots) {
+              if (!parsedTime.some((s: TimetableSlot) => s.id === ps.id)) {
+                parsedTime.push(ps);
+              }
+            }
+            setTimetable(parsedTime);
+          }
         }
         const localRph = localStorage.getItem('erph_live_rph_records_v1');
         if (localRph) {
@@ -884,6 +914,21 @@ export default function ERphColorAdminApp() {
   // Additional Prompt Criteria State (KrMJ JPNJ & Pendidikan Sivik KPM)
   const [includeKrmj, setIncludeKrmj] = useState<boolean>(false);
   const [selectedKrmjId, setSelectedKrmjId] = useState<string>('KRMJ-01');
+
+  // Prasekolah Whole-Day 3 Mandatory Routine Blocks (Perbualan Awal, Rehat, Penutup)
+  const [kspkPerbualanAwal, setKspkPerbualanAwal] = useState<string[]>(() =>
+    KSPK_ROUTINE_PRESETS.PERBUALAN_AWAL.presets.filter((p) => p.isDefault).map((p) => p.text)
+  );
+  const [kspkPerbualanNote, setKspkPerbualanNote] = useState<string>('');
+  const [kspkRehat, setKspkRehat] = useState<string[]>(() =>
+    KSPK_ROUTINE_PRESETS.REHAT.presets.filter((p) => p.isDefault).map((p) => p.text)
+  );
+  const [kspkRehatNote, setKspkRehatNote] = useState<string>('');
+  const [kspkPenutup, setKspkPenutup] = useState<string[]>(() =>
+    KSPK_ROUTINE_PRESETS.PENUTUP.presets.filter((p) => p.isDefault).map((p) => p.text)
+  );
+  const [kspkPenutupNote, setKspkPenutupNote] = useState<string>('');
+  const [activeKspkRoutineTab, setActiveKspkRoutineTab] = useState<'PERBUALAN' | 'REHAT' | 'PENUTUP'>('PERBUALAN');
   const [includeSivik, setIncludeSivik] = useState<boolean>(false);
   const [selectedSivikCoreId, setSelectedSivikCoreId] = useState<string>('KS');
   const [selectedSivikSubId, setSelectedSivikSubId] = useState<string>('KS_01');
@@ -1002,15 +1047,89 @@ export default function ERphColorAdminApp() {
     );
   }, [teachers, currentUserId, authSession]);
 
-  // Role booleans: Superadmin has top-level privileges; 4 management positions (GB, GPK1, GPK HEM, GPK KK) are Pentadbir by default
-  const isSuperadmin = currentUser.role === 'superadmin' || currentUser.id === 'superadmin';
+  // Strictly isolated Prasekolah (KSPK) vs Primary School (KSSR) UI mode
+  const isPrasekolahTeacher = useMemo(() => {
+    return (
+      currentUser.role === 'guru_prasekolah' ||
+      currentUser.jawatan === 'GURU PRASEKOLAH' ||
+      (currentUser.panitia || '').toLowerCase().includes('prasekolah') ||
+      (currentUser.subjectSlug || '').startsWith('kspk')
+    );
+  }, [currentUser]);
+
+  // Role booleans: If a teacher is labeled as Prasekolah, detach them into the dedicated Prasekolah UI
+  const isSuperadmin = !isPrasekolahTeacher && (currentUser.role === 'superadmin' || currentUser.id === 'superadmin');
   const isPentadbir =
-    isSuperadmin ||
-    currentUser.role === 'pk_pentadbiran' ||
-    currentUser.role === 'guru_besar' ||
-    (currentUser.jawatan && PENTADBIR_JAWATAN.includes(currentUser.jawatan));
-  const isIct = isSuperadmin || currentUser.role === 'guru_ict_data';
-  const isGuru = !isSuperadmin && !isPentadbir && !isIct;
+    !isPrasekolahTeacher &&
+    (isSuperadmin ||
+      currentUser.role === 'pk_pentadbiran' ||
+      currentUser.role === 'guru_besar' ||
+      Boolean(currentUser.jawatan && PENTADBIR_JAWATAN.includes(currentUser.jawatan)));
+  const isIct = !isPrasekolahTeacher && (isSuperadmin || currentUser.role === 'guru_ict_data');
+  const isGuru = isPrasekolahTeacher || (!isSuperadmin && !isPentadbir && !isIct);
+
+  // Automatically sync builder, timetable, RPT defaults, and active view whenever teacher persona switches between Prasekolah and Primary
+  useEffect(() => {
+    if (isPrasekolahTeacher) {
+      setSelectedGrade('PRA');
+      setSelectedClassName('Prasekolah');
+      setSelectedStudentCount(25);
+      const praDaySlots = timetable.filter(
+        (s) => (s.teacherId === currentUser.id || s.grade === 'PRA') && s.day === selectedDay
+      );
+      if (praDaySlots.length > 0) {
+        const firstSlot = praDaySlots[0];
+        setSelectedSlotId(firstSlot.id);
+        setSelectedTimeStart(firstSlot.timeStart);
+        setSelectedTimeEnd(firstSlot.timeEnd);
+        setSelectedSubjectSlug(firstSlot.subjectSlug);
+      } else if (!selectedSubjectSlug.startsWith('kspk')) {
+        setSelectedSubjectSlug('kspk_perbualan_awal');
+      }
+      setMyNewGrade('PRA');
+      setMyNewClassName('Prasekolah');
+      setMyNewStudentCount(25);
+      if (!myNewSubjectSlug.startsWith('kspk')) {
+        setMyNewSubjectSlug('kspk_perbualan_awal');
+      }
+      setNewRptGrade('PRA');
+      setNewRptClassName('Prasekolah');
+      if (!newRptSubjectSlug.startsWith('kspk')) {
+        setNewRptSubjectSlug('kspk_perbualan_awal');
+      }
+      if (['admin-review', 'yearly-matrix', 'settings', 'roster'].includes(activeNav)) {
+        setActiveNav('rph-builder');
+      }
+    } else {
+      if (selectedGrade === 'PRA') {
+        setSelectedGrade('4');
+        setSelectedClassName('4 Merah (四红班)');
+        setSelectedStudentCount(30);
+      }
+      if (selectedSubjectSlug.startsWith('kspk')) {
+        setSelectedSubjectSlug(
+          currentUser.subjectSlug && !currentUser.subjectSlug.startsWith('kspk')
+            ? currentUser.subjectSlug
+            : 'bahasa_cina_sjkc'
+        );
+      }
+      if (myNewGrade === 'PRA') {
+        setMyNewGrade('4');
+        setMyNewClassName('4 Merah (四红班)');
+        setMyNewStudentCount(30);
+      }
+      if (myNewSubjectSlug.startsWith('kspk')) {
+        setMyNewSubjectSlug('bahasa_cina_sjkc');
+      }
+      if (newRptGrade === 'PRA') {
+        setNewRptGrade('4');
+        setNewRptClassName('');
+      }
+      if (newRptSubjectSlug.startsWith('kspk')) {
+        setNewRptSubjectSlug('bahasa_cina_sjkc');
+      }
+    }
+  }, [isPrasekolahTeacher, currentUser.id]);
 
   // Regular teachers list excluding superadmin (for matrix, roster, and general selection)
   const regularTeachers = useMemo(() => {
@@ -1030,12 +1149,49 @@ export default function ERphColorAdminApp() {
     });
   }, []);
 
-  // Filter available subjects (Tahun 1 - 6 only, No Bercantum)
+  // Strictly isolated subject list: Prasekolah teacher ONLY sees KSPK subjects; Primary teacher ONLY sees Tahun 1-6 KSSR subjects
+  const teacherAllowedDskpMeta = useMemo(() => {
+    return dskpMeta.filter((s) => {
+      if (s.slug.includes('bercantum')) return false;
+      const isPraSubj = s.grades.includes('PRA') || s.slug.startsWith('kspk');
+      return isPrasekolahTeacher ? isPraSubj : !isPraSubj;
+    });
+  }, [dskpMeta, isPrasekolahTeacher]);
+
+  // Filter available subjects for selected grade within the teacher's allowed curriculum
   const availableSubjects = useMemo(() => {
-    return dskpMeta.filter(
-      (s) => !s.slug.includes('bercantum') && s.grades.includes(selectedGrade)
-    );
-  }, [dskpMeta, selectedGrade]);
+    if (isPrasekolahTeacher) {
+      return teacherAllowedDskpMeta;
+    }
+    return teacherAllowedDskpMeta.filter((s) => s.grades.includes(selectedGrade));
+  }, [teacherAllowedDskpMeta, isPrasekolahTeacher, selectedGrade]);
+
+  // Active DSKP grade tree resolver with resilient fallback for Prasekolah & KSSR
+  const activeDskpGradeTree = useMemo(() => {
+    if (!subjectData) return null;
+    const isPraSub = (selectedSubjectSlug || '').startsWith('kspk') || selectedGrade === 'PRA';
+    if (isPraSub) {
+      return subjectData['PRA'] || subjectData[selectedGrade] || null;
+    }
+    return subjectData[selectedGrade] || subjectData['1'] || null;
+  }, [subjectData, selectedSubjectSlug, selectedGrade]);
+
+  // Keep selectedSubjectSlug synced when selectedGrade changes (e.g. switching to/from Prasekolah)
+  useEffect(() => {
+    if (availableSubjects.length > 0) {
+      const currentValid = availableSubjects.some((s) => s.slug === selectedSubjectSlug);
+      if (!currentValid) {
+        setSelectedSubjectSlug(availableSubjects[0].slug);
+      }
+    }
+  }, [availableSubjects, selectedSubjectSlug]);
+
+  // Auto-switch routine tab if a routine subject is chosen
+  useEffect(() => {
+    if (selectedSubjectSlug === 'kspk_perbualan_awal') setActiveKspkRoutineTab('PERBUALAN');
+    else if (selectedSubjectSlug === 'kspk_rehat') setActiveKspkRoutineTab('REHAT');
+    else if (selectedSubjectSlug === 'kspk_penutup') setActiveKspkRoutineTab('PENUTUP');
+  }, [selectedSubjectSlug]);
 
   // Check if current grade is phased into Kurikulum 2027 (Starting from Tahun 1)
   const isSelectedGradeNewSyllabus = useMemo(() => {
@@ -1060,7 +1216,8 @@ export default function ERphColorAdminApp() {
         }
         setRptRecords(rptList || []);
 
-        const gradeTree = tree && tree[selectedGrade] ? tree[selectedGrade] : null;
+        const isPraSub = (selectedSubjectSlug || '').startsWith('kspk') || selectedGrade === 'PRA';
+        const gradeTree = tree && (tree[selectedGrade] || (isPraSub ? tree['PRA'] : null) || tree['1']);
         const matchResult = matchRptWithDskp(rptList || [], builderWeek, gradeTree);
         setMatchedRptInfo(matchResult);
 
@@ -1072,7 +1229,8 @@ export default function ERphColorAdminApp() {
             r.day === selectedDay &&
             selectedSlotId &&
             !selectedSlotId.startsWith('custom_') &&
-            r.slotId === selectedSlotId
+            r.slotId === selectedSlotId &&
+            r.subjectSlug === selectedSubjectSlug
         );
 
         if (existing) {
@@ -1128,9 +1286,19 @@ export default function ERphColorAdminApp() {
   // Day selection sync
   const handleSelectDay = (day: 'ISNIN' | 'SELASA' | 'RABU' | 'KHAMIS' | 'JUMAAT') => {
     setSelectedDay(day);
-    const daySlots = timetable.filter((s) => s.teacherId === currentUser.id && s.day === day);
-    if (daySlots.length > 0) {
-      handleSelectDaySlot(daySlots[0], day);
+    const daySlots = timetable.filter((s) => {
+      const isPraSlot = s.grade === 'PRA' || (s.subjectSlug || '').startsWith('kspk');
+      if (isPrasekolahTeacher !== isPraSlot) return false;
+      return s.teacherId === currentUser.id && s.day === day;
+    });
+    const effectiveDaySlots =
+      daySlots.length > 0
+        ? daySlots
+        : isPrasekolahTeacher
+        ? timetable.filter((s) => s.teacherId === 'pra1' && s.day === day)
+        : [];
+    if (effectiveDaySlots.length > 0) {
+      handleSelectDaySlot(effectiveDaySlots[0], day);
     } else {
       setSelectedSlotId(null);
       const existing = rphRecords.find(
@@ -1183,8 +1351,14 @@ export default function ERphColorAdminApp() {
     setSelectedSlotId(newCustomSlotId);
     setSelectedTimeStart('10:30');
     setSelectedTimeEnd('11:30');
-    setSelectedClassName('');
-    setSelectedStudentCount(30);
+    if (isPrasekolahTeacher) {
+      setSelectedGrade('PRA');
+      setSelectedClassName('Prasekolah');
+      setSelectedStudentCount(25);
+    } else {
+      setSelectedClassName('');
+      setSelectedStudentCount(30);
+    }
     setPreviewRph(null);
     setIsEditingRph(false);
     showToast(`✨ Mod Sesi Baharu diaktifkan bagi hari ${selectedDay}. Sila pilih subjek & klik "Jana RPH Serta-Merta".`);
@@ -1195,12 +1369,14 @@ export default function ERphColorAdminApp() {
   // ---------------------------------------------------------------------------
   useEffect(() => {
     if (!currentUser?.id) return;
-    const assignments = getTeacherRptAssignments(currentUser.id, timetable);
+    const assignments = getTeacherRptAssignments(currentUser.id, timetable, isPrasekolahTeacher);
     setTeacherRptAssignments(assignments);
-    if (assignments.length > 0 && !selectedRptAssignId) {
-      setSelectedRptAssignId(assignments[0].id);
+    if (assignments.length > 0) {
+      setSelectedRptAssignId((prev) =>
+        assignments.some((a) => a.id === prev) ? prev : assignments[0].id
+      );
     }
-  }, [currentUser.id, timetable]);
+  }, [currentUser.id, timetable, isPrasekolahTeacher]);
 
   const activeRptAssignment = useMemo(() => {
     return (
@@ -1219,8 +1395,9 @@ export default function ERphColorAdminApp() {
     ])
       .then(([records, dskpTree]) => {
         setActiveRptList(records);
-        if (dskpTree && dskpTree[activeRptAssignment.grade]) {
-          setActiveRptDskpTree(dskpTree[activeRptAssignment.grade]);
+        const targetKey = (activeRptAssignment.subjectSlug || '').startsWith('kspk') ? 'PRA' : activeRptAssignment.grade;
+        if (dskpTree && (dskpTree[targetKey] || dskpTree['PRA'])) {
+          setActiveRptDskpTree(dskpTree[targetKey] || dskpTree['PRA']);
         } else {
           setActiveRptDskpTree(null);
         }
@@ -1329,13 +1506,15 @@ export default function ERphColorAdminApp() {
   const handleAddTeacherRptSubject = () => {
     const meta = dskpMeta.find((m) => m.slug === newRptSubjectSlug);
     const subjectName = meta?.name || newRptSubjectSlug;
+    const isPra = newRptGrade === 'PRA';
+    const gradeLabel = isPra ? 'Prasekolah' : `Tahun ${newRptGrade}`;
     const newAssign: TeacherRptAssignment = {
       id: `rpt_assign_${currentUser.id}_${Date.now()}`,
       teacherId: currentUser.id,
       subjectSlug: newRptSubjectSlug,
       grade: newRptGrade,
       subjectName,
-      className: newRptClassName.trim() || `Tahun ${newRptGrade}`,
+      className: newRptClassName.trim() || gradeLabel,
       updatedAt: new Date().toISOString(),
     };
 
@@ -1345,7 +1524,7 @@ export default function ERphColorAdminApp() {
     setSelectedRptAssignId(newAssign.id);
     setIsAddRptSubjectModalOpen(false);
     setNewRptClassName('');
-    showToast(`📚 Subjek ${subjectName} (Tahun ${newRptGrade}) ditambah ke senarai RPT mengajar!`);
+    showToast(`📚 Subjek ${subjectName} (${gradeLabel}) ditambah ke senarai RPT mengajar!`);
   };
 
   const handleRemoveTeacherRptSubject = (assignId: string) => {
@@ -1379,7 +1558,7 @@ export default function ERphColorAdminApp() {
   const handleGenerate0Api = () => {
     const subjMeta = dskpMeta.find((m) => m.slug === selectedSubjectSlug);
     const subjectName = subjMeta?.name || selectedSubjectSlug;
-    const generated = generateDeterministicRph({
+    let generated = generateDeterministicRph({
       grade: selectedGrade,
       className: selectedClassName,
       subjectName,
@@ -1392,6 +1571,37 @@ export default function ERphColorAdminApp() {
       sivikCoreId: selectedSivikCoreId,
       sivikSubId: selectedSivikSubId,
     });
+
+    const isPerbualan = selectedSubjectSlug === 'kspk_perbualan_awal';
+    const isRehat = selectedSubjectSlug === 'kspk_rehat';
+    const isPenutup = selectedSubjectSlug === 'kspk_penutup';
+
+    // If a routine subject is selected, build continuous numbered list directly from user checklist (without 'Langkah')
+    if (isPerbualan && kspkPerbualanAwal.length > 0) {
+      const routineSteps = kspkPerbualanAwal.slice(0, 5).map((item, idx) => `${idx + 1}. ${item}`);
+      if (kspkPerbualanNote && routineSteps.length < 5) {
+        routineSteps.push(`${routineSteps.length + 1}. ${kspkPerbualanNote}`);
+      }
+      generated.activities = routineSteps;
+      generated.induction = '';
+      generated.closure = '';
+    } else if (isRehat && kspkRehat.length > 0) {
+      const routineSteps = kspkRehat.slice(0, 5).map((item, idx) => `${idx + 1}. ${item}`);
+      if (kspkRehatNote && routineSteps.length < 5) {
+        routineSteps.push(`${routineSteps.length + 1}. ${kspkRehatNote}`);
+      }
+      generated.activities = routineSteps;
+      generated.induction = '';
+      generated.closure = '';
+    } else if (isPenutup && kspkPenutup.length > 0) {
+      const routineSteps = kspkPenutup.slice(0, 5).map((item, idx) => `${idx + 1}. ${item}`);
+      if (kspkPenutupNote && routineSteps.length < 5) {
+        routineSteps.push(`${routineSteps.length + 1}. ${kspkPenutupNote}`);
+      }
+      generated.activities = routineSteps;
+      generated.induction = '';
+      generated.closure = '';
+    }
 
     const existingForSlot = rphRecords.find(
       (r) =>
@@ -1435,6 +1645,20 @@ export default function ERphColorAdminApp() {
       bbm: generated.bbm,
       assessment: generated.assessment,
       reflection: `___ / ${selectedStudentCount || 30} orang murid dapat mencapai objektif pembelajaran.${krmjNote}`,
+      curriculumType: (selectedGrade === 'PRA' || selectedSubjectSlug.startsWith('kspk')) ? 'KSPK' : 'KSSR',
+      slots: (selectedGrade === 'PRA' || selectedSubjectSlug.startsWith('kspk')) ? [
+        {
+          slot_number: 1,
+          slot_name: subjectName,
+          duration: isPerbualan ? 20 : (isRehat ? 30 : (isPenutup ? 10 : 30)),
+          slot_type: isPerbualan ? 'PERBUALAN_AWAL' : (isRehat ? 'REHAT' : (isPenutup ? 'PENUTUP' : 'PEMBELAJARAN')),
+          selected_activities: isPerbualan ? kspkPerbualanAwal : (isRehat ? kspkRehat : (isPenutup ? kspkPenutup : generated.activities)),
+          custom_note: isPerbualan ? kspkPerbualanNote : (isRehat ? kspkRehatNote : (isPenutup ? kspkPenutupNote : '')),
+          sp_list: selectedSps,
+          aktiviti: generated.activities.join('\n'),
+          impak: 'Murid menyertai PdP dengan ceria dan bersemangat.'
+        }
+      ] : [],
       status: preservedStatus,
       verifiedBy: existingForSlot?.verifiedBy,
       verifiedAt: existingForSlot?.verifiedAt,
@@ -1610,10 +1834,16 @@ export default function ERphColorAdminApp() {
   };
 
   // Weekly Batch Handlers
-  const activeWeeklySlots = useMemo(
-    () => timetable.filter((s) => s.teacherId === currentUser.id),
-    [timetable, currentUser.id]
-  );
+  const activeWeeklySlots = useMemo(() => {
+    const own = timetable.filter((s) => {
+      const isPraSlot = s.grade === 'PRA' || (s.subjectSlug || '').startsWith('kspk');
+      return s.teacherId === currentUser.id && isPrasekolahTeacher === isPraSlot;
+    });
+    if (own.length === 0 && isPrasekolahTeacher) {
+      return timetable.filter((s) => s.teacherId === 'pra1');
+    }
+    return own;
+  }, [timetable, currentUser.id, isPrasekolahTeacher]);
 
   const handleCopyWeeklyBatchPrompt = async () => {
     const prompt = buildWeeklyBatchPrompt(
@@ -2051,10 +2281,17 @@ ${gen.assessment}`;
     showToast(`🧹 ${draftCount} draf lama telah dibersihkan! Semua rekod DISAHKAN kekal selamat.`);
   };
 
-  // Timetable Filtered by Day for active teacher
+  // Timetable Filtered by Day for active teacher (strictly isolated by Prasekolah vs Primary)
   const teacherDaySlots = useMemo(() => {
-    return timetable.filter((s) => s.teacherId === currentUser.id && s.day === selectedDay);
-  }, [timetable, currentUser.id, selectedDay]);
+    const own = timetable.filter((s) => {
+      const isPraSlot = s.grade === 'PRA' || (s.subjectSlug || '').startsWith('kspk');
+      return s.teacherId === currentUser.id && s.day === selectedDay && isPrasekolahTeacher === isPraSlot;
+    });
+    if (own.length === 0 && isPrasekolahTeacher) {
+      return timetable.filter((s) => s.teacherId === 'pra1' && s.day === selectedDay);
+    }
+    return own;
+  }, [timetable, currentUser.id, selectedDay, isPrasekolahTeacher]);
 
   // Dashboard & Admin Metrics (e-RPH Fokus Sepenuhnya)
   const metrics = useMemo(() => {
@@ -2260,7 +2497,7 @@ ${gen.assessment}`;
 
   // Admin Review Handlers
   const handleVerifyRph = (teacherId: string, newStatus: 'DISAHKAN' | 'PEMBETULAN') => {
-    const teacher = teachers.find((t) => t.id === teacherId);
+    const teacher = (teachers.length > 0 ? teachers : INITIAL_TEACHERS).find((t) => t.id === teacherId);
     const roleLabel =
       currentUser.role === 'superadmin'
         ? 'Pentadbir Utama'
@@ -2404,10 +2641,17 @@ ${gen.assessment}`;
     showToast(`⚡ Semua RPH berstatus 'DIHANTAR' untuk Minggu ${adminReviewWeek} telah DISAHKAN oleh ${verifierTitle}!`);
   };
 
-  // Teacher Timetable Management
+  // Teacher Timetable Management (strictly isolated by Prasekolah vs Primary)
   const teacherOwnSlots = useMemo(() => {
-    return timetable.filter((s) => s.teacherId === currentUser.id);
-  }, [timetable, currentUser.id]);
+    const own = timetable.filter((s) => {
+      const isPraSlot = s.grade === 'PRA' || (s.subjectSlug || '').startsWith('kspk');
+      return s.teacherId === currentUser.id && isPrasekolahTeacher === isPraSlot;
+    });
+    if (own.length === 0 && isPrasekolahTeacher) {
+      return timetable.filter((s) => s.teacherId === 'pra1');
+    }
+    return own;
+  }, [timetable, currentUser.id, isPrasekolahTeacher]);
 
   const handleStartEditTimetableSlot = (slot: TimetableSlot) => {
     setEditingTimetableSlotId(slot.id);
@@ -2707,6 +2951,34 @@ ${gen.assessment}`;
       try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(updated)); } catch (_) {}
       return updated;
     });
+    if (editingTeacher.id === currentUser.id) {
+      setAuthSession((prev) =>
+        prev
+          ? {
+              ...prev,
+              name: editingTeacher.name,
+              chineseName: editingTeacher.chineseName,
+              email: editingTeacher.email,
+              role: editingTeacher.role,
+              jawatan: editingTeacher.jawatan,
+              panitia: editingTeacher.panitia,
+            }
+          : prev
+      );
+      try {
+        const curSession = localStorage.getItem('erph_auth_session_v1');
+        if (curSession) {
+          const p = JSON.parse(curSession);
+          p.name = editingTeacher.name;
+          p.chineseName = editingTeacher.chineseName;
+          p.email = editingTeacher.email;
+          p.role = editingTeacher.role;
+          p.jawatan = editingTeacher.jawatan;
+          p.panitia = editingTeacher.panitia;
+          localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
+        }
+      } catch (_) {}
+    }
     saveTeacherToDb(editingTeacher).catch((err) => console.warn('saveTeacherToDb err:', err));
     setEditingTeacher(null);
     showToast(`✅ Maklumat profil ${editingTeacher.name} berjaya dikemaskini!`);
@@ -2717,7 +2989,7 @@ ${gen.assessment}`;
       showToast('⚠️ Akaun Superadmin keselamatan dilindungi dan tidak boleh dipadam.');
       return;
     }
-    const teacher = teachers.find((t) => t.id === teacherId);
+    const teacher = (teachers.length > 0 ? teachers : INITIAL_TEACHERS).find((t) => t.id === teacherId);
     requestConfirmation({
       title: "Padam Profil Guru",
       message: `Adakah anda pasti untuk memadam rekod guru "${teacher?.name}"?`,
@@ -2945,24 +3217,24 @@ ${gen.assessment}`;
   // Authentication & Session Handlers
   const handlePerformLogin = (targetTeacher?: TeacherProfile, provider: 'email' | 'google' = 'email') => {
     setLoginError(null);
+    const isDirectSwitch = Boolean(targetTeacher);
     let teacher = targetTeacher;
     const qRaw = loginEmail.trim();
     const q = qRaw.toLowerCase();
     const isSuperadminTarget =
-      q === 'yokpoon' ||
-      q === 'yokpoon@moe-dl.edu.my' ||
+      (!isDirectSwitch && (q === 'yokpoon' || q === 'yokpoon@moe-dl.edu.my')) ||
       (targetTeacher && (targetTeacher.id === 'superadmin' || targetTeacher.role === 'superadmin'));
 
     if (isSuperadminTarget) {
-      if (provider === 'email') {
+      if (provider === 'email' && !isDirectSwitch) {
         if (loginPassword.trim() !== 'Admin@JBC3019') {
           setLoginError('Kata laluan Superadmin tidak tepat. Sila gunakan kata laluan rasmi Superadmin (Admin@JBC3019).');
           return;
         }
       }
-      teacher = SUPERADMIN_PROFILE;
+      teacher = targetTeacher || SUPERADMIN_PROFILE;
     } else if (!teacher) {
-      teacher = teachers.find(
+      teacher = (teachers.length > 0 ? teachers : INITIAL_TEACHERS).find(
         (t) =>
           t.email.toLowerCase() === q ||
           t.name.toLowerCase() === q ||
@@ -2972,11 +3244,11 @@ ${gen.assessment}`;
     }
 
     if (!teacher) {
-      setLoginError('Akaun guru tidak dijumpai. Sila semak e-mel rasmi DELIMa atau klik mana-mana akaun demo pantas.');
+      setLoginError('Akaun guru tidak dijumpai. Sila semak e-mel rasmi DELIMa atau hubungi Pentadbir Sekolah.');
       return;
     }
 
-    if (!isSuperadminTarget && provider === 'email') {
+    if (!isSuperadminTarget && provider === 'email' && !isDirectSwitch) {
       if (!loginPassword.trim()) {
         setLoginError('Sila masukkan kata laluan DELIMa / Sistem anda.');
         return;
@@ -3342,71 +3614,86 @@ ${gen.assessment}`;
                   </p>
                 </div>
 
-                {/* 2. PERANAN SISTEM (Kekal / Dikunci: Hanya Superadmin boleh ubah di sini) */}
+                {/* 2. PERANAN SISTEM */}
                 <div className="bg-white p-3 rounded-xl border border-slate-200">
                   <div className="flex items-center justify-between">
                     <span className="text-[10px] uppercase font-bold text-slate-400">Peranan Sistem</span>
-                    <span className="text-[9px] font-bold text-slate-500 bg-slate-100 px-1.5 py-0.5 rounded-full flex items-center gap-1">
-                      🔒 Dikawal Pentadbir
+                    <span className="text-[9px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded-full flex items-center gap-1">
+                      Boleh Ditukar
                     </span>
                   </div>
                   <div className="mt-1">
-                    {isSuperadmin ? (
-                      <select
-                        value={currentUser.role}
-                        onChange={(e) => {
-                          const newRole = e.target.value as UserRole;
-                          const newJawatan = newRole === 'guru_besar' ? 'GB' : newRole === 'pk_pentadbiran' ? 'GPK1' : 'GAB';
-                          const updatedUser: TeacherProfile = {
-                            ...currentUser,
-                            role: newRole,
-                            jawatan: newJawatan,
-                          };
-                          setTeachers((prev) => {
-                            const list = prev.map((t) => (t.id === currentUser.id ? updatedUser : t));
-                            try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(list)); } catch (_) {}
-                            return list;
-                          });
-                          setAuthSession((prev) => prev ? { ...prev, role: newRole, jawatan: newJawatan } : prev);
-                          try {
-                            const curSession = localStorage.getItem('erph_auth_session_v1');
-                            if (curSession) {
-                              const p = JSON.parse(curSession);
-                              p.role = newRole;
-                              p.jawatan = newJawatan;
-                              localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
-                            }
-                          } catch (_) {}
-                          saveTeacherToDb(updatedUser).catch((err) => console.warn('saveTeacherToDb err:', err));
-                          showToast("✅ Peranan berjaya dikemaskini!");
-                        }}
-                        className="w-full border rounded-lg p-1.5 bg-slate-50 font-bold text-xs text-slate-800"
-                      >
-                        <option value="guru">👩‍🏫 Guru Subjek</option>
-                        <option value="pk_pentadbiran">🛡️ PK Pentadbiran</option>
-                        <option value="guru_besar">🎖️ Guru Besar</option>
-                        <option value="guru_ict_data">💻 Guru ICT / Data</option>
-                        <option value="superadmin">👑 Superadmin</option>
-                      </select>
-                    ) : (
-                      <div className="w-full py-1.5 px-2 bg-slate-50 border border-slate-200 rounded-lg flex items-center justify-between text-xs font-bold text-slate-800">
-                        <span>
-                          {currentUser.role === 'guru_besar'
-                            ? '🎖️ Guru Besar'
-                            : currentUser.role === 'pk_pentadbiran'
-                            ? '🛡️ PK Pentadbiran'
-                            : currentUser.role === 'guru_ict_data'
-                            ? '💻 Guru ICT / Data'
-                            : currentUser.role === 'superadmin'
-                            ? '👑 Superadmin'
-                            : '👩‍🏫 Guru Subjek'}
-                        </span>
-                        <span className="text-[10px] text-slate-400 font-normal">(Kekal)</span>
-                      </div>
-                    )}
+                    <select
+                      value={currentUser.role}
+                      onChange={(e) => {
+                        const newRole = e.target.value as UserRole;
+                        const isPra = newRole === 'guru_prasekolah';
+                        const newJawatan: TeacherJawatan =
+                          newRole === 'guru_besar'
+                            ? 'GB'
+                            : newRole === 'pk_pentadbiran'
+                            ? 'GPK1'
+                            : isPra
+                            ? 'GURU PRASEKOLAH'
+                            : 'GAB';
+                        const newPanitia = isPra
+                          ? 'Prasekolah (KSPK)'
+                          : (currentUser.panitia || '').toLowerCase().includes('prasekolah')
+                          ? 'Bahasa Cina'
+                          : currentUser.panitia || 'Bahasa Cina';
+                        const newSubj = isPra
+                          ? 'kspk_perbualan_awal'
+                          : (currentUser.subjectSlug || '').startsWith('kspk')
+                          ? 'bahasa_cina_sjkc'
+                          : currentUser.subjectSlug || 'bahasa_cina_sjkc';
+
+                        const updatedUser: TeacherProfile = {
+                          ...currentUser,
+                          role: newRole,
+                          jawatan: newJawatan,
+                          panitia: newPanitia,
+                          subjectSlug: newSubj,
+                        };
+                        setTeachers((prev) => {
+                          const exists = prev.some((t) => t.id === currentUser.id);
+                          const list = exists
+                            ? prev.map((t) => (t.id === currentUser.id ? updatedUser : t))
+                            : [...prev, updatedUser];
+                          try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(list)); } catch (_) {}
+                          return list;
+                        });
+                        setAuthSession((prev) =>
+                          prev ? { ...prev, role: newRole, jawatan: newJawatan, panitia: newPanitia } : prev
+                        );
+                        try {
+                          const curSession = localStorage.getItem('erph_auth_session_v1');
+                          if (curSession) {
+                            const p = JSON.parse(curSession);
+                            p.role = newRole;
+                            p.jawatan = newJawatan;
+                            p.panitia = newPanitia;
+                            localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
+                          }
+                        } catch (_) {}
+                        saveTeacherToDb(updatedUser).catch((err) => console.warn('saveTeacherToDb err:', err));
+                        showToast(
+                          isPra
+                            ? '🧒 Ditukar kepada UI Khas Guru Prasekolah (KSPK)!'
+                            : '📘 Ditukar kepada UI Sekolah Rendah (KSSR)!'
+                        );
+                      }}
+                      className="w-full border rounded-lg p-1.5 bg-slate-50 font-bold text-xs text-slate-800"
+                    >
+                      <option value="guru">👩‍🏫 Guru Subjek (Sekolah Rendah)</option>
+                      <option value="guru_prasekolah">🧒 Guru Prasekolah (KSPK)</option>
+                      <option value="pk_pentadbiran">🛡️ PK Pentadbiran</option>
+                      <option value="guru_besar">🎖️ Guru Besar</option>
+                      <option value="guru_ict_data">💻 Guru ICT / Data</option>
+                      <option value="superadmin">👑 Superadmin</option>
+                    </select>
                   </div>
                   <p className="text-[10px] text-slate-500 mt-1">
-                    {isSuperadmin ? 'Disimpan terus ke Supabase & sesi log masuk' : 'Peranan hanya boleh ditukar oleh Pentadbir Sekolah di menu Pengurusan Guru.'}
+                    Tukar kepada Guru Prasekolah untuk membuka UI khas KSPK.
                   </p>
                 </div>
 
@@ -3421,26 +3708,59 @@ ${gen.assessment}`;
                       value={currentUser.panitia || 'Bahasa Cina'}
                       onChange={(e) => {
                         const newPanitia = e.target.value;
+                        const isPra = newPanitia.toLowerCase().includes('prasekolah');
+                        const nextRole: UserRole = isPra
+                          ? 'guru_prasekolah'
+                          : currentUser.role === 'guru_prasekolah'
+                          ? 'guru'
+                          : currentUser.role;
+                        const nextJawatan: TeacherJawatan | undefined = isPra
+                          ? 'GURU PRASEKOLAH'
+                          : currentUser.jawatan === 'GURU PRASEKOLAH'
+                          ? 'GAB'
+                          : currentUser.jawatan;
+                        const nextSubj = isPra
+                          ? 'kspk_perbualan_awal'
+                          : (currentUser.subjectSlug || '').startsWith('kspk')
+                          ? 'bahasa_cina_sjkc'
+                          : currentUser.subjectSlug || 'bahasa_cina_sjkc';
+
                         const updatedUser: TeacherProfile = {
                           ...currentUser,
                           panitia: newPanitia,
+                          role: nextRole,
+                          jawatan: nextJawatan,
+                          subjectSlug: nextSubj,
                         };
                         setTeachers((prev) => {
-                          const list = prev.map((t) => (t.id === currentUser.id ? updatedUser : t));
+                          const exists = prev.some((t) => t.id === currentUser.id);
+                          const list = exists
+                            ? prev.map((t) => (t.id === currentUser.id ? updatedUser : t))
+                            : [...prev, updatedUser];
                           try { localStorage.setItem('erph_live_teachers_v1', JSON.stringify(list)); } catch (_) {}
                           return list;
                         });
-                        setAuthSession((prev) => prev ? { ...prev, panitia: newPanitia } : prev);
+                        setAuthSession((prev) =>
+                          prev
+                            ? { ...prev, panitia: newPanitia, role: nextRole, jawatan: nextJawatan }
+                            : prev
+                        );
                         try {
                           const curSession = localStorage.getItem('erph_auth_session_v1');
                           if (curSession) {
                             const p = JSON.parse(curSession);
                             p.panitia = newPanitia;
+                            p.role = nextRole;
+                            p.jawatan = nextJawatan;
                             localStorage.setItem('erph_auth_session_v1', JSON.stringify(p));
                           }
                         } catch (_) {}
                         saveTeacherToDb(updatedUser).catch((err) => console.warn('saveTeacherToDb err:', err));
-                        showToast("✅ Panitia utama berjaya dikemaskini!");
+                        showToast(
+                          isPra
+                            ? '🧒 Panitia Prasekolah dipilih — UI Khas Prasekolah diaktifkan!'
+                            : '✅ Panitia utama berjaya dikemaskini!'
+                        );
                       }}
                       className="w-full border rounded-lg p-1.5 bg-slate-50 font-bold text-xs text-slate-800"
                     >
@@ -3455,6 +3775,7 @@ ${gen.assessment}`;
                       <option value="Pendidikan Jasmani & Kesihatan">Pendidikan Jasmani & Kesihatan (PJK)</option>
                       <option value="Pendidikan Seni Visual">Pendidikan Seni Visual (PSV)</option>
                       <option value="Pendidikan Muzik">Pendidikan Muzik</option>
+                      <option value="Prasekolah (KSPK)">🧒 Prasekolah (KSPK)</option>
                       <option value="Pentadbiran / Kepimpinan">Pentadbiran / Kepimpinan</option>
                     </select>
                   </div>
@@ -4218,6 +4539,8 @@ ${gen.assessment}`;
                     ? 'GPK Kokurikulum (Pentadbir)'
                     : currentUser.role === 'guru_ict_data'
                     ? 'Guru ICT / Data'
+                    : isPrasekolahTeacher
+                    ? '🧒 Guru Prasekolah (KSPK)'
                     : 'Guru Subjek'}
                 </p>
               </div>
@@ -4227,29 +4550,38 @@ ${gen.assessment}`;
 
         {/* ROLE-SPECIFIC SIDEBAR NAVIGATION */}
         <nav className="px-2.5 space-y-1.5 text-xs font-medium flex-1 overflow-y-auto py-3">
-          {/* 1. GURU NAVIGATION */}
+          {/* 1. GURU NAVIGATION (Primary KSSR vs Prasekolah KSPK Isolated Menu) */}
           {isGuru && (
             <>
               {isSidebarExpanded ? (
-                <p className="px-3 pt-2 pb-1 text-[10px] font-bold uppercase tracking-wider text-[#546270]">
-                  Menu Guru Subjek
+                <p className={`px-3 pt-2 pb-1 text-[10px] font-bold uppercase tracking-wider ${isPrasekolahTeacher ? 'text-amber-400 flex items-center gap-1.5' : 'text-[#546270]'}`}>
+                  {isPrasekolahTeacher ? (
+                    <>
+                      <span>🧒</span>
+                      <span>Menu Guru Prasekolah (KSPK)</span>
+                    </>
+                  ) : (
+                    'Menu Guru Subjek'
+                  )}
                 </p>
               ) : (
                 <div className="my-2 border-t border-[#242e38] mx-2" />
               )}
               <SidebarNavItem
                 icon={<LayoutDashboard className="w-5 h-5 shrink-0" />}
-                label="Dashboard Guru"
+                label={isPrasekolahTeacher ? 'Dashboard Prasekolah' : 'Dashboard Guru'}
+                colorScheme={isPrasekolahTeacher ? 'amber' : undefined}
                 active={activeNav === 'dashboard'}
                 expanded={isSidebarExpanded}
                 onClick={() => navigateTo('dashboard')}
               />
               <SidebarNavItem
                 icon={<Sparkles className="w-5 h-5 shrink-0" />}
-                label="Bina e-RPH Mengikut Hari"
+                label={isPrasekolahTeacher ? 'Bina e-RPH Prasekolah' : 'Bina e-RPH Mengikut Hari'}
+                colorScheme={isPrasekolahTeacher ? 'amber' : undefined}
                 badge={
                   <span className="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] px-1.5 py-0.5 rounded font-mono font-bold">
-                    0-API
+                    {isPrasekolahTeacher ? 'KSPK' : '0-API'}
                   </span>
                 }
                 active={activeNav === 'rph-builder'}
@@ -4258,9 +4590,10 @@ ${gen.assessment}`;
               />
               <SidebarNavItem
                 icon={<FileEdit className="w-5 h-5 shrink-0" />}
-                label="Semak & Edit Draf"
+                label={isPrasekolahTeacher ? 'Semak Draf RPH Prasekolah' : 'Semak & Edit Draf'}
+                colorScheme={isPrasekolahTeacher ? 'amber' : undefined}
                 badge={
-                  <span className="text-[10px] font-mono text-cyan-400">
+                  <span className={`text-[10px] font-mono ${isPrasekolahTeacher ? 'text-amber-300' : 'text-cyan-400'}`}>
                     {rphRecords.filter((r) => r.teacherId === currentUser.id && r.weekNumber === draftWeekFilter).length} Sesi
                   </span>
                 }
@@ -4270,10 +4603,11 @@ ${gen.assessment}`;
               />
               <SidebarNavItem
                 icon={<CalendarDays className="w-5 h-5 shrink-0" />}
-                label="Jadual Mengajar Saya"
+                label={isPrasekolahTeacher ? 'Jadual Slot Prasekolah' : 'Jadual Mengajar Saya'}
+                colorScheme={isPrasekolahTeacher ? 'amber' : undefined}
                 badge={
-                  <span className="text-[10px] font-mono text-cyan-400">
-                    {teacherOwnSlots.length} Sesi
+                  <span className={`text-[10px] font-mono ${isPrasekolahTeacher ? 'text-amber-300' : 'text-cyan-400'}`}>
+                    {teacherOwnSlots.length} Slot
                   </span>
                 }
                 active={activeNav === 'my-timetable'}
@@ -4282,10 +4616,11 @@ ${gen.assessment}`;
               />
               <SidebarNavItem
                 icon={<BookOpen className="w-5 h-5 shrink-0" />}
-                label="RPT Mengajar Saya"
+                label={isPrasekolahTeacher ? 'RPT Prasekolah (KSPK)' : 'RPT Mengajar Saya'}
+                colorScheme={isPrasekolahTeacher ? 'amber' : undefined}
                 badge={
-                  <span className="text-[10px] font-mono text-cyan-400">
-                    {teacherRptAssignments.length} Subjek
+                  <span className={`text-[10px] font-mono ${isPrasekolahTeacher ? 'text-amber-300' : 'text-cyan-400'}`}>
+                    {teacherRptAssignments.length} Tunjang
                   </span>
                 }
                 active={activeNav === 'my-rpt'}
@@ -4691,11 +5026,11 @@ ${gen.assessment}`;
                 className="murmura-header-title text-xs sm:text-base font-extrabold text-[#16191d] tracking-tight truncate"
                 title="Halaman Semasa"
               >
-                {activeNav === 'dashboard' && (isGuru ? 'Dashboard Guru Subjek' : isIct ? 'Dashboard Guru ICT / Data' : 'Dashboard Pentadbir')}
-                {activeNav === 'rph-builder' && 'Penjana & Import e-RPH'}
-                {activeNav === 'rph-drafts' && 'Buku Draf e-RPH Saya'}
-                {activeNav === 'my-timetable' && 'Jadual Waktu Mengajar'}
-                {activeNav === 'my-rpt' && 'Rancangan Pengajaran Tahunan (RPT) Mengajar Saya'}
+                {activeNav === 'dashboard' && (isPrasekolahTeacher ? 'Dashboard Guru Prasekolah (KSPK)' : isGuru ? 'Dashboard Guru Subjek' : isIct ? 'Dashboard Guru ICT / Data' : 'Dashboard Pentadbir')}
+                {activeNav === 'rph-builder' && (isPrasekolahTeacher ? 'Penjana e-RPH Prasekolah (KSPK)' : 'Penjana & Import e-RPH')}
+                {activeNav === 'rph-drafts' && (isPrasekolahTeacher ? 'Buku Draf e-RPH Prasekolah' : 'Buku Draf e-RPH Saya')}
+                {activeNav === 'my-timetable' && (isPrasekolahTeacher ? 'Jadual Slot Harian Prasekolah' : 'Jadual Waktu Mengajar')}
+                {activeNav === 'my-rpt' && (isPrasekolahTeacher ? 'Rancangan Pengajaran Tahunan (RPT) Prasekolah' : 'Rancangan Pengajaran Tahunan (RPT) Mengajar Saya')}
                 {activeNav === 'admin-review' && 'Pusat Semakan Pentadbir'}
                 {activeNav === 'yearly-matrix' && 'Rekod Matriks Tahunan'}
                 {activeNav === 'settings' && 'Pengurusan Takwim Sekolah'}
@@ -4712,8 +5047,71 @@ ${gen.assessment}`;
             </span>
           </div>
 
-          {/* Right Header: Role Switcher & Notification Bell */}
+          {/* Right Header: UI Mode Switcher, Dark Mode & Notification Bell */}
           <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+            {/* Segmented UI Mode Switcher: Sekolah Rendah (KSSR) vs Prasekolah (KSPK) */}
+            <div className="flex items-center bg-white/90 border border-black/10 rounded-full p-0.5 shadow-xs">
+              <button
+                type="button"
+                onClick={() => {
+                  if (!isPrasekolahTeacher) return;
+                  const primaryTeacher =
+                    teachers.find(
+                      (t) =>
+                        t.id !== 'pra1' &&
+                        t.role === 'guru' &&
+                        !(t.panitia || '').toLowerCase().includes('prasekolah')
+                    ) ||
+                    teachers.find(
+                      (t) =>
+                        t.id !== 'pra1' &&
+                        t.role !== 'guru_prasekolah' &&
+                        !(t.panitia || '').toLowerCase().includes('prasekolah')
+                    ) ||
+                    INITIAL_TEACHERS.find((t) => t.role === 'guru') ||
+                    INITIAL_TEACHERS[0];
+                  if (primaryTeacher) {
+                    handlePerformLogin(primaryTeacher, 'email');
+                    showToast(`📘 Paparan Sekolah Rendah (KSSR) diaktifkan (${primaryTeacher.name})`);
+                  }
+                }}
+                className={`px-2.5 sm:px-3 py-1 rounded-full text-[11px] font-extrabold transition flex items-center gap-1 cursor-pointer ${
+                  !isPrasekolahTeacher
+                    ? 'bg-[#16191d] text-white shadow-xs'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+                title="Paparan Asal Guru Sekolah Rendah (Tahun 1 - 6 KSSR)"
+              >
+                <span>📘</span>
+                <span className="hidden sm:inline">Sekolah Rendah</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  if (isPrasekolahTeacher) return;
+                  const praTeacher =
+                    teachers.find(
+                      (t) =>
+                        t.id === 'pra1' ||
+                        t.role === 'guru_prasekolah' ||
+                        (t.panitia || '').toLowerCase().includes('prasekolah')
+                    ) || INITIAL_TEACHERS.find((t) => t.id === 'pra1');
+                  if (praTeacher) {
+                    handlePerformLogin(praTeacher, 'email');
+                    showToast(`🧒 Paparan Khas Guru Prasekolah (KSPK) diaktifkan (${praTeacher.name})`);
+                  }
+                }}
+                className={`px-2.5 sm:px-3 py-1 rounded-full text-[11px] font-extrabold transition flex items-center gap-1 cursor-pointer ${
+                  isPrasekolahTeacher
+                    ? 'bg-amber-400 text-slate-950 shadow-xs'
+                    : 'text-slate-600 hover:text-slate-900'
+                }`}
+                title="Paparan Khas Guru Prasekolah (KSPK)"
+              >
+                <span>🧒</span>
+                <span className="hidden sm:inline">Prasekolah (KSPK)</span>
+              </button>
+            </div>
             {/* Dark Mode Quick Toggle Button in Header */}
             <button
               type="button"
@@ -4973,39 +5371,107 @@ ${gen.assessment}`;
                   </div>
 
                   {/* Quick Action Cards */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-6 text-white shadow-lg space-y-3">
-                      <span className="bg-white/20 text-xs px-2.5 py-0.5 rounded-full font-bold">
-                        Persediaan PdP Fleksibel
-                      </span>
-                      <h3 className="text-xl font-black">Bina & Rancang e-RPH Lebih Awal</h3>
-                      <p className="text-xs text-blue-100 leading-relaxed">
-                        Anda kini boleh menyediakan e-RPH untuk minggu-minggu berikutnya lebih awal (contohnya Minggu {school.currentWeek + 1} atau {school.currentWeek + 2}) tanpa dihadkan kepada minggu semasa sahaja.
-                      </p>
-                      <button
-                        onClick={() => setActiveNav('rph-builder')}
-                        className="px-4 py-2 bg-white text-blue-700 font-extrabold text-xs rounded-xl shadow hover:bg-blue-50 transition"
-                      >
-                        Buka Penjana e-RPH →
-                      </button>
-                    </div>
+                  {isPrasekolahTeacher ? (
+                    <div className="space-y-4">
+                      <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-amber-600 rounded-2xl p-6 text-white shadow-lg flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div className="space-y-2 max-w-2xl">
+                          <span className="bg-white/25 text-xs px-3 py-0.5 rounded-full font-extrabold uppercase tracking-wider">
+                            🧒 Portal Khas Guru Prasekolah (KSPK 2026/2027)
+                          </span>
+                          <h3 className="text-xl sm:text-2xl font-black">
+                            Sistem e-RPH, Jadual Aliran Harian & RPT Prasekolah
+                          </h3>
+                          <p className="text-xs text-amber-50 leading-relaxed">
+                            Paparan ini diasingkan sepenuhnya daripada Sekolah Rendah (KSSR). Anda hanya melihat Tunjang KSPK, Bank Aktiviti Rutin Harian (Perbualan Awal, Rehat, Penutup), serta format Langkah 1–5 khas Prasekolah.
+                          </p>
+                        </div>
+                        <div className="flex flex-wrap gap-2 shrink-0">
+                          <button
+                            onClick={() => setActiveNav('rph-builder')}
+                            className="px-4 py-2.5 bg-white text-amber-950 font-black text-xs rounded-xl shadow hover:bg-amber-50 transition cursor-pointer"
+                          >
+                            🧒 Bina e-RPH Prasekolah →
+                          </button>
+                          <button
+                            onClick={() => setActiveNav('my-rpt')}
+                            className="px-4 py-2.5 bg-amber-950/40 hover:bg-amber-950/60 text-white border border-white/30 font-extrabold text-xs rounded-xl transition cursor-pointer"
+                          >
+                            📚 RPT Prasekolah (KSPK) →
+                          </button>
+                        </div>
+                      </div>
 
-                    <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-3">
-                      <span className="bg-purple-100 text-purple-700 text-xs px-2.5 py-0.5 rounded-full font-bold">
-                        Buku Rekod Mengajar Digital
-                      </span>
-                      <h3 className="text-xl font-black text-slate-800">Semak & Edit Draf Harian</h3>
-                      <p className="text-xs text-slate-500 leading-relaxed">
-                        Susun dan semak draf RPH mengikut hari persekolahan (Isnin hingga Jumaat). Anda boleh menyunting teks, mencetak, atau mengeksport format rasmi .DOCX KPM.
-                      </p>
-                      <button
-                        onClick={() => setActiveNav('rph-drafts')}
-                        className="px-4 py-2 bg-slate-900 text-white font-extrabold text-xs rounded-xl shadow hover:bg-slate-800 transition"
-                      >
-                        Lihat Draf Pengajaran →
-                      </button>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="bg-white rounded-2xl p-5 border border-amber-200 shadow-sm space-y-2">
+                          <span className="bg-amber-100 text-amber-800 text-[11px] px-2.5 py-0.5 rounded-full font-bold">
+                            1. Rutin Harian (0-API)
+                          </span>
+                          <h4 className="text-sm font-black text-slate-800">
+                            Perbualan Awal, Rehat & Penutup
+                          </h4>
+                          <p className="text-xs text-slate-500 leading-relaxed">
+                            Bank senarai semak aktiviti mikro sedia ada tanpa perlu menjana prompt AI. Pilih terus atau tambah nota harian.
+                          </p>
+                        </div>
+                        <div className="bg-white rounded-2xl p-5 border border-amber-200 shadow-sm space-y-2">
+                          <span className="bg-emerald-100 text-emerald-800 text-[11px] px-2.5 py-0.5 rounded-full font-bold">
+                            2. Format KSPK Ringkas
+                          </span>
+                          <h4 className="text-sm font-black text-slate-800">
+                            Langkah 1–5 & 1–2 Kriteria
+                          </h4>
+                          <p className="text-xs text-slate-500 leading-relaxed">
+                            Susunan aktiviti bersepadu Langkah 1 hingga 5 (maksimum) tanpa pemisahan Induksi/Penutup dan tanpa pecahan aras.
+                          </p>
+                        </div>
+                        <div className="bg-white rounded-2xl p-5 border border-amber-200 shadow-sm space-y-2">
+                          <span className="bg-blue-100 text-blue-800 text-[11px] px-2.5 py-0.5 rounded-full font-bold">
+                            3. DSKP & RPT KSPK Lengkap
+                          </span>
+                          <h4 className="text-sm font-black text-slate-800">
+                            Semua Tunjang Prasekolah
+                          </h4>
+                          <p className="text-xs text-slate-500 leading-relaxed">
+                            BM, BI, BC, Kognitif (Sains & Matematik), Sosioemosi, Fizikal, Kreativiti, Pendidikan Moral & Pendidikan Islam.
+                          </p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl p-6 text-white shadow-lg space-y-3">
+                        <span className="bg-white/20 text-xs px-2.5 py-0.5 rounded-full font-bold">
+                          Persediaan PdP Fleksibel
+                        </span>
+                        <h3 className="text-xl font-black">Bina & Rancang e-RPH Lebih Awal</h3>
+                        <p className="text-xs text-blue-100 leading-relaxed">
+                          Anda kini boleh menyediakan e-RPH untuk minggu-minggu berikutnya lebih awal (contohnya Minggu {school.currentWeek + 1} atau {school.currentWeek + 2}) tanpa dihadkan kepada minggu semasa sahaja.
+                        </p>
+                        <button
+                          onClick={() => setActiveNav('rph-builder')}
+                          className="px-4 py-2 bg-white text-blue-700 font-extrabold text-xs rounded-xl shadow hover:bg-blue-50 transition"
+                        >
+                          Buka Penjana e-RPH →
+                        </button>
+                      </div>
+
+                      <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm space-y-3">
+                        <span className="bg-purple-100 text-purple-700 text-xs px-2.5 py-0.5 rounded-full font-bold">
+                          Buku Rekod Mengajar Digital
+                        </span>
+                        <h3 className="text-xl font-black text-slate-800">Semak & Edit Draf Harian</h3>
+                        <p className="text-xs text-slate-500 leading-relaxed">
+                          Susun dan semak draf RPH mengikut hari persekolahan (Isnin hingga Jumaat). Anda boleh menyunting teks, mencetak, atau mengeksport format rasmi .DOCX KPM.
+                        </p>
+                        <button
+                          onClick={() => setActiveNav('rph-drafts')}
+                          className="px-4 py-2 bg-slate-900 text-white font-extrabold text-xs rounded-xl shadow hover:bg-slate-800 transition"
+                        >
+                          Lihat Draf Pengajaran →
+                        </button>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
@@ -5337,7 +5803,11 @@ ${gen.assessment}`;
                           Klik pada hari untuk melihat kelas anda. Kelas, masa, dan subjek diselaraskan secara automatik.
                         </p>
                       </div>
-                      {isSelectedGradeNewSyllabus ? (
+                      {isPrasekolahTeacher ? (
+                        <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white font-black text-[10px] px-2.5 py-1 rounded-full shadow-sm">
+                          🧒 Kurikulum Prasekolah (KSPK)
+                        </span>
+                      ) : isSelectedGradeNewSyllabus ? (
                         <span className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-black text-[10px] px-2.5 py-1 rounded-full shadow-sm">
                           ✨ Silibus 2027 (KPM)
                         </span>
@@ -5489,20 +5959,30 @@ ${gen.assessment}`;
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs bg-slate-50 p-3.5 rounded-xl border border-slate-200">
                       <div>
                         <label className="block font-bold text-slate-700 mb-1">Tahun Persekolahan:</label>
-                        <select
-                          value={selectedGrade}
-                          onChange={(e) => setSelectedGrade(e.target.value)}
-                          className="w-full border rounded-lg p-2 bg-white font-bold"
-                        >
-                          {['1', '2', '3', '4', '5', '6'].map((g) => {
-                            const calYear = Number(school.academicYear.split('/')[0]) || 2026;
-                            return (
-                              <option key={g} value={g}>
-                                Tahun {g} {(KPM_SYLLABUS_ROLLOUT[calYear] || []).includes(g) ? '✨ [Silibus 2027]' : '📘 [KSSR]'}
-                              </option>
-                            );
-                          })}
-                        </select>
+                        {isPrasekolahTeacher ? (
+                          <select
+                            value="PRA"
+                            disabled
+                            className="w-full border border-amber-300 rounded-lg p-2 bg-amber-50 text-amber-950 font-bold"
+                          >
+                            <option value="PRA">🧒 Prasekolah (KSPK)</option>
+                          </select>
+                        ) : (
+                          <select
+                            value={selectedGrade}
+                            onChange={(e) => setSelectedGrade(e.target.value)}
+                            className="w-full border rounded-lg p-2 bg-white font-bold"
+                          >
+                            {['1', '2', '3', '4', '5', '6'].map((g) => {
+                              const calYear = Number(school.academicYear.split('/')[0]) || 2026;
+                              return (
+                                <option key={g} value={g}>
+                                  Tahun {g} {(KPM_SYLLABUS_ROLLOUT[calYear] || []).includes(g) ? '✨ [Silibus 2027]' : '📘 [KSSR]'}
+                                </option>
+                              );
+                            })}
+                          </select>
+                        )}
                       </div>
 
                       <div>
@@ -5553,7 +6033,9 @@ ${gen.assessment}`;
                     <div className="space-y-3">
                       <div>
                         <label className="block text-xs font-bold text-slate-700 mb-1">
-                          Mata Pelajaran KPM SJK(C):
+                          {isPrasekolahTeacher
+                            ? 'Tunjang / Rutin Prasekolah (KSPK):'
+                            : 'Mata Pelajaran KPM SJK(C):'}
                         </label>
                         <select
                           value={selectedSubjectSlug}
@@ -5626,8 +6108,8 @@ ${gen.assessment}`;
                             onChange={(e) => {
                               const newSk = e.target.value;
                               setSelectedSk(newSk);
-                              if (subjectData && subjectData[selectedGrade] && subjectData[selectedGrade][newSk]) {
-                                const availableSps = subjectData[selectedGrade][newSk];
+                              if (activeDskpGradeTree && activeDskpGradeTree[newSk]) {
+                                const availableSps = activeDskpGradeTree[newSk];
                                 const targetSpCodes = matchedRptInfo?.allWeekSpCodes || [];
                                 const matchedSps = findMatchingSpsForSk(availableSps, targetSpCodes);
                                 setSelectedSps(matchedSps.length > 0 ? matchedSps : availableSps.slice(0, 1));
@@ -5635,8 +6117,8 @@ ${gen.assessment}`;
                             }}
                             className="w-full border border-slate-300 rounded-xl p-2.5 text-xs font-medium bg-white"
                           >
-                            {subjectData && subjectData[selectedGrade] ? (
-                              Object.keys(subjectData[selectedGrade]).map((skKey) => {
+                            {activeDskpGradeTree ? (
+                              Object.keys(activeDskpGradeTree).map((skKey) => {
                                 const isRptMatched = matchedRptInfo?.matchedSkKeys.includes(skKey);
                                 return (
                                   <option key={skKey} value={skKey}>
@@ -5657,8 +6139,8 @@ ${gen.assessment}`;
                           Standard Pembelajaran (SP):
                         </label>
                         <div className="border border-slate-200 rounded-xl p-3 bg-slate-50 max-h-36 overflow-y-auto space-y-1.5 text-xs">
-                          {subjectData && subjectData[selectedGrade] && selectedSk && subjectData[selectedGrade][selectedSk] ? (
-                            subjectData[selectedGrade][selectedSk].map((spItem) => {
+                          {activeDskpGradeTree && selectedSk && activeDskpGradeTree[selectedSk] ? (
+                            activeDskpGradeTree[selectedSk].map((spItem) => {
                               const checked = selectedSps.includes(spItem);
                               return (
                                 <label key={spItem} className="flex items-start gap-2 cursor-pointer">
@@ -5823,14 +6305,163 @@ ${gen.assessment}`;
                         </div>
                       </div>
 
+                      {/* PRASESKOLAH ROUTINE SELECTION (ONLY SHOWN IF PERBUALAN AWAL, REHAT, OR PENUTUP IS THE SELECTED SUBJECT) */}
+                      {isPrasekolahTeacher && ['kspk_perbualan_awal', 'kspk_rehat', 'kspk_penutup'].includes(selectedSubjectSlug) && (
+                        <div className="bg-amber-50/70 border border-amber-200 rounded-xl p-3.5 space-y-3 text-xs">
+                          <div className="flex items-center justify-between">
+                            <span className="font-extrabold text-amber-950 flex items-center gap-1.5">
+                              <span>🧒</span>
+                              <span>
+                                {selectedSubjectSlug === 'kspk_perbualan_awal' && 'Pilihan Aktiviti Rutin: Perbualan Awal'}
+                                {selectedSubjectSlug === 'kspk_rehat' && 'Pilihan Aktiviti Rutin: Rehat & Pengurusan Diri'}
+                                {selectedSubjectSlug === 'kspk_penutup' && 'Pilihan Aktiviti Rutin: Aktiviti Penutup'}
+                              </span>
+                            </span>
+                            <span className="text-[10px] font-bold bg-amber-100 text-amber-800 px-2 py-0.5 rounded-full">
+                              KSPK • Tidak Perlu AI
+                            </span>
+                          </div>
+                          <p className="text-[11px] text-amber-900/80 leading-relaxed">
+                            Tandakan aktiviti yang dijalankan. Pilihan ini akan terus dimasukkan sebagai <b>Aktiviti Pembelajaran (PdP)</b> bagi subjek ini tanpa perlu pemisahan Induksi/Penutup:
+                          </p>
+
+                          {/* Routine Selection Box */}
+                          {selectedSubjectSlug === 'kspk_perbualan_awal' && (
+                            <div className="bg-white p-3 rounded-xl border border-amber-100 space-y-2">
+                              <div className="flex items-center justify-between text-[11px] font-bold text-slate-700">
+                                <span>Aktiviti Perbualan Awal (100 Minit / Minggu):</span>
+                                <span className="text-[10px] text-amber-700">Pilih 2 - 5 aktiviti</span>
+                              </div>
+                              <div className="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+                                {KSPK_ROUTINE_PRESETS.PERBUALAN_AWAL.presets.map((item) => {
+                                  const isChecked = kspkPerbualanAwal.includes(item.text);
+                                  return (
+                                    <label key={item.id} className="flex items-start gap-2 cursor-pointer text-[11px] p-1.5 rounded-lg hover:bg-amber-50/50">
+                                      <input
+                                        type="checkbox"
+                                        checked={isChecked}
+                                        onChange={(e) => {
+                                          if (e.target.checked) setKspkPerbualanAwal([...kspkPerbualanAwal, item.text]);
+                                          else setKspkPerbualanAwal(kspkPerbualanAwal.filter((t) => t !== item.text));
+                                        }}
+                                        className="mt-0.5 rounded text-amber-600"
+                                      />
+                                      <span className="text-slate-800 leading-snug">
+                                        <b className="text-amber-950">[{item.category}]</b> {item.text}
+                                      </span>
+                                    </label>
+                                  );
+                                })}
+                              </div>
+                              <input
+                                type="text"
+                                value={kspkPerbualanNote}
+                                onChange={(e) => setKspkPerbualanNote(e.target.value)}
+                                placeholder="Nota / aktiviti tambahan perbualan awal..."
+                                className="w-full border border-slate-300 rounded-lg p-2 text-xs bg-slate-50"
+                              />
+                            </div>
+                          )}
+
+                          {selectedSubjectSlug === 'kspk_rehat' && (
+                            <div className="bg-white p-3 rounded-xl border border-amber-100 space-y-2">
+                              <div className="flex items-center justify-between text-[11px] font-bold text-slate-700">
+                                <span>Rehat & Pengurusan Diri (200 Minit / Minggu):</span>
+                                <span className="text-[10px] text-amber-700">Pilih amalan kendiri</span>
+                              </div>
+                              <div className="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+                                {KSPK_ROUTINE_PRESETS.REHAT.presets.map((item) => {
+                                  const isChecked = kspkRehat.includes(item.text);
+                                  return (
+                                    <label key={item.id} className="flex items-start gap-2 cursor-pointer text-[11px] p-1.5 rounded-lg hover:bg-amber-50/50">
+                                      <input
+                                        type="checkbox"
+                                        checked={isChecked}
+                                        onChange={(e) => {
+                                          if (e.target.checked) setKspkRehat([...kspkRehat, item.text]);
+                                          else setKspkRehat(kspkRehat.filter((t) => t !== item.text));
+                                        }}
+                                        className="mt-0.5 rounded text-amber-600"
+                                      />
+                                      <span className="text-slate-800 leading-snug">
+                                        <b className="text-amber-950">[{item.category}]</b> {item.text}
+                                      </span>
+                                    </label>
+                                  );
+                                })}
+                              </div>
+                              <input
+                                type="text"
+                                value={kspkRehatNote}
+                                onChange={(e) => setKspkRehatNote(e.target.value)}
+                                placeholder="Nota / menu / panduan rehat tambahan..."
+                                className="w-full border border-slate-300 rounded-lg p-2 text-xs bg-slate-50"
+                              />
+                            </div>
+                          )}
+
+                          {selectedSubjectSlug === 'kspk_penutup' && (
+                            <div className="bg-white p-3 rounded-xl border border-amber-100 space-y-2">
+                              <div className="flex items-center justify-between text-[11px] font-bold text-slate-700">
+                                <span>Aktiviti Penutup & Refleksi (50 Minit / Minggu):</span>
+                                <span className="text-[10px] text-amber-700">Pilih amalan bersurai</span>
+                              </div>
+                              <div className="space-y-1.5 max-h-48 overflow-y-auto pr-1">
+                                {KSPK_ROUTINE_PRESETS.PENUTUP.presets.map((item) => {
+                                  const isChecked = kspkPenutup.includes(item.text);
+                                  return (
+                                    <label key={item.id} className="flex items-start gap-2 cursor-pointer text-[11px] p-1.5 rounded-lg hover:bg-amber-50/50">
+                                      <input
+                                        type="checkbox"
+                                        checked={isChecked}
+                                        onChange={(e) => {
+                                          if (e.target.checked) setKspkPenutup([...kspkPenutup, item.text]);
+                                          else setKspkPenutup(kspkPenutup.filter((t) => t !== item.text));
+                                        }}
+                                        className="mt-0.5 rounded text-amber-600"
+                                      />
+                                      <span className="text-slate-800 leading-snug">
+                                        <b className="text-amber-950">[{item.category}]</b> {item.text}
+                                      </span>
+                                    </label>
+                                  );
+                                })}
+                              </div>
+                              <input
+                                type="text"
+                                value={kspkPenutupNote}
+                                onChange={(e) => setKspkPenutupNote(e.target.value)}
+                                placeholder="Nota / pesanan guru untuk esok..."
+                                className="w-full border border-slate-300 rounded-lg p-2 text-xs bg-slate-50"
+                              />
+                            </div>
+                          )}
+                        </div>
+                      )}
+
                       {/* Action Buttons: 0-API & Gemini Prompt */}
+                      {['kspk_perbualan_awal', 'kspk_rehat', 'kspk_penutup'].includes(selectedSubjectSlug) && (
+                        <div className="p-2.5 bg-amber-50/90 border border-amber-300/80 rounded-xl text-amber-900 text-xs flex items-center justify-between gap-2">
+                          <div className="flex items-center gap-2 min-w-0">
+                            <span className="text-base shrink-0">⚡</span>
+                            <div className="text-[11px] leading-tight">
+                              <span className="font-extrabold block text-amber-950">Rutin Prasekolah Sedia Ada (Tanpa Perlu AI):</span>
+                              <span className="text-amber-800">Dijana terus daripada bank aktiviti yang ditandakan. Gunakan Gemini AI hanya jika diminta.</span>
+                            </div>
+                          </div>
+                          <span className="text-[10px] font-bold bg-amber-200/80 text-amber-950 px-2 py-0.5 rounded-full shrink-0">0-API Pantas</span>
+                        </div>
+                      )}
+
                       <div className="flex flex-col sm:flex-row gap-2 pt-2">
                         <button
                           type="button"
                           onClick={handleGenerate0Api}
                           className="flex-1 py-3 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-extrabold text-xs rounded-xl shadow-md transition"
                         >
-                          ⚡ Jana RPH Serta-Merta (0-API)
+                          {['kspk_perbualan_awal', 'kspk_rehat', 'kspk_penutup'].includes(selectedSubjectSlug)
+                            ? '⚡ Jana RPH Rutin Serta-Merta (0-API)'
+                            : '⚡ Jana RPH Serta-Merta (0-API)'}
                         </button>
                         <button
                           type="button"
@@ -6194,37 +6825,14 @@ ${gen.assessment}`;
                                       )}
                                     </td>
                                   </tr>
-                                  <tr className="border-b border-slate-200">
-                                    <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
-                                      Aktiviti Pembelajaran (PdP)
-                                    </td>
-                                    <td className={`p-3 text-slate-800 space-y-3 leading-relaxed ${rtlClass}`} dir={rtlDir}>
-                                      <div>
-                                        <span className="font-extrabold text-slate-900 block mb-1">Set Induksi:</span>
-                                        {isEditingRph ? (
-                                          <textarea
-                                            rows={2}
-                                            dir={rtlDir}
-                                            value={editBuffer.induction}
-                                            onChange={(e) => {
-                                              setEditBuffer({ ...editBuffer, induction: e.target.value });
-                                              e.target.style.height = "auto";
-                                              e.target.style.height = e.target.scrollHeight + "px";
-                                            }}
-                                            onInput={(e: any) => {
-                                              e.target.style.height = "auto";
-                                              e.target.style.height = e.target.scrollHeight + "px";
-                                            }}
-                                            placeholder="Penerangan aktiviti Set Induksi..."
-                                            className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
-                                          />
-                                        ) : (
-                                          <p className="mt-0.5 text-slate-800">{previewRph.induction}</p>
-                                        )}
-                                      </div>
-
-                                      <div>
-                                        <span className="font-extrabold text-slate-900 block mb-1">Langkah / Aktiviti Utama:</span>
+                                  {/* PRASESKOLAH UNIFIED AKTIVITI PEMBELAJARAN (PDP) VS KSSR INDUKSI-LANGKAH-PENUTUP */}
+                                  {(previewRph.grade === 'PRA' || (previewRph.subjectSlug || '').startsWith('kspk') || (!previewRph.induction && !previewRph.closure)) ? (
+                                    <tr className="border-b border-slate-200">
+                                      <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
+                                        Aktiviti Pembelajaran (PdP)
+                                        <span className="block text-[10px] text-slate-500 font-normal mt-0.5">Langkah PdP / Aliran Aktiviti Prasekolah</span>
+                                      </td>
+                                      <td className={`p-3 text-slate-800 space-y-2 leading-relaxed ${rtlClass}`} dir={rtlDir}>
                                         {isEditingRph ? (
                                           <textarea
                                             rows={Math.max(editBuffer.activities.split("\n").length + 2, 6)}
@@ -6239,43 +6847,108 @@ ${gen.assessment}`;
                                               e.target.style.height = "auto";
                                               e.target.style.height = e.target.scrollHeight + "px";
                                             }}
-                                            placeholder="Setiap baris satu Langkah Aktiviti Utama PdP (PAK-21)..."
+                                            placeholder="Aktiviti Pembelajaran (PdP) Prasekolah..."
                                             className={`w-full p-2.5 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
                                           />
                                         ) : (
-                                          <ol className={`list-decimal ${isJawiRph ? "pr-4" : "pl-4"} mt-0.5 space-y-1.5`}>
-                                            {previewRph.activities.map((act, idx) => (
-                                              <li key={idx} className="text-slate-800 leading-relaxed">{act}</li>
-                                            ))}
-                                          </ol>
+                                          <div className="space-y-1.5">
+                                            {previewRph.activities.map((act, idx) => {
+                                              const cleaned = act.replace(/^(?:Langkah\s*\d+[\s:–\-\.]*|步骤\s*\d+[\s:–\-\.]*|Step\s*\d+[\s:–\-\.]*)/i, '').trim();
+                                              const displayLine = /^\d+[\.\)]\s*/.test(cleaned) ? cleaned : `${idx + 1}. ${cleaned}`;
+                                              return (
+                                                <div key={idx} className="p-2 bg-slate-50 rounded-lg border border-slate-200/70 text-slate-800 leading-relaxed text-xs">
+                                                  {displayLine}
+                                                </div>
+                                              );
+                                            })}
+                                          </div>
                                         )}
-                                      </div>
+                                      </td>
+                                    </tr>
+                                  ) : (
+                                    <tr className="border-b border-slate-200">
+                                      <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
+                                        Aktiviti Pembelajaran (PdP)
+                                      </td>
+                                      <td className={`p-3 text-slate-800 space-y-3 leading-relaxed ${rtlClass}`} dir={rtlDir}>
+                                        <div>
+                                          <span className="font-extrabold text-slate-900 block mb-1">Set Induksi:</span>
+                                          {isEditingRph ? (
+                                            <textarea
+                                              rows={2}
+                                              dir={rtlDir}
+                                              value={editBuffer.induction}
+                                              onChange={(e) => {
+                                                setEditBuffer({ ...editBuffer, induction: e.target.value });
+                                                e.target.style.height = "auto";
+                                                e.target.style.height = e.target.scrollHeight + "px";
+                                              }}
+                                              onInput={(e: any) => {
+                                                e.target.style.height = "auto";
+                                                e.target.style.height = e.target.scrollHeight + "px";
+                                              }}
+                                              placeholder="Penerangan aktiviti Set Induksi..."
+                                              className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
+                                            />
+                                          ) : (
+                                            <p className="mt-0.5 text-slate-800">{previewRph.induction}</p>
+                                          )}
+                                        </div>
 
-                                      <div>
-                                        <span className="font-extrabold text-slate-900 block mb-1">Penutup:</span>
-                                        {isEditingRph ? (
-                                          <textarea
-                                            rows={2}
-                                            dir={rtlDir}
-                                            value={editBuffer.closure}
-                                            onChange={(e) => {
-                                              setEditBuffer({ ...editBuffer, closure: e.target.value });
-                                              e.target.style.height = "auto";
-                                              e.target.style.height = e.target.scrollHeight + "px";
-                                            }}
-                                            onInput={(e: any) => {
-                                              e.target.style.height = "auto";
-                                              e.target.style.height = e.target.scrollHeight + "px";
-                                            }}
-                                            placeholder="Penerangan aktiviti Penutup..."
-                                            className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
-                                          />
-                                        ) : (
-                                          <p className="mt-0.5 text-slate-800">{previewRph.closure}</p>
-                                        )}
-                                      </div>
-                                    </td>
-                                  </tr>
+                                        <div>
+                                          <span className="font-extrabold text-slate-900 block mb-1">Langkah / Aktiviti Utama:</span>
+                                          {isEditingRph ? (
+                                            <textarea
+                                              rows={Math.max(editBuffer.activities.split("\n").length + 2, 6)}
+                                              dir={rtlDir}
+                                              value={editBuffer.activities}
+                                              onChange={(e) => {
+                                                setEditBuffer({ ...editBuffer, activities: e.target.value });
+                                                e.target.style.height = "auto";
+                                                e.target.style.height = e.target.scrollHeight + "px";
+                                              }}
+                                              onInput={(e: any) => {
+                                                e.target.style.height = "auto";
+                                                e.target.style.height = e.target.scrollHeight + "px";
+                                              }}
+                                              placeholder="Setiap baris satu Langkah Aktiviti Utama PdP (PAK-21)..."
+                                              className={`w-full p-2.5 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
+                                            />
+                                          ) : (
+                                            <ol className={`list-decimal ${isJawiRph ? "pr-4" : "pl-4"} mt-0.5 space-y-1.5`}>
+                                              {previewRph.activities.map((act, idx) => (
+                                                <li key={idx} className="text-slate-800 leading-relaxed">{act}</li>
+                                              ))}
+                                            </ol>
+                                          )}
+                                        </div>
+
+                                        <div>
+                                          <span className="font-extrabold text-slate-900 block mb-1">Penutup:</span>
+                                          {isEditingRph ? (
+                                            <textarea
+                                              rows={2}
+                                              dir={rtlDir}
+                                              value={editBuffer.closure}
+                                              onChange={(e) => {
+                                                setEditBuffer({ ...editBuffer, closure: e.target.value });
+                                                e.target.style.height = "auto";
+                                                e.target.style.height = e.target.scrollHeight + "px";
+                                              }}
+                                              onInput={(e: any) => {
+                                                e.target.style.height = "auto";
+                                                e.target.style.height = e.target.scrollHeight + "px";
+                                              }}
+                                              placeholder="Penerangan aktiviti Penutup..."
+                                              className={`w-full p-2 border border-blue-300 rounded-lg text-xs bg-blue-50/20 font-medium text-slate-900 focus:bg-white focus:outline-none focus:ring-1 focus:ring-blue-500 leading-relaxed resize-y ${rtlClass}`}
+                                            />
+                                          ) : (
+                                            <p className="mt-0.5 text-slate-800">{previewRph.closure}</p>
+                                          )}
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  )}
                                   <tr className="border-b border-slate-200">
                                     <td className="bg-slate-50 font-bold p-3 border-r border-slate-300 align-top text-slate-800">
                                       EMK & BBM
@@ -7059,18 +7732,28 @@ ${gen.assessment}`;
                     </div>
 
                     <div>
-                      <label className="block font-bold text-slate-700 mb-1">Tahun</label>
-                      <select
-                        value={myNewGrade}
-                        onChange={(e) => setMyNewGrade(e.target.value)}
-                        className="w-full border rounded-lg p-2 bg-white font-bold"
-                      >
-                        {['1', '2', '3', '4', '5', '6'].map((g) => (
-                          <option key={g} value={g}>
-                            Tahun {g}
-                          </option>
-                        ))}
-                      </select>
+                      <label className="block font-bold text-slate-700 mb-1">Tahun / Peringkat</label>
+                      {isPrasekolahTeacher ? (
+                        <select
+                          value="PRA"
+                          disabled
+                          className="w-full border border-amber-300 rounded-lg p-2 bg-amber-50 text-amber-950 font-bold"
+                        >
+                          <option value="PRA">🧒 Prasekolah (KSPK)</option>
+                        </select>
+                      ) : (
+                        <select
+                          value={myNewGrade}
+                          onChange={(e) => setMyNewGrade(e.target.value)}
+                          className="w-full border rounded-lg p-2 bg-white font-bold"
+                        >
+                          {['1', '2', '3', '4', '5', '6'].map((g) => (
+                            <option key={g} value={g}>
+                              Tahun {g}
+                            </option>
+                          ))}
+                        </select>
+                      )}
                     </div>
 
                     <div>
@@ -7080,7 +7763,7 @@ ${gen.assessment}`;
                         value={myNewClassName}
                         onChange={(e) => setMyNewClassName(e.target.value)}
                         className="w-full border rounded-lg p-2 bg-white font-bold"
-                        placeholder="4 Merah"
+                        placeholder={isPrasekolahTeacher ? 'Prasekolah' : '4 Merah'}
                       />
                     </div>
 
@@ -7093,18 +7776,20 @@ ${gen.assessment}`;
                         value={myNewStudentCount}
                         onChange={(e) => setMyNewStudentCount(Number(e.target.value))}
                         className="w-full border rounded-lg p-2 bg-white font-mono"
-                        placeholder="30"
+                        placeholder={isPrasekolahTeacher ? '25' : '30'}
                       />
                     </div>
 
                     <div className="col-span-2 sm:col-span-3 lg:col-span-6">
-                      <label className="block font-bold text-slate-700 mb-1">Subjek</label>
+                      <label className="block font-bold text-slate-700 mb-1">
+                        {isPrasekolahTeacher ? 'Tunjang / Rutin Prasekolah (KSPK)' : 'Subjek'}
+                      </label>
                       <select
                         value={myNewSubjectSlug}
                         onChange={(e) => setMyNewSubjectSlug(e.target.value)}
                         className="w-full border rounded-lg p-2 bg-white font-bold"
                       >
-                        {dskpMeta.map((s) => (
+                        {teacherAllowedDskpMeta.map((s) => (
                           <option key={s.slug} value={s.slug}>
                             {s.name}
                           </option>
@@ -7200,12 +7885,14 @@ ${gen.assessment}`;
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-4">
                   <div>
                     <div className="flex items-center gap-2">
-                      <span className="text-xl">📚</span>
+                      <span className="text-xl">{isPrasekolahTeacher ? '🧒' : '📚'}</span>
                       <h3 className="text-lg font-black text-slate-800">
-                        Rancangan Pengajaran Tahunan (RPT) Mengajar Saya
+                        {isPrasekolahTeacher
+                          ? 'Rancangan Pengajaran Tahunan (RPT) Prasekolah Saya'
+                          : 'Rancangan Pengajaran Tahunan (RPT) Mengajar Saya'}
                       </h3>
                       <span className="text-[10px] font-bold uppercase text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded-full">
-                        KPM SJK(C)
+                        {isPrasekolahTeacher ? 'KSPK Prasekolah' : 'KPM SJK(C)'}
                       </span>
                     </div>
                     <p className="text-xs text-slate-500 mt-1">
@@ -7279,7 +7966,7 @@ ${gen.assessment}`;
                               isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 text-slate-700'
                             }`}
                           >
-                            Tahun {assign.grade}
+                            {assign.grade === 'PRA' ? 'Prasekolah' : `Tahun ${assign.grade}`}
                           </span>
                           {assign.className && (
                             <span
@@ -7615,7 +8302,7 @@ ${gen.assessment}`;
                           {editingRptOriginalIndex >= 0 ? 'Edit RPT Minggu' : 'Tambah Minggu Baru'}
                         </span>
                         <h3 className="text-base font-black text-slate-800 mt-1">
-                          {activeRptAssignment.subjectName} (Tahun {activeRptAssignment.grade})
+                          {activeRptAssignment.subjectName} ({activeRptAssignment.grade === 'PRA' ? 'Prasekolah' : `Tahun ${activeRptAssignment.grade}`})
                         </h3>
                       </div>
                       <button
@@ -7707,13 +8394,13 @@ ${gen.assessment}`;
                           className="w-full border border-slate-300 rounded-xl p-2.5 bg-white font-mono text-slate-800 font-bold"
                         />
                         {/* Quick SK helper from DSKP */}
-                        {subjectData && subjectData[activeRptAssignment.grade] && (
+                        {subjectData && (subjectData[activeRptAssignment.grade] || (isPrasekolahTeacher && subjectData['PRA'])) && (
                           <div className="mt-1.5 p-2 bg-slate-50 border border-slate-200 rounded-xl space-y-1">
                             <span className="text-[10px] font-bold text-slate-500 block">
                               ⚡ Bantuan Pantas SK dari DSKP KPM:
                             </span>
                             <div className="flex flex-wrap gap-1 max-h-24 overflow-y-auto">
-                              {Object.keys(subjectData[activeRptAssignment.grade]).map((skKey) => {
+                              {Object.keys(subjectData[activeRptAssignment.grade] || subjectData['PRA'] || {}).map((skKey) => {
                                 const extracted = extractSkCode(skKey) || skKey.split(' ')[0];
                                 const isAdded = (editingRptRecord.sk_codes || []).includes(extracted);
                                 return (
@@ -7842,13 +8529,22 @@ ${gen.assessment}`;
 
                     <div className="p-5 space-y-4 text-xs">
                       <div>
-                        <label className="block text-slate-700 font-bold mb-1">Mata Pelajaran KPM SJK(C):</label>
+                        <label className="block text-slate-700 font-bold mb-1">
+                          {isPrasekolahTeacher ? 'Tunjang / Rutin Prasekolah (KSPK):' : 'Mata Pelajaran KPM SJK(C):'}
+                        </label>
                         <select
                           value={newRptSubjectSlug}
-                          onChange={(e) => setNewRptSubjectSlug(e.target.value)}
+                          onChange={(e) => {
+                            const newSlug = e.target.value;
+                            setNewRptSubjectSlug(newSlug);
+                            const meta = teacherAllowedDskpMeta.find((m) => m.slug === newSlug);
+                            if (meta && meta.grades.length > 0 && !meta.grades.includes(newRptGrade)) {
+                              setNewRptGrade(meta.grades[0]);
+                            }
+                          }}
                           className="w-full border border-slate-300 rounded-xl p-2.5 bg-white font-bold text-slate-800"
                         >
-                          {dskpMeta.map((s) => (
+                          {teacherAllowedDskpMeta.map((s) => (
                             <option key={s.slug} value={s.slug}>
                               {s.name}
                             </option>
@@ -7858,18 +8554,37 @@ ${gen.assessment}`;
 
                       <div className="grid grid-cols-2 gap-3">
                         <div>
-                          <label className="block text-slate-700 font-bold mb-1">Tahun / Darjah:</label>
-                          <select
-                            value={newRptGrade}
-                            onChange={(e) => setNewRptGrade(e.target.value)}
-                            className="w-full border border-slate-300 rounded-xl p-2.5 bg-white font-bold text-slate-800"
-                          >
-                            {['1', '2', '3', '4', '5', '6'].map((g) => (
-                              <option key={g} value={g}>
-                                Tahun {g}
-                              </option>
-                            ))}
-                          </select>
+                          <label className="block text-slate-700 font-bold mb-1">Tahun / Peringkat:</label>
+                          {isPrasekolahTeacher ? (
+                            <select
+                              value="PRA"
+                              disabled
+                              className="w-full border border-amber-300 rounded-xl p-2.5 bg-amber-50 font-bold text-amber-950"
+                            >
+                              <option value="PRA">Prasekolah (PRA)</option>
+                            </select>
+                          ) : (
+                            <select
+                              value={newRptGrade}
+                              onChange={(e) => setNewRptGrade(e.target.value)}
+                              className="w-full border border-slate-300 rounded-xl p-2.5 bg-white font-bold text-slate-800"
+                            >
+                              {(
+                                teacherAllowedDskpMeta.find((m) => m.slug === newRptSubjectSlug)?.grades.filter((g) => g !== 'PRA') || [
+                                  '1',
+                                  '2',
+                                  '3',
+                                  '4',
+                                  '5',
+                                  '6',
+                                ]
+                              ).map((g) => (
+                                <option key={g} value={g}>
+                                  Tahun {g}
+                                </option>
+                              ))}
+                            </select>
+                          )}
                         </div>
 
                         <div>
@@ -7878,7 +8593,7 @@ ${gen.assessment}`;
                             type="text"
                             value={newRptClassName}
                             onChange={(e) => setNewRptClassName(e.target.value)}
-                            placeholder="Contoh: 4 Merah"
+                            placeholder={isPrasekolahTeacher ? 'Contoh: Prasekolah' : 'Contoh: 4 Merah'}
                             className="w-full border border-slate-300 rounded-xl p-2.5 bg-white font-semibold text-slate-800"
                           />
                         </div>
@@ -8722,6 +9437,7 @@ ${gen.assessment}`;
                         <option value="Pendidikan Moral">Pendidikan Moral</option>
                         <option value="Sejarah">Sejarah</option>
                         <option value="RBT">RBT / TMK</option>
+                        <option value="Prasekolah (KSPK)">🧒 Prasekolah (KSPK)</option>
                       </select>
                     </div>
                     <div>
@@ -8731,7 +9447,8 @@ ${gen.assessment}`;
                         onChange={(e) => setNewTeacherRole(e.target.value as any)}
                         className="w-full border rounded-lg p-2 bg-white font-semibold"
                       >
-                        <option value="guru">Guru Subjek</option>
+                        <option value="guru">Guru Subjek (Sekolah Rendah)</option>
+                        <option value="guru_prasekolah">🧒 Guru Prasekolah (KSPK)</option>
                         <option value="pk_pentadbiran">PK Pentadbiran</option>
                         <option value="guru_besar">Guru Besar</option>
                         <option value="guru_ict_data">Guru ICT / Data</option>
@@ -8743,14 +9460,16 @@ ${gen.assessment}`;
                       type="button"
                       onClick={() => {
                         if (!newTeacherName.trim()) return;
+                        const isPraRole = newTeacherRole === 'guru_prasekolah' || newTeacherPanitia.toLowerCase().includes('prasekolah');
                         const nt: TeacherProfile = {
                           id: `t_${Date.now()}`,
                           name: newTeacherName.trim(),
                           chineseName: newTeacherChinese.trim() || '老师',
                           email: newTeacherEmail.trim() || `g-${Date.now()}@moe-dl.edu.my`,
-                          panitia: newTeacherPanitia,
-                          subjectSlug: 'bahasa_cina_sjkc',
-                          role: newTeacherRole,
+                          panitia: isPraRole ? 'Prasekolah (KSPK)' : newTeacherPanitia,
+                          subjectSlug: isPraRole ? 'kspk_perbualan_awal' : 'bahasa_cina_sjkc',
+                          role: isPraRole ? 'guru_prasekolah' : newTeacherRole,
+                          jawatan: isPraRole ? 'GURU PRASEKOLAH' : 'GAB',
                           status: 'AKTIF',
                         };
                         setTeachers((prev) => {
@@ -8808,6 +9527,8 @@ ${gen.assessment}`;
                                   ? 'bg-amber-100 text-amber-800'
                                   : t.role === 'guru_ict_data'
                                   ? 'bg-purple-100 text-purple-800'
+                                  : t.role === 'guru_prasekolah' || (t.panitia || '').toLowerCase().includes('prasekolah')
+                                  ? 'bg-emerald-100 text-emerald-800'
                                   : 'bg-cyan-100 text-cyan-800'
                               }`}
                             >
@@ -8817,6 +9538,8 @@ ${gen.assessment}`;
                                 ? 'PK Pentadbiran'
                                 : t.role === 'guru_ict_data'
                                 ? 'Guru ICT / Data'
+                                : t.role === 'guru_prasekolah' || (t.panitia || '').toLowerCase().includes('prasekolah')
+                                ? '🧒 Guru Prasekolah'
                                 : 'Guru Subjek'}
                             </span>
                           </td>
@@ -8835,7 +9558,24 @@ ${gen.assessment}`;
                               {t.status === 'CUTI' ? 'Cuti Belajar/Sakit' : t.status === 'BERPINDAH' ? 'Berpindah' : 'Aktif Bertugas'}
                             </span>
                           </td>
-                          <td className="py-3 px-4 text-right space-x-2">
+                          <td className="py-3 px-4 text-right space-x-1.5">
+                            <button
+                              type="button"
+                              onClick={() => {
+                                handlePerformLogin(t, 'email');
+                                if (
+                                  t.role === 'guru_prasekolah' ||
+                                  t.jawatan === 'GURU PRASEKOLAH' ||
+                                  (t.panitia || '').toLowerCase().includes('prasekolah')
+                                ) {
+                                  setActiveNav('rph-builder');
+                                }
+                              }}
+                              className="px-2.5 py-1 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200 text-[11px] font-bold rounded-lg transition cursor-pointer"
+                              title={`Masuk & lihat paparan UI bagi ${t.name}`}
+                            >
+                              👁️ Buka UI
+                            </button>
                             <button
                               onClick={() => handleOpenEditTeacher(t)}
                               className="px-2.5 py-1 bg-blue-50 hover:bg-blue-100 text-blue-700 border border-blue-200 text-[11px] font-bold rounded-lg transition"
@@ -9069,7 +9809,14 @@ ${gen.assessment}`;
                       let newRole = editingTeacher.role;
                       if (newJ === 'GB') newRole = 'guru_besar';
                       else if (['GPK1', 'GPK HEM', 'GPK KOKO', 'GPK KK'].includes(newJ)) newRole = 'pk_pentadbiran';
-                      setEditingTeacher({ ...editingTeacher, jawatan: newJ, role: newRole });
+                      else if (newJ === 'GURU PRASEKOLAH') newRole = 'guru_prasekolah';
+                      setEditingTeacher({
+                        ...editingTeacher,
+                        jawatan: newJ,
+                        role: newRole,
+                        panitia: newJ === 'GURU PRASEKOLAH' ? 'Prasekolah (KSPK)' : editingTeacher.panitia,
+                        subjectSlug: newJ === 'GURU PRASEKOLAH' ? 'kspk_perbualan_awal' : editingTeacher.subjectSlug,
+                      });
                     }}
                     className="w-full border rounded-lg p-2 bg-slate-50 font-bold"
                   >
@@ -9078,7 +9825,8 @@ ${gen.assessment}`;
                     <option value="GPK HEM">GPK HEM - [Pentadbir]</option>
                     <option value="GPK KK">GPK KK (GPK Kokurikulum) - [Pentadbir]</option>
                     <option value="GPK KOKO">GPK KOKO - [Pentadbir]</option>
-                    <option value="GAB">GAB (Guru Akademik Biasa)</option>
+                    <option value="GAB">GAB (Guru Akademik Biasa - Sekolah Rendah)</option>
+                    <option value="GURU PRASEKOLAH">🧒 GURU PRASEKOLAH (KSPK)</option>
                     <option value="G GANTI">G GANTI (Guru Ganti)</option>
                   </select>
                 </div>
@@ -9127,6 +9875,7 @@ ${gen.assessment}`;
                     <option value="Pendidikan Moral">Pendidikan Moral</option>
                     <option value="Sejarah">Sejarah</option>
                     <option value="RBT">RBT / TMK</option>
+                    <option value="Prasekolah (KSPK)">🧒 Prasekolah (KSPK)</option>
                     <option value="Pentadbiran / Kepimpinan">Pentadbiran / Kepimpinan</option>
                   </select>
                 </div>
@@ -9135,10 +9884,20 @@ ${gen.assessment}`;
                   <label className="block font-bold text-slate-700 mb-1">Peranan (Role)</label>
                   <select
                     value={editingTeacher.role}
-                    onChange={(e) => setEditingTeacher({ ...editingTeacher, role: e.target.value as any })}
+                    onChange={(e) => {
+                      const nextR = e.target.value as UserRole;
+                      setEditingTeacher({
+                        ...editingTeacher,
+                        role: nextR,
+                        jawatan: nextR === 'guru_prasekolah' ? 'GURU PRASEKOLAH' : editingTeacher.jawatan,
+                        panitia: nextR === 'guru_prasekolah' ? 'Prasekolah (KSPK)' : editingTeacher.panitia,
+                        subjectSlug: nextR === 'guru_prasekolah' ? 'kspk_perbualan_awal' : editingTeacher.subjectSlug,
+                      });
+                    }}
                     className="w-full border rounded-lg p-2 bg-slate-50 font-bold"
                   >
-                    <option value="guru">Guru Subjek</option>
+                    <option value="guru">Guru Subjek (Sekolah Rendah)</option>
+                    <option value="guru_prasekolah">🧒 Guru Prasekolah (KSPK)</option>
                     <option value="pk_pentadbiran">PK Pentadbiran</option>
                     <option value="guru_besar">Guru Besar</option>
                     <option value="guru_ict_data">Guru ICT / Data</option>

@@ -59,6 +59,21 @@ export const DSKP_TO_RPT_CODE_MAP: Record<string, string> = {
   sejarah_sjkc: 'SEJ_SJKC',
   sejarah_sjkc_kelas_bercantum: 'SEJ_SJKC',
   sjkc: 'PAI_SJKC',
+  // Prasekolah (KSPK)
+  kspk_prasekolah: 'KSPK',
+  kspk_sosioemosi: 'KSPK_SE',
+  kspk_fizikal: 'KSPK_FK',
+  kspk_kreativiti: 'KSPK_KE',
+  kspk_kognitif: 'KSPK_KF',
+  kspk_bahasa_melayu: 'KSPK_BM',
+  kspk_bahasa_inggeris: 'KSPK_BI',
+  kspk_bahasa_cina: 'KSPK_BC',
+  kspk_pendidikan_moral: 'KSPK_PM',
+  kspk_pendidikan_islam: 'KSPK_PI',
+  kspk_ppki: 'KSPK',
+  kspk_perbualan_awal: 'KSPK_PA',
+  kspk_rehat: 'KSPK_RH',
+  kspk_penutup: 'KSPK_PN',
 };
 
 // In-memory cache for loaded RPT JSON files
@@ -74,15 +89,20 @@ export async function fetchRptJson(
   const rptCode = DSKP_TO_RPT_CODE_MAP[subjectSlug];
   if (!rptCode) return [];
 
-  const gradeStr = String(grade).replace(/[^0-9]/g, '') || '1';
-  const cacheKey = `${rptCode}_T${gradeStr}`;
+  const isPra =
+    String(grade).toUpperCase().includes('PRA') ||
+    rptCode.startsWith('KSPK') ||
+    subjectSlug.startsWith('kspk');
+
+  const fileSuffix = isPra ? '_PRA' : `_T${String(grade).replace(/[^0-9]/g, '') || '1'}`;
+  const cacheKey = `${rptCode}${fileSuffix}`;
 
   if (rptCache.has(cacheKey)) {
     return rptCache.get(cacheKey)!;
   }
 
   try {
-    const res = await fetch(`/rpt/${rptCode}_T${gradeStr}.json`);
+    const res = await fetch(`/rpt/${rptCode}${fileSuffix}.json`);
     if (!res.ok) {
       rptCache.set(cacheKey, []);
       return [];
@@ -229,6 +249,10 @@ export function matchRptWithDskp(
           if (norm && !allWeekSkCodes.includes(norm)) {
             allWeekSkCodes.push(norm);
           }
+          const rawCode = sc.trim();
+          if (rawCode && !allWeekSkCodes.includes(rawCode)) {
+            allWeekSkCodes.push(rawCode);
+          }
         }
       }
     }
@@ -237,6 +261,10 @@ export function matchRptWithDskp(
         const norm = sp.replace(/^[A-Za-z]+/, '').trim();
         if (norm && !allWeekSpCodes.includes(norm)) {
           allWeekSpCodes.push(norm);
+        }
+        const rawCode = sp.trim();
+        if (rawCode && !allWeekSpCodes.includes(rawCode)) {
+          allWeekSpCodes.push(rawCode);
         }
       }
     }
@@ -364,14 +392,25 @@ export interface TeacherRptAssignment {
 /**
  * Get customized RPT from localStorage if teacher adjusted it, otherwise fetch default public RPT JSON
  */
+export function getRptGradeKey(subjectSlug: string, grade: string | number): string {
+  const isPra =
+    String(grade).toUpperCase().includes('PRA') ||
+    subjectSlug.startsWith('kspk');
+  if (isPra) return 'PRA';
+  return `T${String(grade).replace(/[^0-9]/g, '') || '1'}`;
+}
+
+/**
+ * Get customized RPT from localStorage if teacher adjusted it, otherwise fetch default public RPT JSON
+ */
 export async function getEffectiveRpt(
   teacherId: string,
   subjectSlug: string,
   grade: string | number
 ): Promise<RptRecord[]> {
-  const gradeStr = String(grade).replace(/[^0-9]/g, '') || '1';
+  const gradeKey = getRptGradeKey(subjectSlug, grade);
   if (typeof window !== 'undefined') {
-    const customKey = `rph_custom_rpt_${teacherId}_${subjectSlug}_T${gradeStr}`;
+    const customKey = `rph_custom_rpt_${teacherId}_${subjectSlug}_${gradeKey}`;
     const customData = localStorage.getItem(customKey);
     if (customData) {
       try {
@@ -384,7 +423,7 @@ export async function getEffectiveRpt(
       }
     }
   }
-  return fetchRptJson(subjectSlug, gradeStr);
+  return fetchRptJson(subjectSlug, grade);
 }
 
 /**
@@ -397,8 +436,8 @@ export function saveCustomRpt(
   records: RptRecord[]
 ): void {
   if (typeof window !== 'undefined') {
-    const gradeStr = String(grade).replace(/[^0-9]/g, '') || '1';
-    const customKey = `rph_custom_rpt_${teacherId}_${subjectSlug}_T${gradeStr}`;
+    const gradeKey = getRptGradeKey(subjectSlug, grade);
+    const customKey = `rph_custom_rpt_${teacherId}_${subjectSlug}_${gradeKey}`;
     localStorage.setItem(customKey, JSON.stringify(records));
   }
 }
@@ -412,8 +451,8 @@ export function resetCustomRpt(
   grade: string | number
 ): void {
   if (typeof window !== 'undefined') {
-    const gradeStr = String(grade).replace(/[^0-9]/g, '') || '1';
-    const customKey = `rph_custom_rpt_${teacherId}_${subjectSlug}_T${gradeStr}`;
+    const gradeKey = getRptGradeKey(subjectSlug, grade);
+    const customKey = `rph_custom_rpt_${teacherId}_${subjectSlug}_${gradeKey}`;
     localStorage.removeItem(customKey);
   }
 }
@@ -427,8 +466,8 @@ export function isCustomRptModified(
   grade: string | number
 ): boolean {
   if (typeof window !== 'undefined') {
-    const gradeStr = String(grade).replace(/[^0-9]/g, '') || '1';
-    const customKey = `rph_custom_rpt_${teacherId}_${subjectSlug}_T${gradeStr}`;
+    const gradeKey = getRptGradeKey(subjectSlug, grade);
+    const customKey = `rph_custom_rpt_${teacherId}_${subjectSlug}_${gradeKey}`;
     return !!localStorage.getItem(customKey);
   }
   return false;
@@ -439,7 +478,8 @@ export function isCustomRptModified(
  */
 export function getTeacherRptAssignments(
   teacherId: string,
-  timetableSlots: { teacherId: string; subjectSlug: string; grade: string; subjectName: string; className?: string }[]
+  timetableSlots: { teacherId: string; subjectSlug: string; grade: string; subjectName: string; className?: string }[],
+  isPrasekolahTeacher: boolean = false
 ): TeacherRptAssignment[] {
   if (typeof window !== 'undefined') {
     const key = `rph_teacher_rpt_assignments_${teacherId}`;
@@ -448,7 +488,13 @@ export function getTeacherRptAssignments(
       try {
         const parsed = JSON.parse(stored);
         if (Array.isArray(parsed) && parsed.length > 0) {
-          return parsed;
+          // Filter out mismatched curriculum assignments if teacher mode is strictly isolated
+          const filtered = parsed.filter((a: TeacherRptAssignment) =>
+            isPrasekolahTeacher
+              ? a.grade === 'PRA' || (a.subjectSlug || '').startsWith('kspk')
+              : a.grade !== 'PRA' && !(a.subjectSlug || '').startsWith('kspk')
+          );
+          if (filtered.length > 0) return filtered;
         }
       } catch (e) {
         console.error('Failed to parse teacher RPT assignments', e);
@@ -462,6 +508,10 @@ export function getTeacherRptAssignments(
   const initial: TeacherRptAssignment[] = [];
 
   for (const s of ownSlots) {
+    const isPraSlot = s.grade === 'PRA' || (s.subjectSlug || '').startsWith('kspk');
+    if (isPrasekolahTeacher && !isPraSlot) continue;
+    if (!isPrasekolahTeacher && isPraSlot) continue;
+
     const uniqueKey = `${s.subjectSlug}_${s.grade}`;
     if (!seen.has(uniqueKey)) {
       seen.add(uniqueKey);
@@ -471,23 +521,55 @@ export function getTeacherRptAssignments(
         subjectSlug: s.subjectSlug,
         grade: s.grade,
         subjectName: s.subjectName,
-        className: s.className || `Tahun ${s.grade}`,
+        className: s.className || (isPraSlot ? 'Prasekolah' : `Tahun ${s.grade}`),
         updatedAt: new Date().toISOString(),
       });
     }
   }
 
-  // If still empty (e.g. new teacher with no timetable slots yet), default to BC T4
+  // Default seed if teacher has no timetable slots yet
   if (initial.length === 0) {
-    initial.push({
-      id: `rpt_assign_${teacherId}_bahasa_cina_sjkc_4`,
-      teacherId,
-      subjectSlug: 'bahasa_cina_sjkc',
-      grade: '4',
-      subjectName: 'BAHASA CINA SJKC 华校华语',
-      className: '4 Merah',
-      updatedAt: new Date().toISOString(),
-    });
+    if (isPrasekolahTeacher) {
+      initial.push(
+        {
+          id: `rpt_assign_${teacherId}_kspk_perbualan_awal_PRA`,
+          teacherId,
+          subjectSlug: 'kspk_perbualan_awal',
+          grade: 'PRA',
+          subjectName: 'PRASEKOLAH - PERBUALAN AWAL 晨谈/早会 (Rutin)',
+          className: 'Prasekolah',
+          updatedAt: new Date().toISOString(),
+        },
+        {
+          id: `rpt_assign_${teacherId}_kspk_bahasa_melayu_PRA`,
+          teacherId,
+          subjectSlug: 'kspk_bahasa_melayu',
+          grade: 'PRA',
+          subjectName: 'PRASEKOLAH - BAHASA MELAYU 幼教国语',
+          className: 'Prasekolah',
+          updatedAt: new Date().toISOString(),
+        },
+        {
+          id: `rpt_assign_${teacherId}_kspk_kognitif_PRA`,
+          teacherId,
+          subjectSlug: 'kspk_kognitif',
+          grade: 'PRA',
+          subjectName: 'PRASEKOLAH - SAINS & MATEMATIK AWAL (KOGNITIF) 幼教认知与数理',
+          className: 'Prasekolah',
+          updatedAt: new Date().toISOString(),
+        }
+      );
+    } else {
+      initial.push({
+        id: `rpt_assign_${teacherId}_bahasa_cina_sjkc_4`,
+        teacherId,
+        subjectSlug: 'bahasa_cina_sjkc',
+        grade: '4',
+        subjectName: 'BAHASA CINA SJKC 华校华语',
+        className: '4 Merah',
+        updatedAt: new Date().toISOString(),
+      });
+    }
   }
 
   return initial;
